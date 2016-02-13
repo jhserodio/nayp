@@ -2,6 +2,48 @@
 01/G - TABLES
 =========================================================================*/
 
-.table {
-  background: red;
+table {
+  width           : 100%;
+  border-collapse : collapse;
+  border-spacing  : 0;
+}
+
+thead {
+  vertical-align : middle;
+}
+
+tfoot {
+  vertical-align : middle;
+}
+
+tbody {
+  vertical-align : middle;
+}
+
+th {
+  text-align  : center;
+  color       : white;
+  font-size   : var(--size-base);
+  font-weight : bold;
+}
+
+td {
+  text-align  : center;
+  padding     : calc(var(--space-base)*2) 0;
+  color       : var(--smoke-white);
+  font-size   : var(--size-base);
+  font-weight : normal;
+  border-left : var(--border-base);
+}
+
+td:first-child {
+  border: 0;
+}
+
+tr {
+  border-top : var(--border-base);
+}
+
+tr:first-child {
+  border : 0;
 }
