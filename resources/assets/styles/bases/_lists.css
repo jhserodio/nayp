@@ -21,10 +21,10 @@ dl {
 }
 
 dt {
-  margin : var(--space-base) 0;
+  margin : var(--space-large) 0;
 }
 
 dd {
   margin       : var(--space-base) 0;
-  padding-left : calc(var(--space-base)*3);
+  padding-left : calc(var(--space-large)*3);
 }
