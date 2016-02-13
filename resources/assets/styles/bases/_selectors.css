@@ -19,9 +19,8 @@
 
 
   /*FORM ELEMENTS*/
-  @custom-selector :--forms-txt input[type="text"], input[type="password"], input[type="search"],
-                               input[type="email"], input[type="file"], input[type="number"],
-                               input[type="tel"], input[type="date"], input[type="time"], textarea, select;
+  @custom-selector :--forms-txt input[type="text"], input[type="password"], input[type="email"],
+                                input[type="number"], input[type="tel"], textarea, select;
 
 
   /*TEMPLATE ELEMENTS*/
