@@ -1,0 +1,50 @@
+/*=========================================================================
+02/B - BUTTONS
+=========================================================================*/
+
+@custom-selector :--btn-lg .btn-submit, .btn-large, .btn-check;
+
+:--btn-lg {
+  font-size: var(--size-title);
+  padding: var(--space-large) calc(var(--space-large)*4);
+  width: 100%;
+}
+
+.btn-large {
+  font-size: var(--size-title);
+  padding: var(--space-large) calc(var(--space-large)*4);
+  width: 100%;
+  color: white;
+  border: var(--border-base);
+    margin: 10px 0;
+}
+
+.btn-large:--over {
+  color: var(--gray-base);
+  border-color: var(--gray-base);
+}
+
+.btn-check {
+  font-size: var(--size-title);
+  padding: var(--space-large) calc(var(--space-large)*4);
+  width: 100%;
+  color: white;
+  border: var(--border-base);
+    margin: 10px 0;
+}
+
+.btn-check:--over {
+  background: white;
+  color: black;
+}
+
+.btn-nude {
+  border: 0;
+  font-size: var(--size-min);
+  color: white;
+}
+
+body {
+  background: black;
+  lost-center: 80%;
+}

@@ -26,8 +26,8 @@
 
 
 :--btn:--over {
-  color      : white;
-  outline    : none;
-  box-shadow : none;
-  border     : var(--border-base);
+  color        : white;
+  outline      : none;
+  box-shadow   : none;
+  border-color : white;
 }
