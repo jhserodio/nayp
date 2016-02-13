@@ -1,0 +1,20 @@
+/*=========================================================================
+05/C - CONTAINER
+=========================================================================*/
+
+.container {
+  lost-center: var(--width-small);
+}
+
+
+@media (--screen-medium) {
+  .container {
+    width: var(--width-medium);
+  }
+}
+
+@media (--screen-tablet) {
+  .container {
+    width: var(--width-tablet);
+  }
+}
