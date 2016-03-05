@@ -2,11 +2,14 @@
 05 - TEMPLATES
 =========================================================================*/
 
-/*05/A HEADER*/
+/*05/A CONTAINER*/
+@import 'container';
+
+/*05/B HEADER*/
 @import 'header';
 
-/*05/B FOOTER*/
+/*05/C FOOTER*/
 @import 'footer';
 
-/*05/C CONTAINER*/
+/*05/D CONTAINER*/
 @import 'container';

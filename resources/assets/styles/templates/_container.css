@@ -3,14 +3,7 @@
 =========================================================================*/
 
 .container {
-  lost-center: var(--width-small);
-}
-
-
-@media (--screen-medium) {
-  .container {
-    width: var(--width-medium);
-  }
+  lost-center: var(--width-base);
 }
 
 @media (--screen-tablet) {

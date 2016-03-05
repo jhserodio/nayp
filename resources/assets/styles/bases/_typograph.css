@@ -8,6 +8,7 @@ html {
   font-family    : var(--font-base);
   font-weight    : normal;
   line-height    : var(--line-default);
+  background     : black;
   color          : var(--color-base);
   letter-spacing : var(--more-spacing);
 }
@@ -38,8 +39,8 @@ span {
 }
 
 address {
-  font-size   : var(--size-small);
-  font-style  : italic;
+  font-size   : var(--size-min);
+  font-style  : normal;
   color       : var(--gray-light);
   font-weight : var(--weight-base);
 }

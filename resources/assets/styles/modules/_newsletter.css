@@ -1,0 +1,20 @@
+
+.newsletter {
+  width: auto;
+  display: inline-block;
+}
+
+.newsletter input {
+  border: none;
+  width: 90%;
+}
+
+.newsletter button {
+  width: 5%;
+  box-sizing: border-box;
+}
+
+.newsletter .form-inline {
+  border: var(--border-base);
+  width: 260px;
+}

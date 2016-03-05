@@ -1,0 +1,6 @@
+
+.banner {
+  height: 480px;
+  lost-center: 100%;
+  background: var(--gray-base);
+}

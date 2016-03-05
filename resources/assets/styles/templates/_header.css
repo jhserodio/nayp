@@ -1,0 +1,30 @@
+/*=========================================================================
+05/B - HEADER
+=========================================================================*/
+
+.header-np {
+  lost-center: 100%;
+  position: relative;
+  z-index: 99999;
+}
+
+.logo-np {
+  lost-column: 2/12 12 0;
+}
+
+.header-navegation {
+  lost-column: 8/12 12 0;
+}
+
+.header-info {
+  lost-column: 2/12 12 0;
+  position: relative;
+}
+
+.header-info .menu,
+.header-info a {
+  font-size      : var(--size-min);
+  font-weight    : var(--weight-bold);
+  text-transform : uppercase;
+  text-align: right;
+}

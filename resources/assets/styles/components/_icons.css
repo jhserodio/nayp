@@ -1,0 +1,123 @@
+
+@font-face {
+    font-family: 'icomoon';
+    src:    url('../fonts/icomoon.eot?i3g2d5');
+    src:    url('../fonts/icomoon.eot?i3g2d5#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?i3g2d5') format('truetype'),
+        url('../fonts/icomoon.woff?i3g2d5') format('woff'),
+        url('../fonts/icomoon.svg?i3g2d5#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-search:before {
+    content: "\f002";
+}
+.icon-mail:before {
+    content: "\f003";
+}
+.icon-star-full:before {
+    content: "\f005";
+}
+.icon-star:before {
+    content: "\f006";
+}
+.icon-check:before {
+    content: "\f00c";
+}
+.icon-close:before {
+    content: "\f00d";
+}
+.icon-gear:before {
+    content: "\f013";
+}
+.icon-plus:before {
+    content: "\f067";
+}
+.icon-minus:before {
+    content: "\f068";
+}
+.icon-gift:before {
+    content: "\f06b";
+}
+.icon-cart:before {
+    content: "\f07a";
+}
+.icon-comments:before {
+    content: "\f086";
+}
+.icon-twitter:before {
+    content: "\f099";
+}
+.icon-facebook:before {
+    content: "\f09a";
+}
+.icon-menu:before {
+    content: "\f0c9";
+}
+.icon-pinterest:before {
+    content: "\f0d2";
+}
+.icon-google-plus:before {
+    content: "\f0d5";
+}
+.icon-money:before {
+    content: "\f0d6";
+}
+.icon-mail-full:before {
+    content: "\f0e0";
+}
+.icon-left:before {
+    content: "\f104";
+}
+.icon-right:before {
+    content: "\f105";
+}
+.icon-up:before {
+    content: "\f106";
+}
+.icon--down:before {
+    content: "\f107";
+}
+.icon-question:before {
+    content: "\f128";
+}
+.icon-info:before {
+    content: "\f129";
+}
+.icon-alert:before {
+    content: "\f12a";
+}
+.icon-instagram:before {
+    content: "\f16d";
+}
+.icon-build:before {
+    content: "\f1ad";
+}
+.icon-map:before {
+    content: "\f279";
+}
+.icon-cc:before {
+    content: "\f283";
+}
+.icon-bag:before {
+    content: "\f290";
+}
+.icon-nayp:before {
+    content: "\e900";
+}

@@ -1,0 +1,41 @@
+/*=========================================================================
+02/D - FORM-BOX
+=========================================================================*/
+
+.form-control {
+  display : block;
+  width   : 100%;
+  height  : auto;
+  margin  : calc(var(--space-base)*2) 0;
+}
+
+.form-control > * {
+  display : block;
+}
+
+.form-inline {
+  display : block;
+  width   : 100%;
+  height  : auto;
+  margin  : calc(var(--space-base)*2) 0;
+}
+
+.form-inline > * {
+  display: inline-block;
+  width: auto;
+}
+
+.form-inline .form-control {
+  display : inline-block;
+  width   : auto;
+  height  : auto;
+  margin  : 0 var(--space-base);
+}
+
+.form-inline .form-control:first-child {
+  margin-left : 0;
+}
+
+.form-inline .form-control:last-child {
+  margin-right : 0;
+}

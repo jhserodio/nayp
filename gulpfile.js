@@ -63,10 +63,24 @@ gulp.task('postcss', function () {
     .pipe(gulp.dest(dest_css));
 });
 
+// compress image files
+gulp.task('imagemin', function () {
+  return gulp.src(src_img)
+    .pipe(imagemin({
+      progressive: true
+    }))
+    .pipe(gulp.dest('public/images'));
+});
+
+// copy files
+gulp.task('copy-fonts', function() {
+  copy(src_font, dest_font);
+});
+
 // watch
 gulp.task('watch', function(){
   gulp.watch(wtc_css, ['postcss']);
 })
 
 // default task
-gulp.task('default', ['postcss', 'watch']);
+gulp.task('default', ['postcss', 'copy-fonts', 'imagemin', 'watch']);

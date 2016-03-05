@@ -1,0 +1,17 @@
+/*=========================================================================
+02/L - FLAG
+=========================================================================*/
+
+@custom-selector :--flags .flag;
+
+:--flags {
+  height     : 100%;
+  width      : auto;
+  display    : block;
+  position   : relative;
+  text-align : center;
+}
+
+.flag {
+  background : var(--smoke-black);
+}

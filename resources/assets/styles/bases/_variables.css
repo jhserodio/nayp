@@ -68,9 +68,8 @@
   --space-small : 1px;
 
   /*measure screens*/
-  --width-medium : 1140px;
+  --width-base   : 92%;
   --width-tablet : 768px;
-  --width-small  : 90%;
   --total-width  : 100%;
 
 

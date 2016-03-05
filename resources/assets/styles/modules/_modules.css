@@ -2,11 +2,38 @@
 03 - MODULES
 =========================================================================*/
 
-/*03/A MENU*/
-@import 'menu';
-
-/*03/B LIST-SET*/
+/*03/A LIST-SET*/
 @import 'list-set';
 
-/*03/C CARDS-GRID*/
+/*03/B CARDS-GRID*/
 @import 'cards-grid';
+
+/*03/C nav-main*/
+@import 'nav-main';
+
+/*03/D nav-language*/
+@import 'nav-language';
+
+/*03/E nav-cart*/
+@import 'nav-cart';
+
+/*03/E MEGAMENU*/
+@import 'megamenu';
+
+/*03/E newsletter*/
+@import 'newsletter';
+
+/*03/E social-list*/
+@import 'social-list';
+
+/*03/E logo*/
+@import 'logo';
+
+/*03/E banner*/
+@import 'banner';
+
+/*03/E category-sample*/
+@import 'category-sample';
+
+/*03/E sale*/
+@import 'sale';

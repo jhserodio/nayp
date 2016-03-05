@@ -1,0 +1,9 @@
+.nav-language {
+  lost-center: 100%;
+}
+
+@media (--screen-medium) {
+  .nav-language {
+    margin-bottom: 50px;
+  }
+}

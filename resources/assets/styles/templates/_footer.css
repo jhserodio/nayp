@@ -1,0 +1,19 @@
+
+.footer-np {
+  border-top: var(--border-base);
+}
+
+.footer .newsletter {
+  width: 200px;
+}
+
+.footer-right {
+  float: right;
+  margin-top: 25px;
+}
+
+.footer-right > * {
+  display: inline-block;
+  width: auto;
+  margin-left: calc(var(--space-base)*2);
+}

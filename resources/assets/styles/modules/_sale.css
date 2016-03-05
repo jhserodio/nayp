@@ -1,0 +1,23 @@
+.sale {
+  lost-center: 100%;
+}
+
+.sale-image img {
+  border: var(--border-base);
+  width: 100%;
+  background: white;
+
+  /*provisorio*/
+  height: 220px;
+}
+
+.sale-descript {
+  font-size: var(--size-small);
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+}
+
+.sale-name {
+  font-size: var(--size-small);
+}

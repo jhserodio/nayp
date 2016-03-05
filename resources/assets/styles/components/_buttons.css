@@ -44,7 +44,11 @@
   color: white;
 }
 
-body {
-  background: black;
-  lost-center: 80%;
+.btn-icon {
+  padding: 0;
+  border: 0;
+}
+
+.btn-link {
+  padding: calc(var(--space-large)/2) calc(var(--space-base)*2);
 }
