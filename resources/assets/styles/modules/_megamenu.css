@@ -1,16 +1,20 @@
 .megamenu  {
-  list-style: none;
-  margin: 0;
-  padding: calc(var(--space-large)*2);
-  text-align: left;
+  position: absolute;;
+  top: 90px;
+  left: 0;
+  background: white;
+  width: 100%;
 }
 
 .megamenu a {
   color: black;
-  font-size: var(--size-min);
-  font-weight: var(--weight-bold);
 }
 
-.megamenu a:hover {
-  color: var(--gray-light);
+.megamenu .menu {
+  display: block;
+  background: gray;
+}
+
+.megamenu .container {
+  background: red;
 }
