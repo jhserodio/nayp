@@ -1,6 +1,6 @@
 .megamenu  {
-  position: absolute;;
-  top: 90px;
+  position: absolute;
+  top: 100px;
   left: 0;
   background: white;
   width: 100%;
@@ -8,13 +8,30 @@
 
 .megamenu a {
   color: black;
+  font-size: var(--size-min);
+  text-transform: uppercase;
 }
 
 .megamenu .menu {
-  display: block;
-  background: gray;
+  display: flex;
+  padding: calc(var(--space-large)*2);
 }
 
-.megamenu .container {
-  background: red;
+.megamenu .menu > li {
+  width: 50%;
+  text-align: left;
+  display: inline-block;
+}
+
+.megamenu .menu li > a {
+  font-weight: var(--weight-bold);
+}
+
+.megamenu .menu-info li {
+  text-align: center;
+}
+
+.megamenu .menu > li:nth-child(1) .dropdown,
+.megamenu .menu > li:nth-child(2) .dropdown {
+  column-count: 2;
 }

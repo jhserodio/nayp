@@ -6,6 +6,7 @@
   lost-center: 100%;
   position: relative;
   z-index: 99999;
+  padding-bottom: var(--space-base);
 }
 
 .logo-np {
