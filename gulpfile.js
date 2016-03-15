@@ -29,7 +29,7 @@ var postcss        = require('gulp-postcss'),
 
 // GLOBAL VARIABLES
 var src_css        = "resources/assets/styles/style.css",
-    wtc_css        = "resources/assets/styles/**/*.css",
+    wtc            = "resources/assets/**/*",
     src_img        = "resources/assets/images/*",
     src_font       = "resources/assets/fonts/*",
     src_scripts    = "resources/assets/scripts/*",
@@ -77,10 +77,15 @@ gulp.task('copy-fonts', function() {
   copy(src_font, dest_font);
 });
 
+// copy scripts
+gulp.task('copy-scripts', function() {
+  copy(src_scripts, dest_scripts);
+});
+
 // watch
 gulp.task('watch', function(){
-  gulp.watch(wtc_css, ['postcss']);
+  gulp.watch(wtc, ['postcss', 'copy-scripts']);
 })
 
 // default task
-gulp.task('default', ['postcss', 'copy-fonts', 'imagemin', 'watch']);
+gulp.task('default', ['postcss', 'copy-fonts', 'copy-scripts', 'imagemin', 'watch']);
