@@ -24,10 +24,9 @@
   margin-bottom: 0;
 }
 
-
-  .card-four .card {
-    lost-waffle   : 1/2 2 var(--space-base);
-  }
+.card-four .card {
+  lost-waffle   : 1/1 1 var(--space-base);
+}
 
 @media (--screen-medium) {
 

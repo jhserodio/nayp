@@ -10,7 +10,7 @@
   padding: 0;
   text-align: center;
   display: flex;
-  height: 90px;
+  height: 30px;
   justify-content: center;
   align-items: flex-end;
   text-transform: uppercase;
@@ -24,4 +24,10 @@
 
 .main-master a {
   text-decoration: none;
+}
+
+@media (--screen-smalloff) {
+  .main-master {
+      height: 90px;
+  }
 }

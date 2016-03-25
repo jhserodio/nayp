@@ -3,29 +3,44 @@
 =========================================================================*/
 
 .header-np {
-  lost-center: 100%;
+  width: 100%;
   position: relative;
   z-index: 99999;
-  padding-bottom: var(--space-base);
+  padding: var(--space-base) 0;
 }
 
-.logo-np {
-  lost-column: 2/12 12 0;
+.header-np .container {
+  display: flex;
+  justify-content: space-between;
+
 }
 
 .header-navegation {
-  lost-column: 8/12 12 0;
-}
-
-.header-info {
-  lost-column: 2/12 12 0;
-  position: relative;
+  flex-grow: 2;
 }
 
 .header-info .menu,
 .header-info a {
   font-size      : var(--size-min);
   font-weight    : var(--weight-bold);
-  text-transform : uppercase;
+  text-transform 1: uppercase;
   text-align: right;
+}
+
+@media (--screen-small) {
+
+  .header-np .container {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .header-info,
+  .logo-np {
+    width: 50%;
+  }
+
+  .header-navegation {
+    order: 1;
+  }
+
 }
