@@ -6,11 +6,12 @@
   display : block;
   width   : 100%;
   height  : auto;
-  margin  : calc(var(--space-base)*2) 0;
+  margin  : calc(var(--space-base)/2) 0;
 }
 
 .form-control > * {
   display : block;
+  width   : 100%;
 }
 
 .form-inline {

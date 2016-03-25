@@ -21,3 +21,7 @@
 .title-large {
   font-size: var(--size-large);
 }
+
+.title-small {
+  font-size: var(--size-small);
+}

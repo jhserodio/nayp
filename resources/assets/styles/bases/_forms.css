@@ -48,6 +48,10 @@ label {
   outline: none;
 }
 
+select option {
+  color: black;
+}
+
 textarea {
   resize: vertical;
   height: 200px;

@@ -11,6 +11,11 @@
   var removeTotal  = document.querySelectorAll(".megamenu");
   var effect       = "display: block;"
 
+  var btnDrop   = document.querySelectorAll(".btn-dropdown");
+  var dropList  = document.querySelectorAll(".dropdown");
+
+  var btnSearch      = document.querySelector('#search-button');
+  var displaySeaerch = document.querySelector('#search-display');
 
   // functions DOM controll
 
@@ -29,5 +34,9 @@
   toggleMenu( activeCollections, collections, effect );
   toggleMenu( activeInfo, info, effect );
 
+
+  for ( var i = 0; i < dropList.length; i++ ) {
+      toggleMenu( btnDrop[i], dropList[i], effect );
+  }
 
 }());

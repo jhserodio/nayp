@@ -1,0 +1,33 @@
+
+.product-details p {
+  font-size: var(--size-small);
+}
+
+.product-price {
+  font-weight: var(--weight-bold);
+  margin: 0;
+}
+
+.product-price .price-old {
+  margin-right: calc(var(--space-base)*2);
+  text-decoration: line-through;
+}
+
+.product-options select {
+  margin: var(--space-base) 0;
+}
+
+@media (--screen-tablet) {
+  .product-item .card {
+    lost-column: 1/2 2;
+  }
+}
+
+
+@media (--screen-smalloff) {
+
+  .product-details {
+    padding: 0 calc(var(--space-large)*2);
+  }
+
+}

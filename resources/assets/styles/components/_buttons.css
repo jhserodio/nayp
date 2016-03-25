@@ -24,16 +24,17 @@
   border-color: var(--gray-base);
 }
 
-.btn-check {
-  font-size: var(--size-title);
-  padding: var(--space-large) calc(var(--space-large)*4);
+.btn-seller {
+  font-size: var(--size-default);
+  padding:  0;
   width: 100%;
+  height: 60px;
   color: white;
   border: var(--border-base);
-    margin: 10px 0;
+  margin: var(--space-base) 0;
 }
 
-.btn-check:--over {
+.btn-seller:--over {
   background: white;
   color: black;
 }
@@ -42,6 +43,8 @@
   border: 0;
   font-size: var(--size-min);
   color: white;
+  padding: var(--space-base) 0;
+  text-align: left;
 }
 
 .btn-icon {
