@@ -23,8 +23,8 @@
 .header-info a {
   font-size      : var(--size-min);
   font-weight    : var(--weight-bold);
-  text-transform 1: uppercase;
-  text-align: right;
+  text-transform : uppercase;
+  text-align     : right;
 }
 
 @media (--screen-small) {
