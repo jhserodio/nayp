@@ -20,7 +20,7 @@
 
   /*FORM ELEMENTS*/
   @custom-selector :--forms-txt input[type="text"], input[type="password"], input[type="email"],
-                                input[type="number"], input[type="tel"], textarea, select;
+                                input[type="number"], input[type="tel"], input[type="search"], textarea, select;
 
 
   /*TEMPLATE ELEMENTS*/

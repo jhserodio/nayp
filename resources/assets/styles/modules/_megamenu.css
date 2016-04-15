@@ -33,6 +33,10 @@
     background: linear-gradient(top, white 42px, var(--gray-light) calc(42px - 100%));
   }
 
+  .megamenu.reset {
+    background: white;
+  }
+
   .megamenu .menu {
     display: flex;
     padding: calc(var(--space-large)*2);

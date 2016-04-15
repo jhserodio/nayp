@@ -1,20 +1,21 @@
 
-.newsletter {
+.form-wrap {
   width: auto;
   display: inline-block;
 }
 
-.newsletter input {
+.form-wrap input {
   border: none;
   width: 90%;
 }
 
-.newsletter button {
+.form-wrap button {
   width: 5%;
   box-sizing: border-box;
+  display: inline-block;
 }
 
-.newsletter .form-inline {
+.form-wrap .form-inline {
   border: var(--border-base);
   width: 260px;
 }
