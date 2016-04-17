@@ -26,15 +26,15 @@
   width: 100%;
 }
 
+.megamenu.reset {
+  background: white;
+}
+
 @media (--screen-medium) {
 
   .megamenu {
     top: 110px;
     background: linear-gradient(top, white 42px, var(--gray-light) calc(42px - 100%));
-  }
-
-  .megamenu.reset {
-    background: white;
   }
 
   .megamenu .menu {

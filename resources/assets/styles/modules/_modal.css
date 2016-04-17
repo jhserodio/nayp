@@ -1,0 +1,33 @@
+.modal {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: var(--half-black);
+  z-index: 99999;
+
+  display: none;
+  visibility: hidden;
+}
+
+.modal-content {
+  background: black;
+  border: 5px solid white;
+  min-width: 280px;
+  min-height: 280px;
+  position: relative;
+  padding: calc(var(--space-base)*2);
+
+  /*provisorio*/
+  width: 280px;
+  height: 280px;
+}
+
+.modal-close {
+  position: absolute;
+  right: var(--space-base);
+  top: var(--space-base);
+  color: white;
+}

@@ -4,25 +4,31 @@
   "description": "",
   "main": "gulpfile.js",
   "devDependencies": {
-   "autoprefixer": "^6.2.3",
-   "cssnano": "^3.4.0",
-   "gulp-concat": "^2.6.0",
-   "gulp-copy-rex": "^1.2.5",
-   "gulp-imagemin": "^2.4.0",
-   "gulp-plumber": "^1.0.1",
-   "gulp-postcss": "^6.0.1",
-   "gulp-sourcemaps": "^1.6.0",
-   "gulp-watch": "^4.3.5",
-   "lost": "^6.6.3",
-   "postcss-calc": "^5.2.0",
-   "postcss-cssnext": "^2.4.0",
-   "postcss-discard-comments": "^2.0.3",
-   "postcss-normalize": "^0.1.2",
-   "precss": "^1.4.0"
- },
- "dependencies": {
-   "gulp": "^3.9.0"
- },
+    "autoprefixer": "^6.2.3",
+    "babel-core": "^6.7.6",
+    "babel-loader": "^6.2.4",
+    "babel-preset-react": "^6.5.0",
+    "cssnano": "^3.4.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-copy-rex": "^1.2.5",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-postcss": "^6.0.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-watch": "^4.3.5",
+    "html-webpack-plugin": "^2.15.0",
+    "lost": "^6.6.3",
+    "postcss-calc": "^5.2.0",
+    "postcss-cssnext": "^2.4.0",
+    "postcss-discard-comments": "^2.0.3",
+    "postcss-normalize": "^0.1.2",
+    "precss": "^1.4.0",
+    "webpack": "^1.12.15",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "gulp": "^3.9.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vnator/vnator.github.io.git"
