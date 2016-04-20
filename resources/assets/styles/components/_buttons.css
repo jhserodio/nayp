@@ -55,3 +55,14 @@
 .btn-link {
   padding: calc(var(--space-large)/2) calc(var(--space-base)*2);
 }
+
+.btn-submit {
+  padding: calc(var(--space-base)/2) 0;
+  font-size: var(--size-small);
+  border-color: black;
+  color: black;
+}
+
+.btn-submit:hover {
+  background: black;
+}

@@ -19,3 +19,46 @@
   border: var(--border-base);
   width: 260px;
 }
+
+/*frete*/
+
+.form-frete {
+  padding: calc(var(--space-large)*2);
+}
+
+.form-frete .form-control {
+  margin: var(--space-base) 0;
+}
+
+.form-frete input,
+.form-frete label,
+.form-frete select {
+  border-color: black;
+  color: black;
+}
+
+.form-frete button {
+  margin-top: calc(var(--space-large)*2);
+}
+
+.form-radio {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.form-radio * {
+  font-size: var(--size-small);
+}
+
+.form-radio small {
+  display: block;
+}
+
+.radio-control {
+  padding-bottom: 3px;
+}
+
+.radio-control input {
+  transform: translateY(3px);
+}
