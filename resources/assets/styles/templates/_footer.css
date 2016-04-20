@@ -17,3 +17,7 @@
   width: auto;
   margin-left: calc(var(--space-base)*2);
 }
+
+.footer-np .social-list {
+  margin-left: var(--space-large);
+}
