@@ -24,7 +24,7 @@
 }
 
 .title-small {
-  font-size: var(--size-min);
-  font-weight: var(--weight-bold);
+  font-size: var(--size-small);
+  font-weight: var(--weight-base);
   text-transform: uppercase;
 }

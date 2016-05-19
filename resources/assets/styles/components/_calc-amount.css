@@ -7,7 +7,8 @@
 .calc-amount button,
 .calc-amount input {
   margin: 0;
-  border: var(--border-base);
+  color: white;
+  border: var(--border-form);
   padding: 0 calc(var(--space-base)/2);
   line-height: 0;
   font-size: var(--size-min);

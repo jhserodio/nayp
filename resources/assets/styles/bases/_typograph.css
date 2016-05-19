@@ -14,7 +14,6 @@ html {
 }
 
 a {
-  font-size : var(--size-base);
   color: var(--color-base);
 }
 
@@ -65,4 +64,10 @@ blockquote {
   font-weight : normal;
   line-height : var(--line-large);
   text-transform: uppercase;
+}
+
+@media (--screen-mobile) {
+  .divider {
+    padding: 0 calc(var(--space-large)/2);
+  }
 }
