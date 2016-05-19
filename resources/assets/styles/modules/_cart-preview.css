@@ -9,10 +9,8 @@
   display: flex;
   flex-direction: row-reverse;
 
-  transform: translateX(100%);
+  /*transform: translateX(100%);*/
 }
-
-
 
 .cart-preview .flag,
 .cart-preview .flag-white {
@@ -30,12 +28,12 @@
 
 .preview-seller::-webkit-scrollbar {
     width: 10px;
-    background: white;
+    background: black;
 }
 .preview-seller::-webkit-scrollbar-thumb {
     width: 10px;
-    border-radius: 10px;
-    background: var(--gray-dark);
+    border-radius: 0;
+    background: white;
   }
 
 .preview-seller .flag {
@@ -51,23 +49,26 @@
   list-style: none;
 }
 
-
-
 .preview-item {
   margin-bottom: calc(var(--space-large)*2);
   font-size: var(--size-small);
   display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
-.preview-item .btn-icon {
-  align-self: center;
+.preview-image {
+  width: 70px;
+  height: 70px;
 }
 
-.preview-item-main {
+.preview-info {
+  margin-bottom: var(--space-base);
   font-size: var(--size-small);
   text-transform: uppercase;
+}
+
+.preview-info p {
+  margin: 0;
+  line-height: var(--line-small);
 }
 
 

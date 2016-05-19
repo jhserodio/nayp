@@ -49,6 +49,7 @@
 
   /*font line-height*/
   --line-base    : 1.4em;
+  --line-small   : 1.2em;
   --line-default : 20px;
   --line-large   : 2em;
 
