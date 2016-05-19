@@ -1,0 +1,18 @@
+@custom-selector :--alerts .alert-error, .alert-info, .alert-success, .alert-warning;
+
+:--alerts {
+  display: inline-block;
+  padding-left: calc(var(--space-base)/2);
+  margin: 0;
+  font-size: 9px;
+  text-transform: uppercase;
+}
+
+.alert-error {
+  color: var(--error-color) !important;
+}
+
+.alert-error + input {
+  border-left: 5px solid var(--error-color);
+  padding-left: calc(var(--space-base)/2);
+}
