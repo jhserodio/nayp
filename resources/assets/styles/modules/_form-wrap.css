@@ -16,8 +16,12 @@
 }
 
 .form-wrap .form-inline {
-  border: var(--border-base);
-  width: 260px;
+  border: var(--border-form);
+  width: 360px;
+}
+
+.form-wrap .btn-icon {
+  color: white;
 }
 
 /*frete*/
@@ -61,4 +65,12 @@
 
 .radio-control input {
   transform: translateY(3px);
+}
+
+
+@media (--screen-small) {
+
+  .form-wrap .form-inline {
+    width: 100%;
+  }
 }

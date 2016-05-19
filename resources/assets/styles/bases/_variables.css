@@ -12,7 +12,7 @@
   /*colors gray-scale */
   --gray-base   : #666666;
   --gray-dark   : #333333;
-  --gray-light  : #999999;
+  --gray-light  : #b7b7b6;
 
   /*colors opacity*/
   --half-black  : color(black alpha(-75%));
@@ -68,7 +68,7 @@
   --space-small : 1px;
 
   /*measure screens*/
-  --width-base   : 92%;
+  --width-base   : 88%;
   --width-tablet : 768px;
   --total-width  : 100%;
 
@@ -86,4 +86,5 @@
 
   /*effect transition*/
   --transition-base  : 0.2s all ease;
+  --transition-large : 0.4s all ease;
 }

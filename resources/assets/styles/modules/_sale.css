@@ -18,6 +18,8 @@
   width: 100%;
 }
 
-.sale-name {
+.sale-name,
+.sale-price {
   font-size: var(--size-small);
+  color: white;
 }

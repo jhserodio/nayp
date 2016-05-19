@@ -18,44 +18,105 @@
       <div class="container">
         <h1 class="logo-np">
           <a href="#">
-            <i class="icon-nayp"></i>
+            <img src="public/images/nayp-logo.svg" alt="">
           </a>
         </h1>
         <div class="header-navegation">
           <nav class="nav-main">
-            <ul class="menu">
-              <li class="item-drop"> <a href="#"> man </a>
-              <div class="dropdown">
-                  <div class="container">
-                    <ul class="megamenu">
-                      <li><span><a href="#">T-SHIRTS</a></span></li>
-                      <li><span><a href="#">SHIRTS</a></span></li>
-                      <li><span><a href="#">SWEATERS</a></span></li>
-                      <li><span><a href="#">JACKETS</a></span></li>
-                    </ul>
-                  </div>
-              </div>
-              </li>
-              <li> <a href="#"> woman </a> </li>
-              <li> <a href="#"> shoes </a> </li>
-              <li> <a href="#"> acessories </a> </li>
+            <ul class="main-master">
+              <li> <a href="#" id="active-collections"> shop </a> </li>
+              <li><span class="divider">/</span></li>
+              <li> iaai </li>
+              <li><span class="divider">/</span></li>
+              <li> <a href="#" id="active-info"> info </a> </li>
             </ul>
+            <div class="megamenu display" id="collections">
+              <div class="container">
+                <ul class="menu">
+                  <li class="item-drop"><a href="#">men</a>
+                    <button class="btn-icon btn-dropdown"><i class="icon--down"></i></button>
+                    <ul class="dropdown">
+                      <li><a href="#">t-shirts</a></li>
+                      <li><a href="#">shirts</a></li>
+                      <li><a href="#">sweaters</a></li>
+                      <li><a href="#">jackets</a></li>
+                      <li><a href="#">denim</a></li>
+                      <li><a href="#">shorts</a></li>
+                      <li><a href="#">dailored</a></li>
+                    </ul>
+                  </li>
+                  <li class="item-drop"><a href="#">women</a>
+                    <button class="btn-icon btn-dropdown"><i class="icon--down"></i></button>
+                    <ul class="dropdown">
+                      <li><a href="#">t-shirts</a></li>
+                      <li><a href="#">shirts</a></li>
+                      <li><a href="#">sweaters</a></li>
+                      <li><a href="#">jackets</a></li>
+                      <li><a href="#">denim</a></li>
+                      <li><a href="#">shorts</a></li>
+                      <li><a href="#">dailored</a></li>
+                    </ul>
+                  </li>
+                  <li class="item-drop"><a href="#">shoes</a>
+                    <button class="btn-icon btn-dropdown"><i class="icon--down"></i></button>
+                    <ul class="dropdown">
+                      <li><a href="#">converse</a></li>
+                      <li><a href="#">keds</a></li>
+                    </ul>
+                  </li>
+                  <li class="item-drop"><a href="#">accessories</a>
+                    <button class="btn-icon btn-dropdown"><i class="icon--down"></i></button>
+                    <ul class="dropdown">
+                      <li><a href="#">hats</a></li>
+                      <li><a href="#">beanies</a></li>
+                      <li><a href="#">scarves</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="megamenu display" id="info">
+              <div class="container">
+                <ul class="menu menu-info">
+                  <li><a href="#">sobre a marca</a></li>
+                  <li><a href="#">guia de tamanhos</a></li>
+                  <li><a href="#">formas de pagamento</a></li>
+                  <li><a href="#">entregas de prazos</a></li>
+                  <li><a href="#">trocas e devoluções</a></li>
+                  <li><a href="#">contato</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="megamenu reset display" id="search">
+              <div class="container">
+                <div class="search-box">
+                  <form action="search" class="form-wrap">
+                    <div class="form-inline">
+                      <input type="search" name="search" value="SIGN UP FOR OUR form-wrap">
+                      <button class="btn-icon">ok</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+
           </nav>
         </div>
         <div class="header-info">
           <div class="nav-language">
             <ul class="menu">
               <li><a href="#">PT</a></li>
-              <li> &nbsp; / &nbsp; </li>
+              <li><span class="divider">/</span></li>
               <li><a href="#">EN</a></li>
             </ul>
           </div>
           <div class="nav-cart">
             <ul class="menu">
-              <li><button class="btn-icon" id="search-button"> Q </button></li>
+              <li><button class="btn-icon" id="active-search"> Q </button></li>
               <li> &nbsp; &nbsp; </li>
-              <li>cart</li>
-              <li> &nbsp; / &nbsp; </li>
+              <li><button class="btn-icon" id="active-cart"> cart </button></li>
+              <li><span class="divider">/</span></li>
               <li>00</li>
             </ul>
           </div>
@@ -69,18 +130,20 @@
 
         <div class="container">
 
-            <h1 class="title">
-              T-shirt
-            </h1>
+            <div class="category-head">
+              <h1 class="title">
+                T-shirt
+              </h1>
 
-            <div class="bread-crumb">
-              <ul class="menu">
-                <li><a href="#">nayp</a></li>
-                <li>/</li>
-                <li><a href="#">man</a></li>
-                <li>/</li>
-                <li><a href="#">T-shirt</a></li>
-              </ul>
+              <div class="bread-crumb">
+                <ul class="menu">
+                  <li><a href="#">nayp</a></li>
+                  <li><span class="divider">/</span></li>
+                  <li><a href="#">man</a></li>
+                  <li><span class="divider">/</span></li>
+                  <li><a href="#">T-shirt</a></li>
+                </ul>
+              </div>
             </div>
 
             <div class="card-four">
@@ -96,6 +159,7 @@
                     <span class="sale-name">
                       nome do produto
                     </span>
+                    <span class="divider">/</span>
                     <span class="sale-price">
                       R$ 00,00
                     </span>
@@ -114,6 +178,7 @@
                     <span class="sale-name">
                       nome do produto
                     </span>
+                    <span class="divider">/</span>
                     <span class="sale-price">
                       R$ 00,00
                     </span>
@@ -132,6 +197,7 @@
                     <span class="sale-name">
                       nome do produto
                     </span>
+                    <span class="divider">/</span>
                     <span class="sale-price">
                       R$ 00,00
                     </span>
@@ -302,6 +368,8 @@
               </div>
 
             </div>
+
+            <button class="btn-page"> load more products </button>
         </div>
 
       </section>
@@ -314,7 +382,7 @@
       <div class="container">
         <form action="form-wrap" class="form-wrap">
           <div class="form-inline">
-            <input type="email" name="form-wrap" value="SIGN UP FOR OUR form-wrap">
+            <input type="email" name="form-wrap" placeholder="SIGN UP FOR OUR form-wrap">
             <button class="btn-icon">ok</button>
           </div>
         </form>
@@ -333,7 +401,7 @@
             <button class="btn-link">info</button>
           </a>
 
-          <address> &copy; NAYP CO. LTDA / CURITIBA-PR / EST. M M V</address>
+          <address> &copy; NAYP CO. LTD / CURITIBA-PR / EST. M M V</address>
         </div>
       </div>
 

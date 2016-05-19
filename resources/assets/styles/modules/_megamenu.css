@@ -1,13 +1,21 @@
 .megamenu  {
-  display: none;
   position: absolute;
-  top: 140px;
+  top: 90px;
   left: 0;
   background: white;
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
   overflow: hidden;
+  transition: var(--transition-large);
+
+  max-height: 0;
+  opacity: 0;
+}
+
+.megamenu.active {
+  max-height: none;
+  opacity: 1;
 }
 
 .megamenu a {
@@ -30,10 +38,15 @@
   background: white;
 }
 
+@media (--screen-small) {
+  .megamenu {
+    top: 120px;
+  }
+}
+
 @media (--screen-medium) {
 
   .megamenu {
-    top: 110px;
     background: linear-gradient(top, white 42px, var(--gray-light) calc(42px - 100%));
   }
 

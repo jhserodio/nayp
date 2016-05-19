@@ -77,15 +77,10 @@ gulp.task('copy-fonts', function() {
   copy(src_font, dest_font);
 });
 
-// copy scripts
-gulp.task('copy-scripts', function() {
-  copy(src_scripts, dest_scripts);
-});
-
 // watch
 gulp.task('watch', function(){
-  gulp.watch(wtc, ['postcss', 'copy-scripts']);
+  gulp.watch(wtc, ['postcss']);
 })
 
 // default task
-gulp.task('default', ['postcss', 'copy-fonts', 'copy-scripts', 'imagemin', 'watch']);
+gulp.task('default', ['postcss', 'copy-fonts', 'imagemin', 'watch']);

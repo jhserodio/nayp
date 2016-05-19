@@ -16,6 +16,7 @@
 
 .title-base {
   font-size: var(--size-title);
+  line-height: normal;
 }
 
 .title-large {

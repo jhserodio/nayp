@@ -15,7 +15,7 @@
 
   <body>
 
-    <div class="modal">
+    <!-- <div class="modal">
       <div class="modal-content">
         <button class="btn-icon modal-close">
           x
@@ -46,7 +46,7 @@
       </div>
     </div>
 
-    <div class="cart-preview">
+    <div class="cart-preview display" id="cart">
 
 
       <div class="preview-seller">
@@ -232,7 +232,7 @@
 
 
 
-    </div>
+    </div> -->
 
     <header class="header-np">
       <div class="container">
@@ -250,7 +250,7 @@
               <li> / </li>
               <li> <a href="#" id="active-info"> info </a> </li>
             </ul>
-            <div class="megamenu" id="collections">
+            <div class="megamenu display" id="collections">
               <div class="container">
                 <ul class="menu">
                   <li class="item-drop"><a href="#">men</a>
@@ -295,7 +295,7 @@
                 </ul>
               </div>
             </div>
-            <div class="megamenu" id="info">
+            <div class="megamenu display" id="info">
               <div class="container">
                 <ul class="menu menu-info">
                   <li><a href="#">sobre a marca</a></li>
@@ -308,7 +308,7 @@
               </div>
             </div>
 
-            <div class="megamenu reset" id="search-display">
+            <div class="megamenu reset display" id="search">
               <div class="container">
                 <div class="search-box">
                   <form action="search" class="form-wrap">
@@ -333,9 +333,9 @@
           </div>
           <div class="nav-cart">
             <ul class="menu">
-              <li><button class="btn-icon" id="search-button"> Q </button></li>
+              <li><button class="btn-icon" id="active-search"> Q </button></li>
               <li> &nbsp; &nbsp; </li>
-              <li>cart</li>
+              <li><button class="btn-icon" id="active-cart"> cart </button></li>
               <li> &nbsp; / &nbsp; </li>
               <li>00</li>
             </ul>
@@ -347,134 +347,35 @@
 
 
     <main class="main-np">
-      <section class="product-np">
-        <div class="banner">
-          <div class="slide-gallery">
-            <div class="slide-item">
-              <div class="flex-image">
-                <img src="#" alt="imagem">
-              </div>
-            </div>
-          </div>
-        </div>
 
+      <div class="info-np">
         <div class="container">
-          <div class="product-item">
-            <div class="card-four">
-              <div class="card">
-                <div class="product-seller">
-                  <h1 class="title-base">Lorem ipsum sit amet dolor</h1>
-                  <p class="product-price">
-                  <span class="price-old">R$ 179</span>
-                  <span>R$ 99</span>
-                  </p>
-                </div>
-                <div class="card-double">
-                  <div class="card product-options">
-                    <form action="submit-product">
-                      <div class="form-control">
-                        <select name="color">
-                          <option value="default">color</option>
-                          <option value="default"></option>
-                        </select>
-                      </div>
-                      <div class="form-control">
-                        <select name="size">
-                          <option value="default">size</option>
-                          <option value="default"></option>
-                        </select>
-                      </div>
-                    </form>
-                  </div>
-                  <div class="card">
-                    <button class="btn-seller">
-                      add to cart
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="card-large">
-                <div class="product-details">
-                  <h3 class="title-small">details</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Iusto quas provident aperiam soluta voluptatem quia tempore,
-                    perferendis ut illum dicta nam nihil, ipsa ea ratione sapiente cumque.
-                    Cupiditate, quasi, fuga.
-                  <br>
-                  <br>
-                    85% Algodão 15% Poliester
-                  </p>
-                </div>
-              </div>
-              <div class="card">
-                <h3 class="title-small">
-                  <a href="#">
-                    size guide
-                  </a>
-                </h3>
-                <button class="btn-nude">+ info</button>
-                <br>
-                <button class="btn-nude"> share </button>
-              </div>
-            </div>
-          </div>
+          <h1 class="title-base">
+            lorem Ipsum dolor
+          </h1>
 
-          <div class="category-sample">
-            <header class="category-header">
-              <h3 class="title">
-                related items
-              </h3>
-            </header>
-            <main class="category-main">
-              <div class="card-four">
-
-                <div class="card">
-                  <div class="sale">
-                    <div class="sale-image">
-                      <div class="flex-image">
-                        <img src="#" alt="">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card">
-                  <div class="sale">
-                    <div class="sale-image">
-                      <div class="flex-image">
-                        <img src="#" alt="">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card">
-                  <div class="sale">
-                    <div class="sale-image">
-                      <div class="flex-image">
-                        <img src="#" alt="">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card">
-                  <div class="sale">
-                    <div class="sale-image">
-                      <div class="flex-image">
-                        <img src="#" alt="">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </main>
-          </div>
-
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus!
+          </p>
         </div>
-      </section>
+      </div>
+
     </main>
 
     <footer class="footer-np">
@@ -509,7 +410,7 @@
 
     </footer>
 
-    <script type="text/javascript" src="public/scripts/script.js">
+    <script type="text/javascript" src="public/scripts/main.js">
     </script>
   </body>
 </html>

@@ -13,12 +13,13 @@
   height: 30px;
   justify-content: center;
   align-items: flex-end;
+  line-height: normal;
   text-transform: uppercase;
   font-size: var(--size-min);
 }
 
 .main-master > li {
-  margin: 0 calc(var(--space-base)/2);
+  margin: 0;
   position: relative;
 }
 
@@ -28,6 +29,6 @@
 
 @media (--screen-smalloff) {
   .main-master {
-      height: 90px;
+      height: 50px;
   }
 }

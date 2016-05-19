@@ -1,17 +1,16 @@
 .logo-np {
   color: white;
-  font-size: 50px;
   margin: 0;
-  height: 90px;
+  height: 50px;
   overflow: hidden;
-
+  width: auto;
 }
 
 .logo-np a {
   text-decoration: none;
 }
 
-.logo-np i {
-  display: block;
-  margin-top: 20px;
+.logo-np img {
+  height: 100%;
+  width: auto;
 }

@@ -32,7 +32,7 @@ label {
 :--forms-txt {
   text-transform: uppercase;
   background: none;
-  border: var(--border-base);
+  border: var(--border-form);
   border-radius: var(--radius-base);
   box-shadow: none;
   box-sizing: border-box;

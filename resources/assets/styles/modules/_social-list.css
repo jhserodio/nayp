@@ -21,7 +21,7 @@
 }
 
 .social-list a {
-  color: var(--gray-light);
+  color: var(--gray-base);
   display: block;
   transform: translateY(3px);
 }

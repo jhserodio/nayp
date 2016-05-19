@@ -26,6 +26,10 @@ small {
   font-size : var(--size-small);
 }
 
+.divider {
+  padding: 0 calc(var(--space-base)/2);
+  font-size: var(--size-min);
+}
 
 /*TEXT DEFINITIONS*/
 p {
@@ -41,7 +45,7 @@ span {
 address {
   font-size   : var(--size-min);
   font-style  : normal;
-  color       : var(--gray-light);
+  color       : var(--gray-base);
   font-weight : var(--weight-base);
 }
 
