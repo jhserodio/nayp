@@ -50,26 +50,29 @@
 
 	var header = _interopRequireWildcard(_header);
 
-	var _cartPreview = __webpack_require__(3);
-
-	var cart = _interopRequireWildcard(_cartPreview);
+	var _slide = __webpack_require__(3);
 
 	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+	// TOGGLE ELEMENTS
+
+	(0, _slide.slide)();
+
+	// declaração carrinho
+	// import { cartPreview } from './components/cartPreview'
+	// cartPreview();
 
 /***/ },
 /* 1 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	var _toggleElements = __webpack_require__(2);
-
-	var _cartPreview = __webpack_require__(3);
 
 	(0, _toggleElements.toggleDisplay)("active-collections");
 	(0, _toggleElements.toggleDisplay)("active-info");
 	(0, _toggleElements.toggleDisplay)("active-search");
-	(0, _cartPreview.cartPreview)();
 
 	// dropdown function header
 
@@ -154,42 +157,89 @@
 /* 3 */
 /***/ function(module, exports) {
 
-	'use strict';
+	"use strict";
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
+	function slide() {
 
-	function cartPreview() {
+	  var slides = document.querySelectorAll(".slide-item");
+	  var slideNav = document.querySelector(".slide-navegation");
+	  var slidePrev = document.querySelector('.slide-nav-prev');
+	  var slideNext = document.querySelector('.slide-nav-next');
 
-	  var btnCart = document.getElementById('active-cart');
-	  var btnShip = document.getElementById('active-ship');
-	  var displayCart = document.querySelector('.preview-seller');
-	  var displayShip = document.querySelector('.preview-shipping');
-	  var closeCart = document.getElementById('close-preview-cart');;
-	  var closeShip = document.getElementById('close-preview-ship');
+	  for (var i = 0; i < slides.length; i++) {
 
-	  btnCart.addEventListener('click', function () {
-	    displayCart.setAttribute('style', 'display:block');
-	    document.body.setAttribute('style', 'overflow:hidden');
+	    var itemList = document.createElement('LI');
+	    itemList.classList.add('slide-nav-item');
+	    itemList.appendChild(document.createElement('A'));
+	    slideNav.appendChild(itemList);
+
+	    var itemLink = document.querySelectorAll('.slide-nav-item a');
+	    itemLink[i].setAttribute('href', '#');
+	  }
+
+	  itemLink[0].classList.add('active');
+
+	  slideChange(itemLink, slides);
+
+	  slidePrev.addEventListener('click', function () {
+	    slideArrow(itemLink, slides, 'left');
 	  });
 
-	  btnShip.addEventListener('click', function () {
-	    displayShip.setAttribute('style', 'display:block');
-	  });
-
-	  closeCart.addEventListener('click', function () {
-	    displayCart.removeAttribute('style');
-	    displayShip.removeAttribute('style');
-	    document.body.removeAttribute('style');
-	  });
-
-	  closeShip.addEventListener('click', function () {
-	    displayShip.removeAttribute('style');
+	  slideNext.addEventListener('click', function () {
+	    slideArrow(itemLink, slides, 'right');
 	  });
 	}
 
-	exports.cartPreview = cartPreview;
+	function slideChange(btn, display) {
+	  var _loop = function _loop(i) {
+	    btn[i].addEventListener('click', function () {
+	      if (!btn[i].classList.contains('active')) {
+	        slideClear(btn, display);
+	        btn[i].classList.add('active');
+	        display[i].classList.add('active');
+	      }
+	    });
+	  };
+
+	  for (var i = 0; i < btn.length; i++) {
+	    _loop(i);
+	  }
+	}
+
+	function slideClear(btn, display) {
+	  for (var j = 0; j < btn.length; j++) {
+	    if (btn[j].classList.contains('active')) btn[j].classList.remove('active');
+	    display[j].classList.remove('active');
+	  }
+	}
+
+	function slideArrow(btn, display, direction) {
+
+	  var position = 0;
+
+	  if (direction === "left") direction = -1;else if (direction === "right") direction = 1;else console.log("direction error arg");
+
+	  console.log(direction);
+
+	  for (var i = 0; i < btn.length; i++) {
+	    if (btn[i].classList.contains('active')) {
+	      var button = btn[i + direction];
+	      var slide = display[i + direction];
+	      position = i;
+	    }
+	  }
+
+	  if (!(position === 0 && direction === -1 || position === btn.length - 1 && direction === 1)) {
+	    slideClear(btn, display);
+	    button.classList.add('active');
+	    slide.classList.add('active');
+	  }
+	}
+
+	exports.slide = slide;
 
 /***/ }
 /******/ ]);

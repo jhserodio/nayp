@@ -1,4 +1,10 @@
 // TOGGLE ELEMENTS
 
 import * as header from './components/header'
-import * as cart from './components/cartPreview'
+
+// declaração carrinho
+// import { cartPreview } from './components/cartPreview'
+// cartPreview();
+
+import { slide } from './components/slide'
+slide();

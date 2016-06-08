@@ -1,10 +1,8 @@
 import { toggleDisplay } from '../utils/toggleElements'
-import { cartPreview } from './cartPreview'
 
 toggleDisplay("active-collections");
 toggleDisplay("active-info");
 toggleDisplay("active-search");
-cartPreview();
 
 // dropdown function header
 

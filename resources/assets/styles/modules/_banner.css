@@ -19,7 +19,7 @@
   display: none;
 }
 
-.slide-item:nth-child(1) {
+.slide-item.active {
   display: block;
 }
 
@@ -73,6 +73,22 @@
   width: 15px;
   height: 15px;
   margin: 0 10px;
-  background: white;
   display: inline-block;
+}
+
+.slide-nav-item a {
+  width: 15px;
+  height: 15px;
+  background: white;
+  display: block;
+}
+
+
+@media (--screen-mobile) {
+
+  .slide-nav-prev,
+  .slide-nav-next {
+    display: none;
+  }
+
 }
