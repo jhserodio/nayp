@@ -3,4 +3,76 @@
   height: 480px;
   lost-center: 100%;
   background: var(--gray-base);
+  position: relative;
+}
+
+.slide-gallery {
+  width: 100%;
+  height: 100%;
+  background: black;
+}
+
+.slide-item {
+  width: 100%;
+  height: 100%;
+  background: red;
+  display: none;
+}
+
+.slide-item:nth-child(1) {
+  display: block;
+}
+
+.slide-item:nth-child(2) {
+  background: blue;
+}
+
+.slide-item:nth-child(3) {
+  background: green;
+}
+
+
+/*navegação lateral*/
+
+.slide-nav-prev,
+.slide-nav-next {
+  text-decoration: none;
+  position: absolute;
+  font-size: 80px;
+  top: calc(50% - 40px);
+  transition: var(--transition-base);
+}
+
+.slide-nav-prev {
+  left: 6%;
+}
+.slide-nav-prev:hover {
+  transform: translateX(-10px);
+}
+
+.slide-nav-next {
+  right: 6%;
+}
+.slide-nav-next:hover {
+  transform: translateX(10px);
+}
+
+/*navegação inferior*/
+
+.slide-navegation {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 30px;
+  width: 100%;
+  padding: 0;
+  text-align: center;
+}
+
+.slide-nav-item {
+  width: 15px;
+  height: 15px;
+  margin: 0 10px;
+  background: white;
+  display: inline-block;
 }

@@ -6,6 +6,12 @@
   lost-center: var(--width-base);
 }
 
+
+.container.reset::before,
+.container.reset::after {
+  display: none;
+}
+
 @media (--screen-tablet) {
   .container {
     width: var(--width-tablet);
