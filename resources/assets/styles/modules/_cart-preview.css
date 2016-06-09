@@ -13,7 +13,7 @@
 
 .cart-preview .flag,
 .cart-preview .flag-white {
-  padding: 0 var(--space-base);
+  padding: 0 calc(var(--space-base)*2);
   height: auto;
 }
 
@@ -24,6 +24,7 @@
   position: relative;
   overflow-y: scroll;
   display: none;
+
 }
 
 .preview-seller::-webkit-scrollbar {
@@ -49,7 +50,7 @@
 }
 
 .preview-seller .preview-list {
-  padding: calc(var(--space-large)*2);
+  padding: calc(var(--space-base)*2);
   list-style: none;
 }
 
@@ -85,7 +86,7 @@
 
 
 .preview-result {
-  padding: 0 calc(var(--space-large)*2);
+  padding: 0 calc(var(--space-base)*2);
   position: fixed;
   background: black;
   bottom: 0;
@@ -145,5 +146,5 @@
 }
 
 .preview-shipping-select {
-  padding: 0 calc(var(--space-large)*2);
+  padding: 0 calc(var(--space-base)*2);
 }
