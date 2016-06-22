@@ -31,7 +31,11 @@
     justify-content: flex-start;
   }
 
-  .form-wrap .form-inline {
+  .footer-left .form-wrap {
+    width: 100%;
+  }
+
+  .footer-left .form-wrap .form-inline {
     margin-bottom: 0;
   }
 
