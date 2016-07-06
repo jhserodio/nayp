@@ -425,7 +425,7 @@
     </div>
 
     <header class="header-np">
-      <div class="container">
+      <div class="container reset">
         <h1 class="logo-np">
           <a href="#">
             <a href="#">
@@ -614,7 +614,15 @@
               <div class="product-actions">
                 <button> size guide </button>
                 <button class="btn"> shipping </button>
-                <button class="btn"> share </button>
+                <button class="btn" id="active-product-social"> share </button>
+                <div class="social-list" id="product-social">
+                  <ul class="menu">
+                    <li><a href="#"><i class="icon-facebook"></i></a></li>
+                    <li><a href="#"><i class="icon-twitter"></i></a></li>
+                    <li><a href="#"><i class="icon-instagram"></i></a></li>
+                    <li><a href="#"><i class="icon-pinterest"></i></a></li>
+                  </ul>
+                </div>
               </div>
 
 
@@ -678,7 +686,7 @@
     </main>
 
     <footer class="footer-np">
-      <div class="container">
+      <div class="container reset">
         <div class="footer-left">
           <form action="form-wrap" class="form-wrap">
             <div class="form-inline">
@@ -686,6 +694,9 @@
               <button class="btn-icon">ok</button>
             </div>
           </form>
+        </div>
+        <div class="footer-right">
+
           <div class="social-list">
             <ul class="menu">
               <li><a href="#"><i class="icon-facebook"></i></a></li>
@@ -694,16 +705,25 @@
               <li><a href="#"><i class="icon-pinterest"></i></a></li>
             </ul>
           </div>
-        </div>
-        <div class="footer-right">
-          <a href="#">
-            <button class="btn-link">info</button>
-          </a>
+
+          <div class="info-footer">
+            <button class="btn-link" id="active-footer-menu">info</button>
+            <div class="propover" id="footer-menu">
+              <ul class="menu-vertical">
+                <li><a href="#">sobre a marca</a></li>
+                <li><a href="#">guia de tamanhos</a></li>
+                <li><a href="#">formas de pagamento</a></li>
+                <li><a href="#">entregas de prazos</a></li>
+                <li><a href="#">trocas e devoluções</a></li>
+                <li><a href="#">contato</a></li>
+              </ul>
+            </div>
+          </div>
+
           <address> &copy; NAYP CO. LTD / CURITIBA-PR / EST. M M V</address>
         </div>
       </div>
-    </footer>
-    <script type="text/javascript" src="public/scripts/main.js">
+    </footer>    <script type="text/javascript" src="public/scripts/product.js">
     </script>
   </body>
 </html>

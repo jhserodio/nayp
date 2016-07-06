@@ -54,9 +54,9 @@
 
 	var footer = _interopRequireWildcard(_footer);
 
-	var _slide = __webpack_require__(4);
-
 	var _cartPreview = __webpack_require__(5);
+
+	var _toggleElements = __webpack_require__(2);
 
 	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -64,8 +64,7 @@
 	// TOGGLE ELEMENTS
 
 	(0, _cartPreview.cartPreview)();
-
-	(0, _slide.slide)();
+	(0, _toggleElements.toggleDisplay)('active-product-social');
 
 /***/ },
 /* 1 */
@@ -169,94 +168,7 @@
 	(0, _toggleElements.toggleDisplay)("active-footer-menu");
 
 /***/ },
-/* 4 */
-/***/ function(module, exports) {
-
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	function slide() {
-
-	  var slides = document.querySelectorAll(".slide-item");
-	  var slideNav = document.querySelector(".slide-navegation");
-	  var slidePrev = document.querySelector('.slide-nav-prev');
-	  var slideNext = document.querySelector('.slide-nav-next');
-
-	  for (var i = 0; i < slides.length; i++) {
-
-	    var itemList = document.createElement('LI');
-	    itemList.classList.add('slide-nav-item');
-	    itemList.appendChild(document.createElement('A'));
-	    slideNav.appendChild(itemList);
-
-	    var itemLink = document.querySelectorAll('.slide-nav-item a');
-	    itemLink[i].setAttribute('href', '#');
-	  }
-
-	  itemLink[0].classList.add('active');
-
-	  slideChange(itemLink, slides);
-
-	  slidePrev.addEventListener('click', function () {
-	    slideArrow(itemLink, slides, 'left');
-	  });
-
-	  slideNext.addEventListener('click', function () {
-	    slideArrow(itemLink, slides, 'right');
-	  });
-	}
-
-	function slideChange(btn, display) {
-	  var _loop = function _loop(i) {
-	    btn[i].addEventListener('click', function () {
-	      if (!btn[i].classList.contains('active')) {
-	        slideClear(btn, display);
-	        btn[i].classList.add('active');
-	        display[i].classList.add('active');
-	      }
-	    });
-	  };
-
-	  for (var i = 0; i < btn.length; i++) {
-	    _loop(i);
-	  }
-	}
-
-	function slideClear(btn, display) {
-	  for (var j = 0; j < btn.length; j++) {
-	    if (btn[j].classList.contains('active')) btn[j].classList.remove('active');
-	    display[j].classList.remove('active');
-	  }
-	}
-
-	function slideArrow(btn, display, direction) {
-
-	  var position = 0;
-
-	  if (direction === "left") direction = -1;else if (direction === "right") direction = 1;else console.log("direction error arg");
-
-	  console.log(direction);
-
-	  for (var i = 0; i < btn.length; i++) {
-	    if (btn[i].classList.contains('active')) {
-	      var button = btn[i + direction];
-	      var slide = display[i + direction];
-	      position = i;
-	    }
-	  }
-
-	  if (!(position === 0 && direction === -1 || position === btn.length - 1 && direction === 1)) {
-	    slideClear(btn, display);
-	    button.classList.add('active');
-	    slide.classList.add('active');
-	  }
-	}
-
-	exports.slide = slide;
-
-/***/ },
+/* 4 */,
 /* 5 */
 /***/ function(module, exports) {
 

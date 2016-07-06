@@ -6,7 +6,8 @@ module.exports = {
 
 // entry points
   entry: {
-    main      : src + "/main.js"
+    main      : src + "/main.js",
+    product   : src + '/product.js'
   },
 
 // output scripts

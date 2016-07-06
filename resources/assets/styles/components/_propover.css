@@ -8,7 +8,12 @@
   background    : white;
   position      : relative;
   border        : var(--border-base);
-  border-radius : var(--radius-large);
+  border-radius : var(--radius-base);
+  box-sizing    : border-box; 
+}
+
+.propover * {
+  color : black;
 }
 
 .propover::after {
@@ -16,6 +21,7 @@
   position      : absolute;
   left          : calc(50% - 7px);
   top           : 0;
+  height        : 0;
   margin-top    : -18px;
   border-left   : 7px solid transparent;
   border-right  : 7px solid transparent;

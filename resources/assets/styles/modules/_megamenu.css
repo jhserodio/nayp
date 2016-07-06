@@ -134,7 +134,8 @@
 
   .megamenu .menu a {
     padding: var(--space-base) 0;
-    padding-left: var(--space-base);
+    padding-left: 6%;
+    box-sizing: border-box;
   }
 
   .megamenu .dropdown a {

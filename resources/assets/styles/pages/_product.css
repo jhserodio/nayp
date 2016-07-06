@@ -82,6 +82,20 @@
   margin-bottom: var(--space-base);
 }
 
+.product-actions .social-list {
+  display: none;
+}
+
+.product-actions .social-list.active {
+  display: block;
+}
+
+@media (--screen-medium) {
+  .product-actions button {
+    min-width: 125px;
+  }
+}
+
 @media (--screen-mobile) {
   .product-item {
     flex-wrap: wrap;
@@ -89,12 +103,18 @@
 
   .product-actions {
     flex-direction: row;
+    flex-wrap: wrap;
   }
 
-  .product-actions > * {
+  .product-actions > button {
     width: 90px;
     margin-right: calc(var(--space-base)/2);
   }
+
+  .product-actions .social-list {
+    min-width: 115px;
+  }
+
 }
 
 @media (--screen-tablet) {

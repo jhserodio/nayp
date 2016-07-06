@@ -2,7 +2,7 @@
 02/F - MENU
 =========================================================================*/
 
-@custom-selector :--menus .menu, .menu-single, .dropdown;
+@custom-selector :--menus .menu, .menu-single, .dropdown, .menu-vertical;
 
 :--menus {
   margin     : 0;
