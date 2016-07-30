@@ -3,7 +3,7 @@ function cartPreview() {
 
   var btnCart = document.getElementById('active-cart');
   var btnShip = document.getElementById('active-ship');
-  var displayCart = document.querySelector('.preview-seller');
+  var displayCart = document.querySelector('.cart-preview');
   var displayShip = document.querySelector('.preview-shipping');
   var closeCart  = document.getElementById('close-preview-cart');;
   var closeShip  = document.getElementById('close-preview-ship');
@@ -11,22 +11,22 @@ function cartPreview() {
 
 
   btnCart.addEventListener('click', () => {
-    displayCart.setAttribute('style', 'display:block');
-    document.body.setAttribute('style', 'overflow:hidden');
+        displayCart.classList.add('active');
+        document.body.setAttribute('style', 'overflow:hidden');
   })
 
   btnShip.addEventListener('click', () => {
-    displayShip.setAttribute('style', 'display:block');
+    displayShip.classList.toggle('active');
   })
 
   closeCart.addEventListener('click', () => {
-    displayCart.removeAttribute('style');
-    displayShip.removeAttribute('style');
+    displayShip.classList.remove('active');
+    displayCart.classList.remove('active');
     document.body.removeAttribute('style');
   })
 
   closeShip.addEventListener('click', () => {
-    displayShip.removeAttribute('style');
+    displayShip.classList.remove('active');
   })
 
 

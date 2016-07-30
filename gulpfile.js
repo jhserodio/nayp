@@ -30,7 +30,7 @@ var postcss        = require('gulp-postcss'),
 // GLOBAL VARIABLES
 var src_css        = "resources/assets/styles/style.css",
     wtc            = "resources/assets/**/*",
-    src_img        = "resources/assets/images/*",
+    src_img        = "resources/assets/images/**/*",
     src_font       = "resources/assets/fonts/*",
     src_scripts    = "resources/assets/scripts/*",
     dest_css       = "public/styles",

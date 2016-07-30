@@ -4,6 +4,7 @@
   "description": "",
   "main": "gulpfile.js",
   "devDependencies": {
+    "gulp": "^3.9.0",
     "autoprefixer": "^6.2.3",
     "babel-core": "^6.7.6",
     "babel-loader": "^6.2.4",
@@ -29,7 +30,6 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
-    "gulp": "^3.9.0"
   },
   "repository": {
     "type": "git",

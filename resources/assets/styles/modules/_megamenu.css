@@ -97,6 +97,10 @@
     position: relative;
   }
 
+  .megamenu .item-drop.active button {
+    transform: rotateY(180deg);
+  }
+
   .megamenu li:last-child {
     margin-bottom: 0;
   }
@@ -116,8 +120,14 @@
   }
 
   .megamenu .dropdown {
-    display: none;
     background: var(--gray-light);
+    height: 0;
+    overflow: hidden;
+    transition: var(--transition-base);
+  }
+
+  .megamenu .dropdown.active {
+    height: auto;
   }
 
   .megamenu .dropdown li {

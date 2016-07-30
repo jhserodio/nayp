@@ -1,3 +1,5 @@
+@import './product-gallery';
+
 .product-item {
   display: flex;
   justify-content: space-between;
@@ -83,11 +85,15 @@
 }
 
 .product-actions .social-list {
-  display: none;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.2s;
 }
 
 .product-actions .social-list.active {
-  display: block;
+  height: auto;
+  opacity: 1;
 }
 
 @media (--screen-medium) {

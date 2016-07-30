@@ -19,7 +19,7 @@ function toggleDropdown( btn, display ) {
             btn[j].removeAttribute('style');
           }
         }
-        display[i].setAttribute('style', 'display:none');
+        display[i].classList.remove('active');
         btn[i].classList.remove("active");
       } else {
         for ( let j = 0; j < btn.length; j++ ) {
@@ -27,7 +27,7 @@ function toggleDropdown( btn, display ) {
             btn[j].setAttribute('style', 'display:none');
           }
         }
-        display[i].setAttribute('style', 'display:block');
+        display[i].classList.add('active');
         btn[i].classList.add("active");
       }
     })
