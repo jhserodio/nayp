@@ -1,3 +1,3 @@
-import { toggleDisplay } from '../utils/toggleElements'
+import { toggleDisplay } from '../utils/toggleElements';
 
 toggleDisplay("active-footer-menu");

@@ -54,18 +54,12 @@
 
 	var footer = _interopRequireWildcard(_footer);
 
-	var _slide = __webpack_require__(5);
-
 	var _cartPreview = __webpack_require__(4);
 
 	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 	// declaração carrinho
-	// TOGGLE ELEMENTS
-
-	(0, _cartPreview.cartPreview)();
-
-	(0, _slide.slide)();
+	(0, _cartPreview.cartPreview)(); // TOGGLE ELEMENTS
 
 /***/ },
 /* 1 */
@@ -207,59 +201,6 @@
 	}
 
 	exports.cartPreview = cartPreview;
-
-/***/ },
-/* 5 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	function slide() {
-
-	  var slides = document.querySelectorAll(".slide-item");
-	  var slidePrev = document.querySelector('.slide-nav-prev');
-	  var slideNext = document.querySelector('.slide-nav-next');
-
-	  slidePrev.addEventListener('click', function (e) {
-	    e.preventDefault();
-	    slideArrow(slides, 'left');
-	  });
-
-	  slideNext.addEventListener('click', function (e) {
-	    e.preventDefault();
-	    slideArrow(slides, 'right');
-	  });
-	}
-
-	function slideClear(display) {
-	  for (var j = 0; j < display.length; j++) {
-	    if (display[j].classList.contains('active')) display[j].classList.remove('active');
-	  }
-	}
-
-	function slideArrow(display, direction) {
-
-	  var position = 0;
-
-	  if (direction === "left") direction = -1;else if (direction === "right") direction = 1;else console.log("direction error arg");
-
-	  for (var i = 0; i < display.length; i++) {
-	    if (display[i].classList.contains('active')) {
-	      var slide = display[i + direction];
-	      position = i;
-	    }
-	  }
-
-	  if (!(position === 0 && direction === -1 || position === display.length - 1 && direction === 1)) {
-	    slideClear(display);
-	    slide.classList.add('active');
-	  }
-	}
-
-	exports.slide = slide;
 
 /***/ }
 /******/ ]);

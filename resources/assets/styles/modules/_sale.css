@@ -2,13 +2,10 @@
   lost-center: 100%;
 }
 
-.sale-image img {
+.sale-image {
   border: var(--border-base);
   width: 100%;
   background: white;
-
-  /*provisorio*/
-  height: 220px;
 }
 
 .sale-descript {

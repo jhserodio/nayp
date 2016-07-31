@@ -54,7 +54,7 @@
 
 	var footer = _interopRequireWildcard(_footer);
 
-	var _cartPreview = __webpack_require__(5);
+	var _cartPreview = __webpack_require__(4);
 
 	var _toggleElements = __webpack_require__(2);
 
@@ -170,8 +170,7 @@
 	(0, _toggleElements.toggleDisplay)("active-footer-menu");
 
 /***/ },
-/* 4 */,
-/* 5 */
+/* 4 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -212,6 +211,7 @@
 	exports.cartPreview = cartPreview;
 
 /***/ },
+/* 5 */,
 /* 6 */
 /***/ function(module, exports) {
 

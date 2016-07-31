@@ -1,6 +1,7 @@
 
 .banner {
-  height: 640px;
+  height: auto;
+  line-height: 0;
   lost-center: 100%;
   background: var(--gray-base);
   position: relative;
@@ -17,6 +18,7 @@
   height: 100%;
   background: red;
   display: none;
+  position: relative;
 }
 
 .slide-item.active {
@@ -37,6 +39,9 @@
   flex-direction: column;
   justify-content: space-between;
   min-height: 160px;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .slide-info h2 {
@@ -107,14 +112,4 @@
   height: 100%;
   background: white;
   display: block;
-}
-
-
-@media (--screen-mobile) {
-
-  .slide-nav-prev,
-  .slide-nav-next {
-    display: none;
-  }
-
 }
