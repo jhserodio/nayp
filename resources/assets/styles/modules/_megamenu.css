@@ -87,14 +87,25 @@
 
 @media (--screen-mobile) {
 
+  .megamenu {
+    background: none;
+  }
+
+  .megamenu .menu {
+    line-height: 0;
+  }
+
   .megamenu .container {
     width: 100%;
     max-width: 100%;
     margin: 0;
   }
 
-  .megamenu li {
+  .megamenu .menu > li {
     position: relative;
+    background: white;
+    margin: 0;
+    height: 40px;
   }
 
   .megamenu .item-drop.active button {
@@ -103,6 +114,10 @@
 
   .megamenu li:last-child {
     margin-bottom: 0;
+  }
+
+  .megamenu .item-drop.inactive {
+    display: none;
   }
 
   .megamenu .btn-dropdown {
@@ -121,13 +136,16 @@
 
   .megamenu .dropdown {
     background: var(--gray-light);
-    height: 0;
+    transform: translateX(-100%);
     overflow: hidden;
-    transition: var(--transition-base);
+    max-height: 0;
+    transition: transform 0.2s;
   }
 
   .megamenu .dropdown.active {
-    height: auto;
+    max-height: none;
+    transform: translateX(0);
+    transition: transform 0.2s;
   }
 
   .megamenu .dropdown li {
@@ -143,14 +161,20 @@
   }
 
   .megamenu .menu a {
-    padding: var(--space-base) 0;
+    height: 100%;
+    line-height: normal;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
     padding-left: 6%;
     box-sizing: border-box;
   }
 
   .megamenu .dropdown a {
-    padding: 5px;
-    padding-left: 10px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: var(--space-large);
   }
 
 }

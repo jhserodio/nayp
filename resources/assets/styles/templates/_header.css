@@ -72,4 +72,9 @@
     order: 1;
   }
 
+  .search-box .form-wrap {
+    width: 88%;
+    margin: 0 6%;
+  }
+
 }
