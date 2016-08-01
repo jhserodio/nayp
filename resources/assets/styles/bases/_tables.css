@@ -12,6 +12,10 @@ thead {
   vertical-align : middle;
 }
 
+thead tr {
+  border: none;
+}
+
 tfoot {
   vertical-align : middle;
 }
@@ -20,30 +24,62 @@ tbody {
   vertical-align : middle;
 }
 
-th {
-  text-align  : center;
-  color       : white;
-  font-size   : var(--size-base);
-  font-weight : bold;
-}
-
 td {
-  text-align  : center;
-  padding     : calc(var(--space-base)*2) 0;
-  color       : var(--smoke-white);
-  font-size   : var(--size-base);
-  font-weight : normal;
-  border-left : var(--border-base);
+  text-align     : center;;
+  text-transform : uppercase;
+  font-size      : var(--size-small);
+  padding        : calc(var(--space-base)*2);
+  color          : var(--smoke-white);
+  font-weight    : normal;
+  border         : none;
 }
 
 td:first-child {
+  text-align: left;
+}
+
+th {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: var(--size-base);
+  font-weight: normal;
+  padding        : calc(var(--space-base)*2) 0;
   border: 0;
 }
 
-tr {
-  border-top : var(--border-base);
+th:first-child {
+  text-align: left;
 }
 
-tr:first-child {
-  border : 0;
+th small {
+  font-size: var(--size-min);
+  text-transform: lowercase;
+}
+
+tr {
+  border : var(--border-focus);
+}
+
+tbody tr:hover,
+tbody tr:hover td {
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+
+@media (--screen-small) {
+
+  th {
+    font-size: var(--size-min);
+    padding: var(--space-base) 0;
+    line-height: normal;
+  }
+
+  td {
+    font-size: var(--size-min);
+    padding: var(--space-base);
+  }
+
+
 }

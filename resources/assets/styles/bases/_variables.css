@@ -13,6 +13,7 @@
   --gray-base   : #666666;
   --gray-dark   : #333333;
   --gray-light  : #b7b7b6;
+  --gray-nude   : #dfdfdf;
 
   /*colors opacity*/
   --half-black  : color(black alpha(-75%));

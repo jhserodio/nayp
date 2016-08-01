@@ -1,5 +1,5 @@
 .info-np {
-  background: #dfdfdf;
+  background: var(--gray-nude);
   padding: var(--space-large) 0;
 }
 
