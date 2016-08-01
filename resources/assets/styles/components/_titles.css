@@ -28,3 +28,11 @@
   font-weight: var(--weight-base);
   text-transform: uppercase;
 }
+
+@media (--screen-small) {
+
+  .title-base {
+    font-size: var(--size-small); 
+  }
+
+}

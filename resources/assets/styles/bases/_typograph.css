@@ -18,7 +18,8 @@ a {
 }
 
 strong {
-  font-weight : bold;
+  font-weight : normal;
+  text-transform: uppercase;
 }
 
 small {

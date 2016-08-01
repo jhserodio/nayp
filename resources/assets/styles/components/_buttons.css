@@ -39,6 +39,12 @@
   color: black;
 }
 
+.btn-other:hover {
+  background: black;
+  border-color: black;
+  color: white;
+}
+
 .btn-nude {
   border: 0;
   font-size: var(--size-min);
