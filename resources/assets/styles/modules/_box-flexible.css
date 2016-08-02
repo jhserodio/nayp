@@ -22,6 +22,10 @@
   text-transform: uppercase;
 }
 
+.flexible-head svg {
+  fill: black;
+}
+
 .flexible-content {
   padding: var(--space-base);
   padding-top: 0;

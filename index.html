@@ -23,7 +23,9 @@
             calculo de envio
           </p>
           <button class="btn-icon" id="close-preview-ship">
-            >
+            <svg class="icon icon-right">
+              <use xlink:href="public/vetor/icons.svg#icon-right"></use>
+            </svg>
           </button>
         </div>
 
@@ -101,7 +103,9 @@
             cart / 03
           </p>
           <button class="btn-icon" id="close-preview-cart">
-            x
+            <svg class="icon icon-cross">
+              <use xlink:href="public/vetor/icons.svg#icon-cross"></use>
+            </svg>
           </button>
         </div>
 
@@ -121,9 +125,17 @@
                 </div>
 
                 <div class="calc-amount">
-                  <button class="btn-icon">-</button>
+                  <button class="btn-icon">
+                    <svg class="icon _small icon-minus">
+                      <use xlink:href="public/vetor/icons.svg#icon-minus"></use>
+                    </svg>
+                  </button>
                   <input type="text" value="2">
-                  <button class="btn-icon">+</button>
+                  <button class="btn-icon">
+                    <svg class="icon _small icon-plus">
+                      <use xlink:href="public/vetor/icons.svg#icon-plus"></use>
+                    </svg>
+                  </button>
                 </div>
 
               </div>
@@ -413,7 +425,11 @@
               <div class="container">
                 <ul class="menu">
                   <li class="item-drop"><a href="#">men</a>
-                    <button class="btn-icon btn-dropdown"><i class="icon-right"></i></button>
+                    <button class="btn-icon btn-dropdown">
+                      <svg class="icon icon-right">
+                        <use xlink:href="public/vetor/icons.svg#icon-right"></use>
+                      </svg>
+                    </button>
                     <ul class="dropdown">
                       <li><a href="#">t-shirts</a></li>
                       <li><a href="#">shirts</a></li>
@@ -425,7 +441,11 @@
                     </ul>
                   </li>
                   <li class="item-drop"><a href="#">women</a>
-                    <button class="btn-icon btn-dropdown"><i class="icon-right"></i></button>
+                    <button class="btn-icon btn-dropdown">
+                      <svg class="icon icon-right">
+                        <use xlink:href="public/vetor/icons.svg#icon-right"></use>
+                      </svg>
+                    </button>
                     <ul class="dropdown">
                       <li><a href="#">t-shirts</a></li>
                       <li><a href="#">shirts</a></li>
@@ -437,14 +457,22 @@
                     </ul>
                   </li>
                   <li class="item-drop"><a href="#">shoes</a>
-                    <button class="btn-icon btn-dropdown"><i class="icon-right"></i></button>
+                    <button class="btn-icon btn-dropdown">
+                      <svg class="icon icon-right">
+                        <use xlink:href="public/vetor/icons.svg#icon-right"></use>
+                      </svg>
+                    </button>
                     <ul class="dropdown">
                       <li><a href="#">converse</a></li>
                       <li><a href="#">keds</a></li>
                     </ul>
                   </li>
                   <li class="item-drop"><a href="#">accessories</a>
-                    <button class="btn-icon btn-dropdown"><i class="icon-right"></i></button>
+                    <button class="btn-icon btn-dropdown">
+                      <svg class="icon icon-right">
+                        <use xlink:href="public/vetor/icons.svg#icon-right"></use>
+                      </svg>
+                    </button>
                     <ul class="dropdown">
                       <li><a href="#">hats</a></li>
                       <li><a href="#">beanies</a></li>
@@ -492,7 +520,13 @@
           </div>
           <div class="nav-cart">
             <ul class="menu">
-              <li><button class="btn-icon" id="active-search"> Q </button></li>
+              <li>
+                <button class="btn-icon" id="active-search">
+                  <svg class="icon icon-search">
+                    <use xlink:href="public/vetor/icons.svg#icon-search"></use>
+                  </svg>
+                </button>
+              </li>
               <li> &nbsp; &nbsp; </li>
               <li><button class="btn-icon" id="active-cart"> cart </button></li>
               <li><span class="divider">/</span></li>
@@ -509,165 +543,27 @@
 
     <main class="main-np">
 
-      <div class="info-np">
-        <div class="container">
+      <div class="about-np">
 
-          <nav class="nav_tab">
-            <ul class="reset">
-              <li><a class="active" href="#">men's top</a></li>
-              <li><a href="#">men's bottoms</a></li>
-              <li><a href="#">women's top</a></li>
-              <li><a href="#">women's bottom</a></li>
-            </ul>
-          </nav>
-
-          <div class="size_model">
-
-            <h2 class="title-base">
-              1º passo / <br />
-              medidas
-            </h2>
-
-            <div class="_content">
-
-              <div class="_image">
-                <img src="public/images/manequin.png" alt="">
+          <div class="banner">
+            <div class="slide-item active">
+              <div class="slide-info">
+                <h2>
+                  pagina about - rise of the pin
+                </h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Quisque feugiat lacus a ipsum tristique tincidunt.
+                </p>
               </div>
-
-              <ul class="_menu">
-                <li>
-                  <p>
-                    <strong>
-                      A. PEITO
-                    </strong>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  </p>
-                  <span class="_marker _a">a</span>
-                </li>
-                <li>
-                  <p>
-                    <strong>
-                      B. ALTURA DO TRONCO
-                    </strong>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  </p>
-                  <span class="_marker _b">b</span>
-                </li>
-                <li>
-                  <p>
-                    <strong>
-                      C. MEDIDA DO BRAÇO
-                    </strong>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  </p>
-                  <span class="_marker _c">c</span>
-                </li>
-              </ul>
-
+              <div class="flex-image">
+                <video autoplay muted>
+                  <source src="resources/assets/video/nayp.mp4" type="video/mp4">
+                </video>
+              </div>
             </div>
-
           </div>
 
-          <table class="size_table">
-            <h2 class="title-base">
-              2º passo / <br />
-              encontre o tamanho certo
-            </h2>
-            <thead>
-              <tr>
-                <th>
-                  tamanho <br />
-                  da peça
-                </th>
-                <th>
-                  a. <br />
-                  peito <br />
-                  <small>(cm)</small>
-                </th>
-                <th>
-                  b. <br />
-                  autura do <br />
-                  tronco <small>(cm)</small>
-                </th>
-                <th>
-                  c. <br />
-                  medida do <br />
-                  braço<small>(cm)</small>
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>xp</td>
-                <td>74-81</td>
-                <td>82-89</td>
-                <td>90-98</td>
-              </tr>
-              <tr>
-                <td>p</td>
-                <td>74-81</td>
-                <td>82-89</td>
-                <td>90-98</td>
-              </tr>
-              <tr>
-                <td>m</td>
-                <td>74-81</td>
-                <td>82-89</td>
-                <td>90-98</td>
-              </tr>
-              <tr>
-                <td>g</td>
-                <td>74-81</td>
-                <td>82-89</td>
-                <td>90-98</td>
-              </tr>
-              <tr>
-                <td>xg</td>
-                <td>74-81</td>
-                <td>82-89</td>
-                <td>90-98</td>
-              </tr>
-              <tr>
-                <td>xxg</td>
-                <td>74-81</td>
-                <td>82-89</td>
-                <td>90-98</td>
-              </tr>
-            </tbody>
-          </table>
-
-          <div>
-            <p>
-              - Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Tenetur fuga quisquam assumenda et est officia, quaerat illum eius,
-              ipsum quas iste corporis pariatur reiciendis distinctio repudiandae
-            </p>
-            <p>
-              - quaerat illum eius, ipsum quas iste corporis pariatur reiciendis
-               distinctio repudiandae voluptate odio voluptatibus neque.
-            </p>
-            <p>
-              - ing elit. Tenetur fuga quisquam assumenda et est officia, quaerat illum eius,
-              ipsum quas iste corporis pariatur reiciendis distinctio
-            </p>
-
-            <h2 class="title-base">
-              duvidas?
-            </h2>
-
-            <p>
-              quaerat illum eius, ipsum quas iste corporis pariatur reiciendis
-              distinctio repudiandae voluptate odio voluptatibus neque.
-            </p>
-
-            <a href="#" class="reset">
-              <button class="btn-full">
-                clique aqui e fale conosco
-              </button>
-            </a>
-          </div>
-
-        </div>
       </div>
 
     </main>
@@ -686,10 +582,34 @@
 
           <div class="social-list">
             <ul class="menu">
-              <li><a href="#"><i class="icon-facebook"></i></a></li>
-              <li><a href="#"><i class="icon-twitter"></i></a></li>
-              <li><a href="#"><i class="icon-instagram"></i></a></li>
-              <li><a href="#"><i class="icon-pinterest"></i></a></li>
+              <li>
+                <a href="#">
+                  <svg class="icon _large icon-facebook">
+                    <use xlink:href="public/vetor/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="icon _large icon-twitter">
+                    <use xlink:href="public/vetor/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="icon _large icon-instagram">
+                    <use xlink:href="public/vetor/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="icon _large icon-pinterest">
+                    <use xlink:href="public/vetor/icons.svg#icon-pinterest"></use>
+                  </svg>
+                </a>
+              </li>
             </ul>
           </div>
 

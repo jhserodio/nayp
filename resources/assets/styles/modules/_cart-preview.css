@@ -22,6 +22,12 @@
   height: auto;
 }
 
+
+.cart-preview .flag svg,
+.cart-preview .flag-white svg {
+  fill: black;
+}
+
 .preview-seller {
   width: 320px;
   background: black;
@@ -142,7 +148,6 @@
   background: white;
   width: 300px;
   height: 100%;
-
   transition: var(--transition-large);
   transform: translateX(100%);
 }

@@ -53,6 +53,10 @@
   text-decoration: underline;
 }
 
+.footer-right svg {
+  fill: var(--gray-light);
+}
+
 @media (--screen-medium) {
   .info-footer {
     position: relative;

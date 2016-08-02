@@ -96,6 +96,10 @@
   opacity: 1;
 }
 
+.product-actions .social-list svg {
+  fill: var(--gray-light);
+}
+
 @media (--screen-medium) {
   .product-actions button {
     min-width: 125px;

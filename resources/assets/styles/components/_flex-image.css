@@ -6,6 +6,7 @@
   line-height: 0;
 }
 
-.flex-image img {
+.flex-image img,
+.flex-image video {
   width: 100%;
 }

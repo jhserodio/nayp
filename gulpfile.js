@@ -19,7 +19,7 @@ var postcss        = require('gulp-postcss'),
 
   // image compress
     imagemin       = require('gulp-imagemin'),
-
+    svgmin         = require('gulp-svgmin'),
   // utilities
     concat         = require('gulp-concat'),
     watch          = require('gulp-watch'),
@@ -31,13 +31,14 @@ var postcss        = require('gulp-postcss'),
 var src_css        = "resources/assets/styles/style.css",
     wtc            = "resources/assets/**/*",
     src_img        = "resources/assets/images/**/*",
+    src_svg        = "resources/assets/vetor/*",
     src_font       = "resources/assets/fonts/*",
     src_scripts    = "resources/assets/scripts/*",
     dest_css       = "public/styles",
     dest_font      = "public/fonts/",
     dest_img       = "public/images";
+    dest_svg       = "public/vetor";
     dest_scripts   = "public/scripts";
-
 
 
 // TASKS DECLARATION
@@ -70,6 +71,11 @@ gulp.task('imagemin', function () {
       progressive: true
     }))
     .pipe(gulp.dest('public/images'));
+});
+
+// compres svg files
+gulp.task('copy-svg', function() {
+    copy(src_svg, dest_svg);
 });
 
 // copy files

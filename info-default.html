@@ -15,149 +15,17 @@
 
   <body>
 
-    <!-- <div class="modal">
-      <div class="modal-content">
-        <button class="btn-icon modal-close">
-          x
-        </button>
-
-        <div class="modal-newsletter">
-          <p>
-            NAYP CO. LTDA
-          </p>
-
-          <form action="form-wrap" class="form-wrap">
-            <div class="form-inline">
-              <input type="email" name="form-wrap" value="SIGN UP FOR OUR form-wrap">
-              <button class="btn-icon btn-dropdown">ok</button>
-            </div>
-          </form>
-
-          <p>
-            stay update on colaborations,
-            new products, events, sales & more.
-          </p>
-
-          <p>
-            get 20% off your first order!
-          </p>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="cart-preview display" id="cart">
-
-
-      <div class="preview-seller">
-        <div class="flag">
-          <p class="title-small">
-            cart / 03
-          </p>
-          <button class="btn-icon">
-            x
-          </button>
-        </div>
-
-
-        <ul class="preview-list">
-          <li>
-            <div class="preview-item">
-              <div class="preview-item-head">
-                <div class="flex-image">
-                  <img src="#" alt="">
-                </div>
-                <div class="preview-amount">
-                  <strong>
-                    02
-                  </strong>
-                </div>
-              </div>
-              <div class="preview-item-main">
-                  titulo da peça
-                  <br>
-                  color gray / size p
-                  <br>
-                  R$ 200,00
-              </div>
-              <div class="preview-item-footer">
-                <button class="btn-icon">
-                  x remover
-                </button>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="preview-item">
-              <div class="preview-item-head">
-                <div class="flex-image">
-                  <img src="#" alt="">
-                </div>
-                <div class="preview-amount">
-                  <strong>
-                    02
-                  </strong>
-                </div>
-              </div>
-              <div class="preview-item-main">
-                  titulo da peça
-                  <br>
-                  color gray / size p
-                  <br>
-                  R$ 200,00
-              </div>
-              <div class="preview-item-footer">
-                <button class="btn-icon">
-                  x remover
-                </button>
-              </div>
-            </div>
-          </li>
-        </ul>
-
-        <button class="btn">
-          calculate shipping
-        </button>
-
-        <div class="preview-result">
-          <p>
-            <span>
-              subtotal
-            </span>
-            <span>
-              R$ 297,00
-            </span>
-          </p>
-          <p>
-            <small>
-              <i>(excluding shipping)</i>
-            </small>
-            <small>
-              R$ 00,00
-            </small>
-          </p>
-          <p>
-            <strong>
-              TOTAL
-            </strong>
-            <strong>
-              R$ 297,00
-            </strong>
-          </p>
-          <button class="btn-seller">
-            checkout
-          </button>
-        </div>
-
-      </div>
+    <div class="cart-preview">
 
       <div class="preview-shipping">
         <div class="flag-white">
           <p class="title-small">
             calculo de envio
           </p>
-          <button class="btn-icon">
-            >
+          <button class="btn-icon" id="close-preview-ship">
+            <svg class="icon icon-right">
+              <use xlink:href="public/vetor/icons.svg#icon-right"></use>
+            </svg>
           </button>
         </div>
 
@@ -229,13 +97,314 @@
           </p>
         </div>
       </div>
+      <div class="preview-seller">
+        <div class="flag">
+          <p class="title-small">
+            cart / 03
+          </p>
+          <button class="btn-icon" id="close-preview-cart">
+            <svg class="icon icon-cross">
+              <use xlink:href="public/vetor/icons.svg#icon-cross"></use>
+            </svg>
+          </button>
+        </div>
 
 
+        <ul class="preview-list">
 
-    </div> -->
+          <li>
+            <div class="preview-item">
+              <div class="preview-image">
+                <img src="#" alt="">
+              </div>
+              <div class="preview-content">
+                <div class="preview-info">
+                  <p>titulo da peça</p>
+                  <p>color gray / size p</p>
+                  <p>R$ 200,00</p>
+                </div>
+
+                <div class="calc-amount">
+                  <button class="btn-icon">
+                    <svg class="icon _small icon-minus">
+                      <use xlink:href="public/vetor/icons.svg#icon-minus"></use>
+                    </svg>
+                  </button>
+                  <input type="text" value="2">
+                  <button class="btn-icon">
+                    <svg class="icon _small icon-plus">
+                      <use xlink:href="public/vetor/icons.svg#icon-plus"></use>
+                    </svg>
+                  </button>
+                </div>
+
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="preview-item">
+              <div class="preview-image">
+                <img src="#" alt="">
+              </div>
+              <div class="preview-content">
+                <div class="preview-info">
+                  <p>titulo da peça</p>
+                  <p>color gray / size p</p>
+                  <p>R$ 200,00</p>
+                </div>
+
+                <div class="calc-amount">
+                  <button class="btn-icon">-</button>
+                  <input type="text" value="2">
+                  <button class="btn-icon">+</button>
+                </div>
+
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="preview-item">
+              <div class="preview-image">
+                <img src="#" alt="">
+              </div>
+              <div class="preview-content">
+                <div class="preview-info">
+                  <p>titulo da peça</p>
+                  <p>color gray / size p</p>
+                  <p>R$ 200,00</p>
+                </div>
+
+                <div class="calc-amount">
+                  <button class="btn-icon">-</button>
+                  <input type="text" value="2">
+                  <button class="btn-icon">+</button>
+                </div>
+
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="preview-item">
+              <div class="preview-image">
+                <img src="#" alt="">
+              </div>
+              <div class="preview-content">
+                <div class="preview-info">
+                  <p>titulo da peça</p>
+                  <p>color gray / size p</p>
+                  <p>R$ 200,00</p>
+                </div>
+
+                <div class="calc-amount">
+                  <button class="btn-icon">-</button>
+                  <input type="text" value="2">
+                  <button class="btn-icon">+</button>
+                </div>
+
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="preview-item">
+              <div class="preview-image">
+                <img src="#" alt="">
+              </div>
+              <div class="preview-content">
+                <div class="preview-info">
+                  <p>titulo da peça</p>
+                  <p>color gray / size p</p>
+                  <p>R$ 200,00</p>
+                </div>
+
+                <div class="calc-amount">
+                  <button class="btn-icon">-</button>
+                  <input type="text" value="2">
+                  <button class="btn-icon">+</button>
+                </div>
+
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="preview-item">
+              <div class="preview-image">
+                <img src="#" alt="">
+              </div>
+              <div class="preview-content">
+                <div class="preview-info">
+                  <p>titulo da peça</p>
+                  <p>color gray / size p</p>
+                  <p>R$ 200,00</p>
+                </div>
+
+                <div class="calc-amount">
+                  <button class="btn-icon">-</button>
+                  <input type="text" value="2">
+                  <button class="btn-icon">+</button>
+                </div>
+
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="preview-item">
+              <div class="preview-image">
+                <img src="#" alt="">
+              </div>
+              <div class="preview-content">
+                <div class="preview-info">
+                  <p>titulo da peça</p>
+                  <p>color gray / size p</p>
+                  <p>R$ 200,00</p>
+                </div>
+
+                <div class="calc-amount">
+                  <button class="btn-icon">-</button>
+                  <input type="text" value="2">
+                  <button class="btn-icon">+</button>
+                </div>
+
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="preview-item">
+              <div class="preview-image">
+                <img src="#" alt="">
+              </div>
+              <div class="preview-content">
+                <div class="preview-info">
+                  <p>titulo da peça</p>
+                  <p>color gray / size p</p>
+                  <p>R$ 200,00</p>
+                </div>
+
+                <div class="calc-amount">
+                  <button class="btn-icon">-</button>
+                  <input type="text" value="2">
+                  <button class="btn-icon">+</button>
+                </div>
+
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="preview-item">
+              <div class="preview-image">
+                <img src="#" alt="">
+              </div>
+              <div class="preview-content">
+                <div class="preview-info">
+                  <p>titulo da peça</p>
+                  <p>color gray / size p</p>
+                  <p>R$ 200,00</p>
+                </div>
+
+                <div class="calc-amount">
+                  <button class="btn-icon">-</button>
+                  <input type="text" value="2">
+                  <button class="btn-icon">+</button>
+                </div>
+
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="preview-item">
+              <div class="preview-image">
+                <img src="#" alt="">
+              </div>
+              <div class="preview-content">
+                <div class="preview-info">
+                  <p>titulo da peça</p>
+                  <p>color gray / size p</p>
+                  <p>R$ 200,00</p>
+                </div>
+
+                <div class="calc-amount">
+                  <button class="btn-icon">-</button>
+                  <input type="text" value="2">
+                  <button class="btn-icon">+</button>
+                </div>
+
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="preview-item">
+              <div class="preview-image">
+                <img src="#" alt="">
+              </div>
+              <div class="preview-content">
+                <div class="preview-info">
+                  <p>titulo da peça</p>
+                  <p>color gray / size p</p>
+                  <p>R$ 200,00</p>
+                </div>
+
+                <div class="calc-amount">
+                  <button class="btn-icon">-</button>
+                  <input type="text" value="2">
+                  <button class="btn-icon">+</button>
+                </div>
+
+              </div>
+            </div>
+          </li>
+
+        </ul>
+
+        <div class="preview-result">
+
+          <button class="btn" id="active-ship">
+            calculate shipping
+          </button>
+
+          <p>
+            <span>
+              subtotal
+            </span>
+            <span>
+              R$ 297,00
+            </span>
+          </p>
+          <p>
+            <small>
+              <i>(excluding shipping)</i>
+            </small>
+            <small>
+              R$ 00,00
+            </small>
+          </p>
+          <p>
+            <strong>
+              TOTAL
+            </strong>
+            <strong>
+              R$ 297,00
+            </strong>
+          </p>
+          <button class="btn-large">
+            checkout
+          </button>
+        </div>
+
+      </div>
+
+    </div>
 
     <header class="header-np">
-      <div class="container">
+      <div class="container reset">
         <h1 class="logo-np">
           <a href="#">
             <a href="#">
@@ -256,7 +425,11 @@
               <div class="container">
                 <ul class="menu">
                   <li class="item-drop"><a href="#">men</a>
-                    <button class="btn-icon btn-dropdown"><i class="icon--down"></i></button>
+                    <button class="btn-icon btn-dropdown">
+                      <svg class="icon icon-right">
+                        <use xlink:href="public/vetor/icons.svg#icon-right"></use>
+                      </svg>
+                    </button>
                     <ul class="dropdown">
                       <li><a href="#">t-shirts</a></li>
                       <li><a href="#">shirts</a></li>
@@ -268,7 +441,11 @@
                     </ul>
                   </li>
                   <li class="item-drop"><a href="#">women</a>
-                    <button class="btn-icon btn-dropdown"><i class="icon--down"></i></button>
+                    <button class="btn-icon btn-dropdown">
+                      <svg class="icon icon-right">
+                        <use xlink:href="public/vetor/icons.svg#icon-right"></use>
+                      </svg>
+                    </button>
                     <ul class="dropdown">
                       <li><a href="#">t-shirts</a></li>
                       <li><a href="#">shirts</a></li>
@@ -280,14 +457,22 @@
                     </ul>
                   </li>
                   <li class="item-drop"><a href="#">shoes</a>
-                    <button class="btn-icon btn-dropdown"><i class="icon--down"></i></button>
+                    <button class="btn-icon btn-dropdown">
+                      <svg class="icon icon-right">
+                        <use xlink:href="public/vetor/icons.svg#icon-right"></use>
+                      </svg>
+                    </button>
                     <ul class="dropdown">
                       <li><a href="#">converse</a></li>
                       <li><a href="#">keds</a></li>
                     </ul>
                   </li>
                   <li class="item-drop"><a href="#">accessories</a>
-                    <button class="btn-icon btn-dropdown"><i class="icon--down"></i></button>
+                    <button class="btn-icon btn-dropdown">
+                      <svg class="icon icon-right">
+                        <use xlink:href="public/vetor/icons.svg#icon-right"></use>
+                      </svg>
+                    </button>
                     <ul class="dropdown">
                       <li><a href="#">hats</a></li>
                       <li><a href="#">beanies</a></li>
@@ -335,7 +520,13 @@
           </div>
           <div class="nav-cart">
             <ul class="menu">
-              <li><button class="btn-icon" id="active-search"> Q </button></li>
+              <li>
+                <button class="btn-icon" id="active-search">
+                  <svg class="icon icon-search">
+                    <use xlink:href="public/vetor/icons.svg#icon-search"></use>
+                  </svg>
+                </button>
+              </li>
               <li> &nbsp; &nbsp; </li>
               <li><button class="btn-icon" id="active-cart"> cart </button></li>
               <li><span class="divider">/</span></li>
@@ -379,7 +570,7 @@
     </main>
 
     <footer class="footer-np">
-      <div class="container">
+      <div class="container reset">
         <div class="footer-left">
           <form action="form-wrap" class="form-wrap">
             <div class="form-inline">
@@ -387,23 +578,61 @@
               <button class="btn-icon">ok</button>
             </div>
           </form>
-          <div class="social-list">
-            <ul class="menu">
-              <li><a href="#"><i class="icon-facebook"></i></a></li>
-              <li><a href="#"><i class="icon-twitter"></i></a></li>
-              <li><a href="#"><i class="icon-instagram"></i></a></li>
-              <li><a href="#"><i class="icon-pinterest"></i></a></li>
-            </ul>
-          </div>
         </div>
         <div class="footer-right">
-          <a href="#">
-            <button class="btn-link">info</button>
-          </a>
+
+          <div class="social-list">
+            <ul class="menu">
+              <li>
+                <a href="#">
+                  <svg class="icon _large icon-facebook">
+                    <use xlink:href="public/vetor/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="icon _large icon-twitter">
+                    <use xlink:href="public/vetor/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="icon _large icon-instagram">
+                    <use xlink:href="public/vetor/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="icon _large icon-pinterest">
+                    <use xlink:href="public/vetor/icons.svg#icon-pinterest"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="info-footer">
+            <button class="btn-link" id="active-footer-menu">info</button>
+            <div class="propover" id="footer-menu">
+              <ul class="menu-vertical">
+                <li><a href="#">sobre a marca</a></li>
+                <li><a href="#">guia de tamanhos</a></li>
+                <li><a href="#">formas de pagamento</a></li>
+                <li><a href="#">entregas de prazos</a></li>
+                <li><a href="#">trocas e devoluções</a></li>
+                <li><a href="#">contato</a></li>
+              </ul>
+            </div>
+          </div>
+
           <address> &copy; NAYP CO. LTD / CURITIBA-PR / EST. M M V</address>
         </div>
       </div>
     </footer>
+
     <script type="text/javascript" src="public/scripts/main.js">
     </script>
   </body>

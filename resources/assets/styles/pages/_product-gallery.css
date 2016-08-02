@@ -17,6 +17,7 @@
 .gallery-nav {
   display: none;
   position: absolute;
+  opacity: .6;
   top: calc(50% - 40px);
   font-size: 80px;
 }

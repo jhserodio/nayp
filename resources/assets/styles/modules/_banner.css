@@ -72,8 +72,8 @@
   transition: var(--transition-base);
 }
 
-.slide-nav-prev i,
-.slide-nav-next i {
+.slide-nav-prev svg,
+.slide-nav-next svg {
   display: block;
   width: 10px;
 }
