@@ -18,10 +18,12 @@
 
 .header-navegation {
   flex-grow: 2;
+  margin-right: -110px;
 }
 
 .header-info {
   height: 50px;
+  width: 140px;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
