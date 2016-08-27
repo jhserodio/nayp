@@ -27384,7 +27384,7 @@
 	                { className: "form-control" },
 	                _react2.default.createElement(
 	                  "button",
-	                  { type: "submit", "class-btn-large": true },
+	                  { type: "submit", className: "btn-other" },
 	                  " ok "
 	                )
 	              )
@@ -27568,7 +27568,7 @@
 	                null,
 	                _react2.default.createElement(
 	                  "a",
-	                  { "class": "active", href: "#" },
+	                  { className: "active", href: "#" },
 	                  "men's top"
 	                )
 	              ),
@@ -27683,15 +27683,15 @@
 	            )
 	          ),
 	          _react2.default.createElement(
+	            "h2",
+	            { className: "title-base" },
+	            "2º passo / ",
+	            _react2.default.createElement("br", null),
+	            "encontre o tamanho certo"
+	          ),
+	          _react2.default.createElement(
 	            "table",
 	            { className: "size_table" },
-	            _react2.default.createElement(
-	              "h2",
-	              { className: "title-base" },
-	              "2º passo / ",
-	              _react2.default.createElement("br", null),
-	              "encontre o tamanho certo"
-	            ),
 	            _react2.default.createElement(
 	              "thead",
 	              null,
@@ -28062,7 +28062,7 @@
 	                { className: "form-control" },
 	                _react2.default.createElement(
 	                  "button",
-	                  { type: "submit", "class-btn-large": true },
+	                  { type: "submit", className: "btn-other" },
 	                  " ok "
 	                )
 	              )

@@ -1,4 +1,5 @@
-var src  = "./resources/assets/scripts";
+var path = require("path");
+var src  = "./resources/assets/js";
 var babel = require('babel-loader');
 var UglifyJsPlugin = require('webpack/lib/optimize/UglifyJsPlugin');
 
@@ -8,12 +9,12 @@ module.exports = {
   entry: {
     main      : src + "/main.js",
     product   : src + "/product.js",
-    info      : src + "/info.js"
+    info      : src + "/main-info.js"
   },
 
 // output scripts
   output : {
-    path     : "public/scripts/",
+    path     : "public/js/",
     filename : "[name].js"
   },
 
@@ -23,10 +24,11 @@ module.exports = {
     loaders: [
       {
         test: /\.jsx?$/,
-        exclude: /node_modules/,
-        loader: 'babel', // 'babel-loader' is also a legal name to reference
+        loaders: ['bable?cacheDirectory'],
+        exclude: /(node_modules)/,
+        loader: 'babel',
         query: {
-          presets: ['es2015']
+          presets: ['react', 'es2015']
         }
       }
     ]
@@ -34,7 +36,7 @@ module.exports = {
 
 // extension files used
   resolve: {
-    extensions: ['', '.js']
+    extensions: ['', '.js', '.jsx']
   },
 
 // plugins config

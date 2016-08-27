@@ -1,0 +1,80 @@
+/*=========================================================================
+COMPONENTS
+=========================================================================*/
+
+/*TITLES*/
+@import 'titles/titles';
+
+/*ICONS*/
+@import 'icons/icons';
+
+/*logo*/
+@import 'logo/logo';
+
+/*BUTTONS*/
+@import 'buttons/buttons';
+
+/*MAIN MENU*/
+@import 'main_menu/nav_main';
+@import 'main_menu/megamenu';
+
+/*MENU*/
+@import 'menu/menu';
+@import 'menu/active';
+
+/*OPTIONS_NAV*/
+@import 'options_nav/nav-cart';
+@import 'options_nav/nav-language';
+
+/*CONTENT WRAP*/
+@import 'content-wrap/image';
+@import 'content-wrap/comment';
+
+/*CARDS*/
+@import 'cards/cards';
+@import 'cards/cards-grid';
+
+/*MODAL*/
+@import 'modal/board';
+@import 'modal/content';
+@import 'modal/news';
+
+/*BANNER*/
+@import 'banner/banner';
+@import 'banner/slide-gallery';
+@import 'banner/slide-item';
+@import 'banner/slide-info';
+
+/*SALE*/
+@import 'sales/item';
+@import 'sales/category';
+
+/*MENU*/
+@import 'menu/menu';
+@import 'menu/active';
+
+/*FORMS_WRAP*/
+@import 'form-wrap/form_box';
+@import 'form-wrap/form_wrap';
+
+/*FLAG*/
+@import 'flags/flag';
+
+/*cart_preview*/
+@import 'cart_preview/cart_preview';
+@import 'cart_preview/calc_amount';
+
+/*alerts*/
+@import 'alerts/alerts';
+
+/*propover*/
+@import 'propover/propover';
+
+/*SIZE_MODE*/
+@import 'size_model/size_model';
+
+/*SOCIAL*/
+@import 'social/social-list';
+
+/*TAB_NAV*/
+@import 'tab_nav/nav_tab';

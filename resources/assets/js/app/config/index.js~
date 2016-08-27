@@ -1,0 +1,23 @@
+import React, { Component } from 'react';
+import { Router, Route, IndexRoute, hashHistory } from 'react-router';
+
+import { Home } from '../components/home/Home.jsx';
+import { About } from '../components/about/About.jsx';
+import { Work } from '../components/work/Work.jsx';
+import { Contact } from '../components/contact/Contact.jsx';
+
+
+export class RouteConfig extends Component {
+  render() {
+    return  (
+      <Router history={hashHistory}>
+        <Route path="/" component={this.props.main} >
+          <IndexRoute component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/work" component={Work} />
+          <Route path="/contact" component={Contact} />
+        </Route>
+      </Router>
+    );
+  }
+}
