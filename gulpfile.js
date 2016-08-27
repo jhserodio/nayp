@@ -2,8 +2,6 @@
 TASKS CONFIGURATION
 ==========================================================================*/
 
-// REQUIRES
-
 var gulp = require('gulp');
   //postcss requires
 var postcss        = require('gulp-postcss'),
