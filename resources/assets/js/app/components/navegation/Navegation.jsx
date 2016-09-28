@@ -8,11 +8,11 @@ export default class Navegation extends Component {
       <div className="megamenu app-navegation">
         <div className="container">
           <ul className="menu menu-info">
-            <li><IndexLink to="/">sobre</IndexLink></li>
-            <li><Link to="/order">pedidos</Link></li>
-            <li><Link to="/sizes">tamanhos</Link></li>
-            <li><Link to="/faq">faq</Link></li>
-            <li><Link to="/contact">contatos</Link></li>
+            <li><IndexLink to="/">sobre nós</IndexLink></li>
+            <li><Link to="/help">atendimento</Link></li>
+            <li><Link to="/order">status do pedido</Link></li>
+            <li><Link to="/sizes">guia de tamanhos</Link></li>
+            <li><Link to="/politic">termos e política</Link></li>
           </ul>
         </div>
       </div>

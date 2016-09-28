@@ -53,13 +53,17 @@ th:first-child {
 }
 
 th small {
-  /*font-size: var(--size-min);*/
   text-transform: lowercase;
 }
 
 tr {
   border : var(--border-focus);
 }
+
+tr small {
+  text-transform: lowercase;
+}
+
 
 tbody tr:hover,
 tbody tr:hover td {

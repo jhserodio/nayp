@@ -18,7 +18,6 @@
 
 .header-navegation {
   flex-grow: 2;
-  margin-right: -110px;
 }
 
 .header-info {
@@ -43,7 +42,7 @@
   justify-content: flex-end;
 }
 
-.search-box .form-inline {
+.search-box .form_inline {
   border: var(--border-focus);
   margin: var(--space-base) 0;
   color: black;
@@ -58,6 +57,12 @@
   display: inline-block;
 }
 
+@media (--screen-smalloff) {
+  .header-np .logo-np {
+    padding-right: 95px;
+  }
+}
+
 @media (--screen-small) {
 
   .header-np .container {
@@ -65,8 +70,8 @@
     flex-direction: row;
   }
 
-  .header-info,
-  .logo-np {
+  .header-np .header-info,
+  .header-np .logo-np {
     width: 50%;
   }
 

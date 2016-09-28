@@ -21,99 +21,102 @@
   width: 1.8em;
   height: 1.8em;
 }
-
-.icon-search {
+.icon._search {
   width: 0.9285703003406525em;
 }
 
-.icon-user {
+.icon._user {
   width: 0.785713866353035em;
 }
 
-.icon-cross {
+.icon._cross {
   width: 0.7857148498296738em;
 }
 
-.icon-tags {
+.icon._tags {
   width: 1.0597098506987095em;
 }
 
-.icon-warning {
+.icon._warning {
   width: 0.8571425080299377em;
 }
 
-.icon-info {
+.icon._info {
   width: 0.8571425080299377em;
 }
 
-.icon-plus {
+.icon._plus {
   width: 0.785714827477932em;
 }
 
-.icon-minus {
+.icon._minus {
   width: 0.7857138440012932em;
 }
 
-.icon-error {
+.icon._error {
   width: 0.8571425080299377em;
 }
 
-.icon-twitter {
+.icon._twitter {
   width: 0.9285703301429749em;
 }
 
-.icon-facebook {
+.icon._facebook {
   width: 0.5881709158420563em;
 }
 
-.icon-credit-card {
+.icon._credit-card {
   width: 1.0714279003441334em;
 }
 
-.icon-pinterest {
+.icon._pinterest {
   width: 0.8571387529373169em;
 }
 
-.icon-google-plus {
+.icon._google-plus {
   width: 1.285714939236641em;
 }
 
-.icon-envelope {
+.icon._envelope {
   width: 1.0000021047890186em;
 }
 
-.icon-comments-o {
+.icon._comments-o {
   width: 1.0000030547380447em;
 }
 
-.icon-left {
+.icon._left {
   width: 0.3750009909272194em;
 }
 
-.icon-right {
+.icon._right {
   width: 0.3392861280590296em;
 }
 
-.icon-up {
+.icon._up {
   width: 0.642861433327198em;
 }
 
-.icon-down {
+.icon._down {
   width: 0.6428574100136757em;
 }
 
-.icon-reply {
+.icon._reply {
   width: 1.0000029690563679em;
 }
 
-.icon-instagram {
+.icon._instagram {
   width: 0.8571425420232117em;
 }
 
-.icon-whatsapp {
+.icon._whatsapp {
   width: 0.8571445941925049em;
 }
 
-.icon-vimeo {
+.icon._vimeo {
   width: 1.0078124701976776em;
+}
+
+.icon._clip {
+  width: 0.7857148349285126em;
 }

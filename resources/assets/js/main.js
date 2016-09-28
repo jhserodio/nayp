@@ -8,4 +8,4 @@ import { cartPreview } from './components/cartPreview'
 // declaração carrinho
 cartPreview();
 
-slide();
+// slide();

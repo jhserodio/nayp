@@ -6,31 +6,21 @@ toggleDisplay("active-search");
 
 // dropdown function header
 
-var btnDropdown = document.querySelectorAll(".item-drop .btn-dropdown");
-var itemDropdown = document.querySelectorAll(".item-drop");
+var activeDropdown  = document.querySelectorAll(".item-drop");
+var removeDropdown  = document.querySelectorAll(".dropdown-back");
 var displayDropdown = document.querySelectorAll(".dropdown");
+var displayMenu     = document.querySelector(".megamenu .menu");
 
-function toggleDropdown( btn, item, display ) {
-  for ( let i = 0; i < item.length; i++ ) {
-    btn[i].addEventListener('click', () => {
-      // console.log(display[i]);
-      if ( item[i].classList.contains("active") ) {
-        for ( let j = 0; j < btn.length; j++ ) {
-          item[j].classList.remove('inactive');
-        }
-        display[i].classList.remove('active');
-        item[i].classList.remove("active");
-      } else {
-        for ( let j = 0; j < item.length; j++ ) {
-          if( btn[j] !== btn[i] ) {
-            item[j].classList.add('inactive');
-          }
-        }
-        display[i].classList.add('active');
-        item[i].classList.add("active");
-      }
-    })
+function showDropdown( active, display, menu ) {
+
+  for ( let i = 0; i < active.length; i++ ) {
+    active[i].addEventListener('click', (e) => {
+      e.preventDefault();
+      display[i].classList.add('active');
+      menu.classList.add('inactive');
+    });
   }
+
 }
 
-toggleDropdown(btnDropdown, itemDropdown, displayDropdown);
+showDropdown(activeDropdown, displayDropdown, displayMenu);

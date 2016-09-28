@@ -48,6 +48,11 @@ label {
   outline: none;
 }
 
+input[type="file"] {
+  white-space: normal;
+  word-wrap: break-word;
+}
+
 select option {
   color: black;
 }

@@ -13,12 +13,21 @@
 }
 
 .nav_tab li {
+  min-width: 25%;
   margin: 0;
   flex-grow: 1;
   text-align: center;
   border: var(--border-focus);
   box-sizing: border-box;
   border-left: none;
+}
+
+.nav_tab._tri li {
+  min-width: 33%;
+}
+
+.nav_tab._half li {
+  min-width: 50%;
 }
 
 .nav_tab li:first-child {
@@ -52,6 +61,9 @@
 
   .nav_tab li {
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .nav_tab li:nth-child(3) {
@@ -62,6 +74,13 @@
   .nav_tab li:last-child {
     border-top: 0;
   }
+
+  .nav_tab._half li {
+    min-width: 100%;
+    width: 100%;
+    border-left: var(--border-focus);
+  }
+
 
   .nav_tab a {
     padding: calc(var(--space-base)/2) 0;

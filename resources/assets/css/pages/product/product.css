@@ -113,11 +113,7 @@
   .product-actions {
     flex-direction: row;
     flex-wrap: wrap;
-  }
-
-  .product-actions > button {
-    width: 90px;
-    margin-right: calc(var(--space-base)/2);
+    width: 100%;
   }
 
   .product-actions .social-list {
@@ -144,4 +140,20 @@
     min-width: 100%;
     margin: var(--space-base) 0;
   }
+
+  .product-options .options-select {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .product-options .options-select select {
+    padding: var(--space-base);
+  }
+
+  .product-actions > button {
+    width: 100%;
+    padding: var(--space-large) 0;
+    margin-bottom: var(--space-large);
+  }
+
 }

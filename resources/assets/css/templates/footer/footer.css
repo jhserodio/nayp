@@ -85,7 +85,7 @@
     width: 100%;
   }
 
-  .footer-left .form-wrap .form-inline {
+  .footer-left .form-wrap .form_inline {
     margin-bottom: 0;
   }
 
@@ -103,8 +103,26 @@
     margin-left: 0;
   }
 
+  .footer-right .social-list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: var(--space-base) 0;
+  }
+
+  .footer-right,
+  .footer-right .info-footer {
+    width: 100%;
+  }
+  .footer-right button {
+    margin: var(--space-base) 0;
+    width: 100%;
+  }
+
   .footer-right address {
     margin: var(--space-base) 0;
+    width: 100%;
+    text-align: center;
   }
 
   /*menu info footer*/

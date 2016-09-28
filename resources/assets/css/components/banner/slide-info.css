@@ -3,7 +3,7 @@
   padding: 6%;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 160px;
+  min-height: 120px;
   position: absolute;
   left: 0;
   top: 0;
@@ -11,6 +11,8 @@
 
 .slide-info h2 {
   font-size: var(--size-small);
+  margin: 0;
+  line-height: normal;
 }
 
 .slide-info p {

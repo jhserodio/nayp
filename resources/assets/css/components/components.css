@@ -13,10 +13,12 @@ COMPONENTS
 
 /*BUTTONS*/
 @import 'buttons/buttons';
+@import 'buttons/buttons-mobile';
 
 /*MAIN MENU*/
 @import 'main_menu/nav_main';
 @import 'main_menu/megamenu';
+@import 'main_menu/dropdown';
 
 /*MENU*/
 @import 'menu/menu';
@@ -54,6 +56,9 @@ COMPONENTS
 @import 'menu/active';
 
 /*FORMS_WRAP*/
+@import 'form-wrap/form_control';
+@import 'form-wrap/form_inline';
+@import 'form-wrap/form_file';
 @import 'form-wrap/form_box';
 @import 'form-wrap/form_wrap';
 
@@ -72,6 +77,7 @@ COMPONENTS
 
 /*SIZE_MODE*/
 @import 'size_model/size_model';
+@import 'size_model/_marker';
 
 /*SOCIAL*/
 @import 'social/social-list';

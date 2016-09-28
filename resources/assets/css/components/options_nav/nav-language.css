@@ -43,12 +43,8 @@
   background: var(--gray-light)!important;
 }
 
-.nav-language li:--over .path1 {
-  border-color: var(--gray-light)!important;
-}
-
-.nav-language li:--over .path2 {
-  fill: var(--gray-light)!important;
+.nav-language li:--over svg {
+  fill: var(--gray-light);
 }
 
 .nav-language li:first-child {

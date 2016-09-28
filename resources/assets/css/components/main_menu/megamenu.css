@@ -2,11 +2,12 @@
   position: absolute;
   top: 90px;
   left: 0;
+  display: flex;
   background: white;
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
-  overflow: hidden;
+  overflow-x: hidden;
   transition: var(--transition-large);
   max-height: 0;
   opacity: 0;
@@ -16,6 +17,8 @@
 .megamenu.active {
   max-height: none;
   opacity: 1;
+  min-width: 100%;
+  overflow: visible;
 }
 
 .megamenu a:hover {
@@ -34,7 +37,6 @@
 
 .megamenu .menu > li {
   text-align: left;
-  display: inline-block;
   width: 100%;
 }
 
@@ -55,7 +57,7 @@
 @media (--screen-medium) {
 
   .megamenu {
-    background: linear-gradient(top, white 42px, var(--gray-light) calc(42px - 100%));
+    background: linear-gradient(to bottom, white 42px, var(--gray-light) 42px);
   }
 
   .app-navegation {
@@ -92,10 +94,6 @@
     width: 70%;
   }
 
-  .megamenu .dropdown {
-    margin-top: var(--space-large);
-  }
-
 }
 
 @media (--screen-mobile) {
@@ -106,71 +104,47 @@
 
   .megamenu .menu {
     line-height: 0;
+    background: white;
   }
 
   .megamenu .container {
     width: 100%;
-    max-width: 100%;
+    min-width: 100%;
     margin: 0;
   }
 
   .megamenu .menu > li {
-    position: relative;
     background: white;
     margin: 0;
     height: 40px;
-  }
-
-  .megamenu .item-drop.active button {
-    transform: rotateY(180deg);
   }
 
   .megamenu li:last-child {
     margin-bottom: 0;
   }
 
-  .megamenu .item-drop.inactive {
-    display: none;
+  .megamenu .menu {
+    transition: all 0.25s;
+    transition-timing-function: cubic-bezier(0.20,0.20,0.05,0.05);
+  }
+
+  .megamenu .menu.inactive {
+    margin-left: 100%;
   }
 
   .megamenu .btn-dropdown {
-    position: absolute;
     display: block;
-    top: 0;
-    right: 0;
-    font-size: var(--size-base);
     width: 40px;
     height: 40px;
   }
 
+  .megamenu .btn-dropdown svg {
+    width: 18px;
+    height: 18px;
+  }
+
   .megamenu .btn-dropdown:--over {
     color: black;
-  }
-
-  .megamenu .dropdown {
-    background: var(--gray-light);
-    transform: translateX(-100%);
-    overflow: hidden;
-    max-height: 0;
-    transition: transform 0.2s;
-  }
-
-  .megamenu .dropdown.active {
-    max-height: none;
-    transform: translateX(0);
-    transition: transform 0.4s;
-  }
-
-  .megamenu .dropdown li {
-    margin: 0;
-  }
-
-  .megamenu .dropdown li:first-child a {
-    padding-top: 10px;
-  }
-
-  .megamenu .dropdown li:last-child a {
-    padding-bottom: 10px;
   }
 
   .megamenu .menu a {
@@ -181,13 +155,6 @@
     display: flex;
     padding-left: 6%;
     box-sizing: border-box;
-  }
-
-  .megamenu .dropdown a {
-    height: 40px;
-    display: flex;
-    align-items: center;
-    padding-left: 6%;
   }
 
 }

@@ -1,0 +1,48 @@
+.form_file {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-base) 0;
+  font-size: var(--size-min);
+  text-transform: uppercase;
+}
+
+.form_file .file_descript {
+  max-width: 60%;
+}
+
+.form_file ._box {
+  position: fixed;
+  top: calc(50% - 100px);
+  left: calc(50% - 150px);
+  width: 300px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--gray-nude);
+  border: var(--border-form);
+  transition: opacity 0.2s ease;
+}
+
+.form_file ._box._hide {
+  opacity: 0;
+  max-height: 0;
+  padding: 0;
+}
+
+.form_file ._box._show {
+  opacity: 1;
+  max-height: none;
+  padding: calc(var(--space-base)*2);
+}
+
+@media (--screen-mobile) {
+  .form_file {
+    flex-wrap: wrap;
+  }
+
+  .form_file .file_descript {
+    margin-bottom: var(--space-base);
+  }
+}

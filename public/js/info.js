@@ -56,7 +56,7 @@
 
 	var _config = __webpack_require__(175);
 
-	var _app = __webpack_require__(244);
+	var _app = __webpack_require__(272);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -21454,17 +21454,53 @@
 
 	var _Faq2 = _interopRequireDefault(_Faq);
 
-	var _Order = __webpack_require__(241);
+	var _Help = __webpack_require__(241);
+
+	var _Help2 = _interopRequireDefault(_Help);
+
+	var _Switch = __webpack_require__(242);
+
+	var _Switch2 = _interopRequireDefault(_Switch);
+
+	var _Order = __webpack_require__(244);
 
 	var _Order2 = _interopRequireDefault(_Order);
 
-	var _Sizes = __webpack_require__(242);
+	var _Sizes = __webpack_require__(245);
 
 	var _Sizes2 = _interopRequireDefault(_Sizes);
 
-	var _Contact = __webpack_require__(243);
+	var _SizeTop = __webpack_require__(246);
+
+	var _SizeTop2 = _interopRequireDefault(_SizeTop);
+
+	var _SizeTop3 = __webpack_require__(247);
+
+	var _SizeTop4 = _interopRequireDefault(_SizeTop3);
+
+	var _SizeBottom = __webpack_require__(248);
+
+	var _SizeBottom2 = _interopRequireDefault(_SizeBottom);
+
+	var _SizeBottom3 = __webpack_require__(249);
+
+	var _SizeBottom4 = _interopRequireDefault(_SizeBottom3);
+
+	var _Contact = __webpack_require__(250);
 
 	var _Contact2 = _interopRequireDefault(_Contact);
+
+	var _Politic = __webpack_require__(269);
+
+	var _Politic2 = _interopRequireDefault(_Politic);
+
+	var _Terms = __webpack_require__(270);
+
+	var _Terms2 = _interopRequireDefault(_Terms);
+
+	var _Privacy = __webpack_require__(271);
+
+	var _Privacy2 = _interopRequireDefault(_Privacy);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -21492,11 +21528,29 @@
 	        _react2.default.createElement(
 	          _reactRouter.Route,
 	          { path: '/', component: this.props.main },
-	          _react2.default.createElement(_reactRouter.IndexRoute, { component: _Info2.default }),
-	          _react2.default.createElement(_reactRouter.Route, { path: '/faq', component: _Faq2.default }),
-	          _react2.default.createElement(_reactRouter.Route, { path: '/order', component: _Order2.default }),
-	          _react2.default.createElement(_reactRouter.Route, { path: '/sizes', component: _Sizes2.default }),
-	          _react2.default.createElement(_reactRouter.Route, { path: '/contact', component: _Contact2.default })
+	          _react2.default.createElement(_reactRouter.IndexRoute, { index: '1', component: _Info2.default }),
+	          _react2.default.createElement(
+	            _reactRouter.Route,
+	            { index: '2', path: '/help', component: _Help2.default },
+	            _react2.default.createElement(_reactRouter.IndexRoute, { component: _Faq2.default }),
+	            _react2.default.createElement(_reactRouter.Route, { path: '/switch', component: _Switch2.default }),
+	            _react2.default.createElement(_reactRouter.Route, { path: '/contact', component: _Contact2.default })
+	          ),
+	          _react2.default.createElement(_reactRouter.Route, { index: '3', path: '/order', component: _Order2.default }),
+	          _react2.default.createElement(
+	            _reactRouter.Route,
+	            { index: '4', path: '/sizes', component: _Sizes2.default },
+	            _react2.default.createElement(_reactRouter.IndexRoute, { component: _SizeTop2.default }),
+	            _react2.default.createElement(_reactRouter.Route, { path: '/top2', component: _SizeTop4.default }),
+	            _react2.default.createElement(_reactRouter.Route, { path: '/bottom', component: _SizeBottom2.default }),
+	            _react2.default.createElement(_reactRouter.Route, { path: '/bottom2', component: _SizeBottom4.default })
+	          ),
+	          _react2.default.createElement(
+	            _reactRouter.Route,
+	            { index: '5', path: '/politic', component: _Politic2.default },
+	            _react2.default.createElement(_reactRouter.IndexRoute, { component: _Terms2.default }),
+	            _react2.default.createElement(_reactRouter.Route, { path: '/privacy', component: _Privacy2.default })
+	          )
 	        )
 	      );
 	    }
@@ -27240,154 +27294,87 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        "div",
-	        { className: "info-np" },
+	        { className: "_content" },
+	        _react2.default.createElement(
+	          "h1",
+	          { className: "title-base" },
+	          "faq / perguntas frequentes"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "iste sed, dolores. Illo molestiae vitae repellat laudantium, rerum aut!"
+	        ),
 	        _react2.default.createElement(
 	          "div",
-	          { className: "container" },
-	          _react2.default.createElement(
-	            "h1",
-	            { className: "title-base" },
-	            "faq / perguntas frequentes"
-	          ),
-	          _react2.default.createElement(
-	            "p",
-	            null,
-	            "iste sed, dolores. Illo molestiae vitae repellat laudantium, rerum aut!"
-	          ),
+	          { className: "box-flexible" },
 	          _react2.default.createElement(
 	            "div",
-	            { className: "box-flexible" },
+	            { className: "flexible-item" },
 	            _react2.default.createElement(
 	              "div",
-	              { className: "flexible-item" },
+	              { className: "flexible-head" },
 	              _react2.default.createElement(
-	                "div",
-	                { className: "flexible-head" },
-	                _react2.default.createElement(
-	                  "span",
-	                  null,
-	                  "como efetuar um pagamento"
-	                ),
-	                _react2.default.createElement(
-	                  "button",
-	                  { className: "btn-icon" },
-	                  "v"
-	                )
+	                "span",
+	                null,
+	                "como efetuar um pagamento"
 	              ),
 	              _react2.default.createElement(
-	                "div",
-	                { className: "flexible-content" },
-	                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit quos minus quidem ratione porro sunt ex quae in aperiam, deleniti esse aliquam soluta, totam tenetur odit saepe vel quasi est?"
+	                "button",
+	                { className: "btn-icon" },
+	                "v"
 	              )
 	            ),
 	            _react2.default.createElement(
 	              "div",
-	              { className: "flexible-item" },
-	              _react2.default.createElement(
-	                "div",
-	                { className: "flexible-head" },
-	                _react2.default.createElement(
-	                  "span",
-	                  null,
-	                  "como efetuar um pagamento"
-	                ),
-	                _react2.default.createElement(
-	                  "button",
-	                  { className: "btn-icon" },
-	                  "v"
-	                )
-	              ),
-	              _react2.default.createElement(
-	                "div",
-	                { className: "flexible-content" },
-	                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit quos minus quidem ratione porro sunt ex quae in aperiam, deleniti esse aliquam soluta, totam tenetur odit saepe vel quasi est?"
-	              )
-	            ),
-	            _react2.default.createElement(
-	              "div",
-	              { className: "flexible-item" },
-	              _react2.default.createElement(
-	                "div",
-	                { className: "flexible-head" },
-	                _react2.default.createElement(
-	                  "span",
-	                  null,
-	                  "como efetuar um pagamento"
-	                ),
-	                _react2.default.createElement(
-	                  "button",
-	                  { className: "btn-icon" },
-	                  "v"
-	                )
-	              ),
-	              _react2.default.createElement(
-	                "div",
-	                { className: "flexible-content" },
-	                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit quos minus quidem ratione porro sunt ex quae in aperiam, deleniti esse aliquam soluta, totam tenetur odit saepe vel quasi est?"
-	              )
+	              { className: "flexible-content" },
+	              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit quos minus quidem ratione porro sunt ex quae in aperiam, deleniti esse aliquam soluta, totam tenetur odit saepe vel quasi est?"
 	            )
 	          ),
 	          _react2.default.createElement(
 	            "div",
-	            { className: "form-contatos" },
+	            { className: "flexible-item" },
 	            _react2.default.createElement(
-	              "form",
-	              null,
+	              "div",
+	              { className: "flexible-head" },
 	              _react2.default.createElement(
-	                "div",
-	                { className: "form-box" },
-	                _react2.default.createElement(
-	                  "label",
-	                  null,
-	                  "nome"
-	                ),
-	                _react2.default.createElement("input", { type: "email", placeholder: "por favor digite seu nome" })
+	                "span",
+	                null,
+	                "como efetuar um pagamento"
 	              ),
 	              _react2.default.createElement(
-	                "div",
-	                { className: "form-box" },
-	                _react2.default.createElement(
-	                  "label",
-	                  null,
-	                  "email"
-	                ),
-	                " ",
-	                _react2.default.createElement(
-	                  "span",
-	                  { className: "alert-error" },
-	                  " digite um email valido "
-	                ),
-	                _react2.default.createElement("input", { type: "email", placeholder: "por favor digite seu email" })
-	              ),
-	              _react2.default.createElement(
-	                "div",
-	                { className: "form-box" },
-	                _react2.default.createElement(
-	                  "label",
-	                  null,
-	                  "telefone"
-	                ),
-	                _react2.default.createElement("input", { type: "email", placeholder: "+00 (00) 0000-0000" })
-	              ),
-	              _react2.default.createElement(
-	                "div",
-	                { className: "form-box" },
-	                _react2.default.createElement(
-	                  "label",
-	                  null,
-	                  "mensagem"
-	                ),
-	                _react2.default.createElement("textarea", { name: "mensagem" })
-	              ),
-	              _react2.default.createElement(
-	                "div",
-	                { className: "form-control" },
-	                _react2.default.createElement(
-	                  "button",
-	                  { type: "submit", className: "btn-other" },
-	                  " ok "
-	                )
+	                "button",
+	                { className: "btn-icon" },
+	                "v"
 	              )
+	            ),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "flexible-content" },
+	              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit quos minus quidem ratione porro sunt ex quae in aperiam, deleniti esse aliquam soluta, totam tenetur odit saepe vel quasi est?"
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "flexible-item" },
+	            _react2.default.createElement(
+	              "div",
+	              { className: "flexible-head" },
+	              _react2.default.createElement(
+	                "span",
+	                null,
+	                "como efetuar um pagamento"
+	              ),
+	              _react2.default.createElement(
+	                "button",
+	                { className: "btn-icon" },
+	                "v"
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "flexible-content" },
+	              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit quos minus quidem ratione porro sunt ex quae in aperiam, deleniti esse aliquam soluta, totam tenetur odit saepe vel quasi est?"
 	            )
 	          )
 	        )
@@ -27402,6 +27389,340 @@
 
 /***/ },
 /* 241 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(176);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Help = function (_Component) {
+	  _inherits(Help, _Component);
+
+	  function Help() {
+	    _classCallCheck(this, Help);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Help).apply(this, arguments));
+	  }
+
+	  _createClass(Help, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'info-np' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'container' },
+	          _react2.default.createElement(
+	            'nav',
+	            { className: 'nav_tab _tri' },
+	            _react2.default.createElement(
+	              'ul',
+	              { className: 'reset' },
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                _react2.default.createElement(
+	                  _reactRouter.IndexLink,
+	                  { to: '/help' },
+	                  'Faq '
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                _react2.default.createElement(
+	                  _reactRouter.Link,
+	                  { to: '/switch' },
+	                  'trocas e devoluções'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                _react2.default.createElement(
+	                  _reactRouter.Link,
+	                  { to: '/contact' },
+	                  'contato'
+	                )
+	              )
+	            )
+	          ),
+	          this.props.children
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Help;
+	}(_react.Component);
+
+	exports.default = Help;
+
+/***/ },
+/* 242 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _FileIndex = __webpack_require__(243);
+
+	var _FileIndex2 = _interopRequireDefault(_FileIndex);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Switch = function (_Component) {
+	  _inherits(Switch, _Component);
+
+	  function Switch() {
+	    _classCallCheck(this, Switch);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Switch).apply(this, arguments));
+	  }
+
+	  _createClass(Switch, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        { className: '_content' },
+	        _react2.default.createElement(
+	          'h2',
+	          { className: 'title-base' },
+	          'trocas e devoluções'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'form_switch' },
+	          _react2.default.createElement(
+	            'form',
+	            null,
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'form_box' },
+	              _react2.default.createElement(
+	                'label',
+	                null,
+	                'nome completo*'
+	              ),
+	              _react2.default.createElement('input', { type: 'text', placeholder: 'por favor digite seu nome' })
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              null,
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'form_box _half' },
+	                _react2.default.createElement(
+	                  'label',
+	                  null,
+	                  'email*'
+	                ),
+	                _react2.default.createElement('input', { type: 'email', placeholder: 'por favor, digite seu email' })
+	              ),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'form_box _half' },
+	                _react2.default.createElement(
+	                  'label',
+	                  null,
+	                  'telefone',
+	                  _react2.default.createElement(
+	                    'small',
+	                    null,
+	                    '(opcional)'
+	                  )
+	                ),
+	                _react2.default.createElement('input', { type: 'tel', placeholder: 'por favor, digite seu email' })
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              null,
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'form_box _tri' },
+	                _react2.default.createElement(
+	                  'label',
+	                  null,
+	                  'cpf*'
+	                ),
+	                _react2.default.createElement('input', { type: 'number', placeholder: 'por favor, digite seu cpf' })
+	              ),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'form_box _tri' },
+	                _react2.default.createElement(
+	                  'label',
+	                  null,
+	                  'nº do pedido*'
+	                ),
+	                _react2.default.createElement('input', { type: 'number', placeholder: 'por favor, digite nº do pedido' })
+	              ),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'form_box _tri' },
+	                _react2.default.createElement(
+	                  'label',
+	                  null,
+	                  'código do produto*'
+	                ),
+	                _react2.default.createElement('input', { type: 'text', placeholder: 'por favor, digite o código do pedido' })
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'form_box _last' },
+	              _react2.default.createElement(
+	                'label',
+	                null,
+	                'motivo da troca*'
+	              ),
+	              _react2.default.createElement('textarea', {
+	                placeholder: 'por favor, digite o motivo pelo qual está solicitando a troca ou a devolução do seu pedido' })
+	            ),
+	            _react2.default.createElement(_FileIndex2.default, null),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'form_control' },
+	              _react2.default.createElement(
+	                'button',
+	                { type: 'submit', className: 'btn-other' },
+	                ' ok '
+	              )
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Switch;
+	}(_react.Component);
+
+	exports.default = Switch;
+
+/***/ },
+/* 243 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var FileIndex = function (_Component) {
+	  _inherits(FileIndex, _Component);
+
+	  function FileIndex() {
+	    _classCallCheck(this, FileIndex);
+
+	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(FileIndex).call(this));
+
+	    _this.state = { file: "_hide" };
+	    return _this;
+	  }
+
+	  _createClass(FileIndex, [{
+	    key: "callFile",
+	    value: function callFile(e) {
+	      e.preventDefault();
+	      if (this.state.file === "_hide") {
+	        this.setState({ file: "_show" });
+	      } else {
+	        this.setState({ file: "_hide" });
+	      }
+	    }
+	  }, {
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        { className: "form_file" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "file_descript" },
+	          "se julga necessário, anexe uma imagem para ajudar a ilustrar o motivo da troca ou devolução do seu produto"
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "file_input" },
+	          _react2.default.createElement(
+	            "button",
+	            { onClick: this.callFile.bind(this) },
+	            "o anexar arquivo"
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "_box " + this.state.file },
+	            _react2.default.createElement("input", { type: "file" })
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return FileIndex;
+	}(_react.Component);
+
+	exports.default = FileIndex;
+
+/***/ },
+/* 244 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -27447,6 +27768,7 @@
 	            { className: "title-base" },
 	            "consulte o status do seu pedido"
 	          ),
+	          _react2.default.createElement("br", null),
 	          _react2.default.createElement(
 	            "div",
 	            { className: "form-status-pedido" },
@@ -27455,7 +27777,7 @@
 	              null,
 	              _react2.default.createElement(
 	                "div",
-	                { className: "form-box" },
+	                { className: "form_box" },
 	                _react2.default.createElement(
 	                  "label",
 	                  null,
@@ -27471,7 +27793,7 @@
 	              ),
 	              _react2.default.createElement(
 	                "div",
-	                { className: "form-box" },
+	                { className: "form_box" },
 	                _react2.default.createElement(
 	                  "label",
 	                  null,
@@ -27481,7 +27803,7 @@
 	              ),
 	              _react2.default.createElement(
 	                "div",
-	                { className: "form-control" },
+	                { className: "form_control" },
 	                _react2.default.createElement(
 	                  "button",
 	                  { type: "submit", className: "btn-other" },
@@ -27516,10 +27838,10 @@
 	exports.default = Order;
 
 /***/ },
-/* 242 */
+/* 245 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -27530,6 +27852,8 @@
 	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(176);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27549,380 +27873,100 @@
 	  }
 
 	  _createClass(Sizes, [{
-	    key: "render",
+	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
-	        "div",
-	        { className: "info-np" },
+	        'div',
+	        { className: 'info-np' },
 	        _react2.default.createElement(
-	          "div",
-	          { className: "container" },
+	          'div',
+	          { className: 'container' },
 	          _react2.default.createElement(
-	            "nav",
-	            { className: "nav_tab" },
+	            'nav',
+	            { className: 'nav_tab' },
 	            _react2.default.createElement(
-	              "ul",
-	              { className: "reset" },
+	              'ul',
+	              { className: 'reset' },
 	              _react2.default.createElement(
-	                "li",
+	                'li',
 	                null,
 	                _react2.default.createElement(
-	                  "a",
-	                  { className: "active", href: "#" },
-	                  "men's top"
+	                  _reactRouter.IndexLink,
+	                  { to: '/sizes' },
+	                  'men\'s top'
 	                )
 	              ),
 	              _react2.default.createElement(
-	                "li",
+	                'li',
 	                null,
 	                _react2.default.createElement(
-	                  "a",
-	                  { href: "#" },
-	                  "men's bottoms"
+	                  _reactRouter.Link,
+	                  { to: 'bottom' },
+	                  'men\'s bottoms'
 	                )
 	              ),
 	              _react2.default.createElement(
-	                "li",
+	                'li',
 	                null,
 	                _react2.default.createElement(
-	                  "a",
-	                  { href: "#" },
-	                  "women's top"
+	                  _reactRouter.Link,
+	                  { to: '/top2' },
+	                  'women\'s top'
 	                )
 	              ),
 	              _react2.default.createElement(
-	                "li",
+	                'li',
 	                null,
 	                _react2.default.createElement(
-	                  "a",
-	                  { href: "#" },
-	                  "women's bottom"
+	                  _reactRouter.Link,
+	                  { to: '/bottom2' },
+	                  'women\'s bottom'
 	                )
 	              )
 	            )
 	          ),
+	          this.props.children,
 	          _react2.default.createElement(
-	            "div",
-	            { className: "size_model" },
-	            _react2.default.createElement(
-	              "h2",
-	              { className: "title-base" },
-	              "1º passo / ",
-	              _react2.default.createElement("br", null),
-	              "medidas"
-	            ),
-	            _react2.default.createElement(
-	              "div",
-	              { className: "_content" },
-	              _react2.default.createElement(
-	                "div",
-	                { className: "_image" },
-	                _react2.default.createElement("img", { src: "public/img/manequin.png", alt: "" })
-	              ),
-	              _react2.default.createElement(
-	                "ul",
-	                { className: "_menu" },
-	                _react2.default.createElement(
-	                  "li",
-	                  null,
-	                  _react2.default.createElement(
-	                    "p",
-	                    null,
-	                    _react2.default.createElement(
-	                      "strong",
-	                      null,
-	                      "A. PEITO"
-	                    ),
-	                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-	                  ),
-	                  _react2.default.createElement(
-	                    "span",
-	                    { className: "_marker _a" },
-	                    "a"
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  "li",
-	                  null,
-	                  _react2.default.createElement(
-	                    "p",
-	                    null,
-	                    _react2.default.createElement(
-	                      "strong",
-	                      null,
-	                      "B. ALTURA DO TRONCO"
-	                    ),
-	                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-	                  ),
-	                  _react2.default.createElement(
-	                    "span",
-	                    { className: "_marker _b" },
-	                    "b"
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  "li",
-	                  null,
-	                  _react2.default.createElement(
-	                    "p",
-	                    null,
-	                    _react2.default.createElement(
-	                      "strong",
-	                      null,
-	                      "C. MEDIDA DO BRAÇO"
-	                    ),
-	                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-	                  ),
-	                  _react2.default.createElement(
-	                    "span",
-	                    { className: "_marker _c" },
-	                    "c"
-	                  )
-	                )
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            "h2",
-	            { className: "title-base" },
-	            "2º passo / ",
-	            _react2.default.createElement("br", null),
-	            "encontre o tamanho certo"
-	          ),
-	          _react2.default.createElement(
-	            "table",
-	            { className: "size_table" },
-	            _react2.default.createElement(
-	              "thead",
-	              null,
-	              _react2.default.createElement(
-	                "tr",
-	                null,
-	                _react2.default.createElement(
-	                  "th",
-	                  null,
-	                  "Medidas",
-	                  _react2.default.createElement("br", null),
-	                  "em cm"
-	                ),
-	                _react2.default.createElement(
-	                  "th",
-	                  null,
-	                  "a.",
-	                  _react2.default.createElement("br", null),
-	                  "peito",
-	                  _react2.default.createElement("br", null)
-	                ),
-	                _react2.default.createElement(
-	                  "th",
-	                  null,
-	                  "b.",
-	                  _react2.default.createElement("br", null),
-	                  "autura do",
-	                  _react2.default.createElement("br", null),
-	                  "tronco"
-	                ),
-	                _react2.default.createElement(
-	                  "th",
-	                  null,
-	                  "c.",
-	                  _react2.default.createElement("br", null),
-	                  "medida do",
-	                  _react2.default.createElement("br", null),
-	                  "braço"
-	                )
-	              )
-	            ),
-	            _react2.default.createElement(
-	              "tbody",
-	              null,
-	              _react2.default.createElement(
-	                "tr",
-	                null,
-	                _react2.default.createElement(
-	                  "td",
-	                  null,
-	                  "xp"
-	                ),
-	                _react2.default.createElement(
-	                  "td",
-	                  null,
-	                  "74 - 81"
-	                ),
-	                _react2.default.createElement(
-	                  "td",
-	                  null,
-	                  "82 - 89"
-	                ),
-	                _react2.default.createElement(
-	                  "td",
-	                  null,
-	                  "90 - 98"
-	                )
-	              ),
-	              _react2.default.createElement(
-	                "tr",
-	                null,
-	                _react2.default.createElement(
-	                  "td",
-	                  null,
-	                  "p"
-	                ),
-	                _react2.default.createElement(
-	                  "td",
-	                  null,
-	                  "74-81"
-	                ),
-	                _react2.default.createElement(
-	                  "td",
-	                  null,
-	                  "82-89"
-	                ),
-	                _react2.default.createElement(
-	                  "td",
-	                  null,
-	                  "90-98"
-	                )
-	              ),
-	              _react2.default.createElement(
-	                "tr",
-	                null,
-	                _react2.default.createElement(
-	                  "td",
-	                  null,
-	                  "m"
-	                ),
-	                _react2.default.createElement(
-	                  "td",
-	                  null,
-	                  "74-81"
-	                ),
-	                _react2.default.createElement(
-	                  "td",
-	                  null,
-	                  "82-89"
-	                ),
-	                _react2.default.createElement(
-	                  "td",
-	                  null,
-	                  "90-98"
-	                )
-	              ),
-	              _react2.default.createElement(
-	                "tr",
-	                null,
-	                _react2.default.createElement(
-	                  "td",
-	                  null,
-	                  "g"
-	                ),
-	                _react2.default.createElement(
-	                  "td",
-	                  null,
-	                  "74-81"
-	                ),
-	                _react2.default.createElement(
-	                  "td",
-	                  null,
-	                  "82-89"
-	                ),
-	                _react2.default.createElement(
-	                  "td",
-	                  null,
-	                  "90-98"
-	                )
-	              ),
-	              _react2.default.createElement(
-	                "tr",
-	                null,
-	                _react2.default.createElement(
-	                  "td",
-	                  null,
-	                  "xg"
-	                ),
-	                _react2.default.createElement(
-	                  "td",
-	                  null,
-	                  "74-81"
-	                ),
-	                _react2.default.createElement(
-	                  "td",
-	                  null,
-	                  "82-89"
-	                ),
-	                _react2.default.createElement(
-	                  "td",
-	                  null,
-	                  "90-98"
-	                )
-	              ),
-	              _react2.default.createElement(
-	                "tr",
-	                null,
-	                _react2.default.createElement(
-	                  "td",
-	                  null,
-	                  "xxg"
-	                ),
-	                _react2.default.createElement(
-	                  "td",
-	                  null,
-	                  "74-81"
-	                ),
-	                _react2.default.createElement(
-	                  "td",
-	                  null,
-	                  "82-89"
-	                ),
-	                _react2.default.createElement(
-	                  "td",
-	                  null,
-	                  "90-98"
-	                )
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            "div",
+	            'div',
 	            null,
 	            _react2.default.createElement(
-	              "div",
-	              { className: "info-content" },
+	              'div',
+	              { className: 'info-content' },
 	              _react2.default.createElement(
-	                "p",
+	                'p',
 	                null,
-	                "- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur fuga quisquam assumenda et est officia, quaerat illum eius, ipsum quas iste corporis pariatur reiciendis distinctio repudiandae"
+	                '- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur fuga quisquam assumenda et est officia, quaerat illum eius, ipsum quas iste corporis pariatur reiciendis distinctio repudiandae'
 	              ),
 	              _react2.default.createElement(
-	                "p",
+	                'p',
 	                null,
-	                "- quaerat illum eius, ipsum quas iste corporis pariatur reiciendis distinctio repudiandae voluptate odio voluptatibus neque."
+	                '- quaerat illum eius, ipsum quas iste corporis pariatur reiciendis distinctio repudiandae voluptate odio voluptatibus neque.'
 	              ),
 	              _react2.default.createElement(
-	                "p",
+	                'p',
 	                null,
-	                "- ing elit. Tenetur fuga quisquam assumenda et est officia, quaerat illum eius, ipsum quas iste corporis pariatur reiciendis distinctio"
+	                '- ing elit. Tenetur fuga quisquam assumenda et est officia, quaerat illum eius, ipsum quas iste corporis pariatur reiciendis distinctio'
 	              )
 	            ),
 	            _react2.default.createElement(
-	              "h2",
-	              { className: "title-base" },
-	              "dúvidas?"
+	              'h2',
+	              { className: 'title-base' },
+	              'dúvidas?'
 	            ),
 	            _react2.default.createElement(
-	              "small",
+	              'small',
 	              null,
-	              "quaerat illum eius, ipsum quas iste corporis pariatur reiciendis distinctio repudiandae voluptate odio voluptatibus neque."
+	              'quaerat illum eius, ipsum quas iste corporis pariatur reiciendis distinctio repudiandae voluptate odio voluptatibus neque.'
 	            ),
-	            _react2.default.createElement("br", null),
-	            _react2.default.createElement("br", null),
+	            _react2.default.createElement('br', null),
+	            _react2.default.createElement('br', null),
 	            _react2.default.createElement(
-	              "a",
-	              { href: "#", className: "reset" },
+	              'a',
+	              { href: '#', className: 'reset' },
 	              _react2.default.createElement(
-	                "button",
-	                { className: "btn-full" },
-	                "clique aqui e fale conosco"
+	                'button',
+	                { className: 'btn-full' },
+	                'clique aqui e fale conosco'
 	              )
 	            )
 	          )
@@ -27937,7 +27981,7 @@
 	exports.default = Sizes;
 
 /***/ },
-/* 243 */
+/* 246 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -27960,6 +28004,1372 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+	var SizeTop = function (_Component) {
+	  _inherits(SizeTop, _Component);
+
+	  function SizeTop() {
+	    _classCallCheck(this, SizeTop);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(SizeTop).apply(this, arguments));
+	  }
+
+	  _createClass(SizeTop, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        null,
+	        _react2.default.createElement(
+	          "div",
+	          { className: "size_model" },
+	          _react2.default.createElement(
+	            "h2",
+	            { className: "title-base" },
+	            "1º passo / ",
+	            _react2.default.createElement("br", null),
+	            "medidas"
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "_content _top-masc" },
+	            _react2.default.createElement(
+	              "div",
+	              { className: "_image" },
+	              _react2.default.createElement("img", { src: "public/img/size-top1.png", alt: "" })
+	            ),
+	            _react2.default.createElement(
+	              "ul",
+	              { className: "_menu" },
+	              _react2.default.createElement(
+	                "li",
+	                null,
+	                _react2.default.createElement(
+	                  "p",
+	                  null,
+	                  _react2.default.createElement(
+	                    "strong",
+	                    null,
+	                    "A. PEITO"
+	                  ),
+	                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+	                ),
+	                _react2.default.createElement(
+	                  "span",
+	                  { className: "_marker _a" },
+	                  "a"
+	                )
+	              ),
+	              _react2.default.createElement(
+	                "li",
+	                null,
+	                _react2.default.createElement(
+	                  "p",
+	                  null,
+	                  _react2.default.createElement(
+	                    "strong",
+	                    null,
+	                    "B. ALTURA DO TRONCO"
+	                  ),
+	                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+	                ),
+	                _react2.default.createElement(
+	                  "span",
+	                  { className: "_marker _b" },
+	                  "b"
+	                )
+	              ),
+	              _react2.default.createElement(
+	                "li",
+	                null,
+	                _react2.default.createElement(
+	                  "p",
+	                  null,
+	                  _react2.default.createElement(
+	                    "strong",
+	                    null,
+	                    "C. MEDIDA DO BRAÇO"
+	                  ),
+	                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+	                ),
+	                _react2.default.createElement(
+	                  "span",
+	                  { className: "_marker _c" },
+	                  "c"
+	                )
+	              )
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "h2",
+	          { className: "title-base" },
+	          "2º passo / ",
+	          _react2.default.createElement("br", null),
+	          "encontre o tamanho certo"
+	        ),
+	        _react2.default.createElement(
+	          "table",
+	          { className: "size_table" },
+	          _react2.default.createElement(
+	            "thead",
+	            null,
+	            _react2.default.createElement(
+	              "tr",
+	              null,
+	              _react2.default.createElement(
+	                "th",
+	                null,
+	                "Medidas",
+	                _react2.default.createElement("br", null),
+	                "em cm"
+	              ),
+	              _react2.default.createElement(
+	                "th",
+	                null,
+	                "a.",
+	                _react2.default.createElement("br", null),
+	                "peito",
+	                _react2.default.createElement("br", null)
+	              ),
+	              _react2.default.createElement(
+	                "th",
+	                null,
+	                "b.",
+	                _react2.default.createElement("br", null),
+	                "autura do",
+	                _react2.default.createElement("br", null),
+	                "tronco"
+	              ),
+	              _react2.default.createElement(
+	                "th",
+	                null,
+	                "c.",
+	                _react2.default.createElement("br", null),
+	                "medida do",
+	                _react2.default.createElement("br", null),
+	                "braço"
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "tbody",
+	            null,
+	            _react2.default.createElement(
+	              "tr",
+	              null,
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "xp"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "74 - 81"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "82 - 89"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "90 - 98"
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "tr",
+	              null,
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "p"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "74-81"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "82-89"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "90-98"
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "tr",
+	              null,
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "m"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "74-81"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "82-89"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "90-98"
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "tr",
+	              null,
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "g"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "74-81"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "82-89"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "90-98"
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "tr",
+	              null,
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "xg"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "74-81"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "82-89"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "90-98"
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "tr",
+	              null,
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "xxg"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "74-81"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "82-89"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "90-98"
+	              )
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return SizeTop;
+	}(_react.Component);
+
+	exports.default = SizeTop;
+
+/***/ },
+/* 247 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var SizeTop2 = function (_Component) {
+	  _inherits(SizeTop2, _Component);
+
+	  function SizeTop2() {
+	    _classCallCheck(this, SizeTop2);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(SizeTop2).apply(this, arguments));
+	  }
+
+	  _createClass(SizeTop2, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        null,
+	        _react2.default.createElement(
+	          "div",
+	          { className: "size_model" },
+	          _react2.default.createElement(
+	            "h2",
+	            { className: "title-base" },
+	            "1º passo / ",
+	            _react2.default.createElement("br", null),
+	            "medidas"
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "_content _top-fem" },
+	            _react2.default.createElement(
+	              "div",
+	              { className: "_image" },
+	              _react2.default.createElement("img", { src: "public/img/size-top2.png", alt: "" })
+	            ),
+	            _react2.default.createElement(
+	              "ul",
+	              { className: "_menu" },
+	              _react2.default.createElement(
+	                "li",
+	                null,
+	                _react2.default.createElement(
+	                  "p",
+	                  null,
+	                  _react2.default.createElement(
+	                    "strong",
+	                    null,
+	                    "A. PEITO"
+	                  ),
+	                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+	                ),
+	                _react2.default.createElement(
+	                  "span",
+	                  { className: "_marker _a" },
+	                  "a"
+	                )
+	              ),
+	              _react2.default.createElement(
+	                "li",
+	                null,
+	                _react2.default.createElement(
+	                  "p",
+	                  null,
+	                  _react2.default.createElement(
+	                    "strong",
+	                    null,
+	                    "B. ALTURA DO TRONCO"
+	                  ),
+	                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+	                ),
+	                _react2.default.createElement(
+	                  "span",
+	                  { className: "_marker _b" },
+	                  "b"
+	                )
+	              ),
+	              _react2.default.createElement(
+	                "li",
+	                null,
+	                _react2.default.createElement(
+	                  "p",
+	                  null,
+	                  _react2.default.createElement(
+	                    "strong",
+	                    null,
+	                    "C. MEDIDA DO BRAÇO"
+	                  ),
+	                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+	                ),
+	                _react2.default.createElement(
+	                  "span",
+	                  { className: "_marker _c" },
+	                  "c"
+	                )
+	              )
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "h2",
+	          { className: "title-base" },
+	          "2º passo / ",
+	          _react2.default.createElement("br", null),
+	          "encontre o tamanho certo"
+	        ),
+	        _react2.default.createElement(
+	          "table",
+	          { className: "size_table" },
+	          _react2.default.createElement(
+	            "thead",
+	            null,
+	            _react2.default.createElement(
+	              "tr",
+	              null,
+	              _react2.default.createElement(
+	                "th",
+	                null,
+	                "Medidas",
+	                _react2.default.createElement("br", null),
+	                "em cm"
+	              ),
+	              _react2.default.createElement(
+	                "th",
+	                null,
+	                "a.",
+	                _react2.default.createElement("br", null),
+	                "peito",
+	                _react2.default.createElement("br", null)
+	              ),
+	              _react2.default.createElement(
+	                "th",
+	                null,
+	                "b.",
+	                _react2.default.createElement("br", null),
+	                "autura do",
+	                _react2.default.createElement("br", null),
+	                "tronco"
+	              ),
+	              _react2.default.createElement(
+	                "th",
+	                null,
+	                "c.",
+	                _react2.default.createElement("br", null),
+	                "medida do",
+	                _react2.default.createElement("br", null),
+	                "braço"
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "tbody",
+	            null,
+	            _react2.default.createElement(
+	              "tr",
+	              null,
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "xp"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "74 - 81"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "82 - 89"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "90 - 98"
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "tr",
+	              null,
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "p"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "74-81"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "82-89"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "90-98"
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "tr",
+	              null,
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "m"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "74-81"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "82-89"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "90-98"
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "tr",
+	              null,
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "g"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "74-81"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "82-89"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "90-98"
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "tr",
+	              null,
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "xg"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "74-81"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "82-89"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "90-98"
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "tr",
+	              null,
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "xxg"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "74-81"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "82-89"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "90-98"
+	              )
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return SizeTop2;
+	}(_react.Component);
+
+	exports.default = SizeTop2;
+
+/***/ },
+/* 248 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var SizeBottom = function (_Component) {
+	  _inherits(SizeBottom, _Component);
+
+	  function SizeBottom() {
+	    _classCallCheck(this, SizeBottom);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(SizeBottom).apply(this, arguments));
+	  }
+
+	  _createClass(SizeBottom, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        null,
+	        _react2.default.createElement(
+	          "div",
+	          { className: "size_model" },
+	          _react2.default.createElement(
+	            "h2",
+	            { className: "title-base" },
+	            "1º passo / ",
+	            _react2.default.createElement("br", null),
+	            "medidas"
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "_content _bottom-masc" },
+	            _react2.default.createElement(
+	              "div",
+	              { className: "_image" },
+	              _react2.default.createElement("img", { src: "public/img/size-bottom1.png", alt: "" })
+	            ),
+	            _react2.default.createElement(
+	              "ul",
+	              { className: "_menu _half" },
+	              _react2.default.createElement(
+	                "li",
+	                null,
+	                _react2.default.createElement(
+	                  "p",
+	                  null,
+	                  _react2.default.createElement(
+	                    "strong",
+	                    null,
+	                    "A. PEITO"
+	                  ),
+	                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+	                ),
+	                _react2.default.createElement(
+	                  "span",
+	                  { className: "_marker _a" },
+	                  "a"
+	                )
+	              ),
+	              _react2.default.createElement(
+	                "li",
+	                null,
+	                _react2.default.createElement(
+	                  "p",
+	                  null,
+	                  _react2.default.createElement(
+	                    "strong",
+	                    null,
+	                    "B. ALTURA DO TRONCO"
+	                  ),
+	                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+	                ),
+	                _react2.default.createElement(
+	                  "span",
+	                  { className: "_marker _b" },
+	                  "b"
+	                )
+	              )
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "h2",
+	          { className: "title-base" },
+	          "2º passo / ",
+	          _react2.default.createElement("br", null),
+	          "encontre o tamanho certo"
+	        ),
+	        _react2.default.createElement(
+	          "table",
+	          { className: "size_table _bottom" },
+	          _react2.default.createElement(
+	            "thead",
+	            null,
+	            _react2.default.createElement(
+	              "tr",
+	              null,
+	              _react2.default.createElement(
+	                "th",
+	                null,
+	                "Medidas",
+	                _react2.default.createElement("br", null),
+	                "em cm"
+	              ),
+	              _react2.default.createElement(
+	                "th",
+	                null,
+	                "b.",
+	                _react2.default.createElement("br", null),
+	                "autura do",
+	                _react2.default.createElement("br", null),
+	                "tronco"
+	              ),
+	              _react2.default.createElement(
+	                "th",
+	                null,
+	                "c.",
+	                _react2.default.createElement("br", null),
+	                "medida do",
+	                _react2.default.createElement("br", null),
+	                "braço"
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "tbody",
+	            null,
+	            _react2.default.createElement(
+	              "tr",
+	              null,
+	              _react2.default.createElement(
+	                "td",
+	                { colSpan: "3" },
+	                "tamanhos numericos"
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "tr",
+	              null,
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "36"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "82 - 89"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "90 - 98"
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "tr",
+	              null,
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "38"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "82-89"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "90-98"
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "tr",
+	              null,
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "40"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "82-89"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "90-98"
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "tr",
+	              null,
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "42"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "82-89"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "90-98"
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "tr",
+	              null,
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "44"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "82-89"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "90-98"
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "tr",
+	              null,
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "46"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "82-89"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "90-98"
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "tr",
+	              null,
+	              _react2.default.createElement(
+	                "td",
+	                { colSpan: "3" },
+	                "tamanhos nominais",
+	                _react2.default.createElement(
+	                  "small",
+	                  null,
+	                  "  (peças com ajustes de cordão e/ou elástico na cintura)"
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "tr",
+	              null,
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "p"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "82-89"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "90-98"
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "tr",
+	              null,
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "m"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "82-89"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "90-98"
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "tr",
+	              null,
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "g"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "82-89"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "90-98"
+	              )
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return SizeBottom;
+	}(_react.Component);
+
+	exports.default = SizeBottom;
+
+/***/ },
+/* 249 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var SizeBottom2 = function (_Component) {
+	  _inherits(SizeBottom2, _Component);
+
+	  function SizeBottom2() {
+	    _classCallCheck(this, SizeBottom2);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(SizeBottom2).apply(this, arguments));
+	  }
+
+	  _createClass(SizeBottom2, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        null,
+	        _react2.default.createElement(
+	          "div",
+	          { className: "size_model" },
+	          _react2.default.createElement(
+	            "h2",
+	            { className: "title-base" },
+	            "1º passo / ",
+	            _react2.default.createElement("br", null),
+	            "medidas"
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "_content _bottom-fem" },
+	            _react2.default.createElement(
+	              "div",
+	              { className: "_image" },
+	              _react2.default.createElement("img", { src: "public/img/size-bottom2.png", alt: "" })
+	            ),
+	            _react2.default.createElement(
+	              "ul",
+	              { className: "_menu _half" },
+	              _react2.default.createElement(
+	                "li",
+	                null,
+	                _react2.default.createElement(
+	                  "p",
+	                  null,
+	                  _react2.default.createElement(
+	                    "strong",
+	                    null,
+	                    "A. PEITO"
+	                  ),
+	                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+	                ),
+	                _react2.default.createElement(
+	                  "span",
+	                  { className: "_marker _a" },
+	                  "a"
+	                )
+	              ),
+	              _react2.default.createElement(
+	                "li",
+	                null,
+	                _react2.default.createElement(
+	                  "p",
+	                  null,
+	                  _react2.default.createElement(
+	                    "strong",
+	                    null,
+	                    "B. ALTURA DO TRONCO"
+	                  ),
+	                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+	                ),
+	                _react2.default.createElement(
+	                  "span",
+	                  { className: "_marker _b" },
+	                  "b"
+	                )
+	              )
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "h2",
+	          { className: "title-base" },
+	          "2º passo / ",
+	          _react2.default.createElement("br", null),
+	          "encontre o tamanho certo"
+	        ),
+	        _react2.default.createElement(
+	          "table",
+	          { className: "size_table _bottom" },
+	          _react2.default.createElement(
+	            "thead",
+	            null,
+	            _react2.default.createElement(
+	              "tr",
+	              null,
+	              _react2.default.createElement(
+	                "th",
+	                null,
+	                "Medidas",
+	                _react2.default.createElement("br", null),
+	                "em cm"
+	              ),
+	              _react2.default.createElement(
+	                "th",
+	                null,
+	                "b.",
+	                _react2.default.createElement("br", null),
+	                "autura do",
+	                _react2.default.createElement("br", null),
+	                "tronco"
+	              ),
+	              _react2.default.createElement(
+	                "th",
+	                null,
+	                "c.",
+	                _react2.default.createElement("br", null),
+	                "medida do",
+	                _react2.default.createElement("br", null),
+	                "braço"
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "tbody",
+	            null,
+	            _react2.default.createElement(
+	              "tr",
+	              null,
+	              _react2.default.createElement(
+	                "td",
+	                { colSpan: "3" },
+	                "tamanhos numericos"
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "tr",
+	              null,
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "36"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "82 - 89"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "90 - 98"
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "tr",
+	              null,
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "38"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "82-89"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "90-98"
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "tr",
+	              null,
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "40"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "82-89"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "90-98"
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "tr",
+	              null,
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "42"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "82-89"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "90-98"
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "tr",
+	              null,
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "44"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "82-89"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "90-98"
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "tr",
+	              null,
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "46"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "82-89"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "90-98"
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "tr",
+	              null,
+	              _react2.default.createElement(
+	                "td",
+	                { colSpan: "3" },
+	                "tamanhos nominais",
+	                _react2.default.createElement(
+	                  "small",
+	                  null,
+	                  "  (peças com ajustes de cordão e/ou elástico na cintura)"
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "tr",
+	              null,
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "p"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "82-89"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "90-98"
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "tr",
+	              null,
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "m"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "82-89"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "90-98"
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "tr",
+	              null,
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "g"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "82-89"
+	              ),
+	              _react2.default.createElement(
+	                "td",
+	                null,
+	                "90-98"
+	              )
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return SizeBottom2;
+	}(_react.Component);
+
+	exports.default = SizeBottom2;
+
+/***/ },
+/* 250 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _GoogleMaps = __webpack_require__(251);
+
+	var _GoogleMaps2 = _interopRequireDefault(_GoogleMaps);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 	var Contact = function (_Component) {
 	  _inherits(Contact, _Component);
 
@@ -27970,105 +29380,134 @@
 	  }
 
 	  _createClass(Contact, [{
-	    key: "render",
+	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
-	        "div",
-	        { className: "info-np" },
+	        'div',
+	        { className: '_content' },
 	        _react2.default.createElement(
-	          "div",
-	          { className: "container" },
+	          'div',
+	          { className: 'capitalize' },
 	          _react2.default.createElement(
-	            "h1",
-	            { className: "title-base" },
-	            "Contato"
+	            'p',
+	            null,
+	            'para outras informações, envie sua mensagem através do formulário, que responderemos brevemente.'
 	          ),
-	          _react2.default.createElement("br", null),
-	          _react2.default.createElement("br", null),
 	          _react2.default.createElement(
-	            "p",
+	            'p',
+	            null,
+	            'horários de atendimento online: ',
+	            _react2.default.createElement('br', null),
+	            _react2.default.createElement(
+	              'span',
+	              null,
+	              'segunda-feira - sexta-feira: 9:00 AM - 9:00 PM (UTC-03:00 / brasília)'
+	            ),
+	            _react2.default.createElement('br', null),
+	            _react2.default.createElement(
+	              'span',
+	              null,
+	              'sábado - domingo: 9:00 AM - 4:00 PM (UTC-03:00 / brasília)'
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'form-contatos' },
+	          _react2.default.createElement(
+	            'form',
 	            null,
 	            _react2.default.createElement(
-	              "strong",
-	              null,
-	              "email: "
+	              'div',
+	              { className: 'form_box' },
+	              _react2.default.createElement(
+	                'label',
+	                null,
+	                'nome'
+	              ),
+	              _react2.default.createElement('input', { type: 'email', placeholder: 'por favor digite seu nome' })
 	            ),
-	            "email@contato.com.br"
-	          ),
-	          _react2.default.createElement(
-	            "p",
-	            null,
 	            _react2.default.createElement(
-	              "strong",
-	              null,
-	              "telefone: "
+	              'div',
+	              { className: 'form_box' },
+	              _react2.default.createElement(
+	                'label',
+	                null,
+	                'email'
+	              ),
+	              ' ',
+	              _react2.default.createElement(
+	                'span',
+	                { className: 'alert-error' },
+	                ' digite um email valido '
+	              ),
+	              _react2.default.createElement('input', { type: 'email', placeholder: 'por favor digite seu email' })
 	            ),
-	            "+55 (41) 9999-9999"
-	          ),
-	          _react2.default.createElement(
-	            "div",
-	            { className: "form-contatos" },
 	            _react2.default.createElement(
-	              "form",
-	              null,
+	              'div',
+	              { className: 'form_box' },
 	              _react2.default.createElement(
-	                "div",
-	                { className: "form-box" },
-	                _react2.default.createElement(
-	                  "label",
-	                  null,
-	                  "nome"
-	                ),
-	                _react2.default.createElement("input", { type: "email", placeholder: "por favor digite seu nome" })
+	                'label',
+	                null,
+	                'telefone'
 	              ),
+	              _react2.default.createElement('input', { type: 'email', placeholder: '+00 (00) 0000-0000' })
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'form_box' },
 	              _react2.default.createElement(
-	                "div",
-	                { className: "form-box" },
-	                _react2.default.createElement(
-	                  "label",
-	                  null,
-	                  "email"
-	                ),
-	                " ",
-	                _react2.default.createElement(
-	                  "span",
-	                  { className: "alert-error" },
-	                  " digite um email valido "
-	                ),
-	                _react2.default.createElement("input", { type: "email", placeholder: "por favor digite seu email" })
+	                'label',
+	                null,
+	                'mensagem'
 	              ),
+	              _react2.default.createElement('textarea', { name: 'mensagem' })
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'form_control' },
 	              _react2.default.createElement(
-	                "div",
-	                { className: "form-box" },
-	                _react2.default.createElement(
-	                  "label",
-	                  null,
-	                  "telefone"
-	                ),
-	                _react2.default.createElement("input", { type: "email", placeholder: "+00 (00) 0000-0000" })
-	              ),
-	              _react2.default.createElement(
-	                "div",
-	                { className: "form-box" },
-	                _react2.default.createElement(
-	                  "label",
-	                  null,
-	                  "mensagem"
-	                ),
-	                _react2.default.createElement("textarea", { name: "mensagem" })
-	              ),
-	              _react2.default.createElement(
-	                "div",
-	                { className: "form-control" },
-	                _react2.default.createElement(
-	                  "button",
-	                  { type: "submit", className: "btn-other" },
-	                  " ok "
-	                )
+	                'button',
+	                { type: 'submit', className: 'btn-other' },
+	                ' ok '
 	              )
 	            )
 	          )
-	        )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'capitalize' },
+	          _react2.default.createElement(
+	            'h2',
+	            { className: 'title-small' },
+	            'loja física nayp'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'cnpj: 00.000/0001-00 ',
+	            _react2.default.createElement('br', null),
+	            'r. comendador araújo, 268, loja ca06 - shopping omar 00000-000, curitiba - paraná, brasil'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'horários de atendimento loja física: ',
+	            _react2.default.createElement('br', null),
+	            _react2.default.createElement(
+	              'span',
+	              null,
+	              'segunda-feira - sexta-feira: 9:00 AM - 8:00 PM (UTC-03:00 / brasília)'
+	            ),
+	            _react2.default.createElement('br', null),
+	            _react2.default.createElement(
+	              'span',
+	              null,
+	              'sábado: 9:00 AM - 6:00 PM (UTC-03:00 / brasília)'
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(_GoogleMaps2.default, null)
 	      );
 	    }
 	  }]);
@@ -28079,7 +29518,1134 @@
 	exports.default = Contact;
 
 /***/ },
-/* 244 */
+/* 251 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactDom = __webpack_require__(35);
+
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+
+	var _reactGmaps = __webpack_require__(252);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var coords = {
+	  lat: -25.4353676,
+	  lng: -49.278431
+	};
+
+	var App = function (_Component) {
+	  _inherits(App, _Component);
+
+	  function App() {
+	    _classCallCheck(this, App);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(App).apply(this, arguments));
+	  }
+
+	  _createClass(App, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        _reactGmaps.Gmaps,
+	        {
+	          width: '100%',
+	          height: '400px',
+	          lat: coords.lat,
+	          lng: coords.lng,
+	          zoom: 14,
+	          loadingMessage: 'Be happy',
+	          params: { v: '3.exp', key: 'AIzaSyDlEyZ_acJRpOYj5_715_4_1GLTRshO7Lc' },
+	          onMapCreated: this.onMapCreated },
+	        _react2.default.createElement(_reactGmaps.Marker, {
+	          lat: coords.lat,
+	          lng: coords.lng,
+	          draggable: true,
+	          onDragEnd: this.onDragEnd })
+	      );
+	    }
+	  }]);
+
+	  return App;
+	}(_react.Component);
+
+	exports.default = App;
+
+/***/ },
+/* 252 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var _componentsGmaps = __webpack_require__(253);
+
+	var _componentsGmaps2 = _interopRequireDefault(_componentsGmaps);
+
+	var _componentsMarker = __webpack_require__(262);
+
+	var _componentsMarker2 = _interopRequireDefault(_componentsMarker);
+
+	var _componentsInfoWindow = __webpack_require__(265);
+
+	var _componentsInfoWindow2 = _interopRequireDefault(_componentsInfoWindow);
+
+	var _componentsCircle = __webpack_require__(267);
+
+	var _componentsCircle2 = _interopRequireDefault(_componentsCircle);
+
+	exports.Gmaps = _componentsGmaps2['default'];
+	exports.Marker = _componentsMarker2['default'];
+	exports.InfoWindow = _componentsInfoWindow2['default'];
+	exports.Circle = _componentsCircle2['default'];
+
+/***/ },
+/* 253 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactDom = __webpack_require__(35);
+
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+
+	var _objectAssign = __webpack_require__(254);
+
+	var _objectAssign2 = _interopRequireDefault(_objectAssign);
+
+	var _eventsMap = __webpack_require__(255);
+
+	var _eventsMap2 = _interopRequireDefault(_eventsMap);
+
+	var _mixinsListener = __webpack_require__(256);
+
+	var _mixinsListener2 = _interopRequireDefault(_mixinsListener);
+
+	var _utilsGoogleMaps = __webpack_require__(257);
+
+	var _utilsGoogleMaps2 = _interopRequireDefault(_utilsGoogleMaps);
+
+	var _utilsCompareProps = __webpack_require__(261);
+
+	var _utilsCompareProps2 = _interopRequireDefault(_utilsCompareProps);
+
+	var Gmaps = _react2['default'].createClass({
+	  displayName: 'Gmaps',
+
+	  mixins: [_mixinsListener2['default']],
+
+	  map: null,
+
+	  getInitialState: function getInitialState() {
+	    return {
+	      isMapCreated: false
+	    };
+	  },
+
+	  componentDidMount: function componentDidMount() {
+	    this.setState({
+	      callbackIndex: _utilsGoogleMaps2['default'].load(this.props.params, this.mapsCallback)
+	    });
+	  },
+
+	  componentWillUnmount: function componentWillUnmount() {
+	    _utilsGoogleMaps2['default'].removeCallback(this.state.callbackIndex);
+	    this.removeListeners();
+	  },
+
+	  componentWillReceiveProps: function componentWillReceiveProps(nextProps) {
+	    if (this.map && !(0, _utilsCompareProps2['default'])(this.props, nextProps)) {
+	      this.map.setOptions(_extends({}, nextProps, {
+	        center: new google.maps.LatLng(nextProps.lat, nextProps.lng)
+	      }));
+	    }
+	  },
+
+	  getMap: function getMap() {
+	    return this.map;
+	  },
+
+	  mapsCallback: function mapsCallback() {
+	    this.createMap();
+	    this.addListeners(this.map, _eventsMap2['default']);
+	  },
+
+	  createMap: function createMap() {
+	    var node = _reactDom2['default'].findDOMNode(this);
+	    this.map = new google.maps.Map(node, _extends({}, this.props, {
+	      center: new google.maps.LatLng(this.props.lat, this.props.lng)
+	    }));
+	    this.setState({
+	      isMapCreated: true
+	    });
+	    if (this.props.onMapCreated) {
+	      this.props.onMapCreated(this.map);
+	    }
+	  },
+
+	  getChildren: function getChildren() {
+	    var _this = this;
+
+	    return _react2['default'].Children.map(this.props.children, function (child) {
+	      if (!_react2['default'].isValidElement(child)) {
+	        return child;
+	      }
+	      return _react2['default'].cloneElement(child, {
+	        ref: child.ref,
+	        map: _this.map
+	      });
+	    });
+	  },
+
+	  render: function render() {
+	    var style = (0, _objectAssign2['default'])({
+	      width: this.props.width,
+	      height: this.props.height
+	    }, this.props.style);
+	    return _react2['default'].createElement(
+	      'div',
+	      { style: style, className: this.props.className },
+	      this.props.loadingMessage || 'Loading...',
+	      this.state.isMapCreated ? this.getChildren() : null
+	    );
+	  }
+
+	});
+
+	exports['default'] = Gmaps;
+	module.exports = exports['default'];
+
+/***/ },
+/* 254 */
+/***/ function(module, exports) {
+
+	'use strict';
+	/* eslint-disable no-unused-vars */
+	var hasOwnProperty = Object.prototype.hasOwnProperty;
+	var propIsEnumerable = Object.prototype.propertyIsEnumerable;
+
+	function toObject(val) {
+		if (val === null || val === undefined) {
+			throw new TypeError('Object.assign cannot be called with null or undefined');
+		}
+
+		return Object(val);
+	}
+
+	function shouldUseNative() {
+		try {
+			if (!Object.assign) {
+				return false;
+			}
+
+			// Detect buggy property enumeration order in older V8 versions.
+
+			// https://bugs.chromium.org/p/v8/issues/detail?id=4118
+			var test1 = new String('abc');  // eslint-disable-line
+			test1[5] = 'de';
+			if (Object.getOwnPropertyNames(test1)[0] === '5') {
+				return false;
+			}
+
+			// https://bugs.chromium.org/p/v8/issues/detail?id=3056
+			var test2 = {};
+			for (var i = 0; i < 10; i++) {
+				test2['_' + String.fromCharCode(i)] = i;
+			}
+			var order2 = Object.getOwnPropertyNames(test2).map(function (n) {
+				return test2[n];
+			});
+			if (order2.join('') !== '0123456789') {
+				return false;
+			}
+
+			// https://bugs.chromium.org/p/v8/issues/detail?id=3056
+			var test3 = {};
+			'abcdefghijklmnopqrst'.split('').forEach(function (letter) {
+				test3[letter] = letter;
+			});
+			if (Object.keys(Object.assign({}, test3)).join('') !==
+					'abcdefghijklmnopqrst') {
+				return false;
+			}
+
+			return true;
+		} catch (e) {
+			// We don't expect any of the above to throw, but better to be safe.
+			return false;
+		}
+	}
+
+	module.exports = shouldUseNative() ? Object.assign : function (target, source) {
+		var from;
+		var to = toObject(target);
+		var symbols;
+
+		for (var s = 1; s < arguments.length; s++) {
+			from = Object(arguments[s]);
+
+			for (var key in from) {
+				if (hasOwnProperty.call(from, key)) {
+					to[key] = from[key];
+				}
+			}
+
+			if (Object.getOwnPropertySymbols) {
+				symbols = Object.getOwnPropertySymbols(from);
+				for (var i = 0; i < symbols.length; i++) {
+					if (propIsEnumerable.call(from, symbols[i])) {
+						to[symbols[i]] = from[symbols[i]];
+					}
+				}
+			}
+		}
+
+		return to;
+	};
+
+
+/***/ },
+/* 255 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+	exports['default'] = {
+	  onBoundsChanged: 'bounds_changed',
+	  onCenterChanged: 'center_changed',
+	  onClick: 'click',
+	  onDblClick: 'dblclick',
+	  onDrag: 'drag',
+	  onDragEnd: 'dragend',
+	  onDragStart: 'dragstart',
+	  onHeadingChanged: 'heading_changed',
+	  onIdle: 'idle',
+	  onMapTypeIdChanged: 'maptypeid_changed',
+	  onMouseMove: 'mousemove',
+	  onMouseOut: 'mouseout',
+	  onMouseOver: 'mouseover',
+	  onProjectionChanged: 'projection_changed',
+	  onResize: 'resize',
+	  onRightClick: 'rightclick',
+	  onTilesLoaded: 'tilesloaded',
+	  onTiltChanged: 'tilt_changed',
+	  onZoomChanged: 'zoom_changed'
+	};
+	module.exports = exports['default'];
+
+/***/ },
+/* 256 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var Listener = {
+
+	  addListeners: function addListeners(entity, events) {
+	    for (var prop in this.props) {
+	      if (this.props.hasOwnProperty(prop) && events[prop]) {
+	        var addListener = google.maps.event.addListener;
+	        var listener = addListener(entity, events[prop], this.props[prop]);
+	        if (!this.listeners) {
+	          this.listeners = [];
+	        }
+	        this.listeners.push(listener);
+	      }
+	    }
+	  },
+
+	  removeListeners: function removeListeners() {
+	    if (window.google && this.listeners) {
+	      this.listeners.forEach(function (listener) {
+	        google.maps.event.removeListener(listener);
+	      });
+	    }
+	  }
+
+	};
+
+	exports["default"] = Listener;
+	module.exports = exports["default"];
+
+/***/ },
+/* 257 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var _querystring = __webpack_require__(258);
+
+	var _querystring2 = _interopRequireDefault(_querystring);
+
+	exports['default'] = {
+
+	  callbacks: [],
+
+	  appended: false,
+
+	  load: function load(params, callback) {
+	    var index = this.callbacks.push(callback);
+	    if (window.google) {
+	      setTimeout(this.fireCallbacks.bind(this));
+	    } else {
+	      if (!this.appended) {
+	        window.mapsCallback = this.mapsCallback.bind(this);
+	        this.appendScript(params);
+	      }
+	    }
+	    return index;
+	  },
+
+	  getSrc: function getSrc(params) {
+	    var src = 'https://maps.googleapis.com/maps/api/js';
+	    src += '?callback=mapsCallback&';
+	    src += _querystring2['default'].stringify(params);
+	    return src;
+	  },
+
+	  appendScript: function appendScript(params) {
+	    var src = this.getSrc(params);
+	    var script = document.createElement('script');
+	    script.setAttribute('src', src);
+	    document.head.appendChild(script);
+	    this.appended = true;
+	  },
+
+	  mapsCallback: function mapsCallback() {
+	    window.mapsCallback = undefined;
+	    this.fireCallbacks();
+	  },
+
+	  fireCallbacks: function fireCallbacks() {
+	    this.callbacks.forEach(function (callback) {
+	      return callback();
+	    });
+	    this.callbacks = [];
+	  },
+
+	  removeCallback: function removeCallback(index) {
+	    this.callbacks.splice(index - 1, 1);
+	  }
+
+	};
+	module.exports = exports['default'];
+
+/***/ },
+/* 258 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	exports.decode = exports.parse = __webpack_require__(259);
+	exports.encode = exports.stringify = __webpack_require__(260);
+
+
+/***/ },
+/* 259 */
+/***/ function(module, exports) {
+
+	// Copyright Joyent, Inc. and other Node contributors.
+	//
+	// Permission is hereby granted, free of charge, to any person obtaining a
+	// copy of this software and associated documentation files (the
+	// "Software"), to deal in the Software without restriction, including
+	// without limitation the rights to use, copy, modify, merge, publish,
+	// distribute, sublicense, and/or sell copies of the Software, and to permit
+	// persons to whom the Software is furnished to do so, subject to the
+	// following conditions:
+	//
+	// The above copyright notice and this permission notice shall be included
+	// in all copies or substantial portions of the Software.
+	//
+	// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+	// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+	// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+	// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+	// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+	// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+	// USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+	'use strict';
+
+	// If obj.hasOwnProperty has been overridden, then calling
+	// obj.hasOwnProperty(prop) will break.
+	// See: https://github.com/joyent/node/issues/1707
+	function hasOwnProperty(obj, prop) {
+	  return Object.prototype.hasOwnProperty.call(obj, prop);
+	}
+
+	module.exports = function(qs, sep, eq, options) {
+	  sep = sep || '&';
+	  eq = eq || '=';
+	  var obj = {};
+
+	  if (typeof qs !== 'string' || qs.length === 0) {
+	    return obj;
+	  }
+
+	  var regexp = /\+/g;
+	  qs = qs.split(sep);
+
+	  var maxKeys = 1000;
+	  if (options && typeof options.maxKeys === 'number') {
+	    maxKeys = options.maxKeys;
+	  }
+
+	  var len = qs.length;
+	  // maxKeys <= 0 means that we should not limit keys count
+	  if (maxKeys > 0 && len > maxKeys) {
+	    len = maxKeys;
+	  }
+
+	  for (var i = 0; i < len; ++i) {
+	    var x = qs[i].replace(regexp, '%20'),
+	        idx = x.indexOf(eq),
+	        kstr, vstr, k, v;
+
+	    if (idx >= 0) {
+	      kstr = x.substr(0, idx);
+	      vstr = x.substr(idx + 1);
+	    } else {
+	      kstr = x;
+	      vstr = '';
+	    }
+
+	    k = decodeURIComponent(kstr);
+	    v = decodeURIComponent(vstr);
+
+	    if (!hasOwnProperty(obj, k)) {
+	      obj[k] = v;
+	    } else if (isArray(obj[k])) {
+	      obj[k].push(v);
+	    } else {
+	      obj[k] = [obj[k], v];
+	    }
+	  }
+
+	  return obj;
+	};
+
+	var isArray = Array.isArray || function (xs) {
+	  return Object.prototype.toString.call(xs) === '[object Array]';
+	};
+
+
+/***/ },
+/* 260 */
+/***/ function(module, exports) {
+
+	// Copyright Joyent, Inc. and other Node contributors.
+	//
+	// Permission is hereby granted, free of charge, to any person obtaining a
+	// copy of this software and associated documentation files (the
+	// "Software"), to deal in the Software without restriction, including
+	// without limitation the rights to use, copy, modify, merge, publish,
+	// distribute, sublicense, and/or sell copies of the Software, and to permit
+	// persons to whom the Software is furnished to do so, subject to the
+	// following conditions:
+	//
+	// The above copyright notice and this permission notice shall be included
+	// in all copies or substantial portions of the Software.
+	//
+	// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+	// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+	// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+	// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+	// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+	// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+	// USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+	'use strict';
+
+	var stringifyPrimitive = function(v) {
+	  switch (typeof v) {
+	    case 'string':
+	      return v;
+
+	    case 'boolean':
+	      return v ? 'true' : 'false';
+
+	    case 'number':
+	      return isFinite(v) ? v : '';
+
+	    default:
+	      return '';
+	  }
+	};
+
+	module.exports = function(obj, sep, eq, name) {
+	  sep = sep || '&';
+	  eq = eq || '=';
+	  if (obj === null) {
+	    obj = undefined;
+	  }
+
+	  if (typeof obj === 'object') {
+	    return map(objectKeys(obj), function(k) {
+	      var ks = encodeURIComponent(stringifyPrimitive(k)) + eq;
+	      if (isArray(obj[k])) {
+	        return map(obj[k], function(v) {
+	          return ks + encodeURIComponent(stringifyPrimitive(v));
+	        }).join(sep);
+	      } else {
+	        return ks + encodeURIComponent(stringifyPrimitive(obj[k]));
+	      }
+	    }).join(sep);
+
+	  }
+
+	  if (!name) return '';
+	  return encodeURIComponent(stringifyPrimitive(name)) + eq +
+	         encodeURIComponent(stringifyPrimitive(obj));
+	};
+
+	var isArray = Array.isArray || function (xs) {
+	  return Object.prototype.toString.call(xs) === '[object Array]';
+	};
+
+	function map (xs, f) {
+	  if (xs.map) return xs.map(f);
+	  var res = [];
+	  for (var i = 0; i < xs.length; i++) {
+	    res.push(f(xs[i], i));
+	  }
+	  return res;
+	}
+
+	var objectKeys = Object.keys || function (obj) {
+	  var res = [];
+	  for (var key in obj) {
+	    if (Object.prototype.hasOwnProperty.call(obj, key)) res.push(key);
+	  }
+	  return res;
+	};
+
+
+/***/ },
+/* 261 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+
+	exports['default'] = function (props, nextProps) {
+
+	  var propsKeys = Object.keys(props);
+	  var nextPropsKeys = Object.keys(nextProps);
+	  if (propsKeys.length !== nextPropsKeys.length) {
+	    return false;
+	  }
+
+	  for (var i = 0; i < propsKeys.length; i++) {
+	    var key = propsKeys[i];
+	    if (key !== 'children' && key.indexOf('on') !== 0 && (!nextProps.hasOwnProperty(key) || props[key] !== nextProps[key])) {
+	      return false;
+	    }
+	  }
+
+	  return true;
+	};
+
+	module.exports = exports['default'];
+
+/***/ },
+/* 262 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var _entity = __webpack_require__(263);
+
+	var _entity2 = _interopRequireDefault(_entity);
+
+	var _eventsMarker = __webpack_require__(264);
+
+	var _eventsMarker2 = _interopRequireDefault(_eventsMarker);
+
+	exports['default'] = (0, _entity2['default'])('Marker', 'position', _eventsMarker2['default']);
+	module.exports = exports['default'];
+
+/***/ },
+/* 263 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _mixinsListener = __webpack_require__(256);
+
+	var _mixinsListener2 = _interopRequireDefault(_mixinsListener);
+
+	var _utilsCompareProps = __webpack_require__(261);
+
+	var _utilsCompareProps2 = _interopRequireDefault(_utilsCompareProps);
+
+	exports['default'] = function (name, latLngProp, events) {
+	  return _react2['default'].createClass({
+
+	    mixins: [_mixinsListener2['default']],
+
+	    entity: null,
+
+	    componentDidMount: function componentDidMount() {
+	      var options = this.getOptions(this.props);
+	      this.entity = new google.maps[name](options);
+	      this.addListeners(this.entity, events);
+	    },
+
+	    componentWillReceiveProps: function componentWillReceiveProps(nextProps) {
+	      if (!(0, _utilsCompareProps2['default'])(this.props, nextProps)) {
+	        var options = this.getOptions(nextProps);
+	        this.entity.setOptions(options);
+	      }
+	    },
+
+	    componentWillUnmount: function componentWillUnmount() {
+	      this.entity.setMap(null);
+	      this.removeListeners();
+	      this.entity = null;
+	    },
+
+	    getEntity: function getEntity() {
+	      return this.entity;
+	    },
+
+	    getOptions: function getOptions(props) {
+	      return _extends({}, props, _defineProperty({}, latLngProp, new google.maps.LatLng(props.lat, props.lng)));
+	    },
+
+	    render: function render() {
+	      return null;
+	    }
+
+	  });
+	};
+
+	module.exports = exports['default'];
+
+/***/ },
+/* 264 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+	exports['default'] = {
+	  onAnimationChanged: 'animation_changed',
+	  onClick: 'click',
+	  onClickableChanged: 'clickable_changed',
+	  onCursorChanged: 'cursor_changed',
+	  onDblClick: 'dblclick',
+	  onDrag: 'drag',
+	  onDragEnd: 'dragend',
+	  onDraggableChanged: 'draggable_changed',
+	  onDragStart: 'dragstart',
+	  onFlatChanged: 'flat_changed',
+	  onIconChanged: 'icon_changed',
+	  onMouseDown: 'mousedown',
+	  onMouseOut: 'mouseout',
+	  onMouseOver: 'mouseover',
+	  onMouseUp: 'mouseup',
+	  onPositionChanged: 'position_changed',
+	  onRightClick: 'rightclick',
+	  onShapeChanged: 'shape_changed',
+	  onTitleChanged: 'title_changed',
+	  onVisibleChanged: 'visible_changed',
+	  onZindexChanged: 'zindex_changed'
+	};
+	module.exports = exports['default'];
+
+/***/ },
+/* 265 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var _entity = __webpack_require__(263);
+
+	var _entity2 = _interopRequireDefault(_entity);
+
+	var _eventsInfoWindow = __webpack_require__(266);
+
+	var _eventsInfoWindow2 = _interopRequireDefault(_eventsInfoWindow);
+
+	exports['default'] = (0, _entity2['default'])('InfoWindow', 'position', _eventsInfoWindow2['default']);
+	module.exports = exports['default'];
+
+/***/ },
+/* 266 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+	exports['default'] = {
+	  onCloseClick: 'closeclick',
+	  onContentChanged: 'content_changed',
+	  onDOMReady: 'domready',
+	  onPositionChanged: 'position_changed',
+	  onZindexChanged: 'zindex_changed'
+	};
+	module.exports = exports['default'];
+
+/***/ },
+/* 267 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var _entity = __webpack_require__(263);
+
+	var _entity2 = _interopRequireDefault(_entity);
+
+	var _eventsCircle = __webpack_require__(268);
+
+	var _eventsCircle2 = _interopRequireDefault(_eventsCircle);
+
+	exports['default'] = (0, _entity2['default'])('Circle', 'center', _eventsCircle2['default']);
+	module.exports = exports['default'];
+
+/***/ },
+/* 268 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+	exports['default'] = {
+	  onCenterChanged: 'center_changed',
+	  onClick: 'click',
+	  onDblClick: 'dblclick',
+	  onDrag: 'drag',
+	  onDragEnd: 'dragend',
+	  onDragStart: 'dragstart',
+	  onMouseDown: 'mousedown',
+	  onMouseMove: 'mousemove',
+	  onMouseOut: 'mouseout',
+	  onMouseOver: 'mouseover',
+	  onMouseUp: 'mouseup',
+	  onRadiusChanged: 'radius_changed',
+	  onRightClick: 'rightclick'
+	};
+	module.exports = exports['default'];
+
+/***/ },
+/* 269 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(176);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Politic = function (_Component) {
+	  _inherits(Politic, _Component);
+
+	  function Politic() {
+	    _classCallCheck(this, Politic);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Politic).apply(this, arguments));
+	  }
+
+	  _createClass(Politic, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'info-np' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'container' },
+	          _react2.default.createElement(
+	            'nav',
+	            { className: 'nav_tab _half' },
+	            _react2.default.createElement(
+	              'ul',
+	              { className: 'reset' },
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                _react2.default.createElement(
+	                  _reactRouter.IndexLink,
+	                  { to: '/politic' },
+	                  'Termos de uso'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                _react2.default.createElement(
+	                  _reactRouter.Link,
+	                  { to: '/privacy' },
+	                  'Política de privacidade'
+	                )
+	              )
+	            )
+	          ),
+	          this.props.children
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Politic;
+	}(_react.Component);
+
+	exports.default = Politic;
+
+/***/ },
+/* 270 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Terms = function (_Component) {
+	  _inherits(Terms, _Component);
+
+	  function Terms() {
+	    _classCallCheck(this, Terms);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Terms).apply(this, arguments));
+	  }
+
+	  _createClass(Terms, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        { className: "_content" },
+	        _react2.default.createElement(
+	          "h1",
+	          { className: "title-base" },
+	          "Termos de uso"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus!"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus!"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus!"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus!"
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Terms;
+	}(_react.Component);
+
+	exports.default = Terms;
+
+/***/ },
+/* 271 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Privacy = function (_Component) {
+	  _inherits(Privacy, _Component);
+
+	  function Privacy() {
+	    _classCallCheck(this, Privacy);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Privacy).apply(this, arguments));
+	  }
+
+	  _createClass(Privacy, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        { className: "_content" },
+	        _react2.default.createElement(
+	          "h1",
+	          { className: "title-base" },
+	          "Política de privacidade"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus!"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus!"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus!"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus!"
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Privacy;
+	}(_react.Component);
+
+	exports.default = Privacy;
+
+/***/ },
+/* 272 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28095,11 +30661,11 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Main = __webpack_require__(245);
+	var _Main = __webpack_require__(273);
 
 	var _Main2 = _interopRequireDefault(_Main);
 
-	var _Navegation = __webpack_require__(246);
+	var _Navegation = __webpack_require__(274);
 
 	var _Navegation2 = _interopRequireDefault(_Navegation);
 
@@ -28140,7 +30706,7 @@
 	}(_react.Component);
 
 /***/ },
-/* 245 */
+/* 273 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -28189,7 +30755,7 @@
 	exports.default = Main;
 
 /***/ },
-/* 246 */
+/* 274 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28241,7 +30807,16 @@
 	              _react2.default.createElement(
 	                _reactRouter.IndexLink,
 	                { to: '/' },
-	                'sobre'
+	                'sobre nós'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement(
+	                _reactRouter.Link,
+	                { to: '/help' },
+	                'atendimento'
 	              )
 	            ),
 	            _react2.default.createElement(
@@ -28250,7 +30825,7 @@
 	              _react2.default.createElement(
 	                _reactRouter.Link,
 	                { to: '/order' },
-	                'pedidos'
+	                'status do pedido'
 	              )
 	            ),
 	            _react2.default.createElement(
@@ -28259,7 +30834,7 @@
 	              _react2.default.createElement(
 	                _reactRouter.Link,
 	                { to: '/sizes' },
-	                'tamanhos'
+	                'guia de tamanhos'
 	              )
 	            ),
 	            _react2.default.createElement(
@@ -28267,17 +30842,8 @@
 	              null,
 	              _react2.default.createElement(
 	                _reactRouter.Link,
-	                { to: '/faq' },
-	                'faq'
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              _react2.default.createElement(
-	                _reactRouter.Link,
-	                { to: '/contact' },
-	                'contatos'
+	                { to: '/politic' },
+	                'termos e política'
 	              )
 	            )
 	          )

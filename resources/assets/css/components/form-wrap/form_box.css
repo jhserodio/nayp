@@ -1,46 +1,6 @@
-/*=========================================================================
-02/D - FORM-BOX
-=========================================================================*/
+@custom-media :--form-box .form_box, .form_box ._half, .form_box ._tri;
 
-.form-control {
-  display : block;
-  width   : 100%;
-  height  : auto;
-}
-
-.form-control > * {
-  display : block;
-  width   : 100%;
-}
-
-.form-inline {
-  display : block;
-  width   : 100%;
-  height  : auto;
-  margin  : calc(var(--space-base)*2) 0;
-}
-
-.form-inline > * {
-  display: inline-block;
-  width: auto;
-}
-
-.form-inline .form-control {
-  display : inline-block;
-  width   : auto;
-  height  : auto;
-  margin  : 0 var(--space-base);
-}
-
-.form-inline .form-control:first-child {
-  margin-left : 0;
-}
-
-.form-inline .form-control:last-child {
-  margin-right : 0;
-}
-
-.form-box {
+.form_box {
   width   : 100%;
   display : block;
   padding : calc(var(--space-base)/2) var(--space-base);
@@ -49,15 +9,15 @@
   box-sizing: border-box;
 }
 
-.form-box > label {
+.form_box label {
   display : inline-block;
   border  : none;
   width   : auto;
   margin-right: 20px;
 }
 
-.form-box > input,
-.form-box > textarea {
+.form_box input,
+.form_box textarea {
   display : block;
   border  : none;
   width   : 100%;
@@ -66,8 +26,38 @@
   transition: var(--transition-base);
 }
 
-.form-box > input:focus,
-.form-box > textarea:focus {
-  border-left: 5px solid black;
-  padding-left: var(--space-base);
+.form_box._last {
+  border-bottom: var(--border-form);
+}
+
+@media (--screen-medium) {
+
+  .form_box._half {
+    display: inline-block;
+    width: 50%;
+    box-sizing: border-box;
+  }
+
+  .form_box._tri {
+    display: inline-block;
+    width: 33%;
+    box-sizing: border-box;
+  }
+
+  .form_box._tri:last-child {
+    width: 34%;
+  }
+
+  .form_box input:focus,
+  .form_box textarea:focus {
+    border-left: 5px solid black;
+    padding-left: var(--space-base);
+  }
+
+  .form_box._half:last-child,
+  .form_box._tri:nth-child(2),
+  .form_box._tri:last-child {
+    border-left: none;
+  }
+
 }

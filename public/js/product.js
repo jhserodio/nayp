@@ -47,19 +47,19 @@
 
 	'use strict';
 
-	var _header = __webpack_require__(247);
+	var _header = __webpack_require__(275);
 
 	var header = _interopRequireWildcard(_header);
 
-	var _footer = __webpack_require__(249);
+	var _footer = __webpack_require__(277);
 
 	var footer = _interopRequireWildcard(_footer);
 
-	var _cartPreview = __webpack_require__(251);
+	var _cartPreview = __webpack_require__(279);
 
-	var _toggleElements = __webpack_require__(248);
+	var _toggleElements = __webpack_require__(276);
 
-	var _productGallery = __webpack_require__(252);
+	var _productGallery = __webpack_require__(280);
 
 	var productGallery = _interopRequireWildcard(_productGallery);
 
@@ -72,12 +72,12 @@
 
 /***/ },
 
-/***/ 247:
+/***/ 275:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
-	var _toggleElements = __webpack_require__(248);
+	var _toggleElements = __webpack_require__(276);
 
 	(0, _toggleElements.toggleDisplay)("active-collections");
 	(0, _toggleElements.toggleDisplay)("active-info");
@@ -85,42 +85,30 @@
 
 	// dropdown function header
 
-	var btnDropdown = document.querySelectorAll(".item-drop .btn-dropdown");
-	var itemDropdown = document.querySelectorAll(".item-drop");
+	var activeDropdown = document.querySelectorAll(".item-drop");
+	var removeDropdown = document.querySelectorAll(".dropdown-back");
 	var displayDropdown = document.querySelectorAll(".dropdown");
+	var displayMenu = document.querySelector(".megamenu .menu");
 
-	function toggleDropdown(btn, item, display) {
+	function showDropdown(active, display, menu) {
 	  var _loop = function _loop(i) {
-	    btn[i].addEventListener('click', function () {
-	      // console.log(display[i]);
-	      if (item[i].classList.contains("active")) {
-	        for (var j = 0; j < btn.length; j++) {
-	          item[j].classList.remove('inactive');
-	        }
-	        display[i].classList.remove('active');
-	        item[i].classList.remove("active");
-	      } else {
-	        for (var _j = 0; _j < item.length; _j++) {
-	          if (btn[_j] !== btn[i]) {
-	            item[_j].classList.add('inactive');
-	          }
-	        }
-	        display[i].classList.add('active');
-	        item[i].classList.add("active");
-	      }
+	    active[i].addEventListener('click', function (e) {
+	      e.preventDefault();
+	      display[i].classList.add('active');
+	      menu.classList.add('inactive');
 	    });
 	  };
 
-	  for (var i = 0; i < item.length; i++) {
+	  for (var i = 0; i < active.length; i++) {
 	    _loop(i);
 	  }
 	}
 
-	toggleDropdown(btnDropdown, itemDropdown, displayDropdown);
+	showDropdown(activeDropdown, displayDropdown, displayMenu);
 
 /***/ },
 
-/***/ 248:
+/***/ 276:
 /***/ function(module, exports) {
 
 	"use strict";
@@ -164,18 +152,18 @@
 
 /***/ },
 
-/***/ 249:
+/***/ 277:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
-	var _toggleElements = __webpack_require__(248);
+	var _toggleElements = __webpack_require__(276);
 
 	(0, _toggleElements.toggleDisplay)("active-footer-menu");
 
 /***/ },
 
-/***/ 251:
+/***/ 279:
 /***/ function(module, exports) {
 
 	'use strict';
@@ -217,7 +205,7 @@
 
 /***/ },
 
-/***/ 252:
+/***/ 280:
 /***/ function(module, exports) {
 
 	"use strict";

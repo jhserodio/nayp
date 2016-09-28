@@ -24,10 +24,15 @@
   margin: calc(var(--space-large)*3) 0;
 }
 
+.info-np ._content {
+  width: 100%;
+  margin-top: calc(var(--space-large)*3);
+}
+
 @media (--screen-smalloff) {
   .info-np .container {
     max-width: 720px;
-    min-height: 580px;
+    min-height: 640px;
   }
 
   .info-np {

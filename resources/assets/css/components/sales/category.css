@@ -4,15 +4,15 @@
 }
 
 .category-header {
-  lost-center: 100%;
+  width: 100%;
+  display: flex;
+  padding-top: calc(var(--space-large)*2);
+  justify-content: space-between;
+  align-items: center;
 }
 
 .category-header .title {
-  margin-bottom: 0;
-}
-
-.category-header > * {
-  lost-column: 1/2 2 0;
+  margin: 0;
 }
 
 .category-more {

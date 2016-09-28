@@ -14,9 +14,3 @@
   height: 100%;
   width: auto;
 }
-
-@media (--screen-medium) {
-  .logo-np {
-    padding-right: 36px;
-  }
-}
