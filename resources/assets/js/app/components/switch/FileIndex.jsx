@@ -24,7 +24,7 @@ export default class FileIndex extends Component {
           a ilustrar o motivo da troca ou devolução do seu produto
         </div>
         <div className="file_input">
-          <button onClick={this.callFile.bind(this)}>
+          <button onClick={this.callFile.bind(this)} className="btn-other">
             o anexar arquivo
           </button>
           <div className={"_box " + this.state.file} >

@@ -47,17 +47,17 @@
 
 	'use strict';
 
-	var _header = __webpack_require__(275);
+	var _header = __webpack_require__(271);
 
 	var header = _interopRequireWildcard(_header);
 
-	var _footer = __webpack_require__(277);
+	var _footer = __webpack_require__(273);
 
 	var footer = _interopRequireWildcard(_footer);
 
-	var _slide = __webpack_require__(278);
+	var _slide = __webpack_require__(274);
 
-	var _cartPreview = __webpack_require__(279);
+	var _cartPreview = __webpack_require__(275);
 
 	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -70,12 +70,12 @@
 
 /***/ },
 
-/***/ 275:
+/***/ 271:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
-	var _toggleElements = __webpack_require__(276);
+	var _toggleElements = __webpack_require__(272);
 
 	(0, _toggleElements.toggleDisplay)("active-collections");
 	(0, _toggleElements.toggleDisplay)("active-info");
@@ -106,7 +106,7 @@
 
 /***/ },
 
-/***/ 276:
+/***/ 272:
 /***/ function(module, exports) {
 
 	"use strict";
@@ -150,18 +150,18 @@
 
 /***/ },
 
-/***/ 277:
+/***/ 273:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
-	var _toggleElements = __webpack_require__(276);
+	var _toggleElements = __webpack_require__(272);
 
 	(0, _toggleElements.toggleDisplay)("active-footer-menu");
 
 /***/ },
 
-/***/ 278:
+/***/ 274:
 /***/ function(module, exports) {
 
 	'use strict';
@@ -215,7 +215,7 @@
 
 /***/ },
 
-/***/ 279:
+/***/ 275:
 /***/ function(module, exports) {
 
 	'use strict';

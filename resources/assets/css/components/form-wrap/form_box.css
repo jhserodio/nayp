@@ -16,6 +16,10 @@
   margin-right: 20px;
 }
 
+.form_box small {
+  line-height: 0;
+}
+
 .form_box input,
 .form_box textarea {
   display : block;
@@ -40,12 +44,8 @@
 
   .form_box._tri {
     display: inline-block;
-    width: 33%;
+    width: 240px;
     box-sizing: border-box;
-  }
-
-  .form_box._tri:last-child {
-    width: 34%;
   }
 
   .form_box input:focus,

@@ -1925,11 +1925,15 @@ clear: both;
 
 @media   (max-width: 1139px) {
   .form_file {
+    flex-direction: column-reverse;
     flex-wrap: wrap;
+    margin: 10px 0;
   }
 
   .form_file .file_descript {
-    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 100%;
+    max-width: none;
   }
 }
 
@@ -1947,6 +1951,10 @@ clear: both;
   border  : none;
   width   : auto;
   margin-right: 20px;
+}
+
+.form_box small {
+  line-height: 0;
 }
 
 .form_box input,
@@ -1973,12 +1981,8 @@ clear: both;
 
   .form_box._tri {
     display: inline-block;
-    width: 33%;
+    width: 240px;
     box-sizing: border-box;
-  }
-
-  .form_box._tri:last-child {
-    width: 34%;
   }
 
   .form_box input:focus,

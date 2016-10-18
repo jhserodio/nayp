@@ -39,10 +39,14 @@
 
 @media (--screen-mobile) {
   .form_file {
+    flex-direction: column-reverse;
     flex-wrap: wrap;
+    margin: var(--space-base) 0;
   }
 
   .form_file .file_descript {
-    margin-bottom: var(--space-base);
+    margin-top: var(--space-base);
+    width: 100%;
+    max-width: none;
   }
 }
