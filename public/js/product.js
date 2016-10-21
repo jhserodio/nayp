@@ -47,19 +47,19 @@
 
 	'use strict';
 
-	var _header = __webpack_require__(271);
+	var _header = __webpack_require__(274);
 
 	var header = _interopRequireWildcard(_header);
 
-	var _footer = __webpack_require__(273);
+	var _footer = __webpack_require__(276);
 
 	var footer = _interopRequireWildcard(_footer);
 
-	var _cartPreview = __webpack_require__(275);
+	var _cartPreview = __webpack_require__(278);
 
-	var _toggleElements = __webpack_require__(272);
+	var _toggleElements = __webpack_require__(275);
 
-	var _productGallery = __webpack_require__(276);
+	var _productGallery = __webpack_require__(279);
 
 	var productGallery = _interopRequireWildcard(_productGallery);
 
@@ -72,12 +72,12 @@
 
 /***/ },
 
-/***/ 271:
+/***/ 274:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
-	var _toggleElements = __webpack_require__(272);
+	var _toggleElements = __webpack_require__(275);
 
 	(0, _toggleElements.toggleDisplay)("active-collections");
 	(0, _toggleElements.toggleDisplay)("active-info");
@@ -108,7 +108,7 @@
 
 /***/ },
 
-/***/ 272:
+/***/ 275:
 /***/ function(module, exports) {
 
 	"use strict";
@@ -152,18 +152,18 @@
 
 /***/ },
 
-/***/ 273:
+/***/ 276:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
-	var _toggleElements = __webpack_require__(272);
+	var _toggleElements = __webpack_require__(275);
 
 	(0, _toggleElements.toggleDisplay)("active-footer-menu");
 
 /***/ },
 
-/***/ 275:
+/***/ 278:
 /***/ function(module, exports) {
 
 	'use strict';
@@ -205,7 +205,7 @@
 
 /***/ },
 
-/***/ 276:
+/***/ 279:
 /***/ function(module, exports) {
 
 	"use strict";

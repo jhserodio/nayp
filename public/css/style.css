@@ -325,6 +325,10 @@ tr {
   border: 1px solid black;
 }
 
+tr._title {
+  font-size: 0.8em;
+}
+
 tr small {
   text-transform: lowercase;
 }
@@ -334,6 +338,13 @@ tbody tr:hover td {
   background: black;
   color: white;
   cursor: pointer;
+}
+
+tbody tr._title:hover,
+tbody tr._title:hover td {
+  background: none;
+  color: black;
+  cursor: default;
 }
 
 @media    (max-width: 767px) {
@@ -1234,37 +1245,59 @@ clear: both;
   width: 100%;
 }
 
-.box-flexible {
+/* FAQ */
+
+.questions {
   width: 100%;
 }
 
-.flexible-item {
-  width: 100%;
-  border: 1px solid #666666;
-  border-bottom: 0;
-  font-size: 0.8em;
+.question {
+    width: 100%;
+    border: 1px solid #666666;
+    border-bottom: 0;
+    font-size: 0.8em;
+    transition: 0.2s all ease;
+    cursor: pointer;
 }
 
-.flexible-item:last-child {
-  border-bottom: 1px solid #666666;
+.question:last-child {
+    border-bottom: 1px solid #666666;
 }
 
-.flexible-head {
-  padding: 10px;
-  padding-bottom: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-transform: uppercase;
+.question ._header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
 }
 
-.flexible-head svg {
-  fill: black;
+.question ._main {
+    padding: 0 1em;
+    overflow: hidden;
+    max-height: 0;
+    transition: 0.2s all ease;
 }
 
-.flexible-content {
-  padding: 10px;
-  padding-top: 0;
+/* state active */
+
+.question._active {
+    background: black;
+}
+
+.question._active ._header span,
+.question._active ._header button {
+    color: white;
+}
+
+.question._active ._header button {
+    transform: rotateX(180deg);
+}
+
+.question._active ._main {
+    padding: 10px;
+    max-height: none;
+    color: white;
 }
 
 /*CARDS*/

@@ -30,7 +30,11 @@ COMPONENTS
 
 /*CONTENT WRAP*/
 @import 'content-wrap/image';
-@import 'content-wrap/comment';
+
+
+/* FAQ */
+@import 'questions/questions';
+@import 'questions/question';
 
 /*CARDS*/
 @import 'cards/cards';

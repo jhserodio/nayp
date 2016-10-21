@@ -6,7 +6,7 @@ export default class Contact extends Component {
     return (
 
       <div className="_content">
-
+        <h1 className="title-base">Contatos e horários</h1>
         <div className="capitalize">
           <p>
             para outras informações, envie sua mensagem através do formulário,

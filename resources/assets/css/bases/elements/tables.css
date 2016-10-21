@@ -60,6 +60,10 @@ tr {
   border : var(--border-focus);
 }
 
+tr._title {
+  font-size: var(--size-small);
+}
+
 tr small {
   text-transform: lowercase;
 }
@@ -70,6 +74,13 @@ tbody tr:hover td {
   background: black;
   color: white;
   cursor: pointer;
+}
+
+tbody tr._title:hover,
+tbody tr._title:hover td {
+  background: none;
+  color: black;
+  cursor: default;
 }
 
 

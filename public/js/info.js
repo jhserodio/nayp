@@ -56,7 +56,7 @@
 
 	var _config = __webpack_require__(172);
 
-	var _app = __webpack_require__(268);
+	var _app = __webpack_require__(271);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -21456,51 +21456,51 @@
 
 	var _Faq2 = _interopRequireDefault(_Faq);
 
-	var _Help = __webpack_require__(238);
+	var _Help = __webpack_require__(241);
 
 	var _Help2 = _interopRequireDefault(_Help);
 
-	var _Switch = __webpack_require__(239);
+	var _Switch = __webpack_require__(242);
 
 	var _Switch2 = _interopRequireDefault(_Switch);
 
-	var _Order = __webpack_require__(241);
+	var _Order = __webpack_require__(244);
 
 	var _Order2 = _interopRequireDefault(_Order);
 
-	var _Sizes = __webpack_require__(242);
+	var _Sizes = __webpack_require__(245);
 
 	var _Sizes2 = _interopRequireDefault(_Sizes);
 
-	var _SizeTop = __webpack_require__(243);
+	var _SizeTop = __webpack_require__(246);
 
 	var _SizeTop2 = _interopRequireDefault(_SizeTop);
 
-	var _SizeTop3 = __webpack_require__(244);
+	var _SizeTop3 = __webpack_require__(247);
 
 	var _SizeTop4 = _interopRequireDefault(_SizeTop3);
 
-	var _SizeBottom = __webpack_require__(245);
+	var _SizeBottom = __webpack_require__(248);
 
 	var _SizeBottom2 = _interopRequireDefault(_SizeBottom);
 
-	var _SizeBottom3 = __webpack_require__(246);
+	var _SizeBottom3 = __webpack_require__(249);
 
 	var _SizeBottom4 = _interopRequireDefault(_SizeBottom3);
 
-	var _Contact = __webpack_require__(247);
+	var _Contact = __webpack_require__(250);
 
 	var _Contact2 = _interopRequireDefault(_Contact);
 
-	var _Politic = __webpack_require__(265);
+	var _Politic = __webpack_require__(268);
 
 	var _Politic2 = _interopRequireDefault(_Politic);
 
-	var _Terms = __webpack_require__(266);
+	var _Terms = __webpack_require__(269);
 
 	var _Terms2 = _interopRequireDefault(_Terms);
 
-	var _Privacy = __webpack_require__(267);
+	var _Privacy = __webpack_require__(270);
 
 	var _Privacy2 = _interopRequireDefault(_Privacy);
 
@@ -27296,7 +27296,7 @@
 /* 237 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -27308,6 +27308,12 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _mock = __webpack_require__(238);
+
+	var _QuestionList = __webpack_require__(282);
+
+	var _QuestionList2 = _interopRequireDefault(_QuestionList);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -27316,104 +27322,40 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+	// data
+
+
 	var Faq = function (_Component) {
 	  _inherits(Faq, _Component);
 
 	  function Faq() {
 	    _classCallCheck(this, Faq);
 
-	    return _possibleConstructorReturn(this, (Faq.__proto__ || Object.getPrototypeOf(Faq)).apply(this, arguments));
+	    var _this = _possibleConstructorReturn(this, (Faq.__proto__ || Object.getPrototypeOf(Faq)).call(this));
+
+	    _this.state = {
+	      questions: _mock.faq.load()
+	    };
+	    return _this;
 	  }
 
 	  _createClass(Faq, [{
-	    key: "render",
+	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
-	        "div",
-	        { className: "_content" },
+	        'div',
+	        { className: '_content' },
 	        _react2.default.createElement(
-	          "h1",
-	          { className: "title-base" },
-	          "faq / perguntas frequentes"
+	          'h1',
+	          { className: 'title-base' },
+	          'faq / perguntas frequentes'
 	        ),
 	        _react2.default.createElement(
-	          "p",
+	          'p',
 	          null,
-	          "iste sed, dolores. Illo molestiae vitae repellat laudantium, rerum aut!"
+	          'iste sed, dolores. Illo molestiae vitae repellat laudantium, rerum aut!'
 	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { className: "box-flexible" },
-	          _react2.default.createElement(
-	            "div",
-	            { className: "flexible-item" },
-	            _react2.default.createElement(
-	              "div",
-	              { className: "flexible-head" },
-	              _react2.default.createElement(
-	                "span",
-	                null,
-	                "como efetuar um pagamento"
-	              ),
-	              _react2.default.createElement(
-	                "button",
-	                { className: "btn-icon" },
-	                "v"
-	              )
-	            ),
-	            _react2.default.createElement(
-	              "div",
-	              { className: "flexible-content" },
-	              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit quos minus quidem ratione porro sunt ex quae in aperiam, deleniti esse aliquam soluta, totam tenetur odit saepe vel quasi est?"
-	            )
-	          ),
-	          _react2.default.createElement(
-	            "div",
-	            { className: "flexible-item" },
-	            _react2.default.createElement(
-	              "div",
-	              { className: "flexible-head" },
-	              _react2.default.createElement(
-	                "span",
-	                null,
-	                "como efetuar um pagamento"
-	              ),
-	              _react2.default.createElement(
-	                "button",
-	                { className: "btn-icon" },
-	                "v"
-	              )
-	            ),
-	            _react2.default.createElement(
-	              "div",
-	              { className: "flexible-content" },
-	              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit quos minus quidem ratione porro sunt ex quae in aperiam, deleniti esse aliquam soluta, totam tenetur odit saepe vel quasi est?"
-	            )
-	          ),
-	          _react2.default.createElement(
-	            "div",
-	            { className: "flexible-item" },
-	            _react2.default.createElement(
-	              "div",
-	              { className: "flexible-head" },
-	              _react2.default.createElement(
-	                "span",
-	                null,
-	                "como efetuar um pagamento"
-	              ),
-	              _react2.default.createElement(
-	                "button",
-	                { className: "btn-icon" },
-	                "v"
-	              )
-	            ),
-	            _react2.default.createElement(
-	              "div",
-	              { className: "flexible-content" },
-	              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit quos minus quidem ratione porro sunt ex quae in aperiam, deleniti esse aliquam soluta, totam tenetur odit saepe vel quasi est?"
-	            )
-	          )
-	        )
+	        _react2.default.createElement(_QuestionList2.default, { list: this.state.questions })
 	      );
 	    }
 	  }]);
@@ -27425,6 +27367,73 @@
 
 /***/ },
 /* 238 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	var faq = exports.faq = {
+
+	  // Load Mock Product Data Into localStorage
+	  load: function load() {
+	    return [{
+	      id: '01',
+	      head: 'qual é o prazo para o envio de um pedido',
+	      main: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit deleniti esse aliquam soluta, totam tenetur odit saepe vel quasi est?'
+	    }, {
+	      id: '02',
+	      head: 'qual o prazo para recebimento de um pedido',
+	      main: 'Isto dependerá de alguns fatores e escolhas que você fará; como o método de envio, forma de pagamento e localidade do endereço de entrega. Os prazos para envio aparecerão antes da finalização do pedido e são uma previsão fornecida pela empresa de logística contratada, no caso os Correios. Eventuais atrasos poderão ocorrer. Não esqueça! Nós começamos a contar a data da entrega a partir da data de confirmação do pagamento do seu pedido, seja pela instituição financeira ou compensação de seu boleto bancário, asim como após a confirmação dos seus dados cadastrais.'
+	    }, {
+	      id: '03',
+	      head: 'quais são os métodos de pagamento',
+	      main: 'No momento aceitamos Paypal, Cartões de Crédito incluindo Visa e Mastercard, Cartões de Débito e Boleto Bancário.'
+	    }, {
+	      id: '04',
+	      head: 'É SEGURO INSERIR DADOS PESSOAIS E BANCÁRIOS?',
+	      main: 'Nossa loja está hospedada em uma plataforma de e-commerce online com um certificado SSL e conformidade PCI; que nos permite vender nossos produtos e serviços com segurança para você. Os gateways de pagamento utilizados por nós aderem aos padrões definidos pela PCI-DSS, gerenciado pelo Conselho de Normas de Segurança PCI. Os requisitos da PCI-DSS ajudam a garantir o manuseio seguro de informações de cartão de crédito pela nossa loja e seus fornecedores de serviço.'
+	    }, {
+	      id: '05',
+	      head: 'COMO SABEREI SE O MEU PEDIDO FOI APROVADO?',
+	      main: 'Você receberá uma confirmação por e-mail logo após seu pedido ter sido aprovado. Por favor, aguarde até 2 (dois) dias úteis para o processamento de pedidos. Não hesite em contatar-nos diretamente com quaisquer dúvidas através do formulário de contato ou por e-mail (info@nayp.co).'
+	    }, {
+	      id: '06',
+	      head: 'COMO FAÇO PARA VERIFICAR O STATUS DE UM PEDIDO?',
+	      main: 'Você pode verificar essa informação clicando em “Status do Pedido”, localizado no topo desta página. Por favor, aguarde até 2 (dois) dias úteis para o processamento de pedidos. Não hesite em contatar-nos diretamente com quaisquer dúvidas através do nosso formulário de contato ou por e-mail (info@nayp.co). '
+	    }, {
+	      id: '07',
+	      head: 'POSSO ADICIONAR OU REMOVER ITENS DO MEU PEDIDO, DEPOIS DE APROVADO?',
+	      main: 'Assim que o seu pedido é aprovado, começamos a processar a sua compra, o que implica uma série de medidas. Durante esse tempo, não é possível adicionar ou remover itens do seu pedido.'
+	    }, {
+	      id: '08',
+	      head: 'POSSO CANCELAR MEU PEDIDO, DEPOIS DE APROVADO?',
+	      main: 'Logo após a aprovação do seu pedido, nós começamos a processar a sua compra, o que implica uma série de medidas. Durante esse tempo, não somos capazes de modificar ou cancelar a sua encomenda. Nós procuramos garantir que você fique completamente satisfeito com a sua experiência de compra, mas caso aconteça algum problema, oferecemos uma Política de Trocas e Devoluções'
+	    }, {
+	      id: '09',
+	      head: 'POSSO CANCELAR MEU PEDIDO, DEPOIS DE APROVADO?',
+	      main: 'No momento aceitamos Paypal, Cartões de Crédito incluindo Visa e Mastercard, Cartões de Débito e Boleto Bancário.'
+	    }, {
+	      id: '10',
+	      head: 'QUEM PODERÁ RECEBER MEU PEDIDO?',
+	      main: 'Será necessária a presença de alguém na hora da entrega do pacote para assinar o protocolo de recebimento dos Correios, não necessariamente o destinatário. Se você mora em prédio, em condomínio, em vila ou similares; o responsável por receber a encomenda deverá ser o porteiro. Por norma dos Correios, se não houver porteiro nesses casos, o carteiro não poderá fazer a entrega.'
+	    }, {
+	      id: '11',
+	      head: 'MEU PEDIDO ESTÁ ATRASADO OU NÃO CHEGOU, COMO PROCEDER?',
+	      main: 'Toda informação sobre detalhes do serviço de entrega, ficarão disponíveis na área de Rastreamento de Objeto no site dos Correios, por isso, é imprescindível que você fique atento a essas informações. Se não conseguir obter a informação necessária, nos avise através do formulário de contato ou por e-mail (info@nayp.co) informando o número do seu pedido, para que possamos abrir um chamado e identificar o que ocorreu com a entrega. Caso seu pacote seja extraviado pelos Correios, você pode optar pela devolução integral da compra (incluindo o frete) ou o reenvio do produto (havendo disponibilidade em estoque), sem nenhum custo adicional.'
+	    }, {
+	      id: '12',
+	      head: 'POR QUE MEU PAGAMENTO POR CARTÃO DE CRÉDITO NÃO FOI APROVADO?',
+	      main: 'Existem duas formas de cancelamento: (i) o banco emissor do seu cartão de crédito não aprovou seu pagamento, porque, por exemplo, você passou do limite mensal do seu cartão (mesmo que você parcele sua compra, o valor total dela entra no limite do mês) ou eles percebem que não é do seu perfil fazer compras online ou (ii) a análise de segurança foi negativa, porque, por exemplo, você errou algum dado pessoal ou dado do cartão na hora de preencher no site. Caso o seu banco tenha recusado o pagamento, apenas o portador do cartão conseguirá ter mais informações sobre o porquê, por medidas de segurança e de privacidade.'
+	    }];
+	  }
+	};
+
+/***/ },
+/* 239 */,
+/* 240 */,
+/* 241 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -27514,7 +27523,7 @@
 	exports.default = Help;
 
 /***/ },
-/* 239 */
+/* 242 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -27529,9 +27538,15 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _FileIndex = __webpack_require__(240);
+	var _SwitchForm = __webpack_require__(284);
 
-	var _FileIndex2 = _interopRequireDefault(_FileIndex);
+	var _SwitchForm2 = _interopRequireDefault(_SwitchForm);
+
+	var _QuestionList = __webpack_require__(282);
+
+	var _QuestionList2 = _interopRequireDefault(_QuestionList);
+
+	var _mock = __webpack_require__(285);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27541,13 +27556,21 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+	// data
+
+
 	var Switch = function (_Component) {
 	  _inherits(Switch, _Component);
 
 	  function Switch() {
 	    _classCallCheck(this, Switch);
 
-	    return _possibleConstructorReturn(this, (Switch.__proto__ || Object.getPrototypeOf(Switch)).apply(this, arguments));
+	    var _this = _possibleConstructorReturn(this, (Switch.__proto__ || Object.getPrototypeOf(Switch)).call(this));
+
+	    _this.state = {
+	      questions: _mock.switchTerms.load()
+	    };
+	    return _this;
 	  }
 
 	  _createClass(Switch, [{
@@ -27570,115 +27593,9 @@
 	            'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
 	          )
 	        ),
+	        _react2.default.createElement(_QuestionList2.default, { list: this.state.questions }),
 	        _react2.default.createElement('br', null),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'form_switch' },
-	          _react2.default.createElement(
-	            'h2',
-	            { className: 'title-base' },
-	            'Formulario de trocas e devoluções'
-	          ),
-	          _react2.default.createElement('br', null),
-	          _react2.default.createElement(
-	            'form',
-	            null,
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'form_box' },
-	              _react2.default.createElement(
-	                'label',
-	                null,
-	                'nome completo*'
-	              ),
-	              _react2.default.createElement('input', { type: 'text', placeholder: 'por favor digite seu nome' })
-	            ),
-	            _react2.default.createElement(
-	              'div',
-	              null,
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'form_box _half' },
-	                _react2.default.createElement(
-	                  'label',
-	                  null,
-	                  'email*'
-	                ),
-	                _react2.default.createElement('input', { type: 'email', placeholder: 'por favor, digite seu email' })
-	              ),
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'form_box _half' },
-	                _react2.default.createElement(
-	                  'label',
-	                  null,
-	                  'telefone',
-	                  _react2.default.createElement(
-	                    'small',
-	                    null,
-	                    '(opcional)'
-	                  )
-	                ),
-	                _react2.default.createElement('input', { type: 'tel', placeholder: 'por favor, digite seu email' })
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'div',
-	              null,
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'form_box _tri' },
-	                _react2.default.createElement(
-	                  'label',
-	                  null,
-	                  'cpf*'
-	                ),
-	                _react2.default.createElement('input', { type: 'number', placeholder: 'por favor, digite seu cpf' })
-	              ),
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'form_box _tri' },
-	                _react2.default.createElement(
-	                  'label',
-	                  null,
-	                  'nº do pedido*'
-	                ),
-	                _react2.default.createElement('input', { type: 'number', placeholder: 'por favor, digite nº do pedido' })
-	              ),
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'form_box _tri' },
-	                _react2.default.createElement(
-	                  'label',
-	                  null,
-	                  'código do produto*'
-	                ),
-	                _react2.default.createElement('input', { type: 'text', placeholder: 'por favor, digite o código do pedido' })
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'form_box _last' },
-	              _react2.default.createElement(
-	                'label',
-	                null,
-	                'motivo da troca*'
-	              ),
-	              _react2.default.createElement('textarea', {
-	                placeholder: 'por favor, digite o motivo pelo qual está solicitando a troca ou a devolução do seu pedido' })
-	            ),
-	            _react2.default.createElement(_FileIndex2.default, null),
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'form_control' },
-	              _react2.default.createElement(
-	                'button',
-	                { type: 'submit', className: 'btn-other' },
-	                ' ok '
-	              )
-	            )
-	          )
-	        )
+	        _react2.default.createElement(_SwitchForm2.default, null)
 	      );
 	    }
 	  }]);
@@ -27689,7 +27606,7 @@
 	exports.default = Switch;
 
 /***/ },
-/* 240 */
+/* 243 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -27769,7 +27686,7 @@
 	exports.default = FileIndex;
 
 /***/ },
-/* 241 */
+/* 244 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -27885,7 +27802,7 @@
 	exports.default = Order;
 
 /***/ },
-/* 242 */
+/* 245 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28028,7 +27945,7 @@
 	exports.default = Sizes;
 
 /***/ },
-/* 243 */
+/* 246 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -28357,7 +28274,7 @@
 	exports.default = SizeTop;
 
 /***/ },
-/* 244 */
+/* 247 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -28686,7 +28603,7 @@
 	exports.default = SizeTop2;
 
 /***/ },
-/* 245 */
+/* 248 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -28834,7 +28751,7 @@
 	            null,
 	            _react2.default.createElement(
 	              "tr",
-	              null,
+	              { className: "_title" },
 	              _react2.default.createElement(
 	                "td",
 	                { colSpan: "3" },
@@ -28957,7 +28874,7 @@
 	            ),
 	            _react2.default.createElement(
 	              "tr",
-	              null,
+	              { className: "_title" },
 	              _react2.default.createElement(
 	                "td",
 	                { colSpan: "3" },
@@ -29038,7 +28955,7 @@
 	exports.default = SizeBottom;
 
 /***/ },
-/* 246 */
+/* 249 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -29186,7 +29103,7 @@
 	            null,
 	            _react2.default.createElement(
 	              "tr",
-	              null,
+	              { className: "_title" },
 	              _react2.default.createElement(
 	                "td",
 	                { colSpan: "3" },
@@ -29309,7 +29226,7 @@
 	            ),
 	            _react2.default.createElement(
 	              "tr",
-	              null,
+	              { className: "_title" },
 	              _react2.default.createElement(
 	                "td",
 	                { colSpan: "3" },
@@ -29390,7 +29307,7 @@
 	exports.default = SizeBottom2;
 
 /***/ },
-/* 247 */
+/* 250 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29405,7 +29322,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _GoogleMaps = __webpack_require__(248);
+	var _GoogleMaps = __webpack_require__(251);
 
 	var _GoogleMaps2 = _interopRequireDefault(_GoogleMaps);
 
@@ -29432,6 +29349,11 @@
 	      return _react2.default.createElement(
 	        'div',
 	        { className: '_content' },
+	        _react2.default.createElement(
+	          'h1',
+	          { className: 'title-base' },
+	          'Contatos e horários'
+	        ),
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'capitalize' },
@@ -29565,7 +29487,7 @@
 	exports.default = Contact;
 
 /***/ },
-/* 248 */
+/* 251 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29584,7 +29506,7 @@
 
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 
-	var _reactGmaps = __webpack_require__(249);
+	var _reactGmaps = __webpack_require__(252);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -29637,7 +29559,7 @@
 	exports.default = App;
 
 /***/ },
-/* 249 */
+/* 252 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29648,19 +29570,19 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _componentsGmaps = __webpack_require__(250);
+	var _componentsGmaps = __webpack_require__(253);
 
 	var _componentsGmaps2 = _interopRequireDefault(_componentsGmaps);
 
-	var _componentsMarker = __webpack_require__(258);
+	var _componentsMarker = __webpack_require__(261);
 
 	var _componentsMarker2 = _interopRequireDefault(_componentsMarker);
 
-	var _componentsInfoWindow = __webpack_require__(261);
+	var _componentsInfoWindow = __webpack_require__(264);
 
 	var _componentsInfoWindow2 = _interopRequireDefault(_componentsInfoWindow);
 
-	var _componentsCircle = __webpack_require__(263);
+	var _componentsCircle = __webpack_require__(266);
 
 	var _componentsCircle2 = _interopRequireDefault(_componentsCircle);
 
@@ -29670,7 +29592,7 @@
 	exports.Circle = _componentsCircle2['default'];
 
 /***/ },
-/* 250 */
+/* 253 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29695,19 +29617,19 @@
 
 	var _objectAssign2 = _interopRequireDefault(_objectAssign);
 
-	var _eventsMap = __webpack_require__(251);
+	var _eventsMap = __webpack_require__(254);
 
 	var _eventsMap2 = _interopRequireDefault(_eventsMap);
 
-	var _mixinsListener = __webpack_require__(252);
+	var _mixinsListener = __webpack_require__(255);
 
 	var _mixinsListener2 = _interopRequireDefault(_mixinsListener);
 
-	var _utilsGoogleMaps = __webpack_require__(253);
+	var _utilsGoogleMaps = __webpack_require__(256);
 
 	var _utilsGoogleMaps2 = _interopRequireDefault(_utilsGoogleMaps);
 
-	var _utilsCompareProps = __webpack_require__(257);
+	var _utilsCompareProps = __webpack_require__(260);
 
 	var _utilsCompareProps2 = _interopRequireDefault(_utilsCompareProps);
 
@@ -29798,7 +29720,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 251 */
+/* 254 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -29830,7 +29752,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 252 */
+/* 255 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -29868,7 +29790,7 @@
 	module.exports = exports["default"];
 
 /***/ },
-/* 253 */
+/* 256 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29879,7 +29801,7 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _querystring = __webpack_require__(254);
+	var _querystring = __webpack_require__(257);
 
 	var _querystring2 = _interopRequireDefault(_querystring);
 
@@ -29937,17 +29859,17 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 254 */
+/* 257 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	exports.decode = exports.parse = __webpack_require__(255);
-	exports.encode = exports.stringify = __webpack_require__(256);
+	exports.decode = exports.parse = __webpack_require__(258);
+	exports.encode = exports.stringify = __webpack_require__(259);
 
 
 /***/ },
-/* 255 */
+/* 258 */
 /***/ function(module, exports) {
 
 	// Copyright Joyent, Inc. and other Node contributors.
@@ -30033,7 +29955,7 @@
 
 
 /***/ },
-/* 256 */
+/* 259 */
 /***/ function(module, exports) {
 
 	// Copyright Joyent, Inc. and other Node contributors.
@@ -30103,7 +30025,7 @@
 
 
 /***/ },
-/* 257 */
+/* 260 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -30133,7 +30055,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 258 */
+/* 261 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30144,11 +30066,11 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _entity = __webpack_require__(259);
+	var _entity = __webpack_require__(262);
 
 	var _entity2 = _interopRequireDefault(_entity);
 
-	var _eventsMarker = __webpack_require__(260);
+	var _eventsMarker = __webpack_require__(263);
 
 	var _eventsMarker2 = _interopRequireDefault(_eventsMarker);
 
@@ -30156,7 +30078,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 259 */
+/* 262 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30175,11 +30097,11 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _mixinsListener = __webpack_require__(252);
+	var _mixinsListener = __webpack_require__(255);
 
 	var _mixinsListener2 = _interopRequireDefault(_mixinsListener);
 
-	var _utilsCompareProps = __webpack_require__(257);
+	var _utilsCompareProps = __webpack_require__(260);
 
 	var _utilsCompareProps2 = _interopRequireDefault(_utilsCompareProps);
 
@@ -30227,7 +30149,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 260 */
+/* 263 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -30261,7 +30183,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 261 */
+/* 264 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30272,11 +30194,11 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _entity = __webpack_require__(259);
+	var _entity = __webpack_require__(262);
 
 	var _entity2 = _interopRequireDefault(_entity);
 
-	var _eventsInfoWindow = __webpack_require__(262);
+	var _eventsInfoWindow = __webpack_require__(265);
 
 	var _eventsInfoWindow2 = _interopRequireDefault(_eventsInfoWindow);
 
@@ -30284,7 +30206,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 262 */
+/* 265 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -30302,7 +30224,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 263 */
+/* 266 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30313,11 +30235,11 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _entity = __webpack_require__(259);
+	var _entity = __webpack_require__(262);
 
 	var _entity2 = _interopRequireDefault(_entity);
 
-	var _eventsCircle = __webpack_require__(264);
+	var _eventsCircle = __webpack_require__(267);
 
 	var _eventsCircle2 = _interopRequireDefault(_eventsCircle);
 
@@ -30325,7 +30247,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 264 */
+/* 267 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -30351,7 +30273,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 265 */
+/* 268 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30432,7 +30354,7 @@
 	exports.default = Politic;
 
 /***/ },
-/* 266 */
+/* 269 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -30505,7 +30427,7 @@
 	exports.default = Terms;
 
 /***/ },
-/* 267 */
+/* 270 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -30578,7 +30500,7 @@
 	exports.default = Privacy;
 
 /***/ },
-/* 268 */
+/* 271 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30594,11 +30516,11 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Main = __webpack_require__(269);
+	var _Main = __webpack_require__(272);
 
 	var _Main2 = _interopRequireDefault(_Main);
 
-	var _Navegation = __webpack_require__(270);
+	var _Navegation = __webpack_require__(273);
 
 	var _Navegation2 = _interopRequireDefault(_Navegation);
 
@@ -30639,7 +30561,7 @@
 	}(_react.Component);
 
 /***/ },
-/* 269 */
+/* 272 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -30688,7 +30610,7 @@
 	exports.default = Main;
 
 /***/ },
-/* 270 */
+/* 273 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30789,6 +30711,340 @@
 	}(_react.Component);
 
 	exports.default = Navegation;
+
+/***/ },
+/* 274 */,
+/* 275 */,
+/* 276 */,
+/* 277 */,
+/* 278 */,
+/* 279 */,
+/* 280 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Question = function (_Component) {
+	  _inherits(Question, _Component);
+
+	  function Question(props) {
+	    _classCallCheck(this, Question);
+
+	    var _this = _possibleConstructorReturn(this, (Question.__proto__ || Object.getPrototypeOf(Question)).call(this, props));
+
+	    _this.state = {
+	      visibility: false
+	    };
+	    return _this;
+	  }
+
+	  _createClass(Question, [{
+	    key: "activeQuestion",
+	    value: function activeQuestion() {
+	      this.setState({
+	        visibility: !this.state.visibility
+	      });
+	    }
+	  }, {
+	    key: "render",
+	    value: function render() {
+
+	      var visibility = this.state.visibility ? "_active " : "";
+
+	      return _react2.default.createElement(
+	        "div",
+	        { className: visibility + "question", onClick: this.activeQuestion.bind(this) },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "_header" },
+	          _react2.default.createElement(
+	            "span",
+	            null,
+	            this.props.title
+	          ),
+	          _react2.default.createElement(
+	            "button",
+	            { className: "btn-icon" },
+	            "v"
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "_main" },
+	          this.props.content
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Question;
+	}(_react.Component);
+
+	exports.default = Question;
+
+/***/ },
+/* 281 */,
+/* 282 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _Question = __webpack_require__(280);
+
+	var _Question2 = _interopRequireDefault(_Question);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var QuestionList = function (_Component) {
+	  _inherits(QuestionList, _Component);
+
+	  function QuestionList() {
+	    _classCallCheck(this, QuestionList);
+
+	    return _possibleConstructorReturn(this, (QuestionList.__proto__ || Object.getPrototypeOf(QuestionList)).apply(this, arguments));
+	  }
+
+	  _createClass(QuestionList, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'questions' },
+	        this.props.list.map(function (item) {
+	          return _react2.default.createElement(_Question2.default, { title: item.head, content: item.main });
+	        })
+	      );
+	    }
+	  }]);
+
+	  return QuestionList;
+	}(_react.Component);
+
+	exports.default = QuestionList;
+
+/***/ },
+/* 283 */,
+/* 284 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _FileIndex = __webpack_require__(243);
+
+	var _FileIndex2 = _interopRequireDefault(_FileIndex);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var SwitchForm = function (_Component) {
+	  _inherits(SwitchForm, _Component);
+
+	  function SwitchForm() {
+	    _classCallCheck(this, SwitchForm);
+
+	    return _possibleConstructorReturn(this, (SwitchForm.__proto__ || Object.getPrototypeOf(SwitchForm)).apply(this, arguments));
+	  }
+
+	  _createClass(SwitchForm, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'form_switch' },
+	        _react2.default.createElement(
+	          'h2',
+	          { className: 'title-base' },
+	          'Formulario de trocas e devoluções'
+	        ),
+	        _react2.default.createElement('br', null),
+	        _react2.default.createElement(
+	          'form',
+	          null,
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'form_box' },
+	            _react2.default.createElement(
+	              'label',
+	              null,
+	              'nome completo*'
+	            ),
+	            _react2.default.createElement('input', { type: 'text', placeholder: 'por favor digite seu nome' })
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            null,
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'form_box _half' },
+	              _react2.default.createElement(
+	                'label',
+	                null,
+	                'email*'
+	              ),
+	              _react2.default.createElement('input', { type: 'email', placeholder: 'por favor, digite seu email' })
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'form_box _half' },
+	              _react2.default.createElement(
+	                'label',
+	                null,
+	                'telefone',
+	                _react2.default.createElement(
+	                  'small',
+	                  null,
+	                  '(opcional)'
+	                )
+	              ),
+	              _react2.default.createElement('input', { type: 'tel', placeholder: 'por favor, digite seu email' })
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            null,
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'form_box _tri' },
+	              _react2.default.createElement(
+	                'label',
+	                null,
+	                'cpf*'
+	              ),
+	              _react2.default.createElement('input', { type: 'number', placeholder: 'por favor, digite seu cpf' })
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'form_box _tri' },
+	              _react2.default.createElement(
+	                'label',
+	                null,
+	                'nº do pedido*'
+	              ),
+	              _react2.default.createElement('input', { type: 'number', placeholder: 'por favor, digite nº do pedido' })
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'form_box _tri' },
+	              _react2.default.createElement(
+	                'label',
+	                null,
+	                'código do produto*'
+	              ),
+	              _react2.default.createElement('input', { type: 'text', placeholder: 'por favor, digite o código do pedido' })
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'form_box _last' },
+	            _react2.default.createElement(
+	              'label',
+	              null,
+	              'motivo da troca*'
+	            ),
+	            _react2.default.createElement('textarea', {
+	              placeholder: 'por favor, digite o motivo pelo qual está solicitando a troca ou a devolução do seu pedido' })
+	          ),
+	          _react2.default.createElement(_FileIndex2.default, null),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'form_control' },
+	            _react2.default.createElement(
+	              'button',
+	              { type: 'submit', className: 'btn-other' },
+	              ' ok '
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return SwitchForm;
+	}(_react.Component);
+
+	exports.default = SwitchForm;
+
+/***/ },
+/* 285 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	var switchTerms = exports.switchTerms = {
+
+	  // Load Mock Product Data Into localStorage
+	  load: function load() {
+	    return [{
+	      id: '01',
+	      head: 'qual é o prazo para o envio de um pedido',
+	      main: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit deleniti esse aliquam soluta, totam tenetur odit saepe vel quasi est?'
+	    }, {
+	      id: '02',
+	      head: 'qual o prazo para recebimento de um pedido',
+	      main: 'Isto dependerá de alguns fatores e escolhas que você fará; como o método de envio, forma de pagamento e localidade do endereço de entrega. Os prazos para envio aparecerão antes da finalização do pedido e são uma previsão fornecida pela empresa de logística contratada, no caso os Correios. Eventuais atrasos poderão ocorrer. Não esqueça! Nós começamos a contar a data da entrega a partir da data de confirmação do pagamento do seu pedido, seja pela instituição financeira ou compensação de seu boleto bancário, asim como após a confirmação dos seus dados cadastrais.'
+	    }, {
+	      id: '03',
+	      head: 'quais são os métodos de pagamento',
+	      main: 'No momento aceitamos Paypal, Cartões de Crédito incluindo Visa e Mastercard, Cartões de Débito e Boleto Bancário.'
+	    }, {
+	      id: '04',
+	      head: 'É SEGURO INSERIR DADOS PESSOAIS E BANCÁRIOS?',
+	      main: 'Nossa loja está hospedada em uma plataforma de e-commerce online com um certificado SSL e conformidade PCI; que nos permite vender nossos produtos e serviços com segurança para você. Os gateways de pagamento utilizados por nós aderem aos padrões definidos pela PCI-DSS, gerenciado pelo Conselho de Normas de Segurança PCI. Os requisitos da PCI-DSS ajudam a garantir o manuseio seguro de informações de cartão de crédito pela nossa loja e seus fornecedores de serviço.'
+	    }];
+	  }
+	};
 
 /***/ }
 /******/ ]);

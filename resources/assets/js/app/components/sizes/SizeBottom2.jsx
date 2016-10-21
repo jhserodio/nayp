@@ -63,7 +63,7 @@ export default class SizeBottom2 extends Component {
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr className="_title">
               <td colSpan="3">tamanhos numericos</td>
             </tr>
             <tr>
@@ -96,7 +96,7 @@ export default class SizeBottom2 extends Component {
               <td>82-89</td>
               <td>90-98</td>
             </tr>
-            <tr>
+            <tr className="_title">
               <td colSpan="3">
                 tamanhos nominais
                 <small>
