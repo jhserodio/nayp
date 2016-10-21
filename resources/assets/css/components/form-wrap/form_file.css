@@ -5,6 +5,7 @@
   padding: var(--space-base) 0;
   font-size: var(--size-min);
   text-transform: uppercase;
+  position: relative;
 }
 
 .form_file .file_descript {
@@ -12,11 +13,11 @@
 }
 
 .form_file ._box {
-  position: fixed;
-  top: calc(50% - 100px);
-  left: calc(50% - 150px);
-  width: 300px;
-  height: 200px;
+  position: absolute;
+  top: calc(var(--space-small)*4);
+  left: 0;
+  width: 400px;
+  height: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,6 +43,7 @@
     flex-direction: column-reverse;
     flex-wrap: wrap;
     margin: var(--space-base) 0;
+    position: inherit;
   }
 
   .form_file .file_descript {
@@ -49,4 +51,14 @@
     width: 100%;
     max-width: none;
   }
+
+  .form_file ._box {
+    position: fixed;
+    top: calc(50% - 200px);
+    left: calc(50% - 170px);
+    width: 300px;
+    height: 200px;
+    box-shadow: 0 0 10px 2px var(--half-black);
+  }
+
 }
