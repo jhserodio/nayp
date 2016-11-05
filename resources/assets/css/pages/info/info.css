@@ -16,13 +16,25 @@
   margin    : calc(var(--space-base)*2) 0;
 }
 
+.info-np ._paragraph {
+  font-size : var(--size-small);
+  margin: 0;
+}
+
+.info-np ._breakout {
+  margin: 10px 0;
+  display: block;
+}
+
 .info-np .info-content {
   margin-bottom: calc(var(--space-large)*3);
 }
 
-.form-contatos {
-  margin: calc(var(--space-large)*3) 0;
+.form-contatos,
+.capitalize {
+  margin-bottom: calc(var(--space-large)*3);
 }
+
 
 .info-np ._content {
   width: 100%;

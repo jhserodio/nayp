@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import GoogleMaps from '../googleMaps/GoogleMaps.jsx';
+import GoogleMaps from '../../components/googleMaps/GoogleMaps.jsx';
 
 export default class Contact extends Component {
   render() {
@@ -8,11 +8,16 @@ export default class Contact extends Component {
       <div className="_content">
         <h1 className="title-base">Contatos e horários</h1>
         <div className="capitalize">
-          <p>
-            para outras informações, envie sua mensagem através do formulário,
-            que responderemos brevemente.
-          </p>
-          <p>
+          <br />
+          <h2 className="title-small">
+            loja Online
+          </h2>
+
+          <p className="_paragraph">
+            <span className="_breakout">
+              para outras informações, envie sua mensagem através do formulário,
+              que responderemos brevemente.
+            </span>
             horários de atendimento online: <br />
             <span>
               segunda-feira - sexta-feira: 9:00 AM - 9:00 PM (UTC-03:00 / brasília)
@@ -27,8 +32,12 @@ export default class Contact extends Component {
         <div className="form-contatos">
           <form>
             <div className="form_box">
-              <label>nome</label>
-              <input type="email" placeholder="por favor digite seu nome" />
+              <label>nome*</label>
+              <input type="email" placeholder="por favor digite seu primeiro nome" />
+            </div>
+            <div className="form_box">
+              <label>sobrenome*</label>
+              <input type="email" placeholder="por favor digite seu sobrenome" />
             </div>
             <div className="form_box">
               <label>email</label> <span className="alert-error"> digite um email valido </span>
@@ -50,15 +59,15 @@ export default class Contact extends Component {
 
         <div className="capitalize">
           <h2 className="title-small">
-            loja física nayp
+            loja física
           </h2>
 
-          <p>
+          <p className="_breakout">
             cnpj: 00.000/0001-00 <br />
             r. comendador araújo, 268, loja ca06 - shopping omar
             00000-000, curitiba - paraná, brasil
           </p>
-          <p>
+          <p className="_breakout">
             horários de atendimento loja física: <br />
             <span>
               segunda-feira - sexta-feira: 9:00 AM - 8:00 PM (UTC-03:00 / brasília)
@@ -68,6 +77,7 @@ export default class Contact extends Component {
               sábado: 9:00 AM - 6:00 PM (UTC-03:00 / brasília)
             </span>
           </p>
+
         </div>
 
         <GoogleMaps></GoogleMaps>

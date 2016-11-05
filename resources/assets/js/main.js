@@ -1,4 +1,4 @@
-// TOGGLE ELEMENTS
+// Toggle Elements
 
 import * as header from './components/header'
 import * as footer from './components/footer'

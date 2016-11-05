@@ -1,7 +1,9 @@
 var path = require("path");
 var src  = "./resources/assets/js";
 var babel = require('babel-loader');
-var UglifyJsPlugin = require('webpack/lib/optimize/UglifyJsPlugin');
+var webpack = require("webpack");
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+
 
 module.exports = {
 
@@ -23,13 +25,13 @@ module.exports = {
 
     loaders: [
       {
-        test: /\.jsx?$/,
-        loaders: ['bable?cacheDirectory'],
-        exclude: /(node_modules)/,
-        loader: 'babel',
-        query: {
-          presets: ['react', 'es2015']
-        }
+        test: /(\.js$|\.jsx$)/,
+        exclude: /node_modules/,
+        loader: 'babel'
+      },
+      {
+        test: /\.json$/,
+        loader: "json"
       }
     ]
   },
@@ -39,13 +41,28 @@ module.exports = {
     extensions: ['', '.js', '.jsx']
   },
 
-// plugins config
- // plugins: [
- //   new UglifyJsPlugin({
- //     compress: {
- //         warnings: false
- //     }
- //   })
- // ]
+// Dev server settings
+devServer: {
+  contentBase: "./info.html",
+  colors: true,
+  historyApiFallback: true,
+  inline: true,
+  hot: true,
+  port: 8080
+},
+
+// Webpack Plugins settings
+plugins: [
+  new webpack.NoErrorsPlugin(),
+  new webpack.HotModuleReplacementPlugin()
+],
+
+
+// resolve extensions and directories
+resolve: {
+  extensions: ['', '.css', '.js', '.jsx', '.json'],
+  modulesDirectories: ['node_modules']
+}
+
 
 }

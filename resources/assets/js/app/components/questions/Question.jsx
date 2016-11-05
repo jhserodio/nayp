@@ -2,20 +2,19 @@ import React, { Component } from 'react';
 
 export default class Question extends Component {
 
-  constructor(props) {
+  constructor (props) {
     super(props);
 
     this.state = {
-      visibility: false
+      visibility: this.props.visibility
     }
   }
 
-  activeQuestion () {
+  toggle() {
     this.setState({
       visibility: !this.state.visibility
-    })
+    });
   }
-
 
   render() {
 
@@ -23,7 +22,8 @@ export default class Question extends Component {
 
     return (
 
-          <div className={ visibility + "question"} onClick={this.activeQuestion.bind(this)}>
+          <div className={ visibility + " question"}
+               onClick={this.toggle.bind(this)}>
             <div className="_header">
               <span>
                 {this.props.title}
@@ -33,7 +33,11 @@ export default class Question extends Component {
               </button>
             </div>
             <div className="_main">
-              {this.props.content}
+              {this.props.content.map( item =>
+                <p className="_paragraph">
+                  {item}
+                </p>
+              )}
             </div>
           </div>
 

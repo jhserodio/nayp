@@ -36,6 +36,9 @@
   opacity: 1;
   max-height: none;
   padding: calc(var(--space-base)*2);
+  padding-left: 0;
+  border: none;
+  justify-content: flex-start;
 }
 
 @media (--screen-mobile) {

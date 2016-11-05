@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Main from './components/main/Main.jsx';
+import Main from './containers/main/Main.jsx';
 import Navegation from './components/navegation/Navegation.jsx';
 
 export class App extends Component {

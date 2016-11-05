@@ -27,15 +27,9 @@
     transition: var(--transition-base);
 }
 
-/* state active */
-
-.question._active {
-    background: black;
-}
-
-.question._active ._header span,
-.question._active ._header button {
-    color: white;
+.question ._main p {
+    font-size: var(--size-base);
+    margin: calc(var(--space-base)/2) 0;
 }
 
 .question._active ._header button {
@@ -43,7 +37,7 @@
 }
 
 .question._active ._main {
-    padding: var(--space-base);
     max-height: none;
-    color: white;
+    padding-bottom: var(--size-base);
+    /*color: white;*/
 }

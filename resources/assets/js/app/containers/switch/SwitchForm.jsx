@@ -11,9 +11,15 @@ export default class SwitchForm extends Component {
       </h2>
       <br/>
       <form>
-        <div className="form_box">
-          <label>nome completo*</label>
-          <input type="text" placeholder="por favor digite seu nome"></input>
+        <div>
+          <div className="form_box _half">
+            <label>nome*</label>
+            <input type="text" placeholder="digite seu primeiro nome"></input>
+          </div>
+          <div className="form_box _half">
+            <label>sobrenome*</label>
+            <input type="text" placeholder="digite seu sobrenome"></input>
+          </div>
         </div>
         <div>
           <div className="form_box _half">

@@ -326,11 +326,12 @@ tr {
 }
 
 tr._title {
-  font-size: 0.8em;
+  font-size: 1em;
 }
 
 tr small {
   text-transform: lowercase;
+  font-size: 1em;
 }
 
 tbody tr:hover,
@@ -347,6 +348,12 @@ tbody tr._title:hover td {
   cursor: default;
 }
 
+@media   (min-width: 1140px) {
+  td:first-child {
+    min-width: 200px;
+  }
+}
+
 @media    (max-width: 767px) {
 
   th {
@@ -359,7 +366,6 @@ tbody tr._title:hover td {
     font-size: 10px;
     padding: 10px;
   }
-
 
 }
 
@@ -1281,15 +1287,9 @@ clear: both;
     transition: 0.2s all ease;
 }
 
-/* state active */
-
-.question._active {
-    background: black;
-}
-
-.question._active ._header span,
-.question._active ._header button {
-    color: white;
+.question ._main p {
+    font-size: 1em;
+    margin: 5px 0;
 }
 
 .question._active ._header button {
@@ -1297,9 +1297,9 @@ clear: both;
 }
 
 .question._active ._main {
-    padding: 10px;
     max-height: none;
-    color: white;
+    padding-bottom: 1em;
+    /*color: white;*/
 }
 
 /*CARDS*/
@@ -1957,6 +1957,9 @@ clear: both;
   opacity: 1;
   max-height: none;
   padding: 20px;
+  padding-left: 0;
+  border: none;
+  justify-content: flex-start;
 }
 
 @media   (max-width: 1139px) {
@@ -2413,6 +2416,7 @@ clear: both;
 
 .size_model ._content {
   display: flex;
+  margin-top: 1em!important;
   justify-content: space-between;
   width: 100%;
   border: 1px solid black;
@@ -2440,6 +2444,8 @@ clear: both;
 .size_model ._menu li {
   border-top: 1px solid black;
   margin: 0;
+  display: flex;
+  align-items: center;
   min-height: 33%;
 }
 
@@ -2680,12 +2686,17 @@ clear: both;
   }
 
   .nav_tab li {
-    width: 50%;
+    width: 100%;
     display: flex;
+    min-width: 100%;
     justify-content: center;
     align-items: center;
+    border-left: 1px solid black;
   }
 
+  .nav_tab li:first-child {
+    border-bottom: 0;
+  }
   .nav_tab li:nth-child(3) {
     border-left: 1px solid black;
     border-top: 0;
@@ -2694,13 +2705,6 @@ clear: both;
   .nav_tab li:last-child {
     border-top: 0;
   }
-
-  .nav_tab._half li {
-    min-width: 100%;
-    width: 100%;
-    border-left: 1px solid black;
-  }
-
 
   .nav_tab a {
     padding: 5px 0;
@@ -2998,12 +3002,23 @@ clear: both;
   margin: 20px 0;
 }
 
+.info-np ._paragraph {
+  font-size: 0.8em;
+  margin: 0;
+}
+
+.info-np ._breakout {
+  margin: 10px 0;
+  display: block;
+}
+
 .info-np .info-content {
   margin-bottom: 45px;
 }
 
-.form-contatos {
-  margin: 45px 0;
+.form-contatos,
+.capitalize {
+  margin-bottom: 45px;
 }
 
 .info-np ._content {

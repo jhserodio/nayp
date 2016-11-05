@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import SwitchForm from './SwitchForm';
-import QuestionList from '../questions/QuestionList';
+import QuestionList from '../../components/questions/QuestionList';
 
 // data
 import { switchTerms } from './mock';
@@ -17,6 +17,7 @@ export default class Switch extends Component {
   }
 
   render() {
+
     return (
       <div className="_content">
         <div>
@@ -36,6 +37,7 @@ export default class Switch extends Component {
 
         <QuestionList list={this.state.questions}/>
 
+        <br/>
         <br/>
 
         <SwitchForm />

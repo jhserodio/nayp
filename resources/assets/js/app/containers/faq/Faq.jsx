@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 // data
 import { faq } from './mock';
 
-import QuestionList from '../questions/QuestionList';
+import QuestionList from '../../components/questions/QuestionList';
 
 
 export default class Faq extends Component {

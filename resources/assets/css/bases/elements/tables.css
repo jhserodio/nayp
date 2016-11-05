@@ -61,11 +61,12 @@ tr {
 }
 
 tr._title {
-  font-size: var(--size-small);
+  font-size: var(--size-base);
 }
 
 tr small {
   text-transform: lowercase;
+  font-size: var(--size-base);
 }
 
 
@@ -84,6 +85,12 @@ tbody tr._title:hover td {
 }
 
 
+@media (--screen-medium) {
+  td:first-child {
+    min-width: 200px;
+  }
+}
+
 @media (--screen-small) {
 
   th {
@@ -96,6 +103,5 @@ tbody tr._title:hover td {
     font-size: var(--size-min);
     padding: var(--space-base);
   }
-
 
 }
