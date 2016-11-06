@@ -63,7 +63,7 @@
 /******/ 	}
 
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "c1d1310a3b3c6000e152"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "d0a2fdbf6e98153462ab"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 
@@ -584,19 +584,19 @@
 
 	'use strict';
 
-	var _header = __webpack_require__(426);
+	var _header = __webpack_require__(427);
 
 	var header = _interopRequireWildcard(_header);
 
-	var _footer = __webpack_require__(428);
+	var _footer = __webpack_require__(429);
 
 	var footer = _interopRequireWildcard(_footer);
 
-	var _cartPreview = __webpack_require__(430);
+	var _cartPreview = __webpack_require__(431);
 
-	var _toggleElements = __webpack_require__(427);
+	var _toggleElements = __webpack_require__(428);
 
-	var _productGallery = __webpack_require__(431);
+	var _productGallery = __webpack_require__(432);
 
 	var productGallery = _interopRequireWildcard(_productGallery);
 
@@ -609,12 +609,12 @@
 
 /***/ },
 
-/***/ 426:
+/***/ 427:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
-	var _toggleElements = __webpack_require__(427);
+	var _toggleElements = __webpack_require__(428);
 
 	(0, _toggleElements.toggleDisplay)("active-collections");
 	(0, _toggleElements.toggleDisplay)("active-info");
@@ -645,7 +645,7 @@
 
 /***/ },
 
-/***/ 427:
+/***/ 428:
 /***/ function(module, exports) {
 
 	"use strict";
@@ -689,18 +689,18 @@
 
 /***/ },
 
-/***/ 428:
+/***/ 429:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
-	var _toggleElements = __webpack_require__(427);
+	var _toggleElements = __webpack_require__(428);
 
 	(0, _toggleElements.toggleDisplay)("active-footer-menu");
 
 /***/ },
 
-/***/ 430:
+/***/ 431:
 /***/ function(module, exports) {
 
 	'use strict';
@@ -742,7 +742,7 @@
 
 /***/ },
 
-/***/ 431:
+/***/ 432:
 /***/ function(module, exports) {
 
 	"use strict";

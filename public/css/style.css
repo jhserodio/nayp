@@ -2021,6 +2021,15 @@ clear: both;
   border-bottom: 1px solid #666666;
 }
 
+.form_box._error .alert-error {
+  display: inline-block;
+}
+
+.form_box._error input {
+  border-left: 5px solid #990000;
+  padding-left: 5px;
+}
+
 @media   (min-width: 1140px) {
 
   .form_box._half {
@@ -2358,7 +2367,7 @@ clear: both;
 .alert-info,
 .alert-success,
 .alert-warning {
-  display: inline-block;
+  display: none;
   margin: 0;
   font-size: 9px;
   text-transform: uppercase;
@@ -2366,11 +2375,6 @@ clear: both;
 
 .alert-error {
   color: #990000 !important;
-}
-
-.alert-error + input {
-  border-left: 5px solid #990000;
-  padding-left: 5px;
 }
 
 /*propover*/

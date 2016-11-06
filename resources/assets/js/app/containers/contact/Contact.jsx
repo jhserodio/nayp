@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+
 import GoogleMaps from '../../components/googleMaps/GoogleMaps.jsx';
+import FormInput from '../../components/formInput/FormInput';
 
 export default class Contact extends Component {
   render() {

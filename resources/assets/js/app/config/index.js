@@ -1,20 +1,20 @@
 import React, { Component } from 'react';
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 
-import Info from '../components/info/Info.jsx';
-import Faq from '../components/faq/Faq.jsx';
-import Help from '../components/help/Help.jsx';
-import Switch from '../components/switch/Switch.jsx';
-import Order from '../components/order/Order.jsx';
-import Sizes from '../components/sizes/Sizes.jsx';
-import SizeTop from '../components/sizes/SizeTop.jsx';
-import SizeTop2 from '../components/sizes/SizeTop2.jsx';
-import SizeBottom from '../components/sizes/SizeBottom.jsx';
-import SizeBottom2 from '../components/sizes/SizeBottom2.jsx';
-import Contact from '../components/contact/Contact.jsx';
-import Politic from '../components/politic/Politic.jsx';
-import Terms   from '../components/terms/Terms.jsx';
-import Privacy from '../components/privacy/Privacy.jsx';
+import Info from '../containers/info/Info.jsx';
+import Faq from '../containers/faq/Faq.jsx';
+import Help from '../containers/help/Help.jsx';
+import Switch from '../containers/switch/Switch.jsx';
+import Order from '../containers/order/Order.jsx';
+import Sizes from '../containers/sizes/Sizes.jsx';
+import SizeTop from '../containers/sizes/SizeTop.jsx';
+import SizeTop2 from '../containers/sizes/SizeTop2.jsx';
+import SizeBottom from '../containers/sizes/SizeBottom.jsx';
+import SizeBottom2 from '../containers/sizes/SizeBottom2.jsx';
+import Contact from '../containers/contact/Contact.jsx';
+import Politic from '../containers/politic/Politic.jsx';
+import Terms   from '../containers/terms/Terms.jsx';
+import Privacy from '../containers/privacy/Privacy.jsx';
 
 export class RouteConfig extends Component {
   render() {

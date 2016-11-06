@@ -42,27 +42,27 @@ module.exports = {
   },
 
 // Dev server settings
-devServer: {
-  contentBase: "./info.html",
-  colors: true,
-  historyApiFallback: true,
-  inline: true,
-  hot: true,
-  port: 8080
-},
+  devServer: {
+    contentBase: "./info.html",
+    colors: true,
+    historyApiFallback: true,
+    inline: true,
+    hot: true,
+    port: 8080
+  },
 
 // Webpack Plugins settings
-plugins: [
-  new webpack.NoErrorsPlugin(),
-  new webpack.HotModuleReplacementPlugin()
-],
+  plugins: [
+    new webpack.NoErrorsPlugin(),
+    new webpack.HotModuleReplacementPlugin()
+  ],
 
 
 // resolve extensions and directories
-resolve: {
-  extensions: ['', '.css', '.js', '.jsx', '.json'],
-  modulesDirectories: ['node_modules']
-}
+  resolve: {
+    extensions: ['', '.css', '.js', '.jsx', '.json'],
+    modulesDirectories: ['node_modules']
+  }
 
 
 }
