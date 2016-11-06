@@ -19,6 +19,8 @@ export default class Order extends Component {
                 <FormInput label="numero da ordem"
                            message="por favor digite o numero do seu pedido"
                            type="text"
+                           minLength={3}
+                           maxLength={10}
                            isRequired/>
 
                 <div className="form_control">

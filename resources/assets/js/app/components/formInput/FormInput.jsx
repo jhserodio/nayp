@@ -9,6 +9,8 @@ export default class FormInput extends Component {
   state = {
       value: "",
       type: this.props.type,
+      minLength: this.props.minLength,
+      maxLength: this.props.maxLength,
       grid: this.props.grid,
       validate: "",
       isRequired: this.props.isRequired
@@ -17,11 +19,9 @@ export default class FormInput extends Component {
   validate(event) {
     let targetValue = event.target.value;
 
-    if (this.state.isRequired){
-      // require verify
       if (targetValue) {
+        // mail type verify
         if (this.state.type === "email") {
-
           let re = /[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}/igm;
           if (!(re.test(targetValue))) {
             this.setState({
@@ -33,17 +33,29 @@ export default class FormInput extends Component {
               validate: ""
             });
           }
+        } else if (targetValue.length < this.state.minLength) {
+          this.setState({
+            validate: "_error",
+            validateMessage: `o campo deve conter no minimo ${this.state.minLength} caracteres`
+          });
+        } else if (targetValue.length > this.state.maxLength) {
+          this.setState({
+            validate: "_error",
+            validateMessage: `o campo deve conter no maximo ${this.state.maxLength} caracteres`
+          });
         } else {
           this.setState({validate: ""});
         }
 
       } else {
-        this.setState({
-          validate: "_error",
-          validateMessage: "campo obrigatório"
-        });
+        if(this.state.isRequired) {
+          this.setState({
+            validate: "_error",
+            validateMessage: "campo obrigatório"
+          });
+        }
       }
-    }
+
   }
 
   handleChange(event) {

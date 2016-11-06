@@ -63,7 +63,7 @@
 /******/ 	}
 
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "d0a2fdbf6e98153462ab"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "dac1bfd23a140afe0579"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 
@@ -34492,6 +34492,8 @@
 	              _react3.default.createElement(_FormInput2.default, { label: 'numero da ordem',
 	                message: 'por favor digite o numero do seu pedido',
 	                type: 'text',
+	                minLength: 3,
+	                maxLength: 10,
 	                isRequired: true }),
 	              _react3.default.createElement(
 	                'div',
@@ -34596,6 +34598,8 @@
 	    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = FormInput.__proto__ || Object.getPrototypeOf(FormInput)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
 	      value: "",
 	      type: _this.props.type,
+	      minLength: _this.props.minLength,
+	      maxLength: _this.props.maxLength,
 	      grid: _this.props.grid,
 	      validate: "",
 	      isRequired: _this.props.isRequired
@@ -34607,26 +34611,35 @@
 	    value: function validate(event) {
 	      var targetValue = event.target.value;
 
-	      if (this.state.isRequired) {
-	        // require verify
-	        if (targetValue) {
-	          if (this.state.type === "email") {
-
-	            var re = /[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}/igm;
-	            if (!re.test(targetValue)) {
-	              this.setState({
-	                validate: "_error",
-	                validateMessage: "digite um email valido"
-	              });
-	            } else {
-	              this.setState({
-	                validate: ""
-	              });
-	            }
+	      if (targetValue) {
+	        // mail type verify
+	        if (this.state.type === "email") {
+	          var re = /[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}/igm;
+	          if (!re.test(targetValue)) {
+	            this.setState({
+	              validate: "_error",
+	              validateMessage: "digite um email valido"
+	            });
 	          } else {
-	            this.setState({ validate: "" });
+	            this.setState({
+	              validate: ""
+	            });
 	          }
+	        } else if (targetValue.length < this.state.minLength) {
+	          this.setState({
+	            validate: "_error",
+	            validateMessage: "o campo deve conter no minimo " + this.state.minLength + " caracteres"
+	          });
+	        } else if (targetValue.length > this.state.maxLength) {
+	          this.setState({
+	            validate: "_error",
+	            validateMessage: "o campo deve conter no maximo " + this.state.maxLength + " caracteres"
+	          });
 	        } else {
+	          this.setState({ validate: "" });
+	        }
+	      } else {
+	        if (this.state.isRequired) {
 	          this.setState({
 	            validate: "_error",
 	            validateMessage: "campo obrigatório"
