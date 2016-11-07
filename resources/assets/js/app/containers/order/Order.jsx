@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import FormInput from '../../components/formInput/FormInput';
+import FormInput from '../../components/formElements/FormInput';
 
 export default class Order extends Component {
   render() {
@@ -12,11 +12,13 @@ export default class Order extends Component {
             <div className="form-status-pedido">
               <form>
                 <FormInput label="Email"
+                           name="order_email"
                            message="Digite seu email"
                            type="email"
                            isRequired/>
 
                 <FormInput label="numero da ordem"
+                           name="order_number"
                            message="por favor digite o numero do seu pedido"
                            type="text"
                            minLength={3}

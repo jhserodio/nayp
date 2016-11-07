@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 
 import FileIndex from './FileIndex';
-
+import FormInput from '../../components/formElements/FormInput';
+import TextArea from '../../components/formElements/TextArea';
 
 export default class SwitchForm extends Component {
   render () {
@@ -12,46 +13,67 @@ export default class SwitchForm extends Component {
       <br/>
       <form>
         <div>
-          <div className="form_box _half">
-            <label>nome*</label>
-            <input type="text" placeholder="digite seu primeiro nome"></input>
-          </div>
-          <div className="form_box _half">
-            <label>sobrenome*</label>
-            <input type="text" placeholder="digite seu sobrenome"></input>
-          </div>
+          <FormInput name="switch_firstname"
+                       label="nome"
+                       grid="_half"
+                       type="text"
+                       minLength={3}
+                       message="por favor digite seu primeiro nome"
+                       isRequired/>
+
+            <FormInput name="switch_lastname"
+                       label="sobrenome"
+                       grid="_half"
+                       type="text"
+                       minLength={3}
+                       message="por favor digite seu ultimo nome"
+                       isRequired/>
         </div>
         <div>
-          <div className="form_box _half">
-            <label>email*</label>
-            <input type="email" placeholder="por favor, digite seu email"></input>
-          </div>
-          <div className="form_box _half">
-            <label>telefone<small>(opcional)</small></label>
-            <input type="tel" placeholder="por favor, digite seu email"></input>
-          </div>
+           <FormInput name="switch_email"
+                       label="Email"
+                       grid="_half"
+                       type="email"
+                       message="Digite seu email"
+                       isRequired/>
+
+            <FormInput name="switch_tel"
+                       label="telefone"
+                       grid="_half"
+                       type="tel"
+                       message="digite um telefone para contato"/>
         </div>
         <div>
-          <div className="form_box _tri">
-            <label>cpf*</label>
-            <input type="number" placeholder="por favor, digite seu cpf"></input>
-          </div>
-          <div className="form_box _tri">
-            <label>nº do pedido*</label>
-            <input type="number" placeholder="por favor, digite nº do pedido"></input>
-          </div>
-          <div className="form_box _tri">
-            <label>código do produto*</label>
-            <input type="text" placeholder="por favor, digite o código do pedido"></input>
-          </div>
+          <FormInput name="switch_cpf"
+                     label="cpf"
+                     grid="_tri"
+                     type="text"
+                     mask="999.999.999-99"
+                     message="por favor digite o nº do seu CPF"
+                     isRequired/>
+
+          <FormInput name="switch_order"
+                     label="nº do pedido"
+                     grid="_tri"
+                     type="text"
+                     message="por favor digite o nº do pedido"
+                     isRequired/>
+
+          <FormInput name="switch_code"
+                     label="cod. pedido"
+                     grid="_tri"
+                     type="text"
+                     message="por favor digite o código do pedido"
+                     isRequired/>
         </div>
-        <div className="form_box _last">
-          <label>motivo da troca*</label>
-          <textarea
-            placeholder="por favor, digite o motivo pelo qual está solicitando
-                a troca ou a devolução do seu pedido">
-              </textarea>
-        </div>
+
+        <TextArea name="switch_messsage"
+                  label="motivo da troca"
+                  grid="_last"
+                  minLength={10}
+                  message="por favor, digite o motivo pelo qual está solicitando a troca/devolução" 
+                  isRequired/>
+      
         <FileIndex />
         <div className="form_control">
           <button type="submit" className="btn-other"> ok </button>

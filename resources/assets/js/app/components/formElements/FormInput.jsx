@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import InputElement from 'react-input-mask';
 
 export default class FormInput extends Component {
 
@@ -9,11 +10,13 @@ export default class FormInput extends Component {
   state = {
       value: "",
       type: this.props.type,
+      label: this.props.isRequired ? `${this.props.label} *` : this.props.label,
       minLength: this.props.minLength,
       maxLength: this.props.maxLength,
       grid: this.props.grid,
       validate: "",
-      isRequired: this.props.isRequired
+      isRequired: this.props.isRequired,
+      mask: this.props.type === "tel" ? "+99 (99) 999999999" : this.props.mask
   }
 
   validate(event) {
@@ -33,21 +36,25 @@ export default class FormInput extends Component {
               validate: ""
             });
           }
+          // min char validate
         } else if (targetValue.length < this.state.minLength) {
           this.setState({
             validate: "_error",
             validateMessage: `o campo deve conter no minimo ${this.state.minLength} caracteres`
           });
+          // max char validate
         } else if (targetValue.length > this.state.maxLength) {
           this.setState({
             validate: "_error",
             validateMessage: `o campo deve conter no maximo ${this.state.maxLength} caracteres`
           });
+          // clear validate
         } else {
           this.setState({validate: ""});
         }
 
       } else {
+        // required validate
         if(this.state.isRequired) {
           this.setState({
             validate: "_error",
@@ -68,15 +75,17 @@ export default class FormInput extends Component {
 
     return (
       <div className={formClass}>
-        <label>{this.props.label}</label>
+        <label>{this.state.label}</label>
         <span className="alert-error">
           {this.state.validateMessage}
         </span>
-        <input type={this.props.type}
-               placeholder={this.props.message}
-               value={this.state.value}
-               onChange={::this.handleChange}
-               onBlur={::this.validate}/>
+        <InputElement type={this.props.type}
+                      name={this.props.name}
+                      placeholder={this.props.message}
+                      value={this.state.value}
+                      mask={this.state.mask}
+                      onChange={::this.handleChange}
+                      onBlur={::this.validate}/>
       </div>
     );
   };

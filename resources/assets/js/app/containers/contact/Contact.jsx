@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 
 import GoogleMaps from '../../components/googleMaps/GoogleMaps.jsx';
-import FormInput from '../../components/formInput/FormInput';
+import FormInput from '../../components/formElements/FormInput';
+import TextArea from '../../components/formElements/TextArea';
 
 export default class Contact extends Component {
   render() {
@@ -33,26 +34,36 @@ export default class Contact extends Component {
 
         <div className="form-contatos">
           <form>
-            <div className="form_box">
-              <label>nome*</label>
-              <input type="email" placeholder="por favor digite seu primeiro nome" />
-            </div>
-            <div className="form_box">
-              <label>sobrenome*</label>
-              <input type="email" placeholder="por favor digite seu sobrenome" />
-            </div>
-            <div className="form_box">
-              <label>email</label> <span className="alert-error"> digite um email valido </span>
-              <input type="email" placeholder="por favor digite seu email" />
-            </div>
-            <div className="form_box">
-              <label>telefone</label>
-              <input type="email" placeholder="+00 (00) 0000-0000" />
-            </div>
-            <div className="form_box">
-              <label>mensagem</label>
-              <textarea name="mensagem"></textarea>
-            </div>
+            <FormInput name="contact_firstname"
+                       label="nome"
+                       type="text"
+                       minLength={3}
+                       message="por favor digite seu primeiro nome"
+                       isRequired/>
+
+            <FormInput name="contact_lastname"
+                       label="sobrenome"
+                       type="text"
+                       minLength={3}
+                       message="por favor digite seu ultimo nome"
+                       isRequired/>
+
+            <FormInput name="contact_email"
+                       label="Email"
+                       type="email"
+                       message="Digite seu email"
+                       isRequired/>
+
+            <FormInput name="contact_tel"
+                       label="telefone"
+                       type="tel"
+                       message="digite um telefone para contato"/>
+
+            <TextArea name="contact_message"
+                      label="mensagem"
+                      minLength={10}
+                      isRequired/>
+
             <div className="form_control">
               <button type="submit" className="btn-other"> ok </button>
             </div>
