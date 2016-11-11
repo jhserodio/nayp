@@ -63,7 +63,7 @@
 /******/ 	}
 
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "c2d092ed15931234a3bb"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "cf30474262bd34547702"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 
@@ -593,7 +593,7 @@
 
 	var _config = __webpack_require__(172);
 
-	var _app = __webpack_require__(424);
+	var _app = __webpack_require__(426);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -22005,43 +22005,43 @@
 
 	var _Switch2 = _interopRequireDefault(_Switch);
 
-	var _Order = __webpack_require__(396);
+	var _Order = __webpack_require__(399);
 
 	var _Order2 = _interopRequireDefault(_Order);
 
-	var _Sizes = __webpack_require__(398);
+	var _Sizes = __webpack_require__(400);
 
 	var _Sizes2 = _interopRequireDefault(_Sizes);
 
-	var _SizeTop = __webpack_require__(399);
+	var _SizeTop = __webpack_require__(401);
 
 	var _SizeTop2 = _interopRequireDefault(_SizeTop);
 
-	var _SizeTop3 = __webpack_require__(400);
+	var _SizeTop3 = __webpack_require__(402);
 
 	var _SizeTop4 = _interopRequireDefault(_SizeTop3);
 
-	var _SizeBottom = __webpack_require__(401);
+	var _SizeBottom = __webpack_require__(403);
 
 	var _SizeBottom2 = _interopRequireDefault(_SizeBottom);
 
-	var _SizeBottom3 = __webpack_require__(402);
+	var _SizeBottom3 = __webpack_require__(404);
 
 	var _SizeBottom4 = _interopRequireDefault(_SizeBottom3);
 
-	var _Contact = __webpack_require__(403);
+	var _Contact = __webpack_require__(405);
 
 	var _Contact2 = _interopRequireDefault(_Contact);
 
-	var _Politic = __webpack_require__(421);
+	var _Politic = __webpack_require__(423);
 
 	var _Politic2 = _interopRequireDefault(_Politic);
 
-	var _Terms = __webpack_require__(422);
+	var _Terms = __webpack_require__(424);
 
 	var _Terms2 = _interopRequireDefault(_Terms);
 
-	var _Privacy = __webpack_require__(423);
+	var _Privacy = __webpack_require__(425);
 
 	var _Privacy2 = _interopRequireDefault(_Privacy);
 
@@ -33991,7 +33991,7 @@
 
 	var _QuestionList2 = _interopRequireDefault(_QuestionList);
 
-	var _mock = __webpack_require__(395);
+	var _mock = __webpack_require__(398);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -34096,11 +34096,11 @@
 
 	var _FileIndex2 = _interopRequireDefault(_FileIndex);
 
-	var _FormInput = __webpack_require__(434);
+	var _FormInput = __webpack_require__(395);
 
 	var _FormInput2 = _interopRequireDefault(_FormInput);
 
-	var _TextArea = __webpack_require__(435);
+	var _TextArea = __webpack_require__(397);
 
 	var _TextArea2 = _interopRequireDefault(_TextArea);
 
@@ -34160,14 +34160,12 @@
 	            null,
 	            _react3.default.createElement(_FormInput2.default, { name: 'switch_firstname',
 	              label: 'nome',
-	              grid: '_half',
 	              type: 'text',
 	              minLength: 3,
 	              message: 'por favor digite seu primeiro nome',
 	              isRequired: true }),
 	            _react3.default.createElement(_FormInput2.default, { name: 'switch_lastname',
 	              label: 'sobrenome',
-	              grid: '_half',
 	              type: 'text',
 	              minLength: 3,
 	              message: 'por favor digite seu ultimo nome',
@@ -34191,25 +34189,17 @@
 	          _react3.default.createElement(
 	            'div',
 	            null,
-	            _react3.default.createElement(_FormInput2.default, { name: 'switch_cpf',
-	              label: 'cpf',
-	              grid: '_tri',
-	              type: 'text',
-	              mask: '999.999.999-99',
-	              message: 'por favor digite o n\xBA do seu CPF',
-	              isRequired: true }),
 	            _react3.default.createElement(_FormInput2.default, { name: 'switch_order',
 	              label: 'n\xBA do pedido',
-	              grid: '_tri',
+	              grid: '_half',
 	              type: 'text',
 	              message: 'por favor digite o n\xBA do pedido',
 	              isRequired: true }),
 	            _react3.default.createElement(_FormInput2.default, { name: 'switch_code',
-	              label: 'cod. pedido',
-	              grid: '_tri',
+	              label: 'cod. produto',
+	              grid: '_half',
 	              type: 'text',
-	              message: 'por favor digite o c\xF3digo do pedido',
-	              isRequired: true })
+	              message: 'por favor digite o c\xF3digo do pedido' })
 	          ),
 	          _react3.default.createElement(_TextArea2.default, { name: 'switch_messsage',
 	            label: 'motivo da troca',
@@ -34344,3394 +34334,6 @@
 
 /***/ },
 /* 395 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	var switchTerms = exports.switchTerms = {
-
-	  // Load Mock Product Data Into localStorage
-	  load: function load() {
-	    return [{
-	      id: '01',
-	      head: 'INFORMAÇÕES GERAIS',
-	      main: ['Para que seja efetuada qualquer troca ou devolução, é preciso primeiro realizar uma solicitação através do nosso formulário de contato ou por e-mail (info@nayp.co); informando de maneira completa os seguintes itens:', '(i)O motivo da troca. (ii)Número do pedido. (iii)Nome e CPF do cliente. (iv)Código do produto (conforme consta na Nota Fiscal, ao lado da descrição do produto)', '___', 'OBS.: ', '- Responderemos em menos de 24 horas, com todas as informações necessárias. ', '- Só será permitida a troca ou devolução quando as regras e prazos informados em nossa Política de Trocas e Devoluções estiverem de acordo.', '- Pedidos feitos em nossa loja online, só poderão ser trocados ou devolvidos em nossa loja online.']
-	    }, {
-	      id: '02',
-	      head: 'DEVOLUÇÃO POR DESISTÊNCIA',
-	      main: ['Caso decida fazer a devolução do produto, será realizado o reembolso do valor pago, sem o frete. Isso só será possível se as regras abaixo estiverem de acordo:', '- 07 (sete) dias corridos a partir da entrega do produto; a contar de sua assinatura ou do ato de recebimento do produto.', '- Frete por conta do consumidor.', '- Respeitar os prazos previstos e informados.', '- O Produto deve ser novo, ou seja, não utilizado e deve estar em sua embalagem original.', '- O produto deve ser enviado com a Nota fiscal Original de compra.', '- Devem constar no envio todos os itens que compõem o pedido em questão, como produtos, embalagens e seus acessórios. Somente com estes itens será possível trocar ou devolver produtos.', '- O produto será analisado conforme regras do código de defesa do consumidor.']
-	    }, {
-	      id: '03',
-	      head: 'TROCA POR TAMANHO OU COR (opção do consumidor)',
-	      main: ['Se a sua vontade é realizar a troca de um produto (por tamanho, cor ou modelo), certifique-se de que as regras abaixo estejam de acordo:', '- 30 (trinta) dias corridos a partir da entrega do produto; a contar de sua assinatura ou do ato de recebimento do produto.', '- Frete por conta do consumidor (exceto por erro operacional *).', '- Respeitar os prazos previstos e informados.', '- O Produto deve ser novo, ou seja, não utilizado e deve estar em sua embalagem original.', '- O produto deve ser enviado com a Nota fiscal Original de compra.', '- Devem constar no envio todos os itens que compõem o pedido em questão, como produtos, embalagens e seus acessórios. Somente com estes itens será possível trocar ou devolver produtos.', '- O produto será analisado conforme regras do Código de Defesa do Consumidor.', '* Frete por nossa conta, quando constatado que o pedido enviado é incompatível com o pedido originalmente feito; caso contrário o produto só será reenviado ao cliente após o pagamento do frete de devolução mais o frete de retorno.']
-
-	    }, {
-	      id: '04',
-	      head: 'TROCA POR DEFEITO',
-	      main: ['Se você precisa realizar a troca de um produto por defeito de fabricação, certifique-se de que as regras abaixo estejam de acordo.', '- 90 (noventa) dias corridos a partir da entrega do produto; a contar de sua assinatura ou do ato de recebimento do produto. ', '- Frete por nossa conta quando constatado o defeito, caso contrário o produto só será reenviado ao cliente após o pagamento do frete de devolução mais o frete de retorno.', '- Respeitar os prazos previstos e informados.', '- O produto deve estar completo, com todos os acessórios recebidos.', '- Deve ser enviado com a Nota Fiscal Original de compra.', '- Devem constar no envio todos os itens que compõem o pedido em questão, como produtos, embalagens, etiquetas originais e seus acessórios. Somente com estes itens será possível trocar ou devolver produtos.', '- E será analisado conforme o código de defesa do consumidor e por nossas premissas de qualidade.', 'OBS.: ', '- Todo o produto devolvido por defeito é analisado por nosso controle de qualidade. Só serão aceitos produtos originais que tenham recebido os cuidados corretos de conservação indicados na etiqueta do produto, com desgaste compatível com o tempo de uso, sem sinais de danos e Nota Fiscal Original; seguindo nossos critérios de qualidade.', '- Sendo constatado o defeito de fabricação, a NAYP tem até 30 (trinta) dias corridos, a contar da data de recebimento do seu produto devolvido, para dar uma das soluções a seguir:', '(i) Caso seja possível fazer o reparo da peça, ela será consertada e reenviada.', '(ii) Caso não seja possível fazer o reparo, mas o produto ainda esteja em estoque, uma nova peça será enviada.', '(iii) Caso não seja possível fazer o reparo e o produto não esteja mais em estoque, você poderá solicitar a devolução do valor pago ou a troca por outro produto da loja online de mesmo valor.']
-	    }];
-	  }
-	};
-
-/***/ },
-/* 396 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(module) {'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _react2 = __webpack_require__(1);
-
-	var _react3 = _interopRequireDefault(_react2);
-
-	var _reactTransformHmr3 = __webpack_require__(174);
-
-	var _reactTransformHmr4 = _interopRequireDefault(_reactTransformHmr3);
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _FormInput = __webpack_require__(434);
-
-	var _FormInput2 = _interopRequireDefault(_FormInput);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var _components = {
-	  Order: {
-	    displayName: 'Order'
-	  }
-	};
-
-	var _reactTransformHmr2 = (0, _reactTransformHmr4.default)({
-	  filename: '/vhost/nayp/resources/assets/js/app/containers/order/Order.jsx',
-	  components: _components,
-	  locals: [module],
-	  imports: [_react3.default]
-	});
-
-	function _wrapComponent(id) {
-	  return function (Component) {
-	    return _reactTransformHmr2(Component, id);
-	  };
-	}
-
-	var Order = _wrapComponent('Order')(function (_Component) {
-	  _inherits(Order, _Component);
-
-	  function Order() {
-	    _classCallCheck(this, Order);
-
-	    return _possibleConstructorReturn(this, (Order.__proto__ || Object.getPrototypeOf(Order)).apply(this, arguments));
-	  }
-
-	  _createClass(Order, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react3.default.createElement(
-	        'div',
-	        { className: 'info-np' },
-	        _react3.default.createElement(
-	          'div',
-	          { className: 'container' },
-	          _react3.default.createElement(
-	            'h1',
-	            { className: 'title-base' },
-	            'consulte o status do seu pedido'
-	          ),
-	          _react3.default.createElement('br', null),
-	          _react3.default.createElement(
-	            'div',
-	            { className: 'form-status-pedido' },
-	            _react3.default.createElement(
-	              'form',
-	              null,
-	              _react3.default.createElement(_FormInput2.default, { label: 'Email',
-	                name: 'order_email',
-	                message: 'Digite seu email',
-	                type: 'email',
-	                isRequired: true }),
-	              _react3.default.createElement(_FormInput2.default, { label: 'numero da ordem',
-	                name: 'order_number',
-	                message: 'por favor digite o numero do seu pedido',
-	                type: 'text',
-	                minLength: 3,
-	                maxLength: 10,
-	                isRequired: true }),
-	              _react3.default.createElement(
-	                'div',
-	                { className: 'form_control' },
-	                _react3.default.createElement(
-	                  'button',
-	                  { type: 'submit', className: 'btn-other' },
-	                  ' ok '
-	                )
-	              )
-	            )
-	          ),
-	          _react3.default.createElement(
-	            'div',
-	            { className: 'status-error' },
-	            _react3.default.createElement(
-	              'p',
-	              null,
-	              _react3.default.createElement(
-	                'span',
-	                { className: 'alert-error' },
-	                'Lametamos mas n\xE3o encontramos seu pedido em nossa base de dados'
-	              ),
-	              _react3.default.createElement('br', null),
-	              'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis obcaecati culpa necessitatibus, impedit in error voluptatem quos eligendi quisquam quo ex excepturi doloribus quod nihil cumque accusamus tempora fugit eius.'
-	            )
-	          )
-	        )
-	      );
-	    }
-	  }]);
-
-	  return Order;
-	}(_react2.Component));
-
-	exports.default = Order;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(173)(module)))
-
-/***/ },
-/* 397 */,
-/* 398 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(module) {'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _react2 = __webpack_require__(1);
-
-	var _react3 = _interopRequireDefault(_react2);
-
-	var _reactTransformHmr3 = __webpack_require__(174);
-
-	var _reactTransformHmr4 = _interopRequireDefault(_reactTransformHmr3);
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _reactRouter = __webpack_require__(323);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var _components = {
-	  Sizes: {
-	    displayName: 'Sizes'
-	  }
-	};
-
-	var _reactTransformHmr2 = (0, _reactTransformHmr4.default)({
-	  filename: '/vhost/nayp/resources/assets/js/app/containers/sizes/Sizes.jsx',
-	  components: _components,
-	  locals: [module],
-	  imports: [_react3.default]
-	});
-
-	function _wrapComponent(id) {
-	  return function (Component) {
-	    return _reactTransformHmr2(Component, id);
-	  };
-	}
-
-	var Sizes = _wrapComponent('Sizes')(function (_Component) {
-	  _inherits(Sizes, _Component);
-
-	  function Sizes() {
-	    _classCallCheck(this, Sizes);
-
-	    return _possibleConstructorReturn(this, (Sizes.__proto__ || Object.getPrototypeOf(Sizes)).apply(this, arguments));
-	  }
-
-	  _createClass(Sizes, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react3.default.createElement(
-	        'div',
-	        { className: 'info-np' },
-	        _react3.default.createElement(
-	          'div',
-	          { className: 'container' },
-	          _react3.default.createElement(
-	            'nav',
-	            { className: 'nav_tab' },
-	            _react3.default.createElement(
-	              'ul',
-	              { className: 'reset' },
-	              _react3.default.createElement(
-	                'li',
-	                null,
-	                _react3.default.createElement(
-	                  _reactRouter.IndexLink,
-	                  { to: '/sizes' },
-	                  'men\'s top'
-	                )
-	              ),
-	              _react3.default.createElement(
-	                'li',
-	                null,
-	                _react3.default.createElement(
-	                  _reactRouter.Link,
-	                  { to: 'bottom' },
-	                  'men\'s bottoms'
-	                )
-	              ),
-	              _react3.default.createElement(
-	                'li',
-	                null,
-	                _react3.default.createElement(
-	                  _reactRouter.Link,
-	                  { to: '/top2' },
-	                  'women\'s top'
-	                )
-	              ),
-	              _react3.default.createElement(
-	                'li',
-	                null,
-	                _react3.default.createElement(
-	                  _reactRouter.Link,
-	                  { to: '/bottom2' },
-	                  'women\'s bottom'
-	                )
-	              )
-	            )
-	          ),
-	          this.props.children,
-	          _react3.default.createElement(
-	            'div',
-	            null,
-	            _react3.default.createElement(
-	              'div',
-	              { className: 'info-content' },
-	              _react3.default.createElement(
-	                'p',
-	                null,
-	                '- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur fuga quisquam assumenda et est officia, quaerat illum eius, ipsum quas iste corporis pariatur reiciendis distinctio repudiandae'
-	              ),
-	              _react3.default.createElement(
-	                'p',
-	                null,
-	                '- quaerat illum eius, ipsum quas iste corporis pariatur reiciendis distinctio repudiandae voluptate odio voluptatibus neque.'
-	              ),
-	              _react3.default.createElement(
-	                'p',
-	                null,
-	                '- ing elit. Tenetur fuga quisquam assumenda et est officia, quaerat illum eius, ipsum quas iste corporis pariatur reiciendis distinctio'
-	              )
-	            ),
-	            _react3.default.createElement(
-	              'h2',
-	              { className: 'title-base' },
-	              'd\xFAvidas?'
-	            ),
-	            _react3.default.createElement(
-	              'small',
-	              null,
-	              'quaerat illum eius, ipsum quas iste corporis pariatur reiciendis distinctio repudiandae voluptate odio voluptatibus neque.'
-	            ),
-	            _react3.default.createElement('br', null),
-	            _react3.default.createElement('br', null),
-	            _react3.default.createElement(
-	              'a',
-	              { href: '#', className: 'reset' },
-	              _react3.default.createElement(
-	                'button',
-	                { className: 'btn-full' },
-	                'clique aqui e fale conosco'
-	              )
-	            )
-	          )
-	        )
-	      );
-	    }
-	  }]);
-
-	  return Sizes;
-	}(_react2.Component));
-
-	exports.default = Sizes;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(173)(module)))
-
-/***/ },
-/* 399 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(module) {"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _react2 = __webpack_require__(1);
-
-	var _react3 = _interopRequireDefault(_react2);
-
-	var _reactTransformHmr3 = __webpack_require__(174);
-
-	var _reactTransformHmr4 = _interopRequireDefault(_reactTransformHmr3);
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var _components = {
-	  SizeTop: {
-	    displayName: "SizeTop"
-	  }
-	};
-
-	var _reactTransformHmr2 = (0, _reactTransformHmr4.default)({
-	  filename: "/vhost/nayp/resources/assets/js/app/containers/sizes/SizeTop.jsx",
-	  components: _components,
-	  locals: [module],
-	  imports: [_react3.default]
-	});
-
-	function _wrapComponent(id) {
-	  return function (Component) {
-	    return _reactTransformHmr2(Component, id);
-	  };
-	}
-
-	var SizeTop = _wrapComponent("SizeTop")(function (_Component) {
-	  _inherits(SizeTop, _Component);
-
-	  function SizeTop() {
-	    _classCallCheck(this, SizeTop);
-
-	    return _possibleConstructorReturn(this, (SizeTop.__proto__ || Object.getPrototypeOf(SizeTop)).apply(this, arguments));
-	  }
-
-	  _createClass(SizeTop, [{
-	    key: "render",
-	    value: function render() {
-	      return _react3.default.createElement(
-	        "div",
-	        null,
-	        _react3.default.createElement(
-	          "div",
-	          { className: "size_model" },
-	          _react3.default.createElement(
-	            "h2",
-	            { className: "title-base" },
-	            "1\xBA passo / ",
-	            _react3.default.createElement("br", null),
-	            "medidas"
-	          ),
-	          _react3.default.createElement(
-	            "div",
-	            { className: "_content _top-masc" },
-	            _react3.default.createElement(
-	              "div",
-	              { className: "_image" },
-	              _react3.default.createElement("img", { src: "public/img/size-top1.png", alt: "" })
-	            ),
-	            _react3.default.createElement(
-	              "ul",
-	              { className: "_menu" },
-	              _react3.default.createElement(
-	                "li",
-	                null,
-	                _react3.default.createElement(
-	                  "p",
-	                  null,
-	                  _react3.default.createElement(
-	                    "strong",
-	                    null,
-	                    "A. PEITO"
-	                  ),
-	                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-	                ),
-	                _react3.default.createElement(
-	                  "span",
-	                  { className: "_marker _a" },
-	                  "a"
-	                )
-	              ),
-	              _react3.default.createElement(
-	                "li",
-	                null,
-	                _react3.default.createElement(
-	                  "p",
-	                  null,
-	                  _react3.default.createElement(
-	                    "strong",
-	                    null,
-	                    "B. ALTURA DO TRONCO"
-	                  ),
-	                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-	                ),
-	                _react3.default.createElement(
-	                  "span",
-	                  { className: "_marker _b" },
-	                  "b"
-	                )
-	              ),
-	              _react3.default.createElement(
-	                "li",
-	                null,
-	                _react3.default.createElement(
-	                  "p",
-	                  null,
-	                  _react3.default.createElement(
-	                    "strong",
-	                    null,
-	                    "C. MEDIDA DO BRA\xC7O"
-	                  ),
-	                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-	                ),
-	                _react3.default.createElement(
-	                  "span",
-	                  { className: "_marker _c" },
-	                  "c"
-	                )
-	              )
-	            )
-	          )
-	        ),
-	        _react3.default.createElement(
-	          "h2",
-	          { className: "title-base" },
-	          "2\xBA passo / ",
-	          _react3.default.createElement("br", null),
-	          "encontre o tamanho certo"
-	        ),
-	        _react3.default.createElement(
-	          "table",
-	          { className: "size_table" },
-	          _react3.default.createElement(
-	            "thead",
-	            null,
-	            _react3.default.createElement(
-	              "tr",
-	              null,
-	              _react3.default.createElement(
-	                "th",
-	                null,
-	                "Medidas",
-	                _react3.default.createElement("br", null),
-	                "em cm"
-	              ),
-	              _react3.default.createElement(
-	                "th",
-	                null,
-	                "a.",
-	                _react3.default.createElement("br", null),
-	                "peito",
-	                _react3.default.createElement("br", null)
-	              ),
-	              _react3.default.createElement(
-	                "th",
-	                null,
-	                "b.",
-	                _react3.default.createElement("br", null),
-	                "autura do",
-	                _react3.default.createElement("br", null),
-	                "tronco"
-	              ),
-	              _react3.default.createElement(
-	                "th",
-	                null,
-	                "c.",
-	                _react3.default.createElement("br", null),
-	                "medida do",
-	                _react3.default.createElement("br", null),
-	                "bra\xE7o"
-	              )
-	            )
-	          ),
-	          _react3.default.createElement(
-	            "tbody",
-	            null,
-	            _react3.default.createElement(
-	              "tr",
-	              null,
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "xp"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "74 - 81"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "82 - 89"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "90 - 98"
-	              )
-	            ),
-	            _react3.default.createElement(
-	              "tr",
-	              null,
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "p"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "74-81"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "82-89"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "90-98"
-	              )
-	            ),
-	            _react3.default.createElement(
-	              "tr",
-	              null,
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "m"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "74-81"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "82-89"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "90-98"
-	              )
-	            ),
-	            _react3.default.createElement(
-	              "tr",
-	              null,
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "g"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "74-81"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "82-89"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "90-98"
-	              )
-	            ),
-	            _react3.default.createElement(
-	              "tr",
-	              null,
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "xg"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "74-81"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "82-89"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "90-98"
-	              )
-	            ),
-	            _react3.default.createElement(
-	              "tr",
-	              null,
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "xxg"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "74-81"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "82-89"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "90-98"
-	              )
-	            )
-	          )
-	        )
-	      );
-	    }
-	  }]);
-
-	  return SizeTop;
-	}(_react2.Component));
-
-	exports.default = SizeTop;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(173)(module)))
-
-/***/ },
-/* 400 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(module) {"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _react2 = __webpack_require__(1);
-
-	var _react3 = _interopRequireDefault(_react2);
-
-	var _reactTransformHmr3 = __webpack_require__(174);
-
-	var _reactTransformHmr4 = _interopRequireDefault(_reactTransformHmr3);
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var _components = {
-	  SizeTop2: {
-	    displayName: "SizeTop2"
-	  }
-	};
-
-	var _reactTransformHmr2 = (0, _reactTransformHmr4.default)({
-	  filename: "/vhost/nayp/resources/assets/js/app/containers/sizes/SizeTop2.jsx",
-	  components: _components,
-	  locals: [module],
-	  imports: [_react3.default]
-	});
-
-	function _wrapComponent(id) {
-	  return function (Component) {
-	    return _reactTransformHmr2(Component, id);
-	  };
-	}
-
-	var SizeTop2 = _wrapComponent("SizeTop2")(function (_Component) {
-	  _inherits(SizeTop2, _Component);
-
-	  function SizeTop2() {
-	    _classCallCheck(this, SizeTop2);
-
-	    return _possibleConstructorReturn(this, (SizeTop2.__proto__ || Object.getPrototypeOf(SizeTop2)).apply(this, arguments));
-	  }
-
-	  _createClass(SizeTop2, [{
-	    key: "render",
-	    value: function render() {
-	      return _react3.default.createElement(
-	        "div",
-	        null,
-	        _react3.default.createElement(
-	          "div",
-	          { className: "size_model" },
-	          _react3.default.createElement(
-	            "h2",
-	            { className: "title-base" },
-	            "1\xBA passo / ",
-	            _react3.default.createElement("br", null),
-	            "medidas"
-	          ),
-	          _react3.default.createElement(
-	            "div",
-	            { className: "_content _top-fem" },
-	            _react3.default.createElement(
-	              "div",
-	              { className: "_image" },
-	              _react3.default.createElement("img", { src: "public/img/size-top2.png", alt: "" })
-	            ),
-	            _react3.default.createElement(
-	              "ul",
-	              { className: "_menu" },
-	              _react3.default.createElement(
-	                "li",
-	                null,
-	                _react3.default.createElement(
-	                  "p",
-	                  null,
-	                  _react3.default.createElement(
-	                    "strong",
-	                    null,
-	                    "A. PEITO"
-	                  ),
-	                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-	                ),
-	                _react3.default.createElement(
-	                  "span",
-	                  { className: "_marker _a" },
-	                  "a"
-	                )
-	              ),
-	              _react3.default.createElement(
-	                "li",
-	                null,
-	                _react3.default.createElement(
-	                  "p",
-	                  null,
-	                  _react3.default.createElement(
-	                    "strong",
-	                    null,
-	                    "B. ALTURA DO TRONCO"
-	                  ),
-	                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-	                ),
-	                _react3.default.createElement(
-	                  "span",
-	                  { className: "_marker _b" },
-	                  "b"
-	                )
-	              ),
-	              _react3.default.createElement(
-	                "li",
-	                null,
-	                _react3.default.createElement(
-	                  "p",
-	                  null,
-	                  _react3.default.createElement(
-	                    "strong",
-	                    null,
-	                    "C. MEDIDA DO BRA\xC7O"
-	                  ),
-	                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-	                ),
-	                _react3.default.createElement(
-	                  "span",
-	                  { className: "_marker _c" },
-	                  "c"
-	                )
-	              )
-	            )
-	          )
-	        ),
-	        _react3.default.createElement(
-	          "h2",
-	          { className: "title-base" },
-	          "2\xBA passo / ",
-	          _react3.default.createElement("br", null),
-	          "encontre o tamanho certo"
-	        ),
-	        _react3.default.createElement(
-	          "table",
-	          { className: "size_table" },
-	          _react3.default.createElement(
-	            "thead",
-	            null,
-	            _react3.default.createElement(
-	              "tr",
-	              null,
-	              _react3.default.createElement(
-	                "th",
-	                null,
-	                "Medidas",
-	                _react3.default.createElement("br", null),
-	                "em cm"
-	              ),
-	              _react3.default.createElement(
-	                "th",
-	                null,
-	                "a.",
-	                _react3.default.createElement("br", null),
-	                "peito",
-	                _react3.default.createElement("br", null)
-	              ),
-	              _react3.default.createElement(
-	                "th",
-	                null,
-	                "b.",
-	                _react3.default.createElement("br", null),
-	                "autura do",
-	                _react3.default.createElement("br", null),
-	                "tronco"
-	              ),
-	              _react3.default.createElement(
-	                "th",
-	                null,
-	                "c.",
-	                _react3.default.createElement("br", null),
-	                "medida do",
-	                _react3.default.createElement("br", null),
-	                "bra\xE7o"
-	              )
-	            )
-	          ),
-	          _react3.default.createElement(
-	            "tbody",
-	            null,
-	            _react3.default.createElement(
-	              "tr",
-	              null,
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "xp"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "74 - 81"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "82 - 89"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "90 - 98"
-	              )
-	            ),
-	            _react3.default.createElement(
-	              "tr",
-	              null,
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "p"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "74-81"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "82-89"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "90-98"
-	              )
-	            ),
-	            _react3.default.createElement(
-	              "tr",
-	              null,
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "m"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "74-81"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "82-89"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "90-98"
-	              )
-	            ),
-	            _react3.default.createElement(
-	              "tr",
-	              null,
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "g"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "74-81"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "82-89"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "90-98"
-	              )
-	            ),
-	            _react3.default.createElement(
-	              "tr",
-	              null,
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "xg"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "74-81"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "82-89"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "90-98"
-	              )
-	            ),
-	            _react3.default.createElement(
-	              "tr",
-	              null,
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "xxg"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "74-81"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "82-89"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "90-98"
-	              )
-	            )
-	          )
-	        )
-	      );
-	    }
-	  }]);
-
-	  return SizeTop2;
-	}(_react2.Component));
-
-	exports.default = SizeTop2;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(173)(module)))
-
-/***/ },
-/* 401 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(module) {"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _react2 = __webpack_require__(1);
-
-	var _react3 = _interopRequireDefault(_react2);
-
-	var _reactTransformHmr3 = __webpack_require__(174);
-
-	var _reactTransformHmr4 = _interopRequireDefault(_reactTransformHmr3);
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var _components = {
-	  SizeBottom: {
-	    displayName: "SizeBottom"
-	  }
-	};
-
-	var _reactTransformHmr2 = (0, _reactTransformHmr4.default)({
-	  filename: "/vhost/nayp/resources/assets/js/app/containers/sizes/SizeBottom.jsx",
-	  components: _components,
-	  locals: [module],
-	  imports: [_react3.default]
-	});
-
-	function _wrapComponent(id) {
-	  return function (Component) {
-	    return _reactTransformHmr2(Component, id);
-	  };
-	}
-
-	var SizeBottom = _wrapComponent("SizeBottom")(function (_Component) {
-	  _inherits(SizeBottom, _Component);
-
-	  function SizeBottom() {
-	    _classCallCheck(this, SizeBottom);
-
-	    return _possibleConstructorReturn(this, (SizeBottom.__proto__ || Object.getPrototypeOf(SizeBottom)).apply(this, arguments));
-	  }
-
-	  _createClass(SizeBottom, [{
-	    key: "render",
-	    value: function render() {
-	      return _react3.default.createElement(
-	        "div",
-	        null,
-	        _react3.default.createElement(
-	          "div",
-	          { className: "size_model" },
-	          _react3.default.createElement(
-	            "h2",
-	            { className: "title-base" },
-	            "1\xBA passo / ",
-	            _react3.default.createElement("br", null),
-	            "medidas"
-	          ),
-	          _react3.default.createElement(
-	            "div",
-	            { className: "_content _bottom-masc" },
-	            _react3.default.createElement(
-	              "div",
-	              { className: "_image" },
-	              _react3.default.createElement("img", { src: "public/img/size-bottom1.png", alt: "" })
-	            ),
-	            _react3.default.createElement(
-	              "ul",
-	              { className: "_menu _half" },
-	              _react3.default.createElement(
-	                "li",
-	                null,
-	                _react3.default.createElement(
-	                  "p",
-	                  null,
-	                  _react3.default.createElement(
-	                    "strong",
-	                    null,
-	                    "A. PEITO"
-	                  ),
-	                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-	                ),
-	                _react3.default.createElement(
-	                  "span",
-	                  { className: "_marker _a" },
-	                  "a"
-	                )
-	              ),
-	              _react3.default.createElement(
-	                "li",
-	                null,
-	                _react3.default.createElement(
-	                  "p",
-	                  null,
-	                  _react3.default.createElement(
-	                    "strong",
-	                    null,
-	                    "B. ALTURA DO TRONCO"
-	                  ),
-	                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-	                ),
-	                _react3.default.createElement(
-	                  "span",
-	                  { className: "_marker _b" },
-	                  "b"
-	                )
-	              )
-	            )
-	          )
-	        ),
-	        _react3.default.createElement(
-	          "h2",
-	          { className: "title-base" },
-	          "2\xBA passo / ",
-	          _react3.default.createElement("br", null),
-	          "encontre o tamanho certo"
-	        ),
-	        _react3.default.createElement(
-	          "table",
-	          { className: "size_table _bottom" },
-	          _react3.default.createElement(
-	            "thead",
-	            null,
-	            _react3.default.createElement(
-	              "tr",
-	              null,
-	              _react3.default.createElement(
-	                "th",
-	                null,
-	                "Medidas",
-	                _react3.default.createElement("br", null),
-	                "em cm"
-	              ),
-	              _react3.default.createElement(
-	                "th",
-	                null,
-	                "b.",
-	                _react3.default.createElement("br", null),
-	                "autura do",
-	                _react3.default.createElement("br", null),
-	                "tronco"
-	              ),
-	              _react3.default.createElement(
-	                "th",
-	                null,
-	                "c.",
-	                _react3.default.createElement("br", null),
-	                "medida do",
-	                _react3.default.createElement("br", null),
-	                "bra\xE7o"
-	              )
-	            )
-	          ),
-	          _react3.default.createElement(
-	            "tbody",
-	            null,
-	            _react3.default.createElement(
-	              "tr",
-	              { className: "_title" },
-	              _react3.default.createElement(
-	                "td",
-	                { colSpan: "3" },
-	                "tamanhos numericos"
-	              )
-	            ),
-	            _react3.default.createElement(
-	              "tr",
-	              null,
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "36"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "82 - 89"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "90 - 98"
-	              )
-	            ),
-	            _react3.default.createElement(
-	              "tr",
-	              null,
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "38"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "82-89"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "90-98"
-	              )
-	            ),
-	            _react3.default.createElement(
-	              "tr",
-	              null,
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "40"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "82-89"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "90-98"
-	              )
-	            ),
-	            _react3.default.createElement(
-	              "tr",
-	              null,
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "42"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "82-89"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "90-98"
-	              )
-	            ),
-	            _react3.default.createElement(
-	              "tr",
-	              null,
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "44"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "82-89"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "90-98"
-	              )
-	            ),
-	            _react3.default.createElement(
-	              "tr",
-	              null,
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "46"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "82-89"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "90-98"
-	              )
-	            ),
-	            _react3.default.createElement(
-	              "tr",
-	              { className: "_title" },
-	              _react3.default.createElement(
-	                "td",
-	                { colSpan: "3" },
-	                "tamanhos nominais",
-	                _react3.default.createElement(
-	                  "small",
-	                  null,
-	                  "\xA0 (pe\xE7as com ajustes de cord\xE3o e/ou el\xE1stico na cintura)"
-	                )
-	              )
-	            ),
-	            _react3.default.createElement(
-	              "tr",
-	              null,
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "p"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "82-89"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "90-98"
-	              )
-	            ),
-	            _react3.default.createElement(
-	              "tr",
-	              null,
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "m"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "82-89"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "90-98"
-	              )
-	            ),
-	            _react3.default.createElement(
-	              "tr",
-	              null,
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "g"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "82-89"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "90-98"
-	              )
-	            )
-	          )
-	        )
-	      );
-	    }
-	  }]);
-
-	  return SizeBottom;
-	}(_react2.Component));
-
-	exports.default = SizeBottom;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(173)(module)))
-
-/***/ },
-/* 402 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(module) {"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _react2 = __webpack_require__(1);
-
-	var _react3 = _interopRequireDefault(_react2);
-
-	var _reactTransformHmr3 = __webpack_require__(174);
-
-	var _reactTransformHmr4 = _interopRequireDefault(_reactTransformHmr3);
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var _components = {
-	  SizeBottom2: {
-	    displayName: "SizeBottom2"
-	  }
-	};
-
-	var _reactTransformHmr2 = (0, _reactTransformHmr4.default)({
-	  filename: "/vhost/nayp/resources/assets/js/app/containers/sizes/SizeBottom2.jsx",
-	  components: _components,
-	  locals: [module],
-	  imports: [_react3.default]
-	});
-
-	function _wrapComponent(id) {
-	  return function (Component) {
-	    return _reactTransformHmr2(Component, id);
-	  };
-	}
-
-	var SizeBottom2 = _wrapComponent("SizeBottom2")(function (_Component) {
-	  _inherits(SizeBottom2, _Component);
-
-	  function SizeBottom2() {
-	    _classCallCheck(this, SizeBottom2);
-
-	    return _possibleConstructorReturn(this, (SizeBottom2.__proto__ || Object.getPrototypeOf(SizeBottom2)).apply(this, arguments));
-	  }
-
-	  _createClass(SizeBottom2, [{
-	    key: "render",
-	    value: function render() {
-	      return _react3.default.createElement(
-	        "div",
-	        null,
-	        _react3.default.createElement(
-	          "div",
-	          { className: "size_model" },
-	          _react3.default.createElement(
-	            "h2",
-	            { className: "title-base" },
-	            "1\xBA passo / ",
-	            _react3.default.createElement("br", null),
-	            "medidas"
-	          ),
-	          _react3.default.createElement(
-	            "div",
-	            { className: "_content _bottom-fem" },
-	            _react3.default.createElement(
-	              "div",
-	              { className: "_image" },
-	              _react3.default.createElement("img", { src: "public/img/size-bottom2.png", alt: "" })
-	            ),
-	            _react3.default.createElement(
-	              "ul",
-	              { className: "_menu _half" },
-	              _react3.default.createElement(
-	                "li",
-	                null,
-	                _react3.default.createElement(
-	                  "p",
-	                  null,
-	                  _react3.default.createElement(
-	                    "strong",
-	                    null,
-	                    "A. PEITO"
-	                  ),
-	                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-	                ),
-	                _react3.default.createElement(
-	                  "span",
-	                  { className: "_marker _a" },
-	                  "a"
-	                )
-	              ),
-	              _react3.default.createElement(
-	                "li",
-	                null,
-	                _react3.default.createElement(
-	                  "p",
-	                  null,
-	                  _react3.default.createElement(
-	                    "strong",
-	                    null,
-	                    "B. ALTURA DO TRONCO"
-	                  ),
-	                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-	                ),
-	                _react3.default.createElement(
-	                  "span",
-	                  { className: "_marker _b" },
-	                  "b"
-	                )
-	              )
-	            )
-	          )
-	        ),
-	        _react3.default.createElement(
-	          "h2",
-	          { className: "title-base" },
-	          "2\xBA passo / ",
-	          _react3.default.createElement("br", null),
-	          "encontre o tamanho certo"
-	        ),
-	        _react3.default.createElement(
-	          "table",
-	          { className: "size_table _bottom" },
-	          _react3.default.createElement(
-	            "thead",
-	            null,
-	            _react3.default.createElement(
-	              "tr",
-	              null,
-	              _react3.default.createElement(
-	                "th",
-	                null,
-	                "Medidas",
-	                _react3.default.createElement("br", null),
-	                "em cm"
-	              ),
-	              _react3.default.createElement(
-	                "th",
-	                null,
-	                "b.",
-	                _react3.default.createElement("br", null),
-	                "autura do",
-	                _react3.default.createElement("br", null),
-	                "tronco"
-	              ),
-	              _react3.default.createElement(
-	                "th",
-	                null,
-	                "c.",
-	                _react3.default.createElement("br", null),
-	                "medida do",
-	                _react3.default.createElement("br", null),
-	                "bra\xE7o"
-	              )
-	            )
-	          ),
-	          _react3.default.createElement(
-	            "tbody",
-	            null,
-	            _react3.default.createElement(
-	              "tr",
-	              { className: "_title" },
-	              _react3.default.createElement(
-	                "td",
-	                { colSpan: "3" },
-	                "tamanhos numericos"
-	              )
-	            ),
-	            _react3.default.createElement(
-	              "tr",
-	              null,
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "36"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "82 - 89"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "90 - 98"
-	              )
-	            ),
-	            _react3.default.createElement(
-	              "tr",
-	              null,
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "38"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "82-89"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "90-98"
-	              )
-	            ),
-	            _react3.default.createElement(
-	              "tr",
-	              null,
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "40"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "82-89"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "90-98"
-	              )
-	            ),
-	            _react3.default.createElement(
-	              "tr",
-	              null,
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "42"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "82-89"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "90-98"
-	              )
-	            ),
-	            _react3.default.createElement(
-	              "tr",
-	              null,
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "44"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "82-89"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "90-98"
-	              )
-	            ),
-	            _react3.default.createElement(
-	              "tr",
-	              null,
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "46"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "82-89"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "90-98"
-	              )
-	            ),
-	            _react3.default.createElement(
-	              "tr",
-	              { className: "_title" },
-	              _react3.default.createElement(
-	                "td",
-	                { colSpan: "3" },
-	                "tamanhos nominais",
-	                _react3.default.createElement(
-	                  "small",
-	                  null,
-	                  "\xA0 (pe\xE7as com ajustes de cord\xE3o e/ou el\xE1stico na cintura)"
-	                )
-	              )
-	            ),
-	            _react3.default.createElement(
-	              "tr",
-	              null,
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "p"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "82-89"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "90-98"
-	              )
-	            ),
-	            _react3.default.createElement(
-	              "tr",
-	              null,
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "m"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "82-89"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "90-98"
-	              )
-	            ),
-	            _react3.default.createElement(
-	              "tr",
-	              null,
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "g"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "82-89"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "90-98"
-	              )
-	            )
-	          )
-	        )
-	      );
-	    }
-	  }]);
-
-	  return SizeBottom2;
-	}(_react2.Component));
-
-	exports.default = SizeBottom2;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(173)(module)))
-
-/***/ },
-/* 403 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(module) {'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _react2 = __webpack_require__(1);
-
-	var _react3 = _interopRequireDefault(_react2);
-
-	var _reactTransformHmr3 = __webpack_require__(174);
-
-	var _reactTransformHmr4 = _interopRequireDefault(_reactTransformHmr3);
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _GoogleMaps = __webpack_require__(404);
-
-	var _GoogleMaps2 = _interopRequireDefault(_GoogleMaps);
-
-	var _FormInput = __webpack_require__(434);
-
-	var _FormInput2 = _interopRequireDefault(_FormInput);
-
-	var _TextArea = __webpack_require__(435);
-
-	var _TextArea2 = _interopRequireDefault(_TextArea);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var _components = {
-	  Contact: {
-	    displayName: 'Contact'
-	  }
-	};
-
-	var _reactTransformHmr2 = (0, _reactTransformHmr4.default)({
-	  filename: '/vhost/nayp/resources/assets/js/app/containers/contact/Contact.jsx',
-	  components: _components,
-	  locals: [module],
-	  imports: [_react3.default]
-	});
-
-	function _wrapComponent(id) {
-	  return function (Component) {
-	    return _reactTransformHmr2(Component, id);
-	  };
-	}
-
-	var Contact = _wrapComponent('Contact')(function (_Component) {
-	  _inherits(Contact, _Component);
-
-	  function Contact() {
-	    _classCallCheck(this, Contact);
-
-	    return _possibleConstructorReturn(this, (Contact.__proto__ || Object.getPrototypeOf(Contact)).apply(this, arguments));
-	  }
-
-	  _createClass(Contact, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react3.default.createElement(
-	        'div',
-	        { className: '_content' },
-	        _react3.default.createElement(
-	          'h1',
-	          { className: 'title-base' },
-	          'Contatos e hor\xE1rios'
-	        ),
-	        _react3.default.createElement(
-	          'div',
-	          { className: 'capitalize' },
-	          _react3.default.createElement('br', null),
-	          _react3.default.createElement(
-	            'h2',
-	            { className: 'title-small' },
-	            'loja Online'
-	          ),
-	          _react3.default.createElement(
-	            'p',
-	            { className: '_paragraph' },
-	            _react3.default.createElement(
-	              'span',
-	              { className: '_breakout' },
-	              'para outras informa\xE7\xF5es, envie sua mensagem atrav\xE9s do formul\xE1rio, que responderemos brevemente.'
-	            ),
-	            'hor\xE1rios de atendimento online: ',
-	            _react3.default.createElement('br', null),
-	            _react3.default.createElement(
-	              'span',
-	              null,
-	              'segunda-feira - sexta-feira: 9:00 AM - 9:00 PM (UTC-03:00 / bras\xEDlia)'
-	            ),
-	            _react3.default.createElement('br', null),
-	            _react3.default.createElement(
-	              'span',
-	              null,
-	              's\xE1bado - domingo: 9:00 AM - 4:00 PM (UTC-03:00 / bras\xEDlia)'
-	            )
-	          )
-	        ),
-	        _react3.default.createElement(
-	          'div',
-	          { className: 'form-contatos' },
-	          _react3.default.createElement(
-	            'form',
-	            null,
-	            _react3.default.createElement(_FormInput2.default, { name: 'contact_firstname',
-	              label: 'nome',
-	              type: 'text',
-	              minLength: 3,
-	              message: 'por favor digite seu primeiro nome',
-	              isRequired: true }),
-	            _react3.default.createElement(_FormInput2.default, { name: 'contact_lastname',
-	              label: 'sobrenome',
-	              type: 'text',
-	              minLength: 3,
-	              message: 'por favor digite seu ultimo nome',
-	              isRequired: true }),
-	            _react3.default.createElement(_FormInput2.default, { name: 'contact_email',
-	              label: 'Email',
-	              type: 'email',
-	              message: 'Digite seu email',
-	              isRequired: true }),
-	            _react3.default.createElement(_FormInput2.default, { name: 'contact_tel',
-	              label: 'telefone',
-	              type: 'tel',
-	              message: 'digite um telefone para contato' }),
-	            _react3.default.createElement(_TextArea2.default, { name: 'contact_message',
-	              label: 'mensagem',
-	              minLength: 10,
-	              isRequired: true }),
-	            _react3.default.createElement(
-	              'div',
-	              { className: 'form_control' },
-	              _react3.default.createElement(
-	                'button',
-	                { type: 'submit', className: 'btn-other' },
-	                ' ok '
-	              )
-	            )
-	          )
-	        ),
-	        _react3.default.createElement(
-	          'div',
-	          { className: 'capitalize' },
-	          _react3.default.createElement(
-	            'h2',
-	            { className: 'title-small' },
-	            'loja f\xEDsica'
-	          ),
-	          _react3.default.createElement(
-	            'p',
-	            { className: '_breakout' },
-	            'cnpj: 00.000/0001-00 ',
-	            _react3.default.createElement('br', null),
-	            'r. comendador ara\xFAjo, 268, loja ca06 - shopping omar 00000-000, curitiba - paran\xE1, brasil'
-	          ),
-	          _react3.default.createElement(
-	            'p',
-	            { className: '_breakout' },
-	            'hor\xE1rios de atendimento loja f\xEDsica: ',
-	            _react3.default.createElement('br', null),
-	            _react3.default.createElement(
-	              'span',
-	              null,
-	              'segunda-feira - sexta-feira: 9:00 AM - 8:00 PM (UTC-03:00 / bras\xEDlia)'
-	            ),
-	            _react3.default.createElement('br', null),
-	            _react3.default.createElement(
-	              'span',
-	              null,
-	              's\xE1bado: 9:00 AM - 6:00 PM (UTC-03:00 / bras\xEDlia)'
-	            )
-	          )
-	        ),
-	        _react3.default.createElement(_GoogleMaps2.default, null)
-	      );
-	    }
-	  }]);
-
-	  return Contact;
-	}(_react2.Component));
-
-	exports.default = Contact;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(173)(module)))
-
-/***/ },
-/* 404 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(module) {'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _react2 = __webpack_require__(1);
-
-	var _react3 = _interopRequireDefault(_react2);
-
-	var _reactTransformHmr3 = __webpack_require__(174);
-
-	var _reactTransformHmr4 = _interopRequireDefault(_reactTransformHmr3);
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _reactDom = __webpack_require__(34);
-
-	var _reactDom2 = _interopRequireDefault(_reactDom);
-
-	var _reactGmaps = __webpack_require__(405);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var _components = {
-	  App: {
-	    displayName: 'App'
-	  }
-	};
-
-	var _reactTransformHmr2 = (0, _reactTransformHmr4.default)({
-	  filename: '/vhost/nayp/resources/assets/js/app/components/googleMaps/GoogleMaps.jsx',
-	  components: _components,
-	  locals: [module],
-	  imports: [_react3.default]
-	});
-
-	function _wrapComponent(id) {
-	  return function (Component) {
-	    return _reactTransformHmr2(Component, id);
-	  };
-	}
-
-	var coords = {
-	  lat: -25.4353676,
-	  lng: -49.278431
-	};
-
-	var App = _wrapComponent('App')(function (_Component) {
-	  _inherits(App, _Component);
-
-	  function App() {
-	    _classCallCheck(this, App);
-
-	    return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
-	  }
-
-	  _createClass(App, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react3.default.createElement(
-	        _reactGmaps.Gmaps,
-	        {
-	          width: '100%',
-	          height: '400px',
-	          lat: coords.lat,
-	          lng: coords.lng,
-	          zoom: 14,
-	          loadingMessage: 'Be happy',
-	          params: { v: '3.exp', key: 'AIzaSyDlEyZ_acJRpOYj5_715_4_1GLTRshO7Lc' },
-	          onMapCreated: this.onMapCreated },
-	        _react3.default.createElement(_reactGmaps.Marker, {
-	          lat: coords.lat,
-	          lng: coords.lng,
-	          draggable: true,
-	          onDragEnd: this.onDragEnd })
-	      );
-	    }
-	  }]);
-
-	  return App;
-	}(_react2.Component));
-
-	exports.default = App;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(173)(module)))
-
-/***/ },
-/* 405 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	  value: true
-	});
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	var _componentsGmaps = __webpack_require__(406);
-
-	var _componentsGmaps2 = _interopRequireDefault(_componentsGmaps);
-
-	var _componentsMarker = __webpack_require__(414);
-
-	var _componentsMarker2 = _interopRequireDefault(_componentsMarker);
-
-	var _componentsInfoWindow = __webpack_require__(417);
-
-	var _componentsInfoWindow2 = _interopRequireDefault(_componentsInfoWindow);
-
-	var _componentsCircle = __webpack_require__(419);
-
-	var _componentsCircle2 = _interopRequireDefault(_componentsCircle);
-
-	exports.Gmaps = _componentsGmaps2['default'];
-	exports.Marker = _componentsMarker2['default'];
-	exports.InfoWindow = _componentsInfoWindow2['default'];
-	exports.Circle = _componentsCircle2['default'];
-
-/***/ },
-/* 406 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	  value: true
-	});
-
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactDom = __webpack_require__(34);
-
-	var _reactDom2 = _interopRequireDefault(_reactDom);
-
-	var _objectAssign = __webpack_require__(4);
-
-	var _objectAssign2 = _interopRequireDefault(_objectAssign);
-
-	var _eventsMap = __webpack_require__(407);
-
-	var _eventsMap2 = _interopRequireDefault(_eventsMap);
-
-	var _mixinsListener = __webpack_require__(408);
-
-	var _mixinsListener2 = _interopRequireDefault(_mixinsListener);
-
-	var _utilsGoogleMaps = __webpack_require__(409);
-
-	var _utilsGoogleMaps2 = _interopRequireDefault(_utilsGoogleMaps);
-
-	var _utilsCompareProps = __webpack_require__(413);
-
-	var _utilsCompareProps2 = _interopRequireDefault(_utilsCompareProps);
-
-	var Gmaps = _react2['default'].createClass({
-	  displayName: 'Gmaps',
-
-	  mixins: [_mixinsListener2['default']],
-
-	  map: null,
-
-	  getInitialState: function getInitialState() {
-	    return {
-	      isMapCreated: false
-	    };
-	  },
-
-	  componentDidMount: function componentDidMount() {
-	    this.setState({
-	      callbackIndex: _utilsGoogleMaps2['default'].load(this.props.params, this.mapsCallback)
-	    });
-	  },
-
-	  componentWillUnmount: function componentWillUnmount() {
-	    _utilsGoogleMaps2['default'].removeCallback(this.state.callbackIndex);
-	    this.removeListeners();
-	  },
-
-	  componentWillReceiveProps: function componentWillReceiveProps(nextProps) {
-	    if (this.map && !(0, _utilsCompareProps2['default'])(this.props, nextProps)) {
-	      this.map.setOptions(_extends({}, nextProps, {
-	        center: new google.maps.LatLng(nextProps.lat, nextProps.lng)
-	      }));
-	    }
-	  },
-
-	  getMap: function getMap() {
-	    return this.map;
-	  },
-
-	  mapsCallback: function mapsCallback() {
-	    this.createMap();
-	    this.addListeners(this.map, _eventsMap2['default']);
-	  },
-
-	  createMap: function createMap() {
-	    var node = _reactDom2['default'].findDOMNode(this);
-	    this.map = new google.maps.Map(node, _extends({}, this.props, {
-	      center: new google.maps.LatLng(this.props.lat, this.props.lng)
-	    }));
-	    this.setState({
-	      isMapCreated: true
-	    });
-	    if (this.props.onMapCreated) {
-	      this.props.onMapCreated(this.map);
-	    }
-	  },
-
-	  getChildren: function getChildren() {
-	    var _this = this;
-
-	    return _react2['default'].Children.map(this.props.children, function (child) {
-	      if (!_react2['default'].isValidElement(child)) {
-	        return child;
-	      }
-	      return _react2['default'].cloneElement(child, {
-	        ref: child.ref,
-	        map: _this.map
-	      });
-	    });
-	  },
-
-	  render: function render() {
-	    var style = (0, _objectAssign2['default'])({
-	      width: this.props.width,
-	      height: this.props.height
-	    }, this.props.style);
-	    return _react2['default'].createElement(
-	      'div',
-	      { style: style, className: this.props.className },
-	      this.props.loadingMessage || 'Loading...',
-	      this.state.isMapCreated ? this.getChildren() : null
-	    );
-	  }
-
-	});
-
-	exports['default'] = Gmaps;
-	module.exports = exports['default'];
-
-/***/ },
-/* 407 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	  value: true
-	});
-	exports['default'] = {
-	  onBoundsChanged: 'bounds_changed',
-	  onCenterChanged: 'center_changed',
-	  onClick: 'click',
-	  onDblClick: 'dblclick',
-	  onDrag: 'drag',
-	  onDragEnd: 'dragend',
-	  onDragStart: 'dragstart',
-	  onHeadingChanged: 'heading_changed',
-	  onIdle: 'idle',
-	  onMapTypeIdChanged: 'maptypeid_changed',
-	  onMouseMove: 'mousemove',
-	  onMouseOut: 'mouseout',
-	  onMouseOver: 'mouseover',
-	  onProjectionChanged: 'projection_changed',
-	  onResize: 'resize',
-	  onRightClick: 'rightclick',
-	  onTilesLoaded: 'tilesloaded',
-	  onTiltChanged: 'tilt_changed',
-	  onZoomChanged: 'zoom_changed'
-	};
-	module.exports = exports['default'];
-
-/***/ },
-/* 408 */
-/***/ function(module, exports) {
-
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var Listener = {
-
-	  addListeners: function addListeners(entity, events) {
-	    for (var prop in this.props) {
-	      if (this.props.hasOwnProperty(prop) && events[prop]) {
-	        var addListener = google.maps.event.addListener;
-	        var listener = addListener(entity, events[prop], this.props[prop]);
-	        if (!this.listeners) {
-	          this.listeners = [];
-	        }
-	        this.listeners.push(listener);
-	      }
-	    }
-	  },
-
-	  removeListeners: function removeListeners() {
-	    if (window.google && this.listeners) {
-	      this.listeners.forEach(function (listener) {
-	        google.maps.event.removeListener(listener);
-	      });
-	    }
-	  }
-
-	};
-
-	exports["default"] = Listener;
-	module.exports = exports["default"];
-
-/***/ },
-/* 409 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	  value: true
-	});
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	var _querystring = __webpack_require__(410);
-
-	var _querystring2 = _interopRequireDefault(_querystring);
-
-	exports['default'] = {
-
-	  callbacks: [],
-
-	  appended: false,
-
-	  load: function load(params, callback) {
-	    var index = this.callbacks.push(callback);
-	    if (window.google) {
-	      setTimeout(this.fireCallbacks.bind(this));
-	    } else {
-	      if (!this.appended) {
-	        window.mapsCallback = this.mapsCallback.bind(this);
-	        this.appendScript(params);
-	      }
-	    }
-	    return index;
-	  },
-
-	  getSrc: function getSrc(params) {
-	    var src = 'https://maps.googleapis.com/maps/api/js';
-	    src += '?callback=mapsCallback&';
-	    src += _querystring2['default'].stringify(params);
-	    return src;
-	  },
-
-	  appendScript: function appendScript(params) {
-	    var src = this.getSrc(params);
-	    var script = document.createElement('script');
-	    script.setAttribute('src', src);
-	    document.head.appendChild(script);
-	    this.appended = true;
-	  },
-
-	  mapsCallback: function mapsCallback() {
-	    window.mapsCallback = undefined;
-	    this.fireCallbacks();
-	  },
-
-	  fireCallbacks: function fireCallbacks() {
-	    this.callbacks.forEach(function (callback) {
-	      return callback();
-	    });
-	    this.callbacks = [];
-	  },
-
-	  removeCallback: function removeCallback(index) {
-	    this.callbacks.splice(index - 1, 1);
-	  }
-
-	};
-	module.exports = exports['default'];
-
-/***/ },
-/* 410 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	exports.decode = exports.parse = __webpack_require__(411);
-	exports.encode = exports.stringify = __webpack_require__(412);
-
-
-/***/ },
-/* 411 */
-/***/ function(module, exports) {
-
-	// Copyright Joyent, Inc. and other Node contributors.
-	//
-	// Permission is hereby granted, free of charge, to any person obtaining a
-	// copy of this software and associated documentation files (the
-	// "Software"), to deal in the Software without restriction, including
-	// without limitation the rights to use, copy, modify, merge, publish,
-	// distribute, sublicense, and/or sell copies of the Software, and to permit
-	// persons to whom the Software is furnished to do so, subject to the
-	// following conditions:
-	//
-	// The above copyright notice and this permission notice shall be included
-	// in all copies or substantial portions of the Software.
-	//
-	// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
-	// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-	// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
-	// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
-	// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
-	// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
-	// USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-	'use strict';
-
-	// If obj.hasOwnProperty has been overridden, then calling
-	// obj.hasOwnProperty(prop) will break.
-	// See: https://github.com/joyent/node/issues/1707
-	function hasOwnProperty(obj, prop) {
-	  return Object.prototype.hasOwnProperty.call(obj, prop);
-	}
-
-	module.exports = function(qs, sep, eq, options) {
-	  sep = sep || '&';
-	  eq = eq || '=';
-	  var obj = {};
-
-	  if (typeof qs !== 'string' || qs.length === 0) {
-	    return obj;
-	  }
-
-	  var regexp = /\+/g;
-	  qs = qs.split(sep);
-
-	  var maxKeys = 1000;
-	  if (options && typeof options.maxKeys === 'number') {
-	    maxKeys = options.maxKeys;
-	  }
-
-	  var len = qs.length;
-	  // maxKeys <= 0 means that we should not limit keys count
-	  if (maxKeys > 0 && len > maxKeys) {
-	    len = maxKeys;
-	  }
-
-	  for (var i = 0; i < len; ++i) {
-	    var x = qs[i].replace(regexp, '%20'),
-	        idx = x.indexOf(eq),
-	        kstr, vstr, k, v;
-
-	    if (idx >= 0) {
-	      kstr = x.substr(0, idx);
-	      vstr = x.substr(idx + 1);
-	    } else {
-	      kstr = x;
-	      vstr = '';
-	    }
-
-	    k = decodeURIComponent(kstr);
-	    v = decodeURIComponent(vstr);
-
-	    if (!hasOwnProperty(obj, k)) {
-	      obj[k] = v;
-	    } else if (Array.isArray(obj[k])) {
-	      obj[k].push(v);
-	    } else {
-	      obj[k] = [obj[k], v];
-	    }
-	  }
-
-	  return obj;
-	};
-
-
-/***/ },
-/* 412 */
-/***/ function(module, exports) {
-
-	// Copyright Joyent, Inc. and other Node contributors.
-	//
-	// Permission is hereby granted, free of charge, to any person obtaining a
-	// copy of this software and associated documentation files (the
-	// "Software"), to deal in the Software without restriction, including
-	// without limitation the rights to use, copy, modify, merge, publish,
-	// distribute, sublicense, and/or sell copies of the Software, and to permit
-	// persons to whom the Software is furnished to do so, subject to the
-	// following conditions:
-	//
-	// The above copyright notice and this permission notice shall be included
-	// in all copies or substantial portions of the Software.
-	//
-	// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
-	// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-	// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
-	// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
-	// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
-	// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
-	// USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-	'use strict';
-
-	var stringifyPrimitive = function(v) {
-	  switch (typeof v) {
-	    case 'string':
-	      return v;
-
-	    case 'boolean':
-	      return v ? 'true' : 'false';
-
-	    case 'number':
-	      return isFinite(v) ? v : '';
-
-	    default:
-	      return '';
-	  }
-	};
-
-	module.exports = function(obj, sep, eq, name) {
-	  sep = sep || '&';
-	  eq = eq || '=';
-	  if (obj === null) {
-	    obj = undefined;
-	  }
-
-	  if (typeof obj === 'object') {
-	    return Object.keys(obj).map(function(k) {
-	      var ks = encodeURIComponent(stringifyPrimitive(k)) + eq;
-	      if (Array.isArray(obj[k])) {
-	        return obj[k].map(function(v) {
-	          return ks + encodeURIComponent(stringifyPrimitive(v));
-	        }).join(sep);
-	      } else {
-	        return ks + encodeURIComponent(stringifyPrimitive(obj[k]));
-	      }
-	    }).join(sep);
-
-	  }
-
-	  if (!name) return '';
-	  return encodeURIComponent(stringifyPrimitive(name)) + eq +
-	         encodeURIComponent(stringifyPrimitive(obj));
-	};
-
-
-/***/ },
-/* 413 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	  value: true
-	});
-
-	exports['default'] = function (props, nextProps) {
-
-	  var propsKeys = Object.keys(props);
-	  var nextPropsKeys = Object.keys(nextProps);
-	  if (propsKeys.length !== nextPropsKeys.length) {
-	    return false;
-	  }
-
-	  for (var i = 0; i < propsKeys.length; i++) {
-	    var key = propsKeys[i];
-	    if (key !== 'children' && key.indexOf('on') !== 0 && (!nextProps.hasOwnProperty(key) || props[key] !== nextProps[key])) {
-	      return false;
-	    }
-	  }
-
-	  return true;
-	};
-
-	module.exports = exports['default'];
-
-/***/ },
-/* 414 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	  value: true
-	});
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	var _entity = __webpack_require__(415);
-
-	var _entity2 = _interopRequireDefault(_entity);
-
-	var _eventsMarker = __webpack_require__(416);
-
-	var _eventsMarker2 = _interopRequireDefault(_eventsMarker);
-
-	exports['default'] = (0, _entity2['default'])('Marker', 'position', _eventsMarker2['default']);
-	module.exports = exports['default'];
-
-/***/ },
-/* 415 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	  value: true
-	});
-
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _mixinsListener = __webpack_require__(408);
-
-	var _mixinsListener2 = _interopRequireDefault(_mixinsListener);
-
-	var _utilsCompareProps = __webpack_require__(413);
-
-	var _utilsCompareProps2 = _interopRequireDefault(_utilsCompareProps);
-
-	exports['default'] = function (name, latLngProp, events) {
-	  return _react2['default'].createClass({
-
-	    mixins: [_mixinsListener2['default']],
-
-	    entity: null,
-
-	    componentDidMount: function componentDidMount() {
-	      var options = this.getOptions(this.props);
-	      this.entity = new google.maps[name](options);
-	      this.addListeners(this.entity, events);
-	    },
-
-	    componentWillReceiveProps: function componentWillReceiveProps(nextProps) {
-	      if (!(0, _utilsCompareProps2['default'])(this.props, nextProps)) {
-	        var options = this.getOptions(nextProps);
-	        this.entity.setOptions(options);
-	      }
-	    },
-
-	    componentWillUnmount: function componentWillUnmount() {
-	      this.entity.setMap(null);
-	      this.removeListeners();
-	      this.entity = null;
-	    },
-
-	    getEntity: function getEntity() {
-	      return this.entity;
-	    },
-
-	    getOptions: function getOptions(props) {
-	      return _extends({}, props, _defineProperty({}, latLngProp, new google.maps.LatLng(props.lat, props.lng)));
-	    },
-
-	    render: function render() {
-	      return null;
-	    }
-
-	  });
-	};
-
-	module.exports = exports['default'];
-
-/***/ },
-/* 416 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	  value: true
-	});
-	exports['default'] = {
-	  onAnimationChanged: 'animation_changed',
-	  onClick: 'click',
-	  onClickableChanged: 'clickable_changed',
-	  onCursorChanged: 'cursor_changed',
-	  onDblClick: 'dblclick',
-	  onDrag: 'drag',
-	  onDragEnd: 'dragend',
-	  onDraggableChanged: 'draggable_changed',
-	  onDragStart: 'dragstart',
-	  onFlatChanged: 'flat_changed',
-	  onIconChanged: 'icon_changed',
-	  onMouseDown: 'mousedown',
-	  onMouseOut: 'mouseout',
-	  onMouseOver: 'mouseover',
-	  onMouseUp: 'mouseup',
-	  onPositionChanged: 'position_changed',
-	  onRightClick: 'rightclick',
-	  onShapeChanged: 'shape_changed',
-	  onTitleChanged: 'title_changed',
-	  onVisibleChanged: 'visible_changed',
-	  onZindexChanged: 'zindex_changed'
-	};
-	module.exports = exports['default'];
-
-/***/ },
-/* 417 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	  value: true
-	});
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	var _entity = __webpack_require__(415);
-
-	var _entity2 = _interopRequireDefault(_entity);
-
-	var _eventsInfoWindow = __webpack_require__(418);
-
-	var _eventsInfoWindow2 = _interopRequireDefault(_eventsInfoWindow);
-
-	exports['default'] = (0, _entity2['default'])('InfoWindow', 'position', _eventsInfoWindow2['default']);
-	module.exports = exports['default'];
-
-/***/ },
-/* 418 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	  value: true
-	});
-	exports['default'] = {
-	  onCloseClick: 'closeclick',
-	  onContentChanged: 'content_changed',
-	  onDOMReady: 'domready',
-	  onPositionChanged: 'position_changed',
-	  onZindexChanged: 'zindex_changed'
-	};
-	module.exports = exports['default'];
-
-/***/ },
-/* 419 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	  value: true
-	});
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	var _entity = __webpack_require__(415);
-
-	var _entity2 = _interopRequireDefault(_entity);
-
-	var _eventsCircle = __webpack_require__(420);
-
-	var _eventsCircle2 = _interopRequireDefault(_eventsCircle);
-
-	exports['default'] = (0, _entity2['default'])('Circle', 'center', _eventsCircle2['default']);
-	module.exports = exports['default'];
-
-/***/ },
-/* 420 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	  value: true
-	});
-	exports['default'] = {
-	  onCenterChanged: 'center_changed',
-	  onClick: 'click',
-	  onDblClick: 'dblclick',
-	  onDrag: 'drag',
-	  onDragEnd: 'dragend',
-	  onDragStart: 'dragstart',
-	  onMouseDown: 'mousedown',
-	  onMouseMove: 'mousemove',
-	  onMouseOut: 'mouseout',
-	  onMouseOver: 'mouseover',
-	  onMouseUp: 'mouseup',
-	  onRadiusChanged: 'radius_changed',
-	  onRightClick: 'rightclick'
-	};
-	module.exports = exports['default'];
-
-/***/ },
-/* 421 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(module) {'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _react2 = __webpack_require__(1);
-
-	var _react3 = _interopRequireDefault(_react2);
-
-	var _reactTransformHmr3 = __webpack_require__(174);
-
-	var _reactTransformHmr4 = _interopRequireDefault(_reactTransformHmr3);
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _reactRouter = __webpack_require__(323);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var _components = {
-	  Politic: {
-	    displayName: 'Politic'
-	  }
-	};
-
-	var _reactTransformHmr2 = (0, _reactTransformHmr4.default)({
-	  filename: '/vhost/nayp/resources/assets/js/app/containers/politic/Politic.jsx',
-	  components: _components,
-	  locals: [module],
-	  imports: [_react3.default]
-	});
-
-	function _wrapComponent(id) {
-	  return function (Component) {
-	    return _reactTransformHmr2(Component, id);
-	  };
-	}
-
-	var Politic = _wrapComponent('Politic')(function (_Component) {
-	  _inherits(Politic, _Component);
-
-	  function Politic() {
-	    _classCallCheck(this, Politic);
-
-	    return _possibleConstructorReturn(this, (Politic.__proto__ || Object.getPrototypeOf(Politic)).apply(this, arguments));
-	  }
-
-	  _createClass(Politic, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react3.default.createElement(
-	        'div',
-	        { className: 'info-np' },
-	        _react3.default.createElement(
-	          'div',
-	          { className: 'container' },
-	          _react3.default.createElement(
-	            'nav',
-	            { className: 'nav_tab _half' },
-	            _react3.default.createElement(
-	              'ul',
-	              { className: 'reset' },
-	              _react3.default.createElement(
-	                'li',
-	                null,
-	                _react3.default.createElement(
-	                  _reactRouter.IndexLink,
-	                  { to: '/politic' },
-	                  'Termos de uso'
-	                )
-	              ),
-	              _react3.default.createElement(
-	                'li',
-	                null,
-	                _react3.default.createElement(
-	                  _reactRouter.Link,
-	                  { to: '/privacy' },
-	                  'Pol\xEDtica de privacidade'
-	                )
-	              )
-	            )
-	          ),
-	          this.props.children
-	        )
-	      );
-	    }
-	  }]);
-
-	  return Politic;
-	}(_react2.Component));
-
-	exports.default = Politic;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(173)(module)))
-
-/***/ },
-/* 422 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(module) {"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _react2 = __webpack_require__(1);
-
-	var _react3 = _interopRequireDefault(_react2);
-
-	var _reactTransformHmr3 = __webpack_require__(174);
-
-	var _reactTransformHmr4 = _interopRequireDefault(_reactTransformHmr3);
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var _components = {
-	  Terms: {
-	    displayName: "Terms"
-	  }
-	};
-
-	var _reactTransformHmr2 = (0, _reactTransformHmr4.default)({
-	  filename: "/vhost/nayp/resources/assets/js/app/containers/terms/Terms.jsx",
-	  components: _components,
-	  locals: [module],
-	  imports: [_react3.default]
-	});
-
-	function _wrapComponent(id) {
-	  return function (Component) {
-	    return _reactTransformHmr2(Component, id);
-	  };
-	}
-
-	var Terms = _wrapComponent("Terms")(function (_Component) {
-	  _inherits(Terms, _Component);
-
-	  function Terms() {
-	    _classCallCheck(this, Terms);
-
-	    return _possibleConstructorReturn(this, (Terms.__proto__ || Object.getPrototypeOf(Terms)).apply(this, arguments));
-	  }
-
-	  _createClass(Terms, [{
-	    key: "render",
-	    value: function render() {
-	      return _react3.default.createElement(
-	        "div",
-	        { className: "_content" },
-	        _react3.default.createElement(
-	          "h1",
-	          { className: "title-base" },
-	          "Termos de uso"
-	        ),
-	        _react3.default.createElement(
-	          "p",
-	          null,
-	          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus!"
-	        ),
-	        _react3.default.createElement(
-	          "p",
-	          null,
-	          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus!"
-	        ),
-	        _react3.default.createElement(
-	          "p",
-	          null,
-	          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus!"
-	        ),
-	        _react3.default.createElement(
-	          "p",
-	          null,
-	          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus!"
-	        )
-	      );
-	    }
-	  }]);
-
-	  return Terms;
-	}(_react2.Component));
-
-	exports.default = Terms;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(173)(module)))
-
-/***/ },
-/* 423 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(module) {"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _react2 = __webpack_require__(1);
-
-	var _react3 = _interopRequireDefault(_react2);
-
-	var _reactTransformHmr3 = __webpack_require__(174);
-
-	var _reactTransformHmr4 = _interopRequireDefault(_reactTransformHmr3);
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var _components = {
-	  Privacy: {
-	    displayName: "Privacy"
-	  }
-	};
-
-	var _reactTransformHmr2 = (0, _reactTransformHmr4.default)({
-	  filename: "/vhost/nayp/resources/assets/js/app/containers/privacy/Privacy.jsx",
-	  components: _components,
-	  locals: [module],
-	  imports: [_react3.default]
-	});
-
-	function _wrapComponent(id) {
-	  return function (Component) {
-	    return _reactTransformHmr2(Component, id);
-	  };
-	}
-
-	var Privacy = _wrapComponent("Privacy")(function (_Component) {
-	  _inherits(Privacy, _Component);
-
-	  function Privacy() {
-	    _classCallCheck(this, Privacy);
-
-	    return _possibleConstructorReturn(this, (Privacy.__proto__ || Object.getPrototypeOf(Privacy)).apply(this, arguments));
-	  }
-
-	  _createClass(Privacy, [{
-	    key: "render",
-	    value: function render() {
-	      return _react3.default.createElement(
-	        "div",
-	        { className: "_content" },
-	        _react3.default.createElement(
-	          "h1",
-	          { className: "title-base" },
-	          "Pol\xEDtica de privacidade"
-	        ),
-	        _react3.default.createElement(
-	          "p",
-	          null,
-	          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus!"
-	        ),
-	        _react3.default.createElement(
-	          "p",
-	          null,
-	          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus!"
-	        ),
-	        _react3.default.createElement(
-	          "p",
-	          null,
-	          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus!"
-	        ),
-	        _react3.default.createElement(
-	          "p",
-	          null,
-	          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus!"
-	        )
-	      );
-	    }
-	  }]);
-
-	  return Privacy;
-	}(_react2.Component));
-
-	exports.default = Privacy;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(173)(module)))
-
-/***/ },
-/* 424 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(module) {'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.App = undefined;
-
-	var _react2 = __webpack_require__(1);
-
-	var _react3 = _interopRequireDefault(_react2);
-
-	var _reactTransformHmr3 = __webpack_require__(174);
-
-	var _reactTransformHmr4 = _interopRequireDefault(_reactTransformHmr3);
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _Main = __webpack_require__(425);
-
-	var _Main2 = _interopRequireDefault(_Main);
-
-	var _Navegation = __webpack_require__(426);
-
-	var _Navegation2 = _interopRequireDefault(_Navegation);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var _components = {
-	  App: {
-	    displayName: 'App'
-	  }
-	};
-
-	var _reactTransformHmr2 = (0, _reactTransformHmr4.default)({
-	  filename: '/vhost/nayp/resources/assets/js/app/app.jsx',
-	  components: _components,
-	  locals: [module],
-	  imports: [_react3.default]
-	});
-
-	function _wrapComponent(id) {
-	  return function (Component) {
-	    return _reactTransformHmr2(Component, id);
-	  };
-	}
-
-	var App = exports.App = _wrapComponent('App')(function (_Component) {
-	  _inherits(App, _Component);
-
-	  function App() {
-	    _classCallCheck(this, App);
-
-	    return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
-	  }
-
-	  _createClass(App, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react3.default.createElement(
-	        'div',
-	        null,
-	        _react3.default.createElement(_Navegation2.default, null),
-	        _react3.default.createElement(
-	          _Main2.default,
-	          null,
-	          this.props.children
-	        )
-	      );
-	    }
-	  }]);
-
-	  return App;
-	}(_react2.Component));
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(173)(module)))
-
-/***/ },
-/* 425 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(module) {"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _react2 = __webpack_require__(1);
-
-	var _react3 = _interopRequireDefault(_react2);
-
-	var _reactTransformHmr3 = __webpack_require__(174);
-
-	var _reactTransformHmr4 = _interopRequireDefault(_reactTransformHmr3);
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var _components = {
-	  Main: {
-	    displayName: "Main"
-	  }
-	};
-
-	var _reactTransformHmr2 = (0, _reactTransformHmr4.default)({
-	  filename: "/vhost/nayp/resources/assets/js/app/containers/main/Main.jsx",
-	  components: _components,
-	  locals: [module],
-	  imports: [_react3.default]
-	});
-
-	function _wrapComponent(id) {
-	  return function (Component) {
-	    return _reactTransformHmr2(Component, id);
-	  };
-	}
-
-	var Main = _wrapComponent("Main")(function (_Component) {
-	  _inherits(Main, _Component);
-
-	  function Main() {
-	    _classCallCheck(this, Main);
-
-	    return _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).apply(this, arguments));
-	  }
-
-	  _createClass(Main, [{
-	    key: "render",
-	    value: function render() {
-	      return _react3.default.createElement(
-	        "div",
-	        { className: "np-info" },
-	        this.props.children
-	      );
-	    }
-	  }]);
-
-	  return Main;
-	}(_react2.Component));
-
-	exports.default = Main;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(173)(module)))
-
-/***/ },
-/* 426 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(module) {'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _react2 = __webpack_require__(1);
-
-	var _react3 = _interopRequireDefault(_react2);
-
-	var _reactTransformHmr3 = __webpack_require__(174);
-
-	var _reactTransformHmr4 = _interopRequireDefault(_reactTransformHmr3);
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _reactRouter = __webpack_require__(323);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var _components = {
-	  Navegation: {
-	    displayName: 'Navegation'
-	  }
-	};
-
-	var _reactTransformHmr2 = (0, _reactTransformHmr4.default)({
-	  filename: '/vhost/nayp/resources/assets/js/app/components/navegation/Navegation.jsx',
-	  components: _components,
-	  locals: [module],
-	  imports: [_react3.default]
-	});
-
-	function _wrapComponent(id) {
-	  return function (Component) {
-	    return _reactTransformHmr2(Component, id);
-	  };
-	}
-
-	var Navegation = _wrapComponent('Navegation')(function (_Component) {
-	  _inherits(Navegation, _Component);
-
-	  function Navegation() {
-	    _classCallCheck(this, Navegation);
-
-	    return _possibleConstructorReturn(this, (Navegation.__proto__ || Object.getPrototypeOf(Navegation)).apply(this, arguments));
-	  }
-
-	  _createClass(Navegation, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react3.default.createElement(
-	        'div',
-	        { className: 'megamenu app-navegation' },
-	        _react3.default.createElement(
-	          'div',
-	          { className: 'container' },
-	          _react3.default.createElement(
-	            'ul',
-	            { className: 'menu menu-info' },
-	            _react3.default.createElement(
-	              'li',
-	              null,
-	              _react3.default.createElement(
-	                _reactRouter.IndexLink,
-	                { to: '/' },
-	                'sobre n\xF3s'
-	              )
-	            ),
-	            _react3.default.createElement(
-	              'li',
-	              null,
-	              _react3.default.createElement(
-	                _reactRouter.Link,
-	                { to: '/help' },
-	                'atendimento'
-	              )
-	            ),
-	            _react3.default.createElement(
-	              'li',
-	              null,
-	              _react3.default.createElement(
-	                _reactRouter.Link,
-	                { to: '/order' },
-	                'status do pedido'
-	              )
-	            ),
-	            _react3.default.createElement(
-	              'li',
-	              null,
-	              _react3.default.createElement(
-	                _reactRouter.Link,
-	                { to: '/sizes' },
-	                'guia de tamanhos'
-	              )
-	            ),
-	            _react3.default.createElement(
-	              'li',
-	              null,
-	              _react3.default.createElement(
-	                _reactRouter.Link,
-	                { to: '/politic' },
-	                'termos e pol\xEDtica'
-	              )
-	            )
-	          )
-	        )
-	      );
-	    }
-	  }]);
-
-	  return Navegation;
-	}(_react2.Component));
-
-	exports.default = Navegation;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(173)(module)))
-
-/***/ },
-/* 427 */,
-/* 428 */,
-/* 429 */,
-/* 430 */,
-/* 431 */,
-/* 432 */,
-/* 433 */,
-/* 434 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(module) {'use strict';
@@ -37752,7 +34354,7 @@
 
 	var _class, _temp2;
 
-	var _reactInputMask = __webpack_require__(437);
+	var _reactInputMask = __webpack_require__(396);
 
 	var _reactInputMask2 = _interopRequireDefault(_reactInputMask);
 
@@ -37899,155 +34501,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(173)(module)))
 
 /***/ },
-/* 435 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(module) {"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _react2 = __webpack_require__(1);
-
-	var _react3 = _interopRequireDefault(_react2);
-
-	var _reactTransformHmr3 = __webpack_require__(174);
-
-	var _reactTransformHmr4 = _interopRequireDefault(_reactTransformHmr3);
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _class, _temp2;
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var _components = {
-	  TextArea: {
-	    displayName: "TextArea"
-	  }
-	};
-
-	var _reactTransformHmr2 = (0, _reactTransformHmr4.default)({
-	  filename: "/vhost/nayp/resources/assets/js/app/components/formElements/TextArea.jsx",
-	  components: _components,
-	  locals: [module],
-	  imports: [_react3.default]
-	});
-
-	function _wrapComponent(id) {
-	  return function (Component) {
-	    return _reactTransformHmr2(Component, id);
-	  };
-	}
-
-	var TextArea = _wrapComponent("TextArea")((_temp2 = _class = function (_Component) {
-	  _inherits(TextArea, _Component);
-
-	  function TextArea() {
-	    var _ref;
-
-	    var _temp, _this, _ret;
-
-	    _classCallCheck(this, TextArea);
-
-	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-	      args[_key] = arguments[_key];
-	    }
-
-	    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = TextArea.__proto__ || Object.getPrototypeOf(TextArea)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
-	      value: "",
-	      label: _this.props.isRequired ? _this.props.label + " *" : _this.props.label,
-	      minLength: _this.props.minLength,
-	      maxLength: _this.props.maxLength,
-	      grid: _this.props.grid,
-	      validate: "",
-	      isRequired: _this.props.isRequired
-	    }, _temp), _possibleConstructorReturn(_this, _ret);
-	  }
-
-	  _createClass(TextArea, [{
-	    key: "validate",
-	    value: function validate(event) {
-	      var targetValue = event.target.value;
-
-	      if (targetValue) {
-	        // mail type verify
-	        if (targetValue.length < this.state.minLength) {
-	          this.setState({
-	            validate: "_error",
-	            validateMessage: "o campo deve conter no minimo " + this.state.minLength + " caracteres"
-	          });
-	          // max char validate
-	        } else if (targetValue.length > this.state.maxLength) {
-	          this.setState({
-	            validate: "_error",
-	            validateMessage: "o campo deve conter no maximo " + this.state.maxLength + " caracteres"
-	          });
-	          // clear validate
-	        } else {
-	          this.setState({ validate: "" });
-	        }
-	      } else {
-	        // required validate
-	        if (this.state.isRequired) {
-	          this.setState({
-	            validate: "_error",
-	            validateMessage: "campo obrigatório"
-	          });
-	        }
-	      }
-	    }
-	  }, {
-	    key: "handleChange",
-	    value: function handleChange(event) {
-	      this.setState({ value: event.target.value });
-	    }
-	  }, {
-	    key: "render",
-	    value: function render() {
-
-	      var formClass = "form_box " + this.state.grid + " " + this.state.validate;
-
-	      return _react3.default.createElement(
-	        "div",
-	        { className: formClass },
-	        _react3.default.createElement(
-	          "label",
-	          null,
-	          this.state.label
-	        ),
-	        _react3.default.createElement(
-	          "span",
-	          { className: "alert-error" },
-	          this.state.validateMessage
-	        ),
-	        _react3.default.createElement("textarea", { type: this.props.type,
-	          name: this.props.name,
-	          value: this.state.value,
-	          onChange: this.handleChange.bind(this),
-	          onBlur: this.validate.bind(this) })
-	      );
-	    }
-	  }]);
-
-	  return TextArea;
-	}(_react2.Component), _class.defaultProps = {
-	  isRequired: false
-	}, _temp2));
-
-	exports.default = TextArea;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(173)(module)))
-
-/***/ },
-/* 436 */,
-/* 437 */
+/* 396 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// https://github.com/sanniassin/react-input-mask
@@ -38884,6 +35338,3554 @@
 	});
 
 	module.exports = InputElement;
+
+/***/ },
+/* 397 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(module) {"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react2 = __webpack_require__(1);
+
+	var _react3 = _interopRequireDefault(_react2);
+
+	var _reactTransformHmr3 = __webpack_require__(174);
+
+	var _reactTransformHmr4 = _interopRequireDefault(_reactTransformHmr3);
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _class, _temp2;
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var _components = {
+	  TextArea: {
+	    displayName: "TextArea"
+	  }
+	};
+
+	var _reactTransformHmr2 = (0, _reactTransformHmr4.default)({
+	  filename: "/vhost/nayp/resources/assets/js/app/components/formElements/TextArea.jsx",
+	  components: _components,
+	  locals: [module],
+	  imports: [_react3.default]
+	});
+
+	function _wrapComponent(id) {
+	  return function (Component) {
+	    return _reactTransformHmr2(Component, id);
+	  };
+	}
+
+	var TextArea = _wrapComponent("TextArea")((_temp2 = _class = function (_Component) {
+	  _inherits(TextArea, _Component);
+
+	  function TextArea() {
+	    var _ref;
+
+	    var _temp, _this, _ret;
+
+	    _classCallCheck(this, TextArea);
+
+	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+	      args[_key] = arguments[_key];
+	    }
+
+	    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = TextArea.__proto__ || Object.getPrototypeOf(TextArea)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
+	      value: "",
+	      label: _this.props.isRequired ? _this.props.label + " *" : _this.props.label,
+	      minLength: _this.props.minLength,
+	      maxLength: _this.props.maxLength,
+	      grid: _this.props.grid,
+	      validate: "",
+	      isRequired: _this.props.isRequired
+	    }, _temp), _possibleConstructorReturn(_this, _ret);
+	  }
+
+	  _createClass(TextArea, [{
+	    key: "validate",
+	    value: function validate(event) {
+	      var targetValue = event.target.value;
+
+	      if (targetValue) {
+	        // mail type verify
+	        if (targetValue.length < this.state.minLength) {
+	          this.setState({
+	            validate: "_error",
+	            validateMessage: "o campo deve conter no minimo " + this.state.minLength + " caracteres"
+	          });
+	          // max char validate
+	        } else if (targetValue.length > this.state.maxLength) {
+	          this.setState({
+	            validate: "_error",
+	            validateMessage: "o campo deve conter no maximo " + this.state.maxLength + " caracteres"
+	          });
+	          // clear validate
+	        } else {
+	          this.setState({ validate: "" });
+	        }
+	      } else {
+	        // required validate
+	        if (this.state.isRequired) {
+	          this.setState({
+	            validate: "_error",
+	            validateMessage: "campo obrigatório"
+	          });
+	        }
+	      }
+	    }
+	  }, {
+	    key: "handleChange",
+	    value: function handleChange(event) {
+	      this.setState({ value: event.target.value });
+	    }
+	  }, {
+	    key: "render",
+	    value: function render() {
+
+	      var formClass = "form_box " + this.state.grid + " " + this.state.validate;
+
+	      return _react3.default.createElement(
+	        "div",
+	        { className: formClass },
+	        _react3.default.createElement(
+	          "label",
+	          null,
+	          this.state.label
+	        ),
+	        _react3.default.createElement(
+	          "span",
+	          { className: "alert-error" },
+	          this.state.validateMessage
+	        ),
+	        _react3.default.createElement("textarea", { type: this.props.type,
+	          name: this.props.name,
+	          value: this.state.value,
+	          onChange: this.handleChange.bind(this),
+	          onBlur: this.validate.bind(this) })
+	      );
+	    }
+	  }]);
+
+	  return TextArea;
+	}(_react2.Component), _class.defaultProps = {
+	  isRequired: false
+	}, _temp2));
+
+	exports.default = TextArea;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(173)(module)))
+
+/***/ },
+/* 398 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	var switchTerms = exports.switchTerms = {
+
+	  // Load Mock Product Data Into localStorage
+	  load: function load() {
+	    return [{
+	      id: '01',
+	      head: 'INFORMAÇÕES GERAIS',
+	      main: ['Para que seja efetuada qualquer troca ou devolução, é preciso primeiro realizar uma solicitação através do nosso formulário de contato ou por e-mail (info@nayp.co); informando de maneira completa os seguintes itens:', '(i)O motivo da troca. (ii)Número do pedido. (iii)Nome e CPF do cliente. (iv)Código do produto (conforme consta na Nota Fiscal, ao lado da descrição do produto)', '___', 'OBS.: ', '- Responderemos em menos de 24 horas, com todas as informações necessárias. ', '- Só será permitida a troca ou devolução quando as regras e prazos informados em nossa Política de Trocas e Devoluções estiverem de acordo.', '- Pedidos feitos em nossa loja online, só poderão ser trocados ou devolvidos em nossa loja online.']
+	    }, {
+	      id: '02',
+	      head: 'DEVOLUÇÃO POR DESISTÊNCIA',
+	      main: ['Caso decida fazer a devolução do produto, será realizado o reembolso do valor pago, sem o frete. Isso só será possível se as regras abaixo estiverem de acordo:', '- 07 (sete) dias corridos a partir da entrega do produto; a contar de sua assinatura ou do ato de recebimento do produto.', '- Frete por conta do consumidor.', '- Respeitar os prazos previstos e informados.', '- O Produto deve ser novo, ou seja, não utilizado e deve estar em sua embalagem original.', '- O produto deve ser enviado com a Nota fiscal Original de compra.', '- Devem constar no envio todos os itens que compõem o pedido em questão, como produtos, embalagens e seus acessórios. Somente com estes itens será possível trocar ou devolver produtos.', '- O produto será analisado conforme regras do código de defesa do consumidor.']
+	    }, {
+	      id: '03',
+	      head: 'TROCA POR TAMANHO OU COR (opção do consumidor)',
+	      main: ['Se a sua vontade é realizar a troca de um produto (por tamanho, cor ou modelo), certifique-se de que as regras abaixo estejam de acordo:', '- 30 (trinta) dias corridos a partir da entrega do produto; a contar de sua assinatura ou do ato de recebimento do produto.', '- Frete por conta do consumidor (exceto por erro operacional *).', '- Respeitar os prazos previstos e informados.', '- O Produto deve ser novo, ou seja, não utilizado e deve estar em sua embalagem original.', '- O produto deve ser enviado com a Nota fiscal Original de compra.', '- Devem constar no envio todos os itens que compõem o pedido em questão, como produtos, embalagens e seus acessórios. Somente com estes itens será possível trocar ou devolver produtos.', '- O produto será analisado conforme regras do Código de Defesa do Consumidor.', '* Frete por nossa conta, quando constatado que o pedido enviado é incompatível com o pedido originalmente feito; caso contrário o produto só será reenviado ao cliente após o pagamento do frete de devolução mais o frete de retorno.']
+
+	    }, {
+	      id: '04',
+	      head: 'TROCA POR DEFEITO',
+	      main: ['Se você precisa realizar a troca de um produto por defeito de fabricação, certifique-se de que as regras abaixo estejam de acordo.', '- 90 (noventa) dias corridos a partir da entrega do produto; a contar de sua assinatura ou do ato de recebimento do produto. ', '- Frete por nossa conta quando constatado o defeito, caso contrário o produto só será reenviado ao cliente após o pagamento do frete de devolução mais o frete de retorno.', '- Respeitar os prazos previstos e informados.', '- O produto deve estar completo, com todos os acessórios recebidos.', '- Deve ser enviado com a Nota Fiscal Original de compra.', '- Devem constar no envio todos os itens que compõem o pedido em questão, como produtos, embalagens, etiquetas originais e seus acessórios. Somente com estes itens será possível trocar ou devolver produtos.', '- E será analisado conforme o código de defesa do consumidor e por nossas premissas de qualidade.', 'OBS.: ', '- Todo o produto devolvido por defeito é analisado por nosso controle de qualidade. Só serão aceitos produtos originais que tenham recebido os cuidados corretos de conservação indicados na etiqueta do produto, com desgaste compatível com o tempo de uso, sem sinais de danos e Nota Fiscal Original; seguindo nossos critérios de qualidade.', '- Sendo constatado o defeito de fabricação, a NAYP tem até 30 (trinta) dias corridos, a contar da data de recebimento do seu produto devolvido, para dar uma das soluções a seguir:', '(i) Caso seja possível fazer o reparo da peça, ela será consertada e reenviada.', '(ii) Caso não seja possível fazer o reparo, mas o produto ainda esteja em estoque, uma nova peça será enviada.', '(iii) Caso não seja possível fazer o reparo e o produto não esteja mais em estoque, você poderá solicitar a devolução do valor pago ou a troca por outro produto da loja online de mesmo valor.']
+	    }];
+	  }
+	};
+
+/***/ },
+/* 399 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(module) {'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react2 = __webpack_require__(1);
+
+	var _react3 = _interopRequireDefault(_react2);
+
+	var _reactTransformHmr3 = __webpack_require__(174);
+
+	var _reactTransformHmr4 = _interopRequireDefault(_reactTransformHmr3);
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _FormInput = __webpack_require__(395);
+
+	var _FormInput2 = _interopRequireDefault(_FormInput);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var _components = {
+	  Order: {
+	    displayName: 'Order'
+	  }
+	};
+
+	var _reactTransformHmr2 = (0, _reactTransformHmr4.default)({
+	  filename: '/vhost/nayp/resources/assets/js/app/containers/order/Order.jsx',
+	  components: _components,
+	  locals: [module],
+	  imports: [_react3.default]
+	});
+
+	function _wrapComponent(id) {
+	  return function (Component) {
+	    return _reactTransformHmr2(Component, id);
+	  };
+	}
+
+	var Order = _wrapComponent('Order')(function (_Component) {
+	  _inherits(Order, _Component);
+
+	  function Order() {
+	    _classCallCheck(this, Order);
+
+	    return _possibleConstructorReturn(this, (Order.__proto__ || Object.getPrototypeOf(Order)).apply(this, arguments));
+	  }
+
+	  _createClass(Order, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react3.default.createElement(
+	        'div',
+	        { className: 'info-np' },
+	        _react3.default.createElement(
+	          'div',
+	          { className: 'container' },
+	          _react3.default.createElement(
+	            'h1',
+	            { className: 'title-base' },
+	            'consulte o status do seu pedido'
+	          ),
+	          _react3.default.createElement('br', null),
+	          _react3.default.createElement(
+	            'div',
+	            { className: 'form-status-pedido' },
+	            _react3.default.createElement(
+	              'form',
+	              null,
+	              _react3.default.createElement(_FormInput2.default, { label: 'Email',
+	                name: 'order_email',
+	                message: 'Digite seu email',
+	                type: 'email',
+	                isRequired: true }),
+	              _react3.default.createElement(_FormInput2.default, { label: 'numero da ordem',
+	                name: 'order_number',
+	                message: 'por favor digite o numero do seu pedido',
+	                type: 'text',
+	                minLength: 3,
+	                maxLength: 10,
+	                isRequired: true }),
+	              _react3.default.createElement(
+	                'div',
+	                { className: 'form_control' },
+	                _react3.default.createElement(
+	                  'button',
+	                  { type: 'submit', className: 'btn-other' },
+	                  ' ok '
+	                )
+	              )
+	            )
+	          ),
+	          _react3.default.createElement(
+	            'div',
+	            { className: 'status-error' },
+	            _react3.default.createElement(
+	              'p',
+	              null,
+	              _react3.default.createElement(
+	                'span',
+	                { className: 'alert-error' },
+	                'Lametamos mas n\xE3o encontramos seu pedido em nossa base de dados'
+	              ),
+	              _react3.default.createElement('br', null),
+	              'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis obcaecati culpa necessitatibus, impedit in error voluptatem quos eligendi quisquam quo ex excepturi doloribus quod nihil cumque accusamus tempora fugit eius.'
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Order;
+	}(_react2.Component));
+
+	exports.default = Order;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(173)(module)))
+
+/***/ },
+/* 400 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(module) {'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react2 = __webpack_require__(1);
+
+	var _react3 = _interopRequireDefault(_react2);
+
+	var _reactTransformHmr3 = __webpack_require__(174);
+
+	var _reactTransformHmr4 = _interopRequireDefault(_reactTransformHmr3);
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _reactRouter = __webpack_require__(323);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var _components = {
+	  Sizes: {
+	    displayName: 'Sizes'
+	  }
+	};
+
+	var _reactTransformHmr2 = (0, _reactTransformHmr4.default)({
+	  filename: '/vhost/nayp/resources/assets/js/app/containers/sizes/Sizes.jsx',
+	  components: _components,
+	  locals: [module],
+	  imports: [_react3.default]
+	});
+
+	function _wrapComponent(id) {
+	  return function (Component) {
+	    return _reactTransformHmr2(Component, id);
+	  };
+	}
+
+	var Sizes = _wrapComponent('Sizes')(function (_Component) {
+	  _inherits(Sizes, _Component);
+
+	  function Sizes() {
+	    _classCallCheck(this, Sizes);
+
+	    return _possibleConstructorReturn(this, (Sizes.__proto__ || Object.getPrototypeOf(Sizes)).apply(this, arguments));
+	  }
+
+	  _createClass(Sizes, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react3.default.createElement(
+	        'div',
+	        { className: 'info-np' },
+	        _react3.default.createElement(
+	          'div',
+	          { className: 'container' },
+	          _react3.default.createElement(
+	            'nav',
+	            { className: 'nav_tab' },
+	            _react3.default.createElement(
+	              'ul',
+	              { className: 'reset' },
+	              _react3.default.createElement(
+	                'li',
+	                null,
+	                _react3.default.createElement(
+	                  _reactRouter.IndexLink,
+	                  { to: '/sizes' },
+	                  'men\'s top'
+	                )
+	              ),
+	              _react3.default.createElement(
+	                'li',
+	                null,
+	                _react3.default.createElement(
+	                  _reactRouter.Link,
+	                  { to: 'bottom' },
+	                  'men\'s bottoms'
+	                )
+	              ),
+	              _react3.default.createElement(
+	                'li',
+	                null,
+	                _react3.default.createElement(
+	                  _reactRouter.Link,
+	                  { to: '/top2' },
+	                  'women\'s top'
+	                )
+	              ),
+	              _react3.default.createElement(
+	                'li',
+	                null,
+	                _react3.default.createElement(
+	                  _reactRouter.Link,
+	                  { to: '/bottom2' },
+	                  'women\'s bottom'
+	                )
+	              )
+	            )
+	          ),
+	          this.props.children,
+	          _react3.default.createElement(
+	            'div',
+	            null,
+	            _react3.default.createElement(
+	              'div',
+	              { className: 'info-content' },
+	              _react3.default.createElement(
+	                'p',
+	                null,
+	                '- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur fuga quisquam assumenda et est officia, quaerat illum eius, ipsum quas iste corporis pariatur reiciendis distinctio repudiandae'
+	              ),
+	              _react3.default.createElement(
+	                'p',
+	                null,
+	                '- quaerat illum eius, ipsum quas iste corporis pariatur reiciendis distinctio repudiandae voluptate odio voluptatibus neque.'
+	              ),
+	              _react3.default.createElement(
+	                'p',
+	                null,
+	                '- ing elit. Tenetur fuga quisquam assumenda et est officia, quaerat illum eius, ipsum quas iste corporis pariatur reiciendis distinctio'
+	              )
+	            ),
+	            _react3.default.createElement(
+	              'h2',
+	              { className: 'title-base' },
+	              'd\xFAvidas?'
+	            ),
+	            _react3.default.createElement(
+	              'small',
+	              null,
+	              'quaerat illum eius, ipsum quas iste corporis pariatur reiciendis distinctio repudiandae voluptate odio voluptatibus neque.'
+	            ),
+	            _react3.default.createElement('br', null),
+	            _react3.default.createElement('br', null),
+	            _react3.default.createElement(
+	              'a',
+	              { href: '#', className: 'reset' },
+	              _react3.default.createElement(
+	                'button',
+	                { className: 'btn-full' },
+	                'clique aqui e fale conosco'
+	              )
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Sizes;
+	}(_react2.Component));
+
+	exports.default = Sizes;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(173)(module)))
+
+/***/ },
+/* 401 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(module) {"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react2 = __webpack_require__(1);
+
+	var _react3 = _interopRequireDefault(_react2);
+
+	var _reactTransformHmr3 = __webpack_require__(174);
+
+	var _reactTransformHmr4 = _interopRequireDefault(_reactTransformHmr3);
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var _components = {
+	  SizeTop: {
+	    displayName: "SizeTop"
+	  }
+	};
+
+	var _reactTransformHmr2 = (0, _reactTransformHmr4.default)({
+	  filename: "/vhost/nayp/resources/assets/js/app/containers/sizes/SizeTop.jsx",
+	  components: _components,
+	  locals: [module],
+	  imports: [_react3.default]
+	});
+
+	function _wrapComponent(id) {
+	  return function (Component) {
+	    return _reactTransformHmr2(Component, id);
+	  };
+	}
+
+	var SizeTop = _wrapComponent("SizeTop")(function (_Component) {
+	  _inherits(SizeTop, _Component);
+
+	  function SizeTop() {
+	    _classCallCheck(this, SizeTop);
+
+	    return _possibleConstructorReturn(this, (SizeTop.__proto__ || Object.getPrototypeOf(SizeTop)).apply(this, arguments));
+	  }
+
+	  _createClass(SizeTop, [{
+	    key: "render",
+	    value: function render() {
+	      return _react3.default.createElement(
+	        "div",
+	        null,
+	        _react3.default.createElement(
+	          "div",
+	          { className: "size_model" },
+	          _react3.default.createElement(
+	            "h2",
+	            { className: "title-base" },
+	            "1\xBA passo / ",
+	            _react3.default.createElement("br", null),
+	            "medidas"
+	          ),
+	          _react3.default.createElement(
+	            "div",
+	            { className: "_content _top-masc" },
+	            _react3.default.createElement(
+	              "div",
+	              { className: "_image" },
+	              _react3.default.createElement("img", { src: "public/img/size-top1.png", alt: "" })
+	            ),
+	            _react3.default.createElement(
+	              "ul",
+	              { className: "_menu" },
+	              _react3.default.createElement(
+	                "li",
+	                null,
+	                _react3.default.createElement(
+	                  "p",
+	                  null,
+	                  _react3.default.createElement(
+	                    "strong",
+	                    null,
+	                    "A. PEITO"
+	                  ),
+	                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+	                ),
+	                _react3.default.createElement(
+	                  "span",
+	                  { className: "_marker _a" },
+	                  "a"
+	                )
+	              ),
+	              _react3.default.createElement(
+	                "li",
+	                null,
+	                _react3.default.createElement(
+	                  "p",
+	                  null,
+	                  _react3.default.createElement(
+	                    "strong",
+	                    null,
+	                    "B. ALTURA DO TRONCO"
+	                  ),
+	                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+	                ),
+	                _react3.default.createElement(
+	                  "span",
+	                  { className: "_marker _b" },
+	                  "b"
+	                )
+	              ),
+	              _react3.default.createElement(
+	                "li",
+	                null,
+	                _react3.default.createElement(
+	                  "p",
+	                  null,
+	                  _react3.default.createElement(
+	                    "strong",
+	                    null,
+	                    "C. MEDIDA DO BRA\xC7O"
+	                  ),
+	                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+	                ),
+	                _react3.default.createElement(
+	                  "span",
+	                  { className: "_marker _c" },
+	                  "c"
+	                )
+	              )
+	            )
+	          )
+	        ),
+	        _react3.default.createElement(
+	          "h2",
+	          { className: "title-base" },
+	          "2\xBA passo / ",
+	          _react3.default.createElement("br", null),
+	          "encontre o tamanho certo"
+	        ),
+	        _react3.default.createElement(
+	          "table",
+	          { className: "size_table" },
+	          _react3.default.createElement(
+	            "thead",
+	            null,
+	            _react3.default.createElement(
+	              "tr",
+	              null,
+	              _react3.default.createElement(
+	                "th",
+	                null,
+	                "Medidas",
+	                _react3.default.createElement("br", null),
+	                "em cm"
+	              ),
+	              _react3.default.createElement(
+	                "th",
+	                null,
+	                "a.",
+	                _react3.default.createElement("br", null),
+	                "peito",
+	                _react3.default.createElement("br", null)
+	              ),
+	              _react3.default.createElement(
+	                "th",
+	                null,
+	                "b.",
+	                _react3.default.createElement("br", null),
+	                "autura do",
+	                _react3.default.createElement("br", null),
+	                "tronco"
+	              ),
+	              _react3.default.createElement(
+	                "th",
+	                null,
+	                "c.",
+	                _react3.default.createElement("br", null),
+	                "medida do",
+	                _react3.default.createElement("br", null),
+	                "bra\xE7o"
+	              )
+	            )
+	          ),
+	          _react3.default.createElement(
+	            "tbody",
+	            null,
+	            _react3.default.createElement(
+	              "tr",
+	              null,
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "xp"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "74 - 81"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "82 - 89"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "90 - 98"
+	              )
+	            ),
+	            _react3.default.createElement(
+	              "tr",
+	              null,
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "p"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "74-81"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "82-89"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "90-98"
+	              )
+	            ),
+	            _react3.default.createElement(
+	              "tr",
+	              null,
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "m"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "74-81"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "82-89"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "90-98"
+	              )
+	            ),
+	            _react3.default.createElement(
+	              "tr",
+	              null,
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "g"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "74-81"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "82-89"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "90-98"
+	              )
+	            ),
+	            _react3.default.createElement(
+	              "tr",
+	              null,
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "xg"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "74-81"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "82-89"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "90-98"
+	              )
+	            ),
+	            _react3.default.createElement(
+	              "tr",
+	              null,
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "xxg"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "74-81"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "82-89"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "90-98"
+	              )
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return SizeTop;
+	}(_react2.Component));
+
+	exports.default = SizeTop;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(173)(module)))
+
+/***/ },
+/* 402 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(module) {"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react2 = __webpack_require__(1);
+
+	var _react3 = _interopRequireDefault(_react2);
+
+	var _reactTransformHmr3 = __webpack_require__(174);
+
+	var _reactTransformHmr4 = _interopRequireDefault(_reactTransformHmr3);
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var _components = {
+	  SizeTop2: {
+	    displayName: "SizeTop2"
+	  }
+	};
+
+	var _reactTransformHmr2 = (0, _reactTransformHmr4.default)({
+	  filename: "/vhost/nayp/resources/assets/js/app/containers/sizes/SizeTop2.jsx",
+	  components: _components,
+	  locals: [module],
+	  imports: [_react3.default]
+	});
+
+	function _wrapComponent(id) {
+	  return function (Component) {
+	    return _reactTransformHmr2(Component, id);
+	  };
+	}
+
+	var SizeTop2 = _wrapComponent("SizeTop2")(function (_Component) {
+	  _inherits(SizeTop2, _Component);
+
+	  function SizeTop2() {
+	    _classCallCheck(this, SizeTop2);
+
+	    return _possibleConstructorReturn(this, (SizeTop2.__proto__ || Object.getPrototypeOf(SizeTop2)).apply(this, arguments));
+	  }
+
+	  _createClass(SizeTop2, [{
+	    key: "render",
+	    value: function render() {
+	      return _react3.default.createElement(
+	        "div",
+	        null,
+	        _react3.default.createElement(
+	          "div",
+	          { className: "size_model" },
+	          _react3.default.createElement(
+	            "h2",
+	            { className: "title-base" },
+	            "1\xBA passo / ",
+	            _react3.default.createElement("br", null),
+	            "medidas"
+	          ),
+	          _react3.default.createElement(
+	            "div",
+	            { className: "_content _top-fem" },
+	            _react3.default.createElement(
+	              "div",
+	              { className: "_image" },
+	              _react3.default.createElement("img", { src: "public/img/size-top2.png", alt: "" })
+	            ),
+	            _react3.default.createElement(
+	              "ul",
+	              { className: "_menu" },
+	              _react3.default.createElement(
+	                "li",
+	                null,
+	                _react3.default.createElement(
+	                  "p",
+	                  null,
+	                  _react3.default.createElement(
+	                    "strong",
+	                    null,
+	                    "A. PEITO"
+	                  ),
+	                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+	                ),
+	                _react3.default.createElement(
+	                  "span",
+	                  { className: "_marker _a" },
+	                  "a"
+	                )
+	              ),
+	              _react3.default.createElement(
+	                "li",
+	                null,
+	                _react3.default.createElement(
+	                  "p",
+	                  null,
+	                  _react3.default.createElement(
+	                    "strong",
+	                    null,
+	                    "B. ALTURA DO TRONCO"
+	                  ),
+	                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+	                ),
+	                _react3.default.createElement(
+	                  "span",
+	                  { className: "_marker _b" },
+	                  "b"
+	                )
+	              ),
+	              _react3.default.createElement(
+	                "li",
+	                null,
+	                _react3.default.createElement(
+	                  "p",
+	                  null,
+	                  _react3.default.createElement(
+	                    "strong",
+	                    null,
+	                    "C. MEDIDA DO BRA\xC7O"
+	                  ),
+	                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+	                ),
+	                _react3.default.createElement(
+	                  "span",
+	                  { className: "_marker _c" },
+	                  "c"
+	                )
+	              )
+	            )
+	          )
+	        ),
+	        _react3.default.createElement(
+	          "h2",
+	          { className: "title-base" },
+	          "2\xBA passo / ",
+	          _react3.default.createElement("br", null),
+	          "encontre o tamanho certo"
+	        ),
+	        _react3.default.createElement(
+	          "table",
+	          { className: "size_table" },
+	          _react3.default.createElement(
+	            "thead",
+	            null,
+	            _react3.default.createElement(
+	              "tr",
+	              null,
+	              _react3.default.createElement(
+	                "th",
+	                null,
+	                "Medidas",
+	                _react3.default.createElement("br", null),
+	                "em cm"
+	              ),
+	              _react3.default.createElement(
+	                "th",
+	                null,
+	                "a.",
+	                _react3.default.createElement("br", null),
+	                "peito",
+	                _react3.default.createElement("br", null)
+	              ),
+	              _react3.default.createElement(
+	                "th",
+	                null,
+	                "b.",
+	                _react3.default.createElement("br", null),
+	                "autura do",
+	                _react3.default.createElement("br", null),
+	                "tronco"
+	              ),
+	              _react3.default.createElement(
+	                "th",
+	                null,
+	                "c.",
+	                _react3.default.createElement("br", null),
+	                "medida do",
+	                _react3.default.createElement("br", null),
+	                "bra\xE7o"
+	              )
+	            )
+	          ),
+	          _react3.default.createElement(
+	            "tbody",
+	            null,
+	            _react3.default.createElement(
+	              "tr",
+	              null,
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "xp"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "74 - 81"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "82 - 89"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "90 - 98"
+	              )
+	            ),
+	            _react3.default.createElement(
+	              "tr",
+	              null,
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "p"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "74-81"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "82-89"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "90-98"
+	              )
+	            ),
+	            _react3.default.createElement(
+	              "tr",
+	              null,
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "m"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "74-81"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "82-89"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "90-98"
+	              )
+	            ),
+	            _react3.default.createElement(
+	              "tr",
+	              null,
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "g"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "74-81"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "82-89"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "90-98"
+	              )
+	            ),
+	            _react3.default.createElement(
+	              "tr",
+	              null,
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "xg"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "74-81"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "82-89"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "90-98"
+	              )
+	            ),
+	            _react3.default.createElement(
+	              "tr",
+	              null,
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "xxg"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "74-81"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "82-89"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "90-98"
+	              )
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return SizeTop2;
+	}(_react2.Component));
+
+	exports.default = SizeTop2;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(173)(module)))
+
+/***/ },
+/* 403 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(module) {"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react2 = __webpack_require__(1);
+
+	var _react3 = _interopRequireDefault(_react2);
+
+	var _reactTransformHmr3 = __webpack_require__(174);
+
+	var _reactTransformHmr4 = _interopRequireDefault(_reactTransformHmr3);
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var _components = {
+	  SizeBottom: {
+	    displayName: "SizeBottom"
+	  }
+	};
+
+	var _reactTransformHmr2 = (0, _reactTransformHmr4.default)({
+	  filename: "/vhost/nayp/resources/assets/js/app/containers/sizes/SizeBottom.jsx",
+	  components: _components,
+	  locals: [module],
+	  imports: [_react3.default]
+	});
+
+	function _wrapComponent(id) {
+	  return function (Component) {
+	    return _reactTransformHmr2(Component, id);
+	  };
+	}
+
+	var SizeBottom = _wrapComponent("SizeBottom")(function (_Component) {
+	  _inherits(SizeBottom, _Component);
+
+	  function SizeBottom() {
+	    _classCallCheck(this, SizeBottom);
+
+	    return _possibleConstructorReturn(this, (SizeBottom.__proto__ || Object.getPrototypeOf(SizeBottom)).apply(this, arguments));
+	  }
+
+	  _createClass(SizeBottom, [{
+	    key: "render",
+	    value: function render() {
+	      return _react3.default.createElement(
+	        "div",
+	        null,
+	        _react3.default.createElement(
+	          "div",
+	          { className: "size_model" },
+	          _react3.default.createElement(
+	            "h2",
+	            { className: "title-base" },
+	            "1\xBA passo / ",
+	            _react3.default.createElement("br", null),
+	            "medidas"
+	          ),
+	          _react3.default.createElement(
+	            "div",
+	            { className: "_content _bottom-masc" },
+	            _react3.default.createElement(
+	              "div",
+	              { className: "_image" },
+	              _react3.default.createElement("img", { src: "public/img/size-bottom1.png", alt: "" })
+	            ),
+	            _react3.default.createElement(
+	              "ul",
+	              { className: "_menu _half" },
+	              _react3.default.createElement(
+	                "li",
+	                null,
+	                _react3.default.createElement(
+	                  "p",
+	                  null,
+	                  _react3.default.createElement(
+	                    "strong",
+	                    null,
+	                    "A. PEITO"
+	                  ),
+	                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+	                ),
+	                _react3.default.createElement(
+	                  "span",
+	                  { className: "_marker _a" },
+	                  "a"
+	                )
+	              ),
+	              _react3.default.createElement(
+	                "li",
+	                null,
+	                _react3.default.createElement(
+	                  "p",
+	                  null,
+	                  _react3.default.createElement(
+	                    "strong",
+	                    null,
+	                    "B. ALTURA DO TRONCO"
+	                  ),
+	                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+	                ),
+	                _react3.default.createElement(
+	                  "span",
+	                  { className: "_marker _b" },
+	                  "b"
+	                )
+	              )
+	            )
+	          )
+	        ),
+	        _react3.default.createElement(
+	          "h2",
+	          { className: "title-base" },
+	          "2\xBA passo / ",
+	          _react3.default.createElement("br", null),
+	          "encontre o tamanho certo"
+	        ),
+	        _react3.default.createElement(
+	          "table",
+	          { className: "size_table _bottom" },
+	          _react3.default.createElement(
+	            "thead",
+	            null,
+	            _react3.default.createElement(
+	              "tr",
+	              null,
+	              _react3.default.createElement(
+	                "th",
+	                null,
+	                "Medidas",
+	                _react3.default.createElement("br", null),
+	                "em cm"
+	              ),
+	              _react3.default.createElement(
+	                "th",
+	                null,
+	                "b.",
+	                _react3.default.createElement("br", null),
+	                "autura do",
+	                _react3.default.createElement("br", null),
+	                "tronco"
+	              ),
+	              _react3.default.createElement(
+	                "th",
+	                null,
+	                "c.",
+	                _react3.default.createElement("br", null),
+	                "medida do",
+	                _react3.default.createElement("br", null),
+	                "bra\xE7o"
+	              )
+	            )
+	          ),
+	          _react3.default.createElement(
+	            "tbody",
+	            null,
+	            _react3.default.createElement(
+	              "tr",
+	              { className: "_title" },
+	              _react3.default.createElement(
+	                "td",
+	                { colSpan: "3" },
+	                "tamanhos numericos"
+	              )
+	            ),
+	            _react3.default.createElement(
+	              "tr",
+	              null,
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "36"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "82 - 89"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "90 - 98"
+	              )
+	            ),
+	            _react3.default.createElement(
+	              "tr",
+	              null,
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "38"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "82-89"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "90-98"
+	              )
+	            ),
+	            _react3.default.createElement(
+	              "tr",
+	              null,
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "40"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "82-89"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "90-98"
+	              )
+	            ),
+	            _react3.default.createElement(
+	              "tr",
+	              null,
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "42"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "82-89"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "90-98"
+	              )
+	            ),
+	            _react3.default.createElement(
+	              "tr",
+	              null,
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "44"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "82-89"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "90-98"
+	              )
+	            ),
+	            _react3.default.createElement(
+	              "tr",
+	              null,
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "46"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "82-89"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "90-98"
+	              )
+	            ),
+	            _react3.default.createElement(
+	              "tr",
+	              { className: "_title" },
+	              _react3.default.createElement(
+	                "td",
+	                { colSpan: "3" },
+	                "tamanhos nominais",
+	                _react3.default.createElement(
+	                  "small",
+	                  null,
+	                  "\xA0 (pe\xE7as com ajustes de cord\xE3o e/ou el\xE1stico na cintura)"
+	                )
+	              )
+	            ),
+	            _react3.default.createElement(
+	              "tr",
+	              null,
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "p"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "82-89"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "90-98"
+	              )
+	            ),
+	            _react3.default.createElement(
+	              "tr",
+	              null,
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "m"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "82-89"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "90-98"
+	              )
+	            ),
+	            _react3.default.createElement(
+	              "tr",
+	              null,
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "g"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "82-89"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "90-98"
+	              )
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return SizeBottom;
+	}(_react2.Component));
+
+	exports.default = SizeBottom;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(173)(module)))
+
+/***/ },
+/* 404 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(module) {"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react2 = __webpack_require__(1);
+
+	var _react3 = _interopRequireDefault(_react2);
+
+	var _reactTransformHmr3 = __webpack_require__(174);
+
+	var _reactTransformHmr4 = _interopRequireDefault(_reactTransformHmr3);
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var _components = {
+	  SizeBottom2: {
+	    displayName: "SizeBottom2"
+	  }
+	};
+
+	var _reactTransformHmr2 = (0, _reactTransformHmr4.default)({
+	  filename: "/vhost/nayp/resources/assets/js/app/containers/sizes/SizeBottom2.jsx",
+	  components: _components,
+	  locals: [module],
+	  imports: [_react3.default]
+	});
+
+	function _wrapComponent(id) {
+	  return function (Component) {
+	    return _reactTransformHmr2(Component, id);
+	  };
+	}
+
+	var SizeBottom2 = _wrapComponent("SizeBottom2")(function (_Component) {
+	  _inherits(SizeBottom2, _Component);
+
+	  function SizeBottom2() {
+	    _classCallCheck(this, SizeBottom2);
+
+	    return _possibleConstructorReturn(this, (SizeBottom2.__proto__ || Object.getPrototypeOf(SizeBottom2)).apply(this, arguments));
+	  }
+
+	  _createClass(SizeBottom2, [{
+	    key: "render",
+	    value: function render() {
+	      return _react3.default.createElement(
+	        "div",
+	        null,
+	        _react3.default.createElement(
+	          "div",
+	          { className: "size_model" },
+	          _react3.default.createElement(
+	            "h2",
+	            { className: "title-base" },
+	            "1\xBA passo / ",
+	            _react3.default.createElement("br", null),
+	            "medidas"
+	          ),
+	          _react3.default.createElement(
+	            "div",
+	            { className: "_content _bottom-fem" },
+	            _react3.default.createElement(
+	              "div",
+	              { className: "_image" },
+	              _react3.default.createElement("img", { src: "public/img/size-bottom2.png", alt: "" })
+	            ),
+	            _react3.default.createElement(
+	              "ul",
+	              { className: "_menu _half" },
+	              _react3.default.createElement(
+	                "li",
+	                null,
+	                _react3.default.createElement(
+	                  "p",
+	                  null,
+	                  _react3.default.createElement(
+	                    "strong",
+	                    null,
+	                    "A. PEITO"
+	                  ),
+	                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+	                ),
+	                _react3.default.createElement(
+	                  "span",
+	                  { className: "_marker _a" },
+	                  "a"
+	                )
+	              ),
+	              _react3.default.createElement(
+	                "li",
+	                null,
+	                _react3.default.createElement(
+	                  "p",
+	                  null,
+	                  _react3.default.createElement(
+	                    "strong",
+	                    null,
+	                    "B. ALTURA DO TRONCO"
+	                  ),
+	                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+	                ),
+	                _react3.default.createElement(
+	                  "span",
+	                  { className: "_marker _b" },
+	                  "b"
+	                )
+	              )
+	            )
+	          )
+	        ),
+	        _react3.default.createElement(
+	          "h2",
+	          { className: "title-base" },
+	          "2\xBA passo / ",
+	          _react3.default.createElement("br", null),
+	          "encontre o tamanho certo"
+	        ),
+	        _react3.default.createElement(
+	          "table",
+	          { className: "size_table _bottom" },
+	          _react3.default.createElement(
+	            "thead",
+	            null,
+	            _react3.default.createElement(
+	              "tr",
+	              null,
+	              _react3.default.createElement(
+	                "th",
+	                null,
+	                "Medidas",
+	                _react3.default.createElement("br", null),
+	                "em cm"
+	              ),
+	              _react3.default.createElement(
+	                "th",
+	                null,
+	                "b.",
+	                _react3.default.createElement("br", null),
+	                "autura do",
+	                _react3.default.createElement("br", null),
+	                "tronco"
+	              ),
+	              _react3.default.createElement(
+	                "th",
+	                null,
+	                "c.",
+	                _react3.default.createElement("br", null),
+	                "medida do",
+	                _react3.default.createElement("br", null),
+	                "bra\xE7o"
+	              )
+	            )
+	          ),
+	          _react3.default.createElement(
+	            "tbody",
+	            null,
+	            _react3.default.createElement(
+	              "tr",
+	              { className: "_title" },
+	              _react3.default.createElement(
+	                "td",
+	                { colSpan: "3" },
+	                "tamanhos numericos"
+	              )
+	            ),
+	            _react3.default.createElement(
+	              "tr",
+	              null,
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "36"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "82 - 89"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "90 - 98"
+	              )
+	            ),
+	            _react3.default.createElement(
+	              "tr",
+	              null,
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "38"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "82-89"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "90-98"
+	              )
+	            ),
+	            _react3.default.createElement(
+	              "tr",
+	              null,
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "40"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "82-89"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "90-98"
+	              )
+	            ),
+	            _react3.default.createElement(
+	              "tr",
+	              null,
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "42"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "82-89"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "90-98"
+	              )
+	            ),
+	            _react3.default.createElement(
+	              "tr",
+	              null,
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "44"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "82-89"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "90-98"
+	              )
+	            ),
+	            _react3.default.createElement(
+	              "tr",
+	              null,
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "46"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "82-89"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "90-98"
+	              )
+	            ),
+	            _react3.default.createElement(
+	              "tr",
+	              { className: "_title" },
+	              _react3.default.createElement(
+	                "td",
+	                { colSpan: "3" },
+	                "tamanhos nominais",
+	                _react3.default.createElement(
+	                  "small",
+	                  null,
+	                  "\xA0 (pe\xE7as com ajustes de cord\xE3o e/ou el\xE1stico na cintura)"
+	                )
+	              )
+	            ),
+	            _react3.default.createElement(
+	              "tr",
+	              null,
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "p"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "82-89"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "90-98"
+	              )
+	            ),
+	            _react3.default.createElement(
+	              "tr",
+	              null,
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "m"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "82-89"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "90-98"
+	              )
+	            ),
+	            _react3.default.createElement(
+	              "tr",
+	              null,
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "g"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "82-89"
+	              ),
+	              _react3.default.createElement(
+	                "td",
+	                null,
+	                "90-98"
+	              )
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return SizeBottom2;
+	}(_react2.Component));
+
+	exports.default = SizeBottom2;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(173)(module)))
+
+/***/ },
+/* 405 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(module) {'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react2 = __webpack_require__(1);
+
+	var _react3 = _interopRequireDefault(_react2);
+
+	var _reactTransformHmr3 = __webpack_require__(174);
+
+	var _reactTransformHmr4 = _interopRequireDefault(_reactTransformHmr3);
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _GoogleMaps = __webpack_require__(406);
+
+	var _GoogleMaps2 = _interopRequireDefault(_GoogleMaps);
+
+	var _FormInput = __webpack_require__(395);
+
+	var _FormInput2 = _interopRequireDefault(_FormInput);
+
+	var _TextArea = __webpack_require__(397);
+
+	var _TextArea2 = _interopRequireDefault(_TextArea);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var _components = {
+	  Contact: {
+	    displayName: 'Contact'
+	  }
+	};
+
+	var _reactTransformHmr2 = (0, _reactTransformHmr4.default)({
+	  filename: '/vhost/nayp/resources/assets/js/app/containers/contact/Contact.jsx',
+	  components: _components,
+	  locals: [module],
+	  imports: [_react3.default]
+	});
+
+	function _wrapComponent(id) {
+	  return function (Component) {
+	    return _reactTransformHmr2(Component, id);
+	  };
+	}
+
+	var Contact = _wrapComponent('Contact')(function (_Component) {
+	  _inherits(Contact, _Component);
+
+	  function Contact() {
+	    _classCallCheck(this, Contact);
+
+	    return _possibleConstructorReturn(this, (Contact.__proto__ || Object.getPrototypeOf(Contact)).apply(this, arguments));
+	  }
+
+	  _createClass(Contact, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react3.default.createElement(
+	        'div',
+	        { className: '_content' },
+	        _react3.default.createElement(
+	          'h1',
+	          { className: 'title-base' },
+	          'Contatos e hor\xE1rios'
+	        ),
+	        _react3.default.createElement(
+	          'div',
+	          { className: 'capitalize' },
+	          _react3.default.createElement('br', null),
+	          _react3.default.createElement(
+	            'h2',
+	            { className: 'title-small' },
+	            'loja Online'
+	          ),
+	          _react3.default.createElement(
+	            'p',
+	            { className: '_paragraph' },
+	            _react3.default.createElement(
+	              'span',
+	              { className: '_breakout' },
+	              'para outras informa\xE7\xF5es, envie sua mensagem atrav\xE9s do formul\xE1rio, que responderemos brevemente.'
+	            ),
+	            'hor\xE1rios de atendimento online: ',
+	            _react3.default.createElement('br', null),
+	            _react3.default.createElement(
+	              'span',
+	              null,
+	              'segunda-feira - sexta-feira: 9:00 AM - 9:00 PM (UTC-03:00 / bras\xEDlia)'
+	            ),
+	            _react3.default.createElement('br', null),
+	            _react3.default.createElement(
+	              'span',
+	              null,
+	              's\xE1bado - domingo: 9:00 AM - 4:00 PM (UTC-03:00 / bras\xEDlia)'
+	            )
+	          )
+	        ),
+	        _react3.default.createElement(
+	          'div',
+	          { className: 'form-contatos' },
+	          _react3.default.createElement(
+	            'form',
+	            null,
+	            _react3.default.createElement(_FormInput2.default, { name: 'contact_firstname',
+	              label: 'nome',
+	              type: 'text',
+	              minLength: 3,
+	              message: 'por favor digite seu primeiro nome',
+	              isRequired: true }),
+	            _react3.default.createElement(_FormInput2.default, { name: 'contact_lastname',
+	              label: 'sobrenome',
+	              type: 'text',
+	              minLength: 3,
+	              message: 'por favor digite seu ultimo nome',
+	              isRequired: true }),
+	            _react3.default.createElement(_FormInput2.default, { name: 'contact_email',
+	              label: 'Email',
+	              type: 'email',
+	              message: 'Digite seu email',
+	              isRequired: true }),
+	            _react3.default.createElement(_FormInput2.default, { name: 'contact_tel',
+	              label: 'telefone',
+	              type: 'tel',
+	              message: 'digite um telefone para contato' }),
+	            _react3.default.createElement(_TextArea2.default, { name: 'contact_message',
+	              label: 'mensagem',
+	              minLength: 10,
+	              isRequired: true }),
+	            _react3.default.createElement(
+	              'div',
+	              { className: 'form_control' },
+	              _react3.default.createElement(
+	                'button',
+	                { type: 'submit', className: 'btn-other' },
+	                ' ok '
+	              )
+	            )
+	          )
+	        ),
+	        _react3.default.createElement(
+	          'div',
+	          { className: 'capitalize' },
+	          _react3.default.createElement(
+	            'h2',
+	            { className: 'title-small' },
+	            'loja f\xEDsica'
+	          ),
+	          _react3.default.createElement(
+	            'p',
+	            { className: '_breakout' },
+	            'cnpj: 00.000/0001-00 ',
+	            _react3.default.createElement('br', null),
+	            'r. comendador ara\xFAjo, 268, loja ca06 - shopping omar 00000-000, curitiba - paran\xE1, brasil'
+	          ),
+	          _react3.default.createElement(
+	            'p',
+	            { className: '_breakout' },
+	            'hor\xE1rios de atendimento loja f\xEDsica: ',
+	            _react3.default.createElement('br', null),
+	            _react3.default.createElement(
+	              'span',
+	              null,
+	              'segunda-feira - sexta-feira: 9:00 AM - 8:00 PM (UTC-03:00 / bras\xEDlia)'
+	            ),
+	            _react3.default.createElement('br', null),
+	            _react3.default.createElement(
+	              'span',
+	              null,
+	              's\xE1bado: 9:00 AM - 6:00 PM (UTC-03:00 / bras\xEDlia)'
+	            )
+	          )
+	        ),
+	        _react3.default.createElement(_GoogleMaps2.default, null)
+	      );
+	    }
+	  }]);
+
+	  return Contact;
+	}(_react2.Component));
+
+	exports.default = Contact;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(173)(module)))
+
+/***/ },
+/* 406 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(module) {'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react2 = __webpack_require__(1);
+
+	var _react3 = _interopRequireDefault(_react2);
+
+	var _reactTransformHmr3 = __webpack_require__(174);
+
+	var _reactTransformHmr4 = _interopRequireDefault(_reactTransformHmr3);
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _reactDom = __webpack_require__(34);
+
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+
+	var _reactGmaps = __webpack_require__(407);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var _components = {
+	  App: {
+	    displayName: 'App'
+	  }
+	};
+
+	var _reactTransformHmr2 = (0, _reactTransformHmr4.default)({
+	  filename: '/vhost/nayp/resources/assets/js/app/components/googleMaps/GoogleMaps.jsx',
+	  components: _components,
+	  locals: [module],
+	  imports: [_react3.default]
+	});
+
+	function _wrapComponent(id) {
+	  return function (Component) {
+	    return _reactTransformHmr2(Component, id);
+	  };
+	}
+
+	var coords = {
+	  lat: -25.4353676,
+	  lng: -49.278431
+	};
+
+	var stylesArray = [{
+	  featureType: "all",
+	  stylers: [{ saturation: -80 }]
+	}, {
+	  featureType: "road.arterial",
+	  elementType: "geometry",
+	  stylers: [{ hue: "#00ffee" }, { saturation: 50 }]
+	}, {
+	  featureType: "poi.business",
+	  elementType: "labels",
+	  stylers: [{ visibility: "off" }]
+	}];
+
+	var App = _wrapComponent('App')(function (_Component) {
+	  _inherits(App, _Component);
+
+	  function App() {
+	    _classCallCheck(this, App);
+
+	    return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
+	  }
+
+	  _createClass(App, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react3.default.createElement(
+	        _reactGmaps.Gmaps,
+	        {
+	          width: '100%',
+	          height: '400px',
+	          lat: coords.lat,
+	          lng: coords.lng,
+	          zoom: 14,
+	          styler: stylesArray,
+	          loadingMessage: 'Be happy',
+	          params: { v: '3.exp', key: 'AIzaSyDlEyZ_acJRpOYj5_715_4_1GLTRshO7Lc' },
+	          onMapCreated: this.onMapCreated },
+	        _react3.default.createElement(_reactGmaps.Marker, {
+	          lat: coords.lat,
+	          lng: coords.lng,
+	          icon: 'public/svg/marker.svg',
+	          draggable: true,
+	          onDragEnd: this.onDragEnd })
+	      );
+	    }
+	  }]);
+
+	  return App;
+	}(_react2.Component));
+
+	exports.default = App;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(173)(module)))
+
+/***/ },
+/* 407 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var _componentsGmaps = __webpack_require__(408);
+
+	var _componentsGmaps2 = _interopRequireDefault(_componentsGmaps);
+
+	var _componentsMarker = __webpack_require__(416);
+
+	var _componentsMarker2 = _interopRequireDefault(_componentsMarker);
+
+	var _componentsInfoWindow = __webpack_require__(419);
+
+	var _componentsInfoWindow2 = _interopRequireDefault(_componentsInfoWindow);
+
+	var _componentsCircle = __webpack_require__(421);
+
+	var _componentsCircle2 = _interopRequireDefault(_componentsCircle);
+
+	exports.Gmaps = _componentsGmaps2['default'];
+	exports.Marker = _componentsMarker2['default'];
+	exports.InfoWindow = _componentsInfoWindow2['default'];
+	exports.Circle = _componentsCircle2['default'];
+
+/***/ },
+/* 408 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactDom = __webpack_require__(34);
+
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+
+	var _objectAssign = __webpack_require__(4);
+
+	var _objectAssign2 = _interopRequireDefault(_objectAssign);
+
+	var _eventsMap = __webpack_require__(409);
+
+	var _eventsMap2 = _interopRequireDefault(_eventsMap);
+
+	var _mixinsListener = __webpack_require__(410);
+
+	var _mixinsListener2 = _interopRequireDefault(_mixinsListener);
+
+	var _utilsGoogleMaps = __webpack_require__(411);
+
+	var _utilsGoogleMaps2 = _interopRequireDefault(_utilsGoogleMaps);
+
+	var _utilsCompareProps = __webpack_require__(415);
+
+	var _utilsCompareProps2 = _interopRequireDefault(_utilsCompareProps);
+
+	var Gmaps = _react2['default'].createClass({
+	  displayName: 'Gmaps',
+
+	  mixins: [_mixinsListener2['default']],
+
+	  map: null,
+
+	  getInitialState: function getInitialState() {
+	    return {
+	      isMapCreated: false,
+	      styler: this.props.styler
+	    };
+	  },
+
+	  componentDidMount: function componentDidMount() {
+	    this.setState({
+	      callbackIndex: _utilsGoogleMaps2['default'].load(this.props.params, this.mapsCallback)
+	    });
+	  },
+
+	  componentWillUnmount: function componentWillUnmount() {
+	    _utilsGoogleMaps2['default'].removeCallback(this.state.callbackIndex);
+	    this.removeListeners();
+	  },
+
+	  componentWillReceiveProps: function componentWillReceiveProps(nextProps) {
+	    if (this.map && !(0, _utilsCompareProps2['default'])(this.props, nextProps)) {
+	      this.map.setOptions(_extends({}, nextProps, {
+	        center: new google.maps.LatLng(nextProps.lat, nextProps.lng)
+	      }));
+	    }
+	  },
+
+	  getMap: function getMap() {
+	    return this.map;
+	  },
+
+	  mapsCallback: function mapsCallback() {
+	    this.createMap();
+	    this.addListeners(this.map, _eventsMap2['default']);
+	  },
+
+	  createMap: function createMap() {
+	    var node = _reactDom2['default'].findDOMNode(this);
+	    var styledMapType = new google.maps.StyledMapType(this.state.styler, { name: 'Styled' });
+
+	    this.map = new google.maps.Map(node, _extends({}, this.props, {
+	      center: new google.maps.LatLng(this.props.lat, this.props.lng),
+	      mapTypeId: 'Styled'
+	    }));
+	    this.map.mapTypes.set('Styled', styledMapType);
+	    this.setState({
+	      isMapCreated: true
+	    });
+	    if (this.props.onMapCreated) {
+	      this.props.onMapCreated(this.map);
+	    }
+	  },
+
+	  getChildren: function getChildren() {
+	    var _this = this;
+
+	    return _react2['default'].Children.map(this.props.children, function (child) {
+	      if (!_react2['default'].isValidElement(child)) {
+	        return child;
+	      }
+	      return _react2['default'].cloneElement(child, {
+	        ref: child.ref,
+	        map: _this.map
+	      });
+	    });
+	  },
+
+	  render: function render() {
+	    var style = (0, _objectAssign2['default'])({
+	      width: this.props.width,
+	      height: this.props.height
+	    }, this.props.style);
+	    return _react2['default'].createElement(
+	      'div',
+	      { style: style, className: this.props.className },
+	      this.props.loadingMessage || 'Loading...',
+	      this.state.isMapCreated ? this.getChildren() : null
+	    );
+	  }
+
+	});
+
+	exports['default'] = Gmaps;
+	module.exports = exports['default'];
+
+/***/ },
+/* 409 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+
+	exports['default'] = {
+	  onBoundsChanged: 'bounds_changed',
+	  onCenterChanged: 'center_changed',
+	  onClick: 'click',
+	  onDblClick: 'dblclick',
+	  onDrag: 'drag',
+	  onDragEnd: 'dragend',
+	  onDragStart: 'dragstart',
+	  onHeadingChanged: 'heading_changed',
+	  onIdle: 'idle',
+	  onMapTypeIdChanged: 'maptypeid_changed',
+	  onMouseMove: 'mousemove',
+	  onMouseOut: 'mouseout',
+	  onMouseOver: 'mouseover',
+	  onProjectionChanged: 'projection_changed',
+	  onResize: 'resize',
+	  onRightClick: 'rightclick',
+	  onTilesLoaded: 'tilesloaded',
+	  onTiltChanged: 'tilt_changed',
+	  onZoomChanged: 'zoom_changed'
+	};
+	module.exports = exports['default'];
+
+/***/ },
+/* 410 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var Listener = {
+
+	  addListeners: function addListeners(entity, events) {
+	    for (var prop in this.props) {
+	      if (this.props.hasOwnProperty(prop) && events[prop]) {
+	        var addListener = google.maps.event.addListener;
+	        var listener = addListener(entity, events[prop], this.props[prop]);
+	        if (!this.listeners) {
+	          this.listeners = [];
+	        }
+	        this.listeners.push(listener);
+	      }
+	    }
+	  },
+
+	  removeListeners: function removeListeners() {
+	    if (window.google && this.listeners) {
+	      this.listeners.forEach(function (listener) {
+	        google.maps.event.removeListener(listener);
+	      });
+	    }
+	  }
+
+	};
+
+	exports["default"] = Listener;
+	module.exports = exports["default"];
+
+/***/ },
+/* 411 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var _querystring = __webpack_require__(412);
+
+	var _querystring2 = _interopRequireDefault(_querystring);
+
+	exports['default'] = {
+
+	  callbacks: [],
+
+	  appended: false,
+
+	  load: function load(params, callback) {
+	    var index = this.callbacks.push(callback);
+	    if (window.google) {
+	      setTimeout(this.fireCallbacks.bind(this));
+	    } else {
+	      if (!this.appended) {
+	        window.mapsCallback = this.mapsCallback.bind(this);
+	        this.appendScript(params);
+	      }
+	    }
+	    return index;
+	  },
+
+	  getSrc: function getSrc(params) {
+	    var src = 'https://maps.googleapis.com/maps/api/js';
+	    src += '?callback=mapsCallback&';
+	    src += _querystring2['default'].stringify(params);
+	    return src;
+	  },
+
+	  appendScript: function appendScript(params) {
+	    var src = this.getSrc(params);
+	    var script = document.createElement('script');
+	    script.setAttribute('src', src);
+	    document.head.appendChild(script);
+	    this.appended = true;
+	  },
+
+	  mapsCallback: function mapsCallback() {
+	    window.mapsCallback = undefined;
+	    this.fireCallbacks();
+	  },
+
+	  fireCallbacks: function fireCallbacks() {
+	    this.callbacks.forEach(function (callback) {
+	      return callback();
+	    });
+	    this.callbacks = [];
+	  },
+
+	  removeCallback: function removeCallback(index) {
+	    this.callbacks.splice(index - 1, 1);
+	  }
+
+	};
+	module.exports = exports['default'];
+
+/***/ },
+/* 412 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	exports.decode = exports.parse = __webpack_require__(413);
+	exports.encode = exports.stringify = __webpack_require__(414);
+
+
+/***/ },
+/* 413 */
+/***/ function(module, exports) {
+
+	// Copyright Joyent, Inc. and other Node contributors.
+	//
+	// Permission is hereby granted, free of charge, to any person obtaining a
+	// copy of this software and associated documentation files (the
+	// "Software"), to deal in the Software without restriction, including
+	// without limitation the rights to use, copy, modify, merge, publish,
+	// distribute, sublicense, and/or sell copies of the Software, and to permit
+	// persons to whom the Software is furnished to do so, subject to the
+	// following conditions:
+	//
+	// The above copyright notice and this permission notice shall be included
+	// in all copies or substantial portions of the Software.
+	//
+	// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+	// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+	// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+	// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+	// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+	// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+	// USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+	'use strict';
+
+	// If obj.hasOwnProperty has been overridden, then calling
+	// obj.hasOwnProperty(prop) will break.
+	// See: https://github.com/joyent/node/issues/1707
+	function hasOwnProperty(obj, prop) {
+	  return Object.prototype.hasOwnProperty.call(obj, prop);
+	}
+
+	module.exports = function(qs, sep, eq, options) {
+	  sep = sep || '&';
+	  eq = eq || '=';
+	  var obj = {};
+
+	  if (typeof qs !== 'string' || qs.length === 0) {
+	    return obj;
+	  }
+
+	  var regexp = /\+/g;
+	  qs = qs.split(sep);
+
+	  var maxKeys = 1000;
+	  if (options && typeof options.maxKeys === 'number') {
+	    maxKeys = options.maxKeys;
+	  }
+
+	  var len = qs.length;
+	  // maxKeys <= 0 means that we should not limit keys count
+	  if (maxKeys > 0 && len > maxKeys) {
+	    len = maxKeys;
+	  }
+
+	  for (var i = 0; i < len; ++i) {
+	    var x = qs[i].replace(regexp, '%20'),
+	        idx = x.indexOf(eq),
+	        kstr, vstr, k, v;
+
+	    if (idx >= 0) {
+	      kstr = x.substr(0, idx);
+	      vstr = x.substr(idx + 1);
+	    } else {
+	      kstr = x;
+	      vstr = '';
+	    }
+
+	    k = decodeURIComponent(kstr);
+	    v = decodeURIComponent(vstr);
+
+	    if (!hasOwnProperty(obj, k)) {
+	      obj[k] = v;
+	    } else if (Array.isArray(obj[k])) {
+	      obj[k].push(v);
+	    } else {
+	      obj[k] = [obj[k], v];
+	    }
+	  }
+
+	  return obj;
+	};
+
+
+/***/ },
+/* 414 */
+/***/ function(module, exports) {
+
+	// Copyright Joyent, Inc. and other Node contributors.
+	//
+	// Permission is hereby granted, free of charge, to any person obtaining a
+	// copy of this software and associated documentation files (the
+	// "Software"), to deal in the Software without restriction, including
+	// without limitation the rights to use, copy, modify, merge, publish,
+	// distribute, sublicense, and/or sell copies of the Software, and to permit
+	// persons to whom the Software is furnished to do so, subject to the
+	// following conditions:
+	//
+	// The above copyright notice and this permission notice shall be included
+	// in all copies or substantial portions of the Software.
+	//
+	// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+	// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+	// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+	// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+	// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+	// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+	// USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+	'use strict';
+
+	var stringifyPrimitive = function(v) {
+	  switch (typeof v) {
+	    case 'string':
+	      return v;
+
+	    case 'boolean':
+	      return v ? 'true' : 'false';
+
+	    case 'number':
+	      return isFinite(v) ? v : '';
+
+	    default:
+	      return '';
+	  }
+	};
+
+	module.exports = function(obj, sep, eq, name) {
+	  sep = sep || '&';
+	  eq = eq || '=';
+	  if (obj === null) {
+	    obj = undefined;
+	  }
+
+	  if (typeof obj === 'object') {
+	    return Object.keys(obj).map(function(k) {
+	      var ks = encodeURIComponent(stringifyPrimitive(k)) + eq;
+	      if (Array.isArray(obj[k])) {
+	        return obj[k].map(function(v) {
+	          return ks + encodeURIComponent(stringifyPrimitive(v));
+	        }).join(sep);
+	      } else {
+	        return ks + encodeURIComponent(stringifyPrimitive(obj[k]));
+	      }
+	    }).join(sep);
+
+	  }
+
+	  if (!name) return '';
+	  return encodeURIComponent(stringifyPrimitive(name)) + eq +
+	         encodeURIComponent(stringifyPrimitive(obj));
+	};
+
+
+/***/ },
+/* 415 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+
+	exports['default'] = function (props, nextProps) {
+
+	  var propsKeys = Object.keys(props);
+	  var nextPropsKeys = Object.keys(nextProps);
+	  if (propsKeys.length !== nextPropsKeys.length) {
+	    return false;
+	  }
+
+	  for (var i = 0; i < propsKeys.length; i++) {
+	    var key = propsKeys[i];
+	    if (key !== 'children' && key.indexOf('on') !== 0 && (!nextProps.hasOwnProperty(key) || props[key] !== nextProps[key])) {
+	      return false;
+	    }
+	  }
+
+	  return true;
+	};
+
+	module.exports = exports['default'];
+
+/***/ },
+/* 416 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var _entity = __webpack_require__(417);
+
+	var _entity2 = _interopRequireDefault(_entity);
+
+	var _eventsMarker = __webpack_require__(418);
+
+	var _eventsMarker2 = _interopRequireDefault(_eventsMarker);
+
+	exports['default'] = (0, _entity2['default'])('Marker', 'position', _eventsMarker2['default']);
+	module.exports = exports['default'];
+
+/***/ },
+/* 417 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _mixinsListener = __webpack_require__(410);
+
+	var _mixinsListener2 = _interopRequireDefault(_mixinsListener);
+
+	var _utilsCompareProps = __webpack_require__(415);
+
+	var _utilsCompareProps2 = _interopRequireDefault(_utilsCompareProps);
+
+	exports['default'] = function (name, latLngProp, events) {
+	  return _react2['default'].createClass({
+
+	    mixins: [_mixinsListener2['default']],
+
+	    entity: null,
+
+	    componentDidMount: function componentDidMount() {
+	      var options = this.getOptions(this.props);
+	      this.entity = new google.maps[name](options);
+	      this.addListeners(this.entity, events);
+	    },
+
+	    componentWillReceiveProps: function componentWillReceiveProps(nextProps) {
+	      if (!(0, _utilsCompareProps2['default'])(this.props, nextProps)) {
+	        var options = this.getOptions(nextProps);
+	        this.entity.setOptions(options);
+	      }
+	    },
+
+	    componentWillUnmount: function componentWillUnmount() {
+	      this.entity.setMap(null);
+	      this.removeListeners();
+	      this.entity = null;
+	    },
+
+	    getEntity: function getEntity() {
+	      return this.entity;
+	    },
+
+	    getOptions: function getOptions(props) {
+	      return _extends({}, props, _defineProperty({}, latLngProp, new google.maps.LatLng(props.lat, props.lng)));
+	    },
+
+	    render: function render() {
+	      return null;
+	    }
+
+	  });
+	};
+
+	module.exports = exports['default'];
+
+/***/ },
+/* 418 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+	exports['default'] = {
+	  onAnimationChanged: 'animation_changed',
+	  onClick: 'click',
+	  onClickableChanged: 'clickable_changed',
+	  onCursorChanged: 'cursor_changed',
+	  onDblClick: 'dblclick',
+	  onDrag: 'drag',
+	  onDragEnd: 'dragend',
+	  onDraggableChanged: 'draggable_changed',
+	  onDragStart: 'dragstart',
+	  onFlatChanged: 'flat_changed',
+	  onIconChanged: 'icon_changed',
+	  onMouseDown: 'mousedown',
+	  onMouseOut: 'mouseout',
+	  onMouseOver: 'mouseover',
+	  onMouseUp: 'mouseup',
+	  onPositionChanged: 'position_changed',
+	  onRightClick: 'rightclick',
+	  onShapeChanged: 'shape_changed',
+	  onTitleChanged: 'title_changed',
+	  onVisibleChanged: 'visible_changed',
+	  onZindexChanged: 'zindex_changed'
+	};
+	module.exports = exports['default'];
+
+/***/ },
+/* 419 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var _entity = __webpack_require__(417);
+
+	var _entity2 = _interopRequireDefault(_entity);
+
+	var _eventsInfoWindow = __webpack_require__(420);
+
+	var _eventsInfoWindow2 = _interopRequireDefault(_eventsInfoWindow);
+
+	exports['default'] = (0, _entity2['default'])('InfoWindow', 'position', _eventsInfoWindow2['default']);
+	module.exports = exports['default'];
+
+/***/ },
+/* 420 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+	exports['default'] = {
+	  onCloseClick: 'closeclick',
+	  onContentChanged: 'content_changed',
+	  onDOMReady: 'domready',
+	  onPositionChanged: 'position_changed',
+	  onZindexChanged: 'zindex_changed'
+	};
+	module.exports = exports['default'];
+
+/***/ },
+/* 421 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var _entity = __webpack_require__(417);
+
+	var _entity2 = _interopRequireDefault(_entity);
+
+	var _eventsCircle = __webpack_require__(422);
+
+	var _eventsCircle2 = _interopRequireDefault(_eventsCircle);
+
+	exports['default'] = (0, _entity2['default'])('Circle', 'center', _eventsCircle2['default']);
+	module.exports = exports['default'];
+
+/***/ },
+/* 422 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+	exports['default'] = {
+	  onCenterChanged: 'center_changed',
+	  onClick: 'click',
+	  onDblClick: 'dblclick',
+	  onDrag: 'drag',
+	  onDragEnd: 'dragend',
+	  onDragStart: 'dragstart',
+	  onMouseDown: 'mousedown',
+	  onMouseMove: 'mousemove',
+	  onMouseOut: 'mouseout',
+	  onMouseOver: 'mouseover',
+	  onMouseUp: 'mouseup',
+	  onRadiusChanged: 'radius_changed',
+	  onRightClick: 'rightclick'
+	};
+	module.exports = exports['default'];
+
+/***/ },
+/* 423 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(module) {'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react2 = __webpack_require__(1);
+
+	var _react3 = _interopRequireDefault(_react2);
+
+	var _reactTransformHmr3 = __webpack_require__(174);
+
+	var _reactTransformHmr4 = _interopRequireDefault(_reactTransformHmr3);
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _reactRouter = __webpack_require__(323);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var _components = {
+	  Politic: {
+	    displayName: 'Politic'
+	  }
+	};
+
+	var _reactTransformHmr2 = (0, _reactTransformHmr4.default)({
+	  filename: '/vhost/nayp/resources/assets/js/app/containers/politic/Politic.jsx',
+	  components: _components,
+	  locals: [module],
+	  imports: [_react3.default]
+	});
+
+	function _wrapComponent(id) {
+	  return function (Component) {
+	    return _reactTransformHmr2(Component, id);
+	  };
+	}
+
+	var Politic = _wrapComponent('Politic')(function (_Component) {
+	  _inherits(Politic, _Component);
+
+	  function Politic() {
+	    _classCallCheck(this, Politic);
+
+	    return _possibleConstructorReturn(this, (Politic.__proto__ || Object.getPrototypeOf(Politic)).apply(this, arguments));
+	  }
+
+	  _createClass(Politic, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react3.default.createElement(
+	        'div',
+	        { className: 'info-np' },
+	        _react3.default.createElement(
+	          'div',
+	          { className: 'container' },
+	          _react3.default.createElement(
+	            'nav',
+	            { className: 'nav_tab _half' },
+	            _react3.default.createElement(
+	              'ul',
+	              { className: 'reset' },
+	              _react3.default.createElement(
+	                'li',
+	                null,
+	                _react3.default.createElement(
+	                  _reactRouter.IndexLink,
+	                  { to: '/politic' },
+	                  'Termos de uso'
+	                )
+	              ),
+	              _react3.default.createElement(
+	                'li',
+	                null,
+	                _react3.default.createElement(
+	                  _reactRouter.Link,
+	                  { to: '/privacy' },
+	                  'Pol\xEDtica de privacidade'
+	                )
+	              )
+	            )
+	          ),
+	          this.props.children
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Politic;
+	}(_react2.Component));
+
+	exports.default = Politic;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(173)(module)))
+
+/***/ },
+/* 424 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(module) {"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react2 = __webpack_require__(1);
+
+	var _react3 = _interopRequireDefault(_react2);
+
+	var _reactTransformHmr3 = __webpack_require__(174);
+
+	var _reactTransformHmr4 = _interopRequireDefault(_reactTransformHmr3);
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var _components = {
+	  Terms: {
+	    displayName: "Terms"
+	  }
+	};
+
+	var _reactTransformHmr2 = (0, _reactTransformHmr4.default)({
+	  filename: "/vhost/nayp/resources/assets/js/app/containers/terms/Terms.jsx",
+	  components: _components,
+	  locals: [module],
+	  imports: [_react3.default]
+	});
+
+	function _wrapComponent(id) {
+	  return function (Component) {
+	    return _reactTransformHmr2(Component, id);
+	  };
+	}
+
+	var Terms = _wrapComponent("Terms")(function (_Component) {
+	  _inherits(Terms, _Component);
+
+	  function Terms() {
+	    _classCallCheck(this, Terms);
+
+	    return _possibleConstructorReturn(this, (Terms.__proto__ || Object.getPrototypeOf(Terms)).apply(this, arguments));
+	  }
+
+	  _createClass(Terms, [{
+	    key: "render",
+	    value: function render() {
+	      return _react3.default.createElement(
+	        "div",
+	        { className: "_content" },
+	        _react3.default.createElement(
+	          "h1",
+	          { className: "title-base" },
+	          "Termos de uso"
+	        ),
+	        _react3.default.createElement(
+	          "p",
+	          null,
+	          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus!"
+	        ),
+	        _react3.default.createElement(
+	          "p",
+	          null,
+	          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus!"
+	        ),
+	        _react3.default.createElement(
+	          "p",
+	          null,
+	          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus!"
+	        ),
+	        _react3.default.createElement(
+	          "p",
+	          null,
+	          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus!"
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Terms;
+	}(_react2.Component));
+
+	exports.default = Terms;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(173)(module)))
+
+/***/ },
+/* 425 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(module) {"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react2 = __webpack_require__(1);
+
+	var _react3 = _interopRequireDefault(_react2);
+
+	var _reactTransformHmr3 = __webpack_require__(174);
+
+	var _reactTransformHmr4 = _interopRequireDefault(_reactTransformHmr3);
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var _components = {
+	  Privacy: {
+	    displayName: "Privacy"
+	  }
+	};
+
+	var _reactTransformHmr2 = (0, _reactTransformHmr4.default)({
+	  filename: "/vhost/nayp/resources/assets/js/app/containers/privacy/Privacy.jsx",
+	  components: _components,
+	  locals: [module],
+	  imports: [_react3.default]
+	});
+
+	function _wrapComponent(id) {
+	  return function (Component) {
+	    return _reactTransformHmr2(Component, id);
+	  };
+	}
+
+	var Privacy = _wrapComponent("Privacy")(function (_Component) {
+	  _inherits(Privacy, _Component);
+
+	  function Privacy() {
+	    _classCallCheck(this, Privacy);
+
+	    return _possibleConstructorReturn(this, (Privacy.__proto__ || Object.getPrototypeOf(Privacy)).apply(this, arguments));
+	  }
+
+	  _createClass(Privacy, [{
+	    key: "render",
+	    value: function render() {
+	      return _react3.default.createElement(
+	        "div",
+	        { className: "_content" },
+	        _react3.default.createElement(
+	          "h1",
+	          { className: "title-base" },
+	          "Pol\xEDtica de privacidade"
+	        ),
+	        _react3.default.createElement(
+	          "p",
+	          null,
+	          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus!"
+	        ),
+	        _react3.default.createElement(
+	          "p",
+	          null,
+	          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus!"
+	        ),
+	        _react3.default.createElement(
+	          "p",
+	          null,
+	          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus!"
+	        ),
+	        _react3.default.createElement(
+	          "p",
+	          null,
+	          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus!"
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Privacy;
+	}(_react2.Component));
+
+	exports.default = Privacy;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(173)(module)))
+
+/***/ },
+/* 426 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(module) {'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.App = undefined;
+
+	var _react2 = __webpack_require__(1);
+
+	var _react3 = _interopRequireDefault(_react2);
+
+	var _reactTransformHmr3 = __webpack_require__(174);
+
+	var _reactTransformHmr4 = _interopRequireDefault(_reactTransformHmr3);
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _Main = __webpack_require__(427);
+
+	var _Main2 = _interopRequireDefault(_Main);
+
+	var _Navegation = __webpack_require__(428);
+
+	var _Navegation2 = _interopRequireDefault(_Navegation);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var _components = {
+	  App: {
+	    displayName: 'App'
+	  }
+	};
+
+	var _reactTransformHmr2 = (0, _reactTransformHmr4.default)({
+	  filename: '/vhost/nayp/resources/assets/js/app/app.jsx',
+	  components: _components,
+	  locals: [module],
+	  imports: [_react3.default]
+	});
+
+	function _wrapComponent(id) {
+	  return function (Component) {
+	    return _reactTransformHmr2(Component, id);
+	  };
+	}
+
+	var App = exports.App = _wrapComponent('App')(function (_Component) {
+	  _inherits(App, _Component);
+
+	  function App() {
+	    _classCallCheck(this, App);
+
+	    return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
+	  }
+
+	  _createClass(App, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react3.default.createElement(
+	        'div',
+	        null,
+	        _react3.default.createElement(_Navegation2.default, null),
+	        _react3.default.createElement(
+	          _Main2.default,
+	          null,
+	          this.props.children
+	        )
+	      );
+	    }
+	  }]);
+
+	  return App;
+	}(_react2.Component));
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(173)(module)))
+
+/***/ },
+/* 427 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(module) {"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react2 = __webpack_require__(1);
+
+	var _react3 = _interopRequireDefault(_react2);
+
+	var _reactTransformHmr3 = __webpack_require__(174);
+
+	var _reactTransformHmr4 = _interopRequireDefault(_reactTransformHmr3);
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var _components = {
+	  Main: {
+	    displayName: "Main"
+	  }
+	};
+
+	var _reactTransformHmr2 = (0, _reactTransformHmr4.default)({
+	  filename: "/vhost/nayp/resources/assets/js/app/containers/main/Main.jsx",
+	  components: _components,
+	  locals: [module],
+	  imports: [_react3.default]
+	});
+
+	function _wrapComponent(id) {
+	  return function (Component) {
+	    return _reactTransformHmr2(Component, id);
+	  };
+	}
+
+	var Main = _wrapComponent("Main")(function (_Component) {
+	  _inherits(Main, _Component);
+
+	  function Main() {
+	    _classCallCheck(this, Main);
+
+	    return _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).apply(this, arguments));
+	  }
+
+	  _createClass(Main, [{
+	    key: "render",
+	    value: function render() {
+	      return _react3.default.createElement(
+	        "div",
+	        { className: "np-info" },
+	        this.props.children
+	      );
+	    }
+	  }]);
+
+	  return Main;
+	}(_react2.Component));
+
+	exports.default = Main;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(173)(module)))
+
+/***/ },
+/* 428 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(module) {'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react2 = __webpack_require__(1);
+
+	var _react3 = _interopRequireDefault(_react2);
+
+	var _reactTransformHmr3 = __webpack_require__(174);
+
+	var _reactTransformHmr4 = _interopRequireDefault(_reactTransformHmr3);
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _reactRouter = __webpack_require__(323);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var _components = {
+	  Navegation: {
+	    displayName: 'Navegation'
+	  }
+	};
+
+	var _reactTransformHmr2 = (0, _reactTransformHmr4.default)({
+	  filename: '/vhost/nayp/resources/assets/js/app/components/navegation/Navegation.jsx',
+	  components: _components,
+	  locals: [module],
+	  imports: [_react3.default]
+	});
+
+	function _wrapComponent(id) {
+	  return function (Component) {
+	    return _reactTransformHmr2(Component, id);
+	  };
+	}
+
+	var Navegation = _wrapComponent('Navegation')(function (_Component) {
+	  _inherits(Navegation, _Component);
+
+	  function Navegation() {
+	    _classCallCheck(this, Navegation);
+
+	    return _possibleConstructorReturn(this, (Navegation.__proto__ || Object.getPrototypeOf(Navegation)).apply(this, arguments));
+	  }
+
+	  _createClass(Navegation, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react3.default.createElement(
+	        'div',
+	        { className: 'megamenu app-navegation' },
+	        _react3.default.createElement(
+	          'div',
+	          { className: 'container' },
+	          _react3.default.createElement(
+	            'ul',
+	            { className: 'menu menu-info' },
+	            _react3.default.createElement(
+	              'li',
+	              null,
+	              _react3.default.createElement(
+	                _reactRouter.IndexLink,
+	                { to: '/' },
+	                'sobre n\xF3s'
+	              )
+	            ),
+	            _react3.default.createElement(
+	              'li',
+	              null,
+	              _react3.default.createElement(
+	                _reactRouter.Link,
+	                { to: '/help' },
+	                'atendimento'
+	              )
+	            ),
+	            _react3.default.createElement(
+	              'li',
+	              null,
+	              _react3.default.createElement(
+	                _reactRouter.Link,
+	                { to: '/order' },
+	                'status do pedido'
+	              )
+	            ),
+	            _react3.default.createElement(
+	              'li',
+	              null,
+	              _react3.default.createElement(
+	                _reactRouter.Link,
+	                { to: '/sizes' },
+	                'guia de tamanhos'
+	              )
+	            ),
+	            _react3.default.createElement(
+	              'li',
+	              null,
+	              _react3.default.createElement(
+	                _reactRouter.Link,
+	                { to: '/politic' },
+	                'termos e pol\xEDtica'
+	              )
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Navegation;
+	}(_react2.Component));
+
+	exports.default = Navegation;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(173)(module)))
 
 /***/ }
 /******/ ]);

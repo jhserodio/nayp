@@ -15,7 +15,6 @@ export default class SwitchForm extends Component {
         <div>
           <FormInput name="switch_firstname"
                        label="nome"
-                       grid="_half"
                        type="text"
                        minLength={3}
                        message="por favor digite seu primeiro nome"
@@ -23,7 +22,6 @@ export default class SwitchForm extends Component {
 
             <FormInput name="switch_lastname"
                        label="sobrenome"
-                       grid="_half"
                        type="text"
                        minLength={3}
                        message="por favor digite seu ultimo nome"
@@ -44,27 +42,19 @@ export default class SwitchForm extends Component {
                        message="digite um telefone para contato"/>
         </div>
         <div>
-          <FormInput name="switch_cpf"
-                     label="cpf"
-                     grid="_tri"
-                     type="text"
-                     mask="999.999.999-99"
-                     message="por favor digite o nº do seu CPF"
-                     isRequired/>
 
           <FormInput name="switch_order"
                      label="nº do pedido"
-                     grid="_tri"
+                     grid="_half"
                      type="text"
                      message="por favor digite o nº do pedido"
                      isRequired/>
 
           <FormInput name="switch_code"
-                     label="cod. pedido"
-                     grid="_tri"
+                     label="cod. produto"
+                     grid="_half"
                      type="text"
-                     message="por favor digite o código do pedido"
-                     isRequired/>
+                     message="por favor digite o código do pedido"/>
         </div>
 
         <TextArea name="switch_messsage"
