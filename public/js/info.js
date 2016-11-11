@@ -63,7 +63,7 @@
 /******/ 	}
 
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "cf30474262bd34547702"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "563a590e22e3855aa6f3"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 
@@ -37531,16 +37531,109 @@
 	};
 
 	var stylesArray = [{
-	  featureType: "all",
-	  stylers: [{ saturation: -80 }]
+	  "elementType": "geometry",
+	  "stylers": [{
+	    "color": "#f5f5f5"
+	  }]
 	}, {
-	  featureType: "road.arterial",
-	  elementType: "geometry",
-	  stylers: [{ hue: "#00ffee" }, { saturation: 50 }]
+	  "elementType": "labels.icon",
+	  "stylers": [{
+	    "visibility": "off"
+	  }]
 	}, {
-	  featureType: "poi.business",
-	  elementType: "labels",
-	  stylers: [{ visibility: "off" }]
+	  "elementType": "labels.text.fill",
+	  "stylers": [{
+	    "color": "#616161"
+	  }]
+	}, {
+	  "elementType": "labels.text.stroke",
+	  "stylers": [{
+	    "color": "#f5f5f5"
+	  }]
+	}, {
+	  "featureType": "administrative.land_parcel",
+	  "elementType": "labels.text.fill",
+	  "stylers": [{
+	    "color": "#bdbdbd"
+	  }]
+	}, {
+	  "featureType": "poi",
+	  "elementType": "geometry",
+	  "stylers": [{
+	    "color": "#eeeeee"
+	  }]
+	}, {
+	  "featureType": "poi",
+	  "elementType": "labels.text.fill",
+	  "stylers": [{
+	    "color": "#757575"
+	  }]
+	}, {
+	  "featureType": "poi.park",
+	  "elementType": "geometry",
+	  "stylers": [{
+	    "color": "#e5e5e5"
+	  }]
+	}, {
+	  "featureType": "poi.park",
+	  "elementType": "labels.text.fill",
+	  "stylers": [{
+	    "color": "#9e9e9e"
+	  }]
+	}, {
+	  "featureType": "road",
+	  "elementType": "geometry",
+	  "stylers": [{
+	    "color": "#ffffff"
+	  }]
+	}, {
+	  "featureType": "road.arterial",
+	  "elementType": "labels.text.fill",
+	  "stylers": [{
+	    "color": "#757575"
+	  }]
+	}, {
+	  "featureType": "road.highway",
+	  "elementType": "geometry",
+	  "stylers": [{
+	    "color": "#dadada"
+	  }]
+	}, {
+	  "featureType": "road.highway",
+	  "elementType": "labels.text.fill",
+	  "stylers": [{
+	    "color": "#616161"
+	  }]
+	}, {
+	  "featureType": "road.local",
+	  "elementType": "labels.text.fill",
+	  "stylers": [{
+	    "color": "#9e9e9e"
+	  }]
+	}, {
+	  "featureType": "transit.line",
+	  "elementType": "geometry",
+	  "stylers": [{
+	    "color": "#e5e5e5"
+	  }]
+	}, {
+	  "featureType": "transit.station",
+	  "elementType": "geometry",
+	  "stylers": [{
+	    "color": "#eeeeee"
+	  }]
+	}, {
+	  "featureType": "water",
+	  "elementType": "geometry",
+	  "stylers": [{
+	    "color": "#c9c9c9"
+	  }]
+	}, {
+	  "featureType": "water",
+	  "elementType": "labels.text.fill",
+	  "stylers": [{
+	    "color": "#9e9e9e"
+	  }]
 	}];
 
 	var App = _wrapComponent('App')(function (_Component) {
@@ -37564,6 +37657,7 @@
 	          lng: coords.lng,
 	          zoom: 14,
 	          styler: stylesArray,
+	          styleName: 'Styled',
 	          loadingMessage: 'Be happy',
 	          params: { v: '3.exp', key: 'AIzaSyDlEyZ_acJRpOYj5_715_4_1GLTRshO7Lc' },
 	          onMapCreated: this.onMapCreated },
@@ -37668,6 +37762,7 @@
 	  getInitialState: function getInitialState() {
 	    return {
 	      isMapCreated: false,
+	      styleName: this.props.styleName,
 	      styler: this.props.styler
 	    };
 	  },
@@ -37702,13 +37797,13 @@
 
 	  createMap: function createMap() {
 	    var node = _reactDom2['default'].findDOMNode(this);
-	    var styledMapType = new google.maps.StyledMapType(this.state.styler, { name: 'Styled' });
+	    var styledMapType = new google.maps.StyledMapType(this.state.styler, { name: this.state.styleName });
 
 	    this.map = new google.maps.Map(node, _extends({}, this.props, {
 	      center: new google.maps.LatLng(this.props.lat, this.props.lng),
-	      mapTypeId: 'Styled'
+	      mapTypeId: this.state.styleName
 	    }));
-	    this.map.mapTypes.set('Styled', styledMapType);
+	    this.map.mapTypes.set(this.state.styleName, styledMapType);
 	    this.setState({
 	      isMapCreated: true
 	    });
@@ -37758,7 +37853,6 @@
 	Object.defineProperty(exports, '__esModule', {
 	  value: true
 	});
-
 	exports['default'] = {
 	  onBoundsChanged: 'bounds_changed',
 	  onCenterChanged: 'center_changed',
