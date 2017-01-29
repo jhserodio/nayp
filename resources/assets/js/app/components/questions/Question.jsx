@@ -1,46 +1,34 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-export default class Question extends Component {
+const Question = props => {
 
-  constructor (props) {
-    super(props);
+  let visibility = props.visibility ? "_active " : "";
 
-    this.state = {
-      visibility: this.props.visibility
-    }
+  const toggle = () => {
+    props.onToggle(props.index);
+    console.log(props.visibility);
   }
 
-  toggle() {
-    this.setState({
-      visibility: !this.state.visibility
-    });
-  }
-
-  render() {
-
-    let visibility = this.state.visibility ? "_active " : "";
-
-    return (
-
-          <div className={ visibility + " question"}
-               onClick={this.toggle.bind(this)}>
-            <div className="_header">
-              <span>
-                {this.props.title}
-              </span>
-              <button className="btn-icon">
-                v
-              </button>
-            </div>
-            <div className="_main">
-              {this.props.content.map( item =>
-                <p className="_paragraph">
-                  {item}
-                </p>
-              )}
-            </div>
+  return (
+        <div className=" question"
+             onClick={toggle}>
+          <div className="_header">
+            <span>
+              {props.title}
+            </span>
+            <button className="btn-icon">
+              v
+            </button>
           </div>
-
-    );
-  }
+          <div className="_main">
+            {props.content.map( item =>
+              <p className="_paragraph">
+                {item}
+              </p>
+            )}
+          </div>
+        </div>
+  );
 }
+
+export default Question;

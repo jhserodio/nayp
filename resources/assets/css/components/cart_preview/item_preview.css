@@ -1,0 +1,29 @@
+.preview_item {
+  margin-bottom: calc(var(--space-large)*2);
+  font-size: var(--size-small);
+  display: flex;
+}
+
+.preview_item ._image {
+  width: 70px;
+  background: white;
+  margin-right: 20px;
+  height: 70px;
+}
+
+.preview_item ._content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.preview_item ._info {
+  margin-bottom: var(--space-base);
+  font-size: var(--size-small);
+  text-transform: uppercase;
+}
+
+.preview_item ._info p {
+  margin: 0;
+  line-height: var(--line-small);
+}

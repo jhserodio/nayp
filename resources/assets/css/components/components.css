@@ -72,6 +72,8 @@ COMPONENTS
 /*cart_preview*/
 @import 'cart_preview/cart_preview';
 @import 'cart_preview/calc_amount';
+@import 'cart_preview/item_preview';
+@import 'cart_preview/recent_products';
 
 /*alerts*/
 @import 'alerts/alerts';

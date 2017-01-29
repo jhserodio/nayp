@@ -31,20 +31,32 @@
   opacity: 0;
   padding: 0;
   max-width: 0;
+  position: relative;
+}
+
+.nav-language li::after {
+  content: '';
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: var(--half-black);
+  transition: var(--transition-base);
+}
+
+.nav-language li:--over:first-child::after {
+  transform: translateX(-100%);
+}
+
+.nav-language li:--over:last-child::after {
+  transform: translateX(100%);
 }
 
 .nav-language li.active {
   opacity: 1;
   max-width: none;
-
-}
-
-.nav-language li:--over {
-  background: var(--gray-light)!important;
-}
-
-.nav-language li:--over svg {
-  fill: var(--gray-light);
 }
 
 .nav-language li:first-child {
@@ -64,6 +76,7 @@
 
 .nav-language svg {
   transform: scale(2);
+  fill: white !important;
 }
 
 .nav-language strong {

@@ -12,7 +12,7 @@ const stylesArray = [
     "elementType": "geometry",
     "stylers": [
       {
-        "color": "#f5f5f5"
+        "color": "#eeeeee"
       }
     ]
   },

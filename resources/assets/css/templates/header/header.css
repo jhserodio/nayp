@@ -16,9 +16,53 @@
 
 }
 
-.header-navegation {
-  flex-grow: 2;
+.header-np .megamenu {
+  top: 90px;
 }
+
+.header-np._scroll {
+  padding: var(--space-base) 0;
+  position: fixed;
+  background: var(--brand-color);
+}
+
+.header-np._scroll .megamenu {
+  top: 50px;
+}
+
+.header-np._scroll .logo-np {
+  height: 30px;
+  display: flex;
+  line-height: normal;
+  align-items: center;
+}
+
+.header-np._scroll .container {
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.header-np._scroll .nav-language{
+  display: none;
+}
+
+.header-np._scroll .header-navegation {
+  order: 1;
+  margin-right: 0;
+}
+
+.header-np._scroll .header-navegation ul {
+  height: auto;
+}
+
+.header-np._scroll .header-info {
+  order: 2;
+  margin-right: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 
 .header-info {
   height: 50px;

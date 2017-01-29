@@ -10,21 +10,55 @@ export default class QuestionList extends Component {
     this.state = {
       content: this.props.list
     };
-
-    for ( let item of this.state.content ) {
-      item.visibility = false;
-    }
   }
 
+  itemToggle(itemId) {
 
+    const clone = this.state.content;
+
+    for (let i = 0; i < clone.length; i++) {
+
+
+      if (itemId === clone[i].id
+          && !clone[i].visibility) {
+         clone[i].visibility = '_active';
+       } else {
+         clone[i].visibility = false;
+       }
+
+    }
+    this.setState({
+      content: clone
+    });
+  }
 
   render() {
+
     return (
       <div className="questions">
         {this.state.content.map( item =>
-          <Question title={item.head}
-                    content={item.main}
-                    visibility={item.visibility}/>
+
+          <div className={`question ${item.visibility}`}
+               onClick={() => this.itemToggle(item.id)}>
+            <div className="_header">
+              <span>
+                {item.head}
+              </span>
+              <button className="btn-icon">
+                <svg class="icon icon-down">
+                  <use xlinkHref="public/svg/icons.svg#icon-down"></use>
+                </svg>
+              </button>
+            </div>
+            <div className="_main">
+              {item.main.map( p =>
+                <p className="_paragraph">
+                  {p}
+                </p>
+              )}
+            </div>
+          </div>
+
         )}
       </div>
     );

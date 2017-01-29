@@ -41,6 +41,10 @@
   margin-top: calc(var(--space-large)*3);
 }
 
+.info-np ._map {
+  border: var(--border-form);
+}
+
 @media (--screen-smalloff) {
   .info-np .container {
     max-width: 720px;

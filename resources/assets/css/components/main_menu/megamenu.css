@@ -1,6 +1,5 @@
 .megamenu  {
   position: absolute;
-  top: 90px;
   left: 0;
   display: flex;
   background: white;
@@ -117,6 +116,7 @@
     background: white;
     margin: 0;
     height: 40px;
+    display: flex;
   }
 
   .megamenu li:last-child {

@@ -63,7 +63,7 @@
 /******/ 	}
 
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "563a590e22e3855aa6f3"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "066ddd46dcb29e80fcb5"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 
@@ -33574,50 +33574,62 @@
 	  load: function load() {
 	    return [{
 	      id: '01',
+	      visibility: false,
 	      head: 'qual é o prazo para o envio de um pedido',
 	      main: ['01 Lorem ipsum dolor sit amet, consectetur adipisicing elit deleniti esse aliquam soluta, totam tenetur odit saepe vel quasi est?', '02 Lorem ipsum dolor sit amet, consectetur adipisicing elit deleniti esse aliquam soluta, totam tenetur odit saepe vel quasi est?']
 	    }, {
 	      id: '02',
+	      visibility: false,
 	      head: 'qual o prazo para recebimento de um pedido',
 	      main: ['Isto dependerá de alguns fatores e escolhas que você fará; como o método de envio, forma de pagamento e localidade do endereço de entrega. Os prazos para envio aparecerão antes da finalização do pedido e são uma previsão fornecida pela empresa de logística contratada, no caso os Correios. Eventuais atrasos poderão ocorrer. Não esqueça! Nós começamos a contar a data da entrega a partir da data de confirmação do pagamento do seu pedido, seja pela instituição financeira ou compensação de seu boleto bancário, asim como após a confirmação dos seus dados cadastrais.']
 	    }, {
 	      id: '03',
+	      visibility: false,
 	      head: 'quais são os métodos de pagamento',
 	      main: ['No momento aceitamos Paypal, Cartões de Crédito incluindo Visa e Mastercard, Cartões de Débito e Boleto Bancário.']
 	    }, {
 	      id: '04',
+	      visibility: false,
 	      head: 'É SEGURO INSERIR DADOS PESSOAIS E BANCÁRIOS?',
 	      main: ['Nossa loja está hospedada em uma plataforma de e-commerce online com um certificado SSL e conformidade PCI; que nos permite vender nossos produtos e serviços com segurança para você. Os gateways de pagamento utilizados por nós aderem aos padrões definidos pela PCI-DSS, gerenciado pelo Conselho de Normas de Segurança PCI. Os requisitos da PCI-DSS ajudam a garantir o manuseio seguro de informações de cartão de crédito pela nossa loja e seus fornecedores de serviço.']
 	    }, {
 	      id: '05',
+	      visibility: false,
 	      head: 'COMO SABEREI SE O MEU PEDIDO FOI APROVADO?',
 	      main: ['Você receberá uma confirmação por e-mail logo após seu pedido ter sido aprovado. Por favor, aguarde até 2 (dois) dias úteis para o processamento de pedidos. Não hesite em contatar-nos diretamente com quaisquer dúvidas através do formulário de contato ou por e-mail (info@nayp.co).']
 	    }, {
 	      id: '06',
+	      visibility: false,
 	      head: 'COMO FAÇO PARA VERIFICAR O STATUS DE UM PEDIDO?',
 	      main: ['Você pode verificar essa informação clicando em “Status do Pedido”, localizado no topo desta página. Por favor, aguarde até 2 (dois) dias úteis para o processamento de pedidos. Não hesite em contatar-nos diretamente com quaisquer dúvidas através do nosso formulário de contato ou por e-mail (info@nayp.co). ']
 	    }, {
 	      id: '07',
+	      visibility: false,
 	      head: 'POSSO ADICIONAR OU REMOVER ITENS DO MEU PEDIDO, DEPOIS DE APROVADO?',
 	      main: ['Assim que o seu pedido é aprovado, começamos a processar a sua compra, o que implica uma série de medidas. Durante esse tempo, não é possível adicionar ou remover itens do seu pedido.']
 	    }, {
 	      id: '08',
+	      visibility: false,
 	      head: 'POSSO CANCELAR MEU PEDIDO, DEPOIS DE APROVADO?',
 	      main: ['Logo após a aprovação do seu pedido, nós começamos a processar a sua compra, o que implica uma série de medidas. Durante esse tempo, não somos capazes de modificar ou cancelar a sua encomenda. Nós procuramos garantir que você fique completamente satisfeito com a sua experiência de compra, mas caso aconteça algum problema, oferecemos uma Política de Trocas e Devoluções']
 	    }, {
 	      id: '09',
+	      visibility: false,
 	      head: 'POSSO CANCELAR MEU PEDIDO, DEPOIS DE APROVADO?',
 	      main: ['No momento aceitamos Paypal, Cartões de Crédito incluindo Visa e Mastercard, Cartões de Débito e Boleto Bancário.']
 	    }, {
 	      id: '10',
+	      visibility: false,
 	      head: 'QUEM PODERÁ RECEBER MEU PEDIDO?',
 	      main: ['Será necessária a presença de alguém na hora da entrega do pacote para assinar o protocolo de recebimento dos Correios, não necessariamente o destinatário. Se você mora em prédio, em condomínio, em vila ou similares; o responsável por receber a encomenda deverá ser o porteiro. Por norma dos Correios, se não houver porteiro nesses casos, o carteiro não poderá fazer a entrega.']
 	    }, {
 	      id: '11',
+	      visibility: false,
 	      head: 'MEU PEDIDO ESTÁ ATRASADO OU NÃO CHEGOU, COMO PROCEDER?',
 	      main: ['Toda informação sobre detalhes do serviço de entrega, ficarão disponíveis na área de Rastreamento de Objeto no site dos Correios, por isso, é imprescindível que você fique atento a essas informações. Se não conseguir obter a informação necessária, nos avise através do formulário de contato ou por e-mail (info@nayp.co) informando o número do seu pedido, para que possamos abrir um chamado e identificar o que ocorreu com a entrega. Caso seu pacote seja extraviado pelos Correios, você pode optar pela devolução integral da compra (incluindo o frete) ou o reenvio do produto (havendo disponibilidade em estoque), sem nenhum custo adicional.']
 	    }, {
 	      id: '12',
+	      visibility: false,
 	      head: 'POR QUE MEU PAGAMENTO POR CARTÃO DE CRÉDITO NÃO FOI APROVADO?',
 	      main: ['Existem duas formas de cancelamento: (i) o banco emissor do seu cartão de crédito não aprovou seu pagamento, porque, por exemplo, você passou do limite mensal do seu cartão (mesmo que você parcele sua compra, o valor total dela entra no limite do mês) ou eles percebem que não é do seu perfil fazer compras online ou (ii) a análise de segurança foi negativa, porque, por exemplo, você errou algum dado pessoal ou dado do cartão na hora de preencher no site. Caso o seu banco tenha recusado o pagamento, apenas o portador do cartão conseguirá ter mais informações sobre o porquê, por medidas de segurança e de privacidade.']
 	    }];
@@ -33686,45 +33698,72 @@
 	    _this.state = {
 	      content: _this.props.list
 	    };
-
-	    var _iteratorNormalCompletion = true;
-	    var _didIteratorError = false;
-	    var _iteratorError = undefined;
-
-	    try {
-	      for (var _iterator = _this.state.content[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-	        var item = _step.value;
-
-	        item.visibility = false;
-	      }
-	    } catch (err) {
-	      _didIteratorError = true;
-	      _iteratorError = err;
-	    } finally {
-	      try {
-	        if (!_iteratorNormalCompletion && _iterator.return) {
-	          _iterator.return();
-	        }
-	      } finally {
-	        if (_didIteratorError) {
-	          throw _iteratorError;
-	        }
-	      }
-	    }
-
 	    return _this;
 	  }
 
 	  _createClass(QuestionList, [{
+	    key: 'itemToggle',
+	    value: function itemToggle(itemId) {
+
+	      var clone = this.state.content;
+
+	      for (var i = 0; i < clone.length; i++) {
+
+	        if (itemId === clone[i].id && !clone[i].visibility) {
+	          clone[i].visibility = '_active';
+	        } else {
+	          clone[i].visibility = false;
+	        }
+	      }
+	      this.setState({
+	        content: clone
+	      });
+	    }
+	  }, {
 	    key: 'render',
 	    value: function render() {
+	      var _this2 = this;
+
 	      return _react3.default.createElement(
 	        'div',
 	        { className: 'questions' },
 	        this.state.content.map(function (item) {
-	          return _react3.default.createElement(_Question2.default, { title: item.head,
-	            content: item.main,
-	            visibility: item.visibility });
+	          return _react3.default.createElement(
+	            'div',
+	            { className: 'question ' + item.visibility,
+	              onClick: function onClick() {
+	                return _this2.itemToggle(item.id);
+	              } },
+	            _react3.default.createElement(
+	              'div',
+	              { className: '_header' },
+	              _react3.default.createElement(
+	                'span',
+	                null,
+	                item.head
+	              ),
+	              _react3.default.createElement(
+	                'button',
+	                { className: 'btn-icon' },
+	                _react3.default.createElement(
+	                  'svg',
+	                  { 'class': 'icon icon-down' },
+	                  _react3.default.createElement('use', { xlinkHref: 'public/svg/icons.svg#icon-down' })
+	                )
+	              )
+	            ),
+	            _react3.default.createElement(
+	              'div',
+	              { className: '_main' },
+	              item.main.map(function (p) {
+	                return _react3.default.createElement(
+	                  'p',
+	                  { className: '_paragraph' },
+	                  p
+	                );
+	              })
+	            )
+	          );
 	        })
 	      );
 	    }
@@ -33740,114 +33779,60 @@
 /* 390 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(module) {"use strict";
+	"use strict";
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
 
-	var _react2 = __webpack_require__(1);
+	var _react = __webpack_require__(1);
 
-	var _react3 = _interopRequireDefault(_react2);
-
-	var _reactTransformHmr3 = __webpack_require__(174);
-
-	var _reactTransformHmr4 = _interopRequireDefault(_reactTransformHmr3);
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	var _react2 = _interopRequireDefault(_react);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	var Question = function Question(props) {
 
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	  var visibility = props.visibility ? "_active " : "";
 
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	  var toggle = function toggle() {
+	    props.onToggle(props.index);
+	    console.log(props.visibility);
+	  };
 
-	var _components = {
-	  Question: {
-	    displayName: "Question"
-	  }
+	  return _react2.default.createElement(
+	    "div",
+	    { className: " question",
+	      onClick: toggle },
+	    _react2.default.createElement(
+	      "div",
+	      { className: "_header" },
+	      _react2.default.createElement(
+	        "span",
+	        null,
+	        props.title
+	      ),
+	      _react2.default.createElement(
+	        "button",
+	        { className: "btn-icon" },
+	        "v"
+	      )
+	    ),
+	    _react2.default.createElement(
+	      "div",
+	      { className: "_main" },
+	      props.content.map(function (item) {
+	        return _react2.default.createElement(
+	          "p",
+	          { className: "_paragraph" },
+	          item
+	        );
+	      })
+	    )
+	  );
 	};
 
-	var _reactTransformHmr2 = (0, _reactTransformHmr4.default)({
-	  filename: "/vhost/nayp/resources/assets/js/app/components/questions/Question.jsx",
-	  components: _components,
-	  locals: [module],
-	  imports: [_react3.default]
-	});
-
-	function _wrapComponent(id) {
-	  return function (Component) {
-	    return _reactTransformHmr2(Component, id);
-	  };
-	}
-
-	var Question = _wrapComponent("Question")(function (_Component) {
-	  _inherits(Question, _Component);
-
-	  function Question(props) {
-	    _classCallCheck(this, Question);
-
-	    var _this = _possibleConstructorReturn(this, (Question.__proto__ || Object.getPrototypeOf(Question)).call(this, props));
-
-	    _this.state = {
-	      visibility: _this.props.visibility
-	    };
-	    return _this;
-	  }
-
-	  _createClass(Question, [{
-	    key: "toggle",
-	    value: function toggle() {
-	      this.setState({
-	        visibility: !this.state.visibility
-	      });
-	    }
-	  }, {
-	    key: "render",
-	    value: function render() {
-
-	      var visibility = this.state.visibility ? "_active " : "";
-
-	      return _react3.default.createElement(
-	        "div",
-	        { className: visibility + " question",
-	          onClick: this.toggle.bind(this) },
-	        _react3.default.createElement(
-	          "div",
-	          { className: "_header" },
-	          _react3.default.createElement(
-	            "span",
-	            null,
-	            this.props.title
-	          ),
-	          _react3.default.createElement(
-	            "button",
-	            { className: "btn-icon" },
-	            "v"
-	          )
-	        ),
-	        _react3.default.createElement(
-	          "div",
-	          { className: "_main" },
-	          this.props.content.map(function (item) {
-	            return _react3.default.createElement(
-	              "p",
-	              { className: "_paragraph" },
-	              item
-	            );
-	          })
-	        )
-	      );
-	    }
-	  }]);
-
-	  return Question;
-	}(_react2.Component));
-
 	exports.default = Question;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(173)(module)))
 
 /***/ },
 /* 391 */
@@ -37461,7 +37446,11 @@
 	            )
 	          )
 	        ),
-	        _react3.default.createElement(_GoogleMaps2.default, null)
+	        _react3.default.createElement(
+	          'div',
+	          { className: '_map' },
+	          _react3.default.createElement(_GoogleMaps2.default, null)
+	        )
 	      );
 	    }
 	  }]);
@@ -37533,7 +37522,7 @@
 	var stylesArray = [{
 	  "elementType": "geometry",
 	  "stylers": [{
-	    "color": "#f5f5f5"
+	    "color": "#eeeeee"
 	  }]
 	}, {
 	  "elementType": "labels.icon",

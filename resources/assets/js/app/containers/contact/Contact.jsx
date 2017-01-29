@@ -93,7 +93,9 @@ export default class Contact extends Component {
 
         </div>
 
-        <GoogleMaps></GoogleMaps>
+        <div className="_map">
+          <GoogleMaps></GoogleMaps>
+        </div>
 
       </div>
 

@@ -1,0 +1,27 @@
+.recent_products {
+  position: fixed;
+  top: 0;
+  width: 290px;
+  height: auto;
+  right: 0;
+  z-index: 999999;
+  background: black;
+}
+
+.recent_products .flag {
+  padding: 0 var(--space-base);
+}
+
+.recent_products .flag  p{
+  font-size: var(--size-min);
+  text-transform: uppercase;
+}
+
+.recent_products ul {
+  line-height: normal;
+  padding: var(--space-large);
+}
+
+.recent_products li:last-child > div {
+  margin-bottom: 0;
+}
