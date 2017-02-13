@@ -63,7 +63,7 @@
 /******/ 	}
 
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "066ddd46dcb29e80fcb5"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "4fab590713499670efdd"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 
@@ -22017,17 +22017,9 @@
 
 	var _SizeTop2 = _interopRequireDefault(_SizeTop);
 
-	var _SizeTop3 = __webpack_require__(402);
-
-	var _SizeTop4 = _interopRequireDefault(_SizeTop3);
-
 	var _SizeBottom = __webpack_require__(403);
 
 	var _SizeBottom2 = _interopRequireDefault(_SizeBottom);
-
-	var _SizeBottom3 = __webpack_require__(404);
-
-	var _SizeBottom4 = _interopRequireDefault(_SizeBottom3);
 
 	var _Contact = __webpack_require__(405);
 
@@ -22103,9 +22095,7 @@
 	            _reactRouter.Route,
 	            { index: '4', path: '/sizes', component: _Sizes2.default },
 	            _react3.default.createElement(_reactRouter.IndexRoute, { component: _SizeTop2.default }),
-	            _react3.default.createElement(_reactRouter.Route, { path: '/top2', component: _SizeTop4.default }),
-	            _react3.default.createElement(_reactRouter.Route, { path: '/bottom', component: _SizeBottom2.default }),
-	            _react3.default.createElement(_reactRouter.Route, { path: '/bottom2', component: _SizeBottom4.default })
+	            _react3.default.createElement(_reactRouter.Route, { path: '/bottom', component: _SizeBottom2.default })
 	          ),
 	          _react3.default.createElement(
 	            _reactRouter.Route,
@@ -33702,68 +33692,17 @@
 	  }
 
 	  _createClass(QuestionList, [{
-	    key: 'itemToggle',
-	    value: function itemToggle(itemId) {
-
-	      var clone = this.state.content;
-
-	      for (var i = 0; i < clone.length; i++) {
-
-	        if (itemId === clone[i].id && !clone[i].visibility) {
-	          clone[i].visibility = '_active';
-	        } else {
-	          clone[i].visibility = false;
-	        }
-	      }
-	      this.setState({
-	        content: clone
-	      });
-	    }
-	  }, {
 	    key: 'render',
 	    value: function render() {
-	      var _this2 = this;
 
 	      return _react3.default.createElement(
 	        'div',
 	        { className: 'questions' },
 	        this.state.content.map(function (item) {
-	          return _react3.default.createElement(
-	            'div',
-	            { className: 'question ' + item.visibility,
-	              onClick: function onClick() {
-	                return _this2.itemToggle(item.id);
-	              } },
-	            _react3.default.createElement(
-	              'div',
-	              { className: '_header' },
-	              _react3.default.createElement(
-	                'span',
-	                null,
-	                item.head
-	              ),
-	              _react3.default.createElement(
-	                'button',
-	                { className: 'btn-icon' },
-	                _react3.default.createElement(
-	                  'svg',
-	                  { 'class': 'icon icon-down' },
-	                  _react3.default.createElement('use', { xlinkHref: 'public/svg/icons.svg#icon-down' })
-	                )
-	              )
-	            ),
-	            _react3.default.createElement(
-	              'div',
-	              { className: '_main' },
-	              item.main.map(function (p) {
-	                return _react3.default.createElement(
-	                  'p',
-	                  { className: '_paragraph' },
-	                  p
-	                );
-	              })
-	            )
-	          );
+	          return _react3.default.createElement(_Question2.default, { key: item.id,
+	            title: item.head,
+	            content: item.main,
+	            visibility: item.visibility });
 	        })
 	      );
 	    }
@@ -33779,60 +33718,118 @@
 /* 390 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	/* WEBPACK VAR INJECTION */(function(module) {"use strict";
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
 
-	var _react = __webpack_require__(1);
+	var _react2 = __webpack_require__(1);
 
-	var _react2 = _interopRequireDefault(_react);
+	var _react3 = _interopRequireDefault(_react2);
+
+	var _reactTransformHmr3 = __webpack_require__(174);
+
+	var _reactTransformHmr4 = _interopRequireDefault(_reactTransformHmr3);
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var Question = function Question(props) {
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-	  var visibility = props.visibility ? "_active " : "";
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-	  var toggle = function toggle() {
-	    props.onToggle(props.index);
-	    console.log(props.visibility);
-	  };
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	  return _react2.default.createElement(
-	    "div",
-	    { className: " question",
-	      onClick: toggle },
-	    _react2.default.createElement(
-	      "div",
-	      { className: "_header" },
-	      _react2.default.createElement(
-	        "span",
-	        null,
-	        props.title
-	      ),
-	      _react2.default.createElement(
-	        "button",
-	        { className: "btn-icon" },
-	        "v"
-	      )
-	    ),
-	    _react2.default.createElement(
-	      "div",
-	      { className: "_main" },
-	      props.content.map(function (item) {
-	        return _react2.default.createElement(
-	          "p",
-	          { className: "_paragraph" },
-	          item
-	        );
-	      })
-	    )
-	  );
+	var _components = {
+	  Question: {
+	    displayName: "Question"
+	  }
 	};
 
+	var _reactTransformHmr2 = (0, _reactTransformHmr4.default)({
+	  filename: "/vhost/nayp/resources/assets/js/app/components/questions/Question.jsx",
+	  components: _components,
+	  locals: [module],
+	  imports: [_react3.default]
+	});
+
+	function _wrapComponent(id) {
+	  return function (Component) {
+	    return _reactTransformHmr2(Component, id);
+	  };
+	}
+
+	var Question = _wrapComponent("Question")(function (_Component) {
+	  _inherits(Question, _Component);
+
+	  function Question(props) {
+	    _classCallCheck(this, Question);
+
+	    var _this = _possibleConstructorReturn(this, (Question.__proto__ || Object.getPrototypeOf(Question)).call(this, props));
+
+	    _this.state = {
+	      visibility: _this.props.visibility
+	    };
+	    return _this;
+	  }
+
+	  _createClass(Question, [{
+	    key: "toggle",
+	    value: function toggle() {
+	      this.setState({
+	        visibility: !this.state.visibility
+	      });
+	    }
+	  }, {
+	    key: "render",
+	    value: function render() {
+
+	      var visibility = this.state.visibility ? "_active " : "";
+
+	      return _react3.default.createElement(
+	        "div",
+	        { className: visibility + " question",
+	          onClick: this.toggle.bind(this) },
+	        _react3.default.createElement(
+	          "div",
+	          { className: "_header" },
+	          _react3.default.createElement(
+	            "span",
+	            null,
+	            this.props.title
+	          ),
+	          _react3.default.createElement(
+	            "button",
+	            { className: "btn-icon" },
+	            _react3.default.createElement(
+	              "svg",
+	              { className: "icon icon-down" },
+	              _react3.default.createElement("use", { xlinkHref: "public/svg/icons.svg#icon-down" })
+	            )
+	          )
+	        ),
+	        _react3.default.createElement(
+	          "div",
+	          { className: "_main" },
+	          this.props.content.map(function (item) {
+	            return _react3.default.createElement(
+	              "p",
+	              { className: "_paragraph" },
+	              item
+	            );
+	          })
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Question;
+	}(_react2.Component));
+
 	exports.default = Question;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(173)(module)))
 
 /***/ },
 /* 391 */
@@ -35725,24 +35722,6 @@
 	                  { to: 'bottom' },
 	                  'men\'s bottoms'
 	                )
-	              ),
-	              _react3.default.createElement(
-	                'li',
-	                null,
-	                _react3.default.createElement(
-	                  _reactRouter.Link,
-	                  { to: '/top2' },
-	                  'women\'s top'
-	                )
-	              ),
-	              _react3.default.createElement(
-	                'li',
-	                null,
-	                _react3.default.createElement(
-	                  _reactRouter.Link,
-	                  { to: '/bottom2' },
-	                  'women\'s bottom'
-	                )
 	              )
 	            )
 	          ),
@@ -36156,359 +36135,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(173)(module)))
 
 /***/ },
-/* 402 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(module) {"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _react2 = __webpack_require__(1);
-
-	var _react3 = _interopRequireDefault(_react2);
-
-	var _reactTransformHmr3 = __webpack_require__(174);
-
-	var _reactTransformHmr4 = _interopRequireDefault(_reactTransformHmr3);
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var _components = {
-	  SizeTop2: {
-	    displayName: "SizeTop2"
-	  }
-	};
-
-	var _reactTransformHmr2 = (0, _reactTransformHmr4.default)({
-	  filename: "/vhost/nayp/resources/assets/js/app/containers/sizes/SizeTop2.jsx",
-	  components: _components,
-	  locals: [module],
-	  imports: [_react3.default]
-	});
-
-	function _wrapComponent(id) {
-	  return function (Component) {
-	    return _reactTransformHmr2(Component, id);
-	  };
-	}
-
-	var SizeTop2 = _wrapComponent("SizeTop2")(function (_Component) {
-	  _inherits(SizeTop2, _Component);
-
-	  function SizeTop2() {
-	    _classCallCheck(this, SizeTop2);
-
-	    return _possibleConstructorReturn(this, (SizeTop2.__proto__ || Object.getPrototypeOf(SizeTop2)).apply(this, arguments));
-	  }
-
-	  _createClass(SizeTop2, [{
-	    key: "render",
-	    value: function render() {
-	      return _react3.default.createElement(
-	        "div",
-	        null,
-	        _react3.default.createElement(
-	          "div",
-	          { className: "size_model" },
-	          _react3.default.createElement(
-	            "h2",
-	            { className: "title-base" },
-	            "1\xBA passo / ",
-	            _react3.default.createElement("br", null),
-	            "medidas"
-	          ),
-	          _react3.default.createElement(
-	            "div",
-	            { className: "_content _top-fem" },
-	            _react3.default.createElement(
-	              "div",
-	              { className: "_image" },
-	              _react3.default.createElement("img", { src: "public/img/size-top2.png", alt: "" })
-	            ),
-	            _react3.default.createElement(
-	              "ul",
-	              { className: "_menu" },
-	              _react3.default.createElement(
-	                "li",
-	                null,
-	                _react3.default.createElement(
-	                  "p",
-	                  null,
-	                  _react3.default.createElement(
-	                    "strong",
-	                    null,
-	                    "A. PEITO"
-	                  ),
-	                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-	                ),
-	                _react3.default.createElement(
-	                  "span",
-	                  { className: "_marker _a" },
-	                  "a"
-	                )
-	              ),
-	              _react3.default.createElement(
-	                "li",
-	                null,
-	                _react3.default.createElement(
-	                  "p",
-	                  null,
-	                  _react3.default.createElement(
-	                    "strong",
-	                    null,
-	                    "B. ALTURA DO TRONCO"
-	                  ),
-	                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-	                ),
-	                _react3.default.createElement(
-	                  "span",
-	                  { className: "_marker _b" },
-	                  "b"
-	                )
-	              ),
-	              _react3.default.createElement(
-	                "li",
-	                null,
-	                _react3.default.createElement(
-	                  "p",
-	                  null,
-	                  _react3.default.createElement(
-	                    "strong",
-	                    null,
-	                    "C. MEDIDA DO BRA\xC7O"
-	                  ),
-	                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-	                ),
-	                _react3.default.createElement(
-	                  "span",
-	                  { className: "_marker _c" },
-	                  "c"
-	                )
-	              )
-	            )
-	          )
-	        ),
-	        _react3.default.createElement(
-	          "h2",
-	          { className: "title-base" },
-	          "2\xBA passo / ",
-	          _react3.default.createElement("br", null),
-	          "encontre o tamanho certo"
-	        ),
-	        _react3.default.createElement(
-	          "table",
-	          { className: "size_table" },
-	          _react3.default.createElement(
-	            "thead",
-	            null,
-	            _react3.default.createElement(
-	              "tr",
-	              null,
-	              _react3.default.createElement(
-	                "th",
-	                null,
-	                "Medidas",
-	                _react3.default.createElement("br", null),
-	                "em cm"
-	              ),
-	              _react3.default.createElement(
-	                "th",
-	                null,
-	                "a.",
-	                _react3.default.createElement("br", null),
-	                "peito",
-	                _react3.default.createElement("br", null)
-	              ),
-	              _react3.default.createElement(
-	                "th",
-	                null,
-	                "b.",
-	                _react3.default.createElement("br", null),
-	                "autura do",
-	                _react3.default.createElement("br", null),
-	                "tronco"
-	              ),
-	              _react3.default.createElement(
-	                "th",
-	                null,
-	                "c.",
-	                _react3.default.createElement("br", null),
-	                "medida do",
-	                _react3.default.createElement("br", null),
-	                "bra\xE7o"
-	              )
-	            )
-	          ),
-	          _react3.default.createElement(
-	            "tbody",
-	            null,
-	            _react3.default.createElement(
-	              "tr",
-	              null,
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "xp"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "74 - 81"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "82 - 89"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "90 - 98"
-	              )
-	            ),
-	            _react3.default.createElement(
-	              "tr",
-	              null,
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "p"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "74-81"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "82-89"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "90-98"
-	              )
-	            ),
-	            _react3.default.createElement(
-	              "tr",
-	              null,
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "m"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "74-81"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "82-89"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "90-98"
-	              )
-	            ),
-	            _react3.default.createElement(
-	              "tr",
-	              null,
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "g"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "74-81"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "82-89"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "90-98"
-	              )
-	            ),
-	            _react3.default.createElement(
-	              "tr",
-	              null,
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "xg"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "74-81"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "82-89"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "90-98"
-	              )
-	            ),
-	            _react3.default.createElement(
-	              "tr",
-	              null,
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "xxg"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "74-81"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "82-89"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "90-98"
-	              )
-	            )
-	          )
-	        )
-	      );
-	    }
-	  }]);
-
-	  return SizeTop2;
-	}(_react2.Component));
-
-	exports.default = SizeTop2;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(173)(module)))
-
-/***/ },
+/* 402 */,
 /* 403 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -36885,382 +36512,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(173)(module)))
 
 /***/ },
-/* 404 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(module) {"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _react2 = __webpack_require__(1);
-
-	var _react3 = _interopRequireDefault(_react2);
-
-	var _reactTransformHmr3 = __webpack_require__(174);
-
-	var _reactTransformHmr4 = _interopRequireDefault(_reactTransformHmr3);
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var _components = {
-	  SizeBottom2: {
-	    displayName: "SizeBottom2"
-	  }
-	};
-
-	var _reactTransformHmr2 = (0, _reactTransformHmr4.default)({
-	  filename: "/vhost/nayp/resources/assets/js/app/containers/sizes/SizeBottom2.jsx",
-	  components: _components,
-	  locals: [module],
-	  imports: [_react3.default]
-	});
-
-	function _wrapComponent(id) {
-	  return function (Component) {
-	    return _reactTransformHmr2(Component, id);
-	  };
-	}
-
-	var SizeBottom2 = _wrapComponent("SizeBottom2")(function (_Component) {
-	  _inherits(SizeBottom2, _Component);
-
-	  function SizeBottom2() {
-	    _classCallCheck(this, SizeBottom2);
-
-	    return _possibleConstructorReturn(this, (SizeBottom2.__proto__ || Object.getPrototypeOf(SizeBottom2)).apply(this, arguments));
-	  }
-
-	  _createClass(SizeBottom2, [{
-	    key: "render",
-	    value: function render() {
-	      return _react3.default.createElement(
-	        "div",
-	        null,
-	        _react3.default.createElement(
-	          "div",
-	          { className: "size_model" },
-	          _react3.default.createElement(
-	            "h2",
-	            { className: "title-base" },
-	            "1\xBA passo / ",
-	            _react3.default.createElement("br", null),
-	            "medidas"
-	          ),
-	          _react3.default.createElement(
-	            "div",
-	            { className: "_content _bottom-fem" },
-	            _react3.default.createElement(
-	              "div",
-	              { className: "_image" },
-	              _react3.default.createElement("img", { src: "public/img/size-bottom2.png", alt: "" })
-	            ),
-	            _react3.default.createElement(
-	              "ul",
-	              { className: "_menu _half" },
-	              _react3.default.createElement(
-	                "li",
-	                null,
-	                _react3.default.createElement(
-	                  "p",
-	                  null,
-	                  _react3.default.createElement(
-	                    "strong",
-	                    null,
-	                    "A. PEITO"
-	                  ),
-	                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-	                ),
-	                _react3.default.createElement(
-	                  "span",
-	                  { className: "_marker _a" },
-	                  "a"
-	                )
-	              ),
-	              _react3.default.createElement(
-	                "li",
-	                null,
-	                _react3.default.createElement(
-	                  "p",
-	                  null,
-	                  _react3.default.createElement(
-	                    "strong",
-	                    null,
-	                    "B. ALTURA DO TRONCO"
-	                  ),
-	                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-	                ),
-	                _react3.default.createElement(
-	                  "span",
-	                  { className: "_marker _b" },
-	                  "b"
-	                )
-	              )
-	            )
-	          )
-	        ),
-	        _react3.default.createElement(
-	          "h2",
-	          { className: "title-base" },
-	          "2\xBA passo / ",
-	          _react3.default.createElement("br", null),
-	          "encontre o tamanho certo"
-	        ),
-	        _react3.default.createElement(
-	          "table",
-	          { className: "size_table _bottom" },
-	          _react3.default.createElement(
-	            "thead",
-	            null,
-	            _react3.default.createElement(
-	              "tr",
-	              null,
-	              _react3.default.createElement(
-	                "th",
-	                null,
-	                "Medidas",
-	                _react3.default.createElement("br", null),
-	                "em cm"
-	              ),
-	              _react3.default.createElement(
-	                "th",
-	                null,
-	                "b.",
-	                _react3.default.createElement("br", null),
-	                "autura do",
-	                _react3.default.createElement("br", null),
-	                "tronco"
-	              ),
-	              _react3.default.createElement(
-	                "th",
-	                null,
-	                "c.",
-	                _react3.default.createElement("br", null),
-	                "medida do",
-	                _react3.default.createElement("br", null),
-	                "bra\xE7o"
-	              )
-	            )
-	          ),
-	          _react3.default.createElement(
-	            "tbody",
-	            null,
-	            _react3.default.createElement(
-	              "tr",
-	              { className: "_title" },
-	              _react3.default.createElement(
-	                "td",
-	                { colSpan: "3" },
-	                "tamanhos numericos"
-	              )
-	            ),
-	            _react3.default.createElement(
-	              "tr",
-	              null,
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "36"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "82 - 89"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "90 - 98"
-	              )
-	            ),
-	            _react3.default.createElement(
-	              "tr",
-	              null,
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "38"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "82-89"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "90-98"
-	              )
-	            ),
-	            _react3.default.createElement(
-	              "tr",
-	              null,
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "40"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "82-89"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "90-98"
-	              )
-	            ),
-	            _react3.default.createElement(
-	              "tr",
-	              null,
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "42"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "82-89"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "90-98"
-	              )
-	            ),
-	            _react3.default.createElement(
-	              "tr",
-	              null,
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "44"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "82-89"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "90-98"
-	              )
-	            ),
-	            _react3.default.createElement(
-	              "tr",
-	              null,
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "46"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "82-89"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "90-98"
-	              )
-	            ),
-	            _react3.default.createElement(
-	              "tr",
-	              { className: "_title" },
-	              _react3.default.createElement(
-	                "td",
-	                { colSpan: "3" },
-	                "tamanhos nominais",
-	                _react3.default.createElement(
-	                  "small",
-	                  null,
-	                  "\xA0 (pe\xE7as com ajustes de cord\xE3o e/ou el\xE1stico na cintura)"
-	                )
-	              )
-	            ),
-	            _react3.default.createElement(
-	              "tr",
-	              null,
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "p"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "82-89"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "90-98"
-	              )
-	            ),
-	            _react3.default.createElement(
-	              "tr",
-	              null,
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "m"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "82-89"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "90-98"
-	              )
-	            ),
-	            _react3.default.createElement(
-	              "tr",
-	              null,
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "g"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "82-89"
-	              ),
-	              _react3.default.createElement(
-	                "td",
-	                null,
-	                "90-98"
-	              )
-	            )
-	          )
-	        )
-	      );
-	    }
-	  }]);
-
-	  return SizeBottom2;
-	}(_react2.Component));
-
-	exports.default = SizeBottom2;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(173)(module)))
-
-/***/ },
+/* 404 */,
 /* 405 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -37751,7 +37003,6 @@
 	  getInitialState: function getInitialState() {
 	    return {
 	      isMapCreated: false,
-	      styleName: this.props.styleName,
 	      styler: this.props.styler
 	    };
 	  },
@@ -37786,13 +37037,13 @@
 
 	  createMap: function createMap() {
 	    var node = _reactDom2['default'].findDOMNode(this);
-	    var styledMapType = new google.maps.StyledMapType(this.state.styler, { name: this.state.styleName });
+	    var styledMapType = new google.maps.StyledMapType(this.state.styler, { name: 'Styled' });
 
 	    this.map = new google.maps.Map(node, _extends({}, this.props, {
 	      center: new google.maps.LatLng(this.props.lat, this.props.lng),
-	      mapTypeId: this.state.styleName
+	      mapTypeId: 'Styled'
 	    }));
-	    this.map.mapTypes.set(this.state.styleName, styledMapType);
+	    this.map.mapTypes.set('Styled', styledMapType);
 	    this.setState({
 	      isMapCreated: true
 	    });
@@ -37842,6 +37093,7 @@
 	Object.defineProperty(exports, '__esModule', {
 	  value: true
 	});
+
 	exports['default'] = {
 	  onBoundsChanged: 'bounds_changed',
 	  onCenterChanged: 'center_changed',

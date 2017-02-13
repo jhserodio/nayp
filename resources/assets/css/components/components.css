@@ -19,6 +19,7 @@ COMPONENTS
 @import 'main_menu/nav_main';
 @import 'main_menu/megamenu';
 @import 'main_menu/dropdown';
+@import 'main_menu/menu_home';
 
 /*MENU*/
 @import 'menu/menu';

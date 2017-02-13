@@ -1,0 +1,39 @@
+.menu_home {
+    list-style: none;
+    line-height: normal;
+    padding: var(--space-large);
+    text-align: center;
+    margin: 0 auto;
+}
+
+@media (--screen-small) {
+    .menu_home {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding: 0;
+    }
+
+    .menu_home li {
+        padding: var(--space-base) 6%;
+        margin: 0;
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (--screen-medium) {
+    .menu_home {
+        padding: var(--space-large);
+        text-align: center;
+        width: var(--width-prime);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .menu_home li {
+        width: 30%;
+    }
+}

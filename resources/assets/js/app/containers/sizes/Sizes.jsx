@@ -10,8 +10,6 @@ export default class Sizes extends Component {
               <ul className="reset">
                 <li><IndexLink to="/sizes">men's top</IndexLink></li>
                 <li><Link to="bottom">men's bottoms</Link></li>
-                <li><Link to="/top2">women's top</Link></li>
-                <li><Link to="/bottom2">women's bottom</Link></li>
               </ul>
             </nav>
 

@@ -47,17 +47,7 @@
   fill: black;
 }
 
-@media (--screen-small) {
-  .megamenu {
-    top: 120px;
-  }
-}
-
 @media (--screen-medium) {
-
-  .megamenu {
-    background: linear-gradient(to bottom, white 42px, var(--gray-light) 42px);
-  }
 
   .app-navegation {
     max-height: none;
@@ -98,7 +88,7 @@
 @media (--screen-mobile) {
 
   .megamenu {
-    background: none;
+    background: white;
   }
 
   .megamenu .menu {

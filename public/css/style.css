@@ -914,17 +914,7 @@ clear: both;
   fill: black;
 }
 
-@media    (max-width: 767px) {
-  .megamenu {
-    top: 120px;
-  }
-}
-
 @media   (min-width: 1140px) {
-
-  .megamenu {
-    background: linear-gradient(to bottom, white 42px, #b7b7b6 42px);
-  }
 
   .app-navegation {
     max-height: none;
@@ -965,7 +955,7 @@ clear: both;
 @media   (max-width: 1139px) {
 
   .megamenu {
-    background: none;
+    background: white;
   }
 
   .megamenu .menu {
@@ -1089,6 +1079,46 @@ clear: both;
     padding-left: 6%;
   }
 
+}
+
+.menu_home {
+    list-style: none;
+    line-height: normal;
+    padding: 15px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+@media    (max-width: 767px) {
+    .menu_home {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding: 0;
+    }
+
+    .menu_home li {
+        padding: 10px 6%;
+        margin: 0;
+        display: block;
+        width: 100%;
+    }
+}
+
+@media   (min-width: 1140px) {
+    .menu_home {
+        padding: 15px;
+        text-align: center;
+        width: 720px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .menu_home li {
+        width: 30%;
+    }
 }
 
 /*MENU*/
@@ -1320,6 +1350,7 @@ clear: both;
 .question svg {
   width: 16px;
   height: 16px;
+  fill: #000000;
 }
 
 /*CARDS*/
@@ -3259,8 +3290,15 @@ TEMPLATES
 
   .header-navegation {
     order: 1;
+    flex-grow: 1;
     margin-right: 0;
   }
+
+
+  .header-np .megamenu {
+    top: 120px;
+  }
+
 
   .search-box .form-wrap {
     width: 88%;

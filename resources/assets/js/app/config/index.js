@@ -8,9 +8,7 @@ import Switch from '../containers/switch/Switch.jsx';
 import Order from '../containers/order/Order.jsx';
 import Sizes from '../containers/sizes/Sizes.jsx';
 import SizeTop from '../containers/sizes/SizeTop.jsx';
-import SizeTop2 from '../containers/sizes/SizeTop2.jsx';
 import SizeBottom from '../containers/sizes/SizeBottom.jsx';
-import SizeBottom2 from '../containers/sizes/SizeBottom2.jsx';
 import Contact from '../containers/contact/Contact.jsx';
 import Politic from '../containers/politic/Politic.jsx';
 import Terms   from '../containers/terms/Terms.jsx';
@@ -30,9 +28,7 @@ export class RouteConfig extends Component {
           <Route index="3" path="/order" component={Order} />
           <Route index="4" path="/sizes" component={Sizes} >
             <IndexRoute component={SizeTop} />
-            <Route path="/top2" component={SizeTop2} />
             <Route path="/bottom" component={SizeBottom} />
-            <Route path="/bottom2" component={SizeBottom2} />
           </Route>
           <Route index="5"path="/politic" component={Politic}>
             <IndexRoute component={Terms} />
