@@ -25,13 +25,12 @@ export default class Switch extends Component {
             Politicas de trocas e devoluções
           </h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident,
-            sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Nosso objetivo é proporcionar uma relação de confiança e respeito,
+            para que sua satisfação ao adquirir nossos produtos seja plena.
+            Mas, se por algum motivo você não tenha ficado satisfeito,
+            será possível solicitar a troca ou devolução do produto.
+            Para isso, descrevemos logo abaixo nossa Política de Trocas e Devoluções,
+            tendo como orientação o Código de Defesa do Consumidor:
           </p>
         </div>
 
