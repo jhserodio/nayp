@@ -6,6 +6,11 @@
     margin: 0 auto;
 }
 
+
+.menu_home a {
+    text-decoration: none;
+}
+
 @media (--screen-small) {
     .menu_home {
         width: 100%;
@@ -21,6 +26,7 @@
         display: block;
         width: 100%;
     }
+
 }
 
 @media (--screen-medium) {
@@ -36,4 +42,5 @@
     .menu_home li {
         width: 30%;
     }
+    
 }
