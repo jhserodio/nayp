@@ -8,8 +8,9 @@ export default class Sizes extends Component {
           <div className="container">
             <nav className="nav_tab">
               <ul className="reset">
-                <li><IndexLink to="/sizes">men's top</IndexLink></li>
-                <li><Link to="bottom">men's bottoms</Link></li>
+                <li><IndexLink to="/sizes">top</IndexLink></li>
+                <li><Link to="bottom">bottom</Link></li>
+                <li><Link to="bottom">headwear</Link></li>
               </ul>
             </nav>
 
