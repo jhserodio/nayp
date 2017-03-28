@@ -63,7 +63,7 @@
 /******/ 	}
 
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "4fab590713499670efdd"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "e810a6b1057f5e5065c7"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 
@@ -593,7 +593,7 @@
 
 	var _config = __webpack_require__(172);
 
-	var _app = __webpack_require__(426);
+	var _app = __webpack_require__(424);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -22017,23 +22017,23 @@
 
 	var _SizeTop2 = _interopRequireDefault(_SizeTop);
 
-	var _SizeBottom = __webpack_require__(403);
+	var _SizeBottom = __webpack_require__(402);
 
 	var _SizeBottom2 = _interopRequireDefault(_SizeBottom);
 
-	var _Contact = __webpack_require__(405);
+	var _Contact = __webpack_require__(403);
 
 	var _Contact2 = _interopRequireDefault(_Contact);
 
-	var _Politic = __webpack_require__(423);
+	var _Politic = __webpack_require__(421);
 
 	var _Politic2 = _interopRequireDefault(_Politic);
 
-	var _Terms = __webpack_require__(424);
+	var _Terms = __webpack_require__(422);
 
 	var _Terms2 = _interopRequireDefault(_Terms);
 
-	var _Privacy = __webpack_require__(425);
+	var _Privacy = __webpack_require__(423);
 
 	var _Privacy2 = _interopRequireDefault(_Privacy);
 
@@ -33536,7 +33536,12 @@
 	        _react3.default.createElement(
 	          'p',
 	          null,
-	          'iste sed, dolores. Illo molestiae vitae repellat laudantium, rerum aut!'
+	          'Ol\xE1, abaixo voc\xEA encontrar\xE1 as respostas \xE0s d\xFAvidas mais frequentes dos nossos clientes, caso n\xE3o encontre a informa\xE7\xE3o que procura, entre em contato conosco clicando',
+	          _react3.default.createElement(
+	            'a',
+	            { href: '#' },
+	            ' aqui. '
+	          )
 	        ),
 	        _react3.default.createElement(_QuestionList2.default, { list: this.state.questions })
 	      );
@@ -33565,17 +33570,17 @@
 	    return [{
 	      id: '01',
 	      visibility: false,
-	      head: 'qual é o prazo para o envio de um pedido',
-	      main: ['01 Lorem ipsum dolor sit amet, consectetur adipisicing elit deleniti esse aliquam soluta, totam tenetur odit saepe vel quasi est?', '02 Lorem ipsum dolor sit amet, consectetur adipisicing elit deleniti esse aliquam soluta, totam tenetur odit saepe vel quasi est?']
+	      head: 'QUAL É O PRAZO DE ENVIO?',
+	      main: ['Trabalhamos para efetuar os procedimentos de postagens o mais rápido possível. Salvo por motivos de força maior, postaremos sua compra em até 01 (um) dia útil após a confirmação do pagamento. Caso o pagamento seja aprovado em um sábado, domingo ou feriado (nacional ou estadual do PR), haverá um acréscimo de 1 (um) dia útil no prazo para postagem.']
 	    }, {
 	      id: '02',
 	      visibility: false,
-	      head: 'qual o prazo para recebimento de um pedido',
-	      main: ['Isto dependerá de alguns fatores e escolhas que você fará; como o método de envio, forma de pagamento e localidade do endereço de entrega. Os prazos para envio aparecerão antes da finalização do pedido e são uma previsão fornecida pela empresa de logística contratada, no caso os Correios. Eventuais atrasos poderão ocorrer. Não esqueça! Nós começamos a contar a data da entrega a partir da data de confirmação do pagamento do seu pedido, seja pela instituição financeira ou compensação de seu boleto bancário, asim como após a confirmação dos seus dados cadastrais.']
+	      head: 'QUAL É O PRAZO DE ENTREGA?',
+	      main: ['sto dependerá de alguns fatores e escolhas que você fará; como o método de envio, forma de pagamento, localidade do endereço de entrega e o peso e dimensões do seu pedido. Você poderá calcular frete e prazo antes da finalização do pedido, e são uma previsão fornecida pela empresa de logística contratada, no caso os Correios. Eventuais atrasos poderão ocorrer.', 'Não esqueça! Nós começamos a contar a data da entrega a partir da data de confirmação do pagamento do seu pedido, seja pela instituição financeira ou compensação de seu boleto bancário, assim como após a confirmação dos seus dados cadastrais.']
 	    }, {
 	      id: '03',
 	      visibility: false,
-	      head: 'quais são os métodos de pagamento',
+	      head: 'QUAIS SÃO OS MÉTODOS DE PAGAMENTO?',
 	      main: ['No momento aceitamos Paypal, Cartões de Crédito incluindo Visa e Mastercard, Cartões de Débito e Boleto Bancário.']
 	    }, {
 	      id: '04',
@@ -33585,38 +33590,43 @@
 	    }, {
 	      id: '05',
 	      visibility: false,
-	      head: 'COMO SABEREI SE O MEU PEDIDO FOI APROVADO?',
-	      main: ['Você receberá uma confirmação por e-mail logo após seu pedido ter sido aprovado. Por favor, aguarde até 2 (dois) dias úteis para o processamento de pedidos. Não hesite em contatar-nos diretamente com quaisquer dúvidas através do formulário de contato ou por e-mail (info@nayp.co).']
+	      head: 'APÓS EFETUAR UM PEDIDO, PERCEBI QUE ERREI O ENDEREÇO, O QUE DEVO FAZER?',
+	      main: ['Assim que perceber qualquer erro, nos avise imediatamente através do nosso formulário de CONTATO ou envie-nos um e-mail, informando a correção.']
 	    }, {
 	      id: '06',
 	      visibility: false,
-	      head: 'COMO FAÇO PARA VERIFICAR O STATUS DE UM PEDIDO?',
-	      main: ['Você pode verificar essa informação clicando em “Status do Pedido”, localizado no topo desta página. Por favor, aguarde até 2 (dois) dias úteis para o processamento de pedidos. Não hesite em contatar-nos diretamente com quaisquer dúvidas através do nosso formulário de contato ou por e-mail (info@nayp.co). ']
+	      head: 'COMO SABEREI SE O MEU PEDIDO FOI APROVADO?',
+	      main: ['Você receberá uma confirmação por e-mail logo após seu pedido ter sido aprovado. Por favor, aguarde até 2 (dois) dias úteis para o processamento de pedidos. Não hesite em contatar-nos diretamente com quaisquer dúvidas através do nosso formulário de CONTATO ou por e-mail.']
 	    }, {
 	      id: '07',
 	      visibility: false,
-	      head: 'POSSO ADICIONAR OU REMOVER ITENS DO MEU PEDIDO, DEPOIS DE APROVADO?',
-	      main: ['Assim que o seu pedido é aprovado, começamos a processar a sua compra, o que implica uma série de medidas. Durante esse tempo, não é possível adicionar ou remover itens do seu pedido.']
+	      head: 'COMO FAÇO PARA VERIFICAR O STATUS DE UM PEDIDO?',
+	      main: ['Você pode verificar essa informação clicando em “STATUS DO PEDIDO”, localizado no topo desta página. Por favor, aguarde até 2 (dois) dias úteis para o processamento de pedidos. Não hesite em contatar-nos diretamente com quaisquer dúvidas através do nosso formulário de CONTATO ou por e-mail.']
 	    }, {
 	      id: '08',
 	      visibility: false,
-	      head: 'POSSO CANCELAR MEU PEDIDO, DEPOIS DE APROVADO?',
-	      main: ['Logo após a aprovação do seu pedido, nós começamos a processar a sua compra, o que implica uma série de medidas. Durante esse tempo, não somos capazes de modificar ou cancelar a sua encomenda. Nós procuramos garantir que você fique completamente satisfeito com a sua experiência de compra, mas caso aconteça algum problema, oferecemos uma Política de Trocas e Devoluções']
+	      head: 'POSSO ADICIONAR OU REMOVER ITENS DO MEU PEDIDO, DEPOIS DE APROVADO?',
+	      main: ['Assim que o seu pedido é aprovado, começamos a processar a sua compra, o que implica uma série de medidas. Durante esse tempo, não é possível adicionar ou remover itens do seu pedido. ']
 	    }, {
 	      id: '09',
 	      visibility: false,
 	      head: 'POSSO CANCELAR MEU PEDIDO, DEPOIS DE APROVADO?',
-	      main: ['No momento aceitamos Paypal, Cartões de Crédito incluindo Visa e Mastercard, Cartões de Débito e Boleto Bancário.']
+	      main: ['Logo após a aprovação do seu pedido, nós começamos a processar a sua compra, o que implica uma série de medidas. Durante esse tempo, não somos capazes de modificar ou cancelar a sua encomenda. Nós procuramos garantir que você fique completamente satisfeito com a sua experiência de compra, mas caso aconteça algum problema, oferecemos uma Política de TROCAS E DEVOLUÇÕES.']
 	    }, {
 	      id: '10',
 	      visibility: false,
 	      head: 'QUEM PODERÁ RECEBER MEU PEDIDO?',
-	      main: ['Será necessária a presença de alguém na hora da entrega do pacote para assinar o protocolo de recebimento dos Correios, não necessariamente o destinatário. Se você mora em prédio, em condomínio, em vila ou similares; o responsável por receber a encomenda deverá ser o porteiro. Por norma dos Correios, se não houver porteiro nesses casos, o carteiro não poderá fazer a entrega.']
+	      main: ['Será necessária a presença de alguém na hora da entrega do pacote para assinar o protocolo de recebimento dos Correios, não necessariamente o destinatário. Se você mora em prédio, em condomínio, em vila ou similares; o responsável por receber a encomenda deverá ser o porteiro. Por norma dos Correios, se não houver porteiro nesses casos, o carteiro não poderá fazer a entrega.', 'Serão efetuadas 3 (três) tentativas de entrega, sendo a primeira no mesmo dia da chegada do objeto na unidade de distribuição. A segunda e a terceira tentativas serão realizadas nos dias úteis imediatamente subsequentes. Caso as 3 (três) tentativas de entrega sejam frustradas, o objeto ficará disponível para retirada na agência dos Correios mais próxima do endereço do destinatário, pelo prazo de 7 (sete) dias corridos. Após este prazo o objeto será devolvido à NAYP.', 'Caso o pacote volte para a NAYP (depois das 3 (três) tentativas de entrega, por não ter sido retirado nos Correios, por endereço incompleto/incorreto ou por recusa do recebimento), o consumidor terá 2 (duas) opções: (i) pagar um novo frete para reenvio da compra ou (ii) solicitar a devolução do dinheiro dos itens comprados. Nesse caso, o valor do frete é descontado do valor a ser ressarcido (mesmo que tenha sido usada uma promoção de frete grátis) por já ter sido feita a postagem nos Correios.', 'Por isso, é imprescindível que você fique de olho no rastreamento do seu pacote no site dos Correios, porque é por lá que todas essas informações ficam registradas, inclusive caso haja algum problema ou restrição na entrega.', 'OBS.: Sempre cheque o pacote, antes de aceitar a entrega pelos Correios. Caso a embalagem esteja violada, recuse o recebimento. Nos avise imediatamente através do nosso formulário de CONTATO ou envie-nos um e-mail, informando o ocorrido.']
 	    }, {
 	      id: '11',
 	      visibility: false,
 	      head: 'MEU PEDIDO ESTÁ ATRASADO OU NÃO CHEGOU, COMO PROCEDER?',
-	      main: ['Toda informação sobre detalhes do serviço de entrega, ficarão disponíveis na área de Rastreamento de Objeto no site dos Correios, por isso, é imprescindível que você fique atento a essas informações. Se não conseguir obter a informação necessária, nos avise através do formulário de contato ou por e-mail (info@nayp.co) informando o número do seu pedido, para que possamos abrir um chamado e identificar o que ocorreu com a entrega. Caso seu pacote seja extraviado pelos Correios, você pode optar pela devolução integral da compra (incluindo o frete) ou o reenvio do produto (havendo disponibilidade em estoque), sem nenhum custo adicional.']
+	      main: ['Toda informação sobre detalhes do serviço de entrega, ficarão disponíveis na área de Rastreamento de Objeto no site dos Correios, por isso, é imprescindível que você fique atento a essas informações.', 'Se não conseguir obter a informação necessária, não hesite em contatar-nos diretamente com quaisquer dúvidas através do nosso formulário de CONTATO ou por e-mail, informando o número do seu pedido, para que possamos abrir um chamado e identificar o que ocorreu com a entrega.', 'Caso seu pacote seja extraviado pelos Correios, você pode optar pela devolução integral da compra (incluindo o frete) ou o reenvio do produto (havendo disponibilidade em estoque), sem nenhum custo adicional.']
+	    }, {
+	      id: '12',
+	      visibility: false,
+	      head: 'POR QUE MEU PAGAMENTO POR CARTÃO DE CRÉDITO NÃO FOI APROVADO?',
+	      main: ['Existem duas formas de cancelamento: (i) o banco emissor do seu cartão de crédito não aprovou seu pagamento, porque, por exemplo, você passou do limite mensal do seu cartão (mesmo que você parcele sua compra, o valor total dela entra no limite do mês) ou eles percebem que não é do seu perfil fazer compras online ou (ii) a análise de segurança foi negativa, porque, por exemplo, você errou algum dado pessoal ou dado do cartão na hora de preencher no site. Caso o seu banco tenha recusado o pagamento, apenas o portador do cartão conseguirá ter mais informações sobre o porquê, por medidas de segurança e de privacidade.']
 	    }, {
 	      id: '12',
 	      visibility: false,
@@ -34037,7 +34047,7 @@
 	          _react3.default.createElement(
 	            'p',
 	            null,
-	            'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+	            'Nosso objetivo \xE9 proporcionar uma rela\xE7\xE3o de confian\xE7a e respeito, para que sua satisfa\xE7\xE3o ao adquirir nossos produtos seja plena. Mas, se por algum motivo voc\xEA n\xE3o tenha ficado satisfeito, ser\xE1 poss\xEDvel solicitar a troca ou devolu\xE7\xE3o do produto. Para isso, descrevemos logo abaixo nossa Pol\xEDtica de Trocas e Devolu\xE7\xF5es, tendo como orienta\xE7\xE3o o C\xF3digo de Defesa do Consumidor:'
 	          )
 	        ),
 	        _react3.default.createElement(_QuestionList2.default, { list: this.state.questions }),
@@ -35484,20 +35494,20 @@
 	    return [{
 	      id: '01',
 	      head: 'INFORMAÇÕES GERAIS',
-	      main: ['Para que seja efetuada qualquer troca ou devolução, é preciso primeiro realizar uma solicitação através do nosso formulário de contato ou por e-mail (info@nayp.co); informando de maneira completa os seguintes itens:', '(i)O motivo da troca. (ii)Número do pedido. (iii)Nome e CPF do cliente. (iv)Código do produto (conforme consta na Nota Fiscal, ao lado da descrição do produto)', '___', 'OBS.: ', '- Responderemos em menos de 24 horas, com todas as informações necessárias. ', '- Só será permitida a troca ou devolução quando as regras e prazos informados em nossa Política de Trocas e Devoluções estiverem de acordo.', '- Pedidos feitos em nossa loja online, só poderão ser trocados ou devolvidos em nossa loja online.']
+	      main: ['Para que seja efetuada qualquer troca ou devolução, é preciso primeiro realizar uma solicitação através do nosso FORMULÁRIO DE TROCAS E DEVOLUÇÕES ou por e-mail; informando de maneira completa os seguintes itens:', '- Nome e Sobrenome', '- CPF', '- Email e Telefone', '- Nº do pedido', '- Código do produto (conforme consta na Nota Fiscal, ao lado da descrição do produto)', '- Motivo da troca', '- OBS.:', '- Responderemos em menos de 24 horas, com todas as informações necessárias. ', '- Só será permitida a troca ou devolução quando as regras e prazos informados em nossa Política de Trocas e Devoluções estiverem de acordo.', '- Pedidos feitos em nossa loja online, só poderão ser trocados ou devolvidos em nossa loja online.']
 	    }, {
 	      id: '02',
 	      head: 'DEVOLUÇÃO POR DESISTÊNCIA',
-	      main: ['Caso decida fazer a devolução do produto, será realizado o reembolso do valor pago, sem o frete. Isso só será possível se as regras abaixo estiverem de acordo:', '- 07 (sete) dias corridos a partir da entrega do produto; a contar de sua assinatura ou do ato de recebimento do produto.', '- Frete por conta do consumidor.', '- Respeitar os prazos previstos e informados.', '- O Produto deve ser novo, ou seja, não utilizado e deve estar em sua embalagem original.', '- O produto deve ser enviado com a Nota fiscal Original de compra.', '- Devem constar no envio todos os itens que compõem o pedido em questão, como produtos, embalagens e seus acessórios. Somente com estes itens será possível trocar ou devolver produtos.', '- O produto será analisado conforme regras do código de defesa do consumidor.']
+	      main: ['Caso decida fazer a devolução do produto, será realizado o reembolso do valor pago, sem o frete. Isso só será possível se as regras abaixo estiverem de acordo:', '- 07 (sete) dias corridos a partir da entrega do produto; a contar de sua assinatura ou do ato de recebimento do produto.', '- Respeitar os prazos previstos e informados.', '- O Produto deve ser novo, ou seja, não utilizado e deve estar em sua embalagem original.', '- O produto deve ser enviado com a Nota fiscal de compra.', '- Devem constar no envio todos os itens que acompanham o(s) produto(s) em questão (como embalagens, etiquetas e seus acessórios). Somente com estes itens será possível trocar ou devolver o(s) produto(s).', '- O produto será analisado conforme regras do Código de Defesa do Consumidor.']
 	    }, {
 	      id: '03',
 	      head: 'TROCA POR TAMANHO OU COR (opção do consumidor)',
-	      main: ['Se a sua vontade é realizar a troca de um produto (por tamanho, cor ou modelo), certifique-se de que as regras abaixo estejam de acordo:', '- 30 (trinta) dias corridos a partir da entrega do produto; a contar de sua assinatura ou do ato de recebimento do produto.', '- Frete por conta do consumidor (exceto por erro operacional *).', '- Respeitar os prazos previstos e informados.', '- O Produto deve ser novo, ou seja, não utilizado e deve estar em sua embalagem original.', '- O produto deve ser enviado com a Nota fiscal Original de compra.', '- Devem constar no envio todos os itens que compõem o pedido em questão, como produtos, embalagens e seus acessórios. Somente com estes itens será possível trocar ou devolver produtos.', '- O produto será analisado conforme regras do Código de Defesa do Consumidor.', '* Frete por nossa conta, quando constatado que o pedido enviado é incompatível com o pedido originalmente feito; caso contrário o produto só será reenviado ao cliente após o pagamento do frete de devolução mais o frete de retorno.']
+	      main: ['Se a sua vontade é realizar a troca de um produto (por tamanho, cor ou modelo), certifique-se de que as regras abaixo estejam de acordo:', '- 30 (trinta) dias corridos a partir da entrega do produto; a contar de sua assinatura ou do ato de recebimento do produto.', '- Frete por conta do consumidor (exceto por erro operacional *).', '- Respeitar os prazos previstos e informados.', '- O Produto deve ser novo, ou seja, não utilizado e deve estar em sua embalagem original.', '- O produto deve ser enviado com a Nota fiscal de compra.', '- Devem constar no envio todos os itens que acompanham o(s) produto(s) em questão (como embalagens, etiquetas e seus acessórios). Somente com estes itens será possível trocar ou devolver o(s) produto(s).', '- O produto será analisado conforme regras do Código de Defesa do Consumidor.', '* Frete por nossa conta, quando constatado que o pedido enviado é incompatível com o pedido originalmente feito; caso contrário o produto só será reenviado ao cliente após o pagamento do frete de devolução mais o frete de retorno.']
 
 	    }, {
 	      id: '04',
 	      head: 'TROCA POR DEFEITO',
-	      main: ['Se você precisa realizar a troca de um produto por defeito de fabricação, certifique-se de que as regras abaixo estejam de acordo.', '- 90 (noventa) dias corridos a partir da entrega do produto; a contar de sua assinatura ou do ato de recebimento do produto. ', '- Frete por nossa conta quando constatado o defeito, caso contrário o produto só será reenviado ao cliente após o pagamento do frete de devolução mais o frete de retorno.', '- Respeitar os prazos previstos e informados.', '- O produto deve estar completo, com todos os acessórios recebidos.', '- Deve ser enviado com a Nota Fiscal Original de compra.', '- Devem constar no envio todos os itens que compõem o pedido em questão, como produtos, embalagens, etiquetas originais e seus acessórios. Somente com estes itens será possível trocar ou devolver produtos.', '- E será analisado conforme o código de defesa do consumidor e por nossas premissas de qualidade.', 'OBS.: ', '- Todo o produto devolvido por defeito é analisado por nosso controle de qualidade. Só serão aceitos produtos originais que tenham recebido os cuidados corretos de conservação indicados na etiqueta do produto, com desgaste compatível com o tempo de uso, sem sinais de danos e Nota Fiscal Original; seguindo nossos critérios de qualidade.', '- Sendo constatado o defeito de fabricação, a NAYP tem até 30 (trinta) dias corridos, a contar da data de recebimento do seu produto devolvido, para dar uma das soluções a seguir:', '(i) Caso seja possível fazer o reparo da peça, ela será consertada e reenviada.', '(ii) Caso não seja possível fazer o reparo, mas o produto ainda esteja em estoque, uma nova peça será enviada.', '(iii) Caso não seja possível fazer o reparo e o produto não esteja mais em estoque, você poderá solicitar a devolução do valor pago ou a troca por outro produto da loja online de mesmo valor.']
+	      main: ['Se você precisa realizar a troca de um produto por defeito de fabricação, certifique-se de que as regras abaixo estejam de acordo:', '- 90 (noventa) dias corridos a partir da entrega do produto; a contar de sua assinatura ou do ato de recebimento do produto. ', '- Frete por nossa conta quando constatado o defeito, caso contrário o produto só será reenviado ao cliente após o pagamento do frete de devolução mais o frete de retorno.', '- Respeitar os prazos previstos e informados.', '- O produto deve estar completo, com todos os acessórios recebidos.', '- Deve ser enviado com a Nota Fiscal de compra.', '- E será analisado conforme o código de defesa do consumidor e por nossas premissas de qualidade.', 'OBS.: ', '- Todo o produto devolvido por defeito é analisado por nosso controle de qualidade. Só serão aceitos produtos originais que tenham recebido os cuidados corretos de conservação indicados na etiqueta do produto, com desgaste compatível com o tempo de uso, sem sinais de danos por uso inadequado.', '- Sendo constatado o defeito de fabricação, a NAYP tem até 30 (trinta) dias corridos, a contar da data de recebimento do seu produto devolvido, para dar uma das soluções a seguir:', '(i) Caso seja possível fazer o reparo da peça, ela será consertada e reenviada.', '(ii) Caso não seja possível fazer o reparo, mas o produto ainda esteja em estoque, uma nova peça será enviada.', '(iii) Caso não seja possível fazer o reparo e o produto não esteja mais em estoque, você poderá solicitar a devolução do valor pago ou a troca por outro produto da loja online de mesmo valor.']
 	    }];
 	  }
 	};
@@ -35711,7 +35721,7 @@
 	                _react3.default.createElement(
 	                  _reactRouter.IndexLink,
 	                  { to: '/sizes' },
-	                  'men\'s top'
+	                  'top'
 	                )
 	              ),
 	              _react3.default.createElement(
@@ -35720,7 +35730,16 @@
 	                _react3.default.createElement(
 	                  _reactRouter.Link,
 	                  { to: 'bottom' },
-	                  'men\'s bottoms'
+	                  'bottom'
+	                )
+	              ),
+	              _react3.default.createElement(
+	                'li',
+	                null,
+	                _react3.default.createElement(
+	                  _reactRouter.Link,
+	                  { to: 'bottom' },
+	                  'headwear'
 	                )
 	              )
 	            )
@@ -36135,8 +36154,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(173)(module)))
 
 /***/ },
-/* 402 */,
-/* 403 */
+/* 402 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(module) {"use strict";
@@ -36512,8 +36530,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(173)(module)))
 
 /***/ },
-/* 404 */,
-/* 405 */
+/* 403 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(module) {'use strict';
@@ -36532,7 +36549,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _GoogleMaps = __webpack_require__(406);
+	var _GoogleMaps = __webpack_require__(404);
 
 	var _GoogleMaps2 = _interopRequireDefault(_GoogleMaps);
 
@@ -36714,7 +36731,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(173)(module)))
 
 /***/ },
-/* 406 */
+/* 404 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(module) {'use strict';
@@ -36737,7 +36754,7 @@
 
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 
-	var _reactGmaps = __webpack_require__(407);
+	var _reactGmaps = __webpack_require__(405);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -36919,7 +36936,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(173)(module)))
 
 /***/ },
-/* 407 */
+/* 405 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -36930,19 +36947,19 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _componentsGmaps = __webpack_require__(408);
+	var _componentsGmaps = __webpack_require__(406);
 
 	var _componentsGmaps2 = _interopRequireDefault(_componentsGmaps);
 
-	var _componentsMarker = __webpack_require__(416);
+	var _componentsMarker = __webpack_require__(414);
 
 	var _componentsMarker2 = _interopRequireDefault(_componentsMarker);
 
-	var _componentsInfoWindow = __webpack_require__(419);
+	var _componentsInfoWindow = __webpack_require__(417);
 
 	var _componentsInfoWindow2 = _interopRequireDefault(_componentsInfoWindow);
 
-	var _componentsCircle = __webpack_require__(421);
+	var _componentsCircle = __webpack_require__(419);
 
 	var _componentsCircle2 = _interopRequireDefault(_componentsCircle);
 
@@ -36952,7 +36969,7 @@
 	exports.Circle = _componentsCircle2['default'];
 
 /***/ },
-/* 408 */
+/* 406 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -36977,19 +36994,19 @@
 
 	var _objectAssign2 = _interopRequireDefault(_objectAssign);
 
-	var _eventsMap = __webpack_require__(409);
+	var _eventsMap = __webpack_require__(407);
 
 	var _eventsMap2 = _interopRequireDefault(_eventsMap);
 
-	var _mixinsListener = __webpack_require__(410);
+	var _mixinsListener = __webpack_require__(408);
 
 	var _mixinsListener2 = _interopRequireDefault(_mixinsListener);
 
-	var _utilsGoogleMaps = __webpack_require__(411);
+	var _utilsGoogleMaps = __webpack_require__(409);
 
 	var _utilsGoogleMaps2 = _interopRequireDefault(_utilsGoogleMaps);
 
-	var _utilsCompareProps = __webpack_require__(415);
+	var _utilsCompareProps = __webpack_require__(413);
 
 	var _utilsCompareProps2 = _interopRequireDefault(_utilsCompareProps);
 
@@ -37085,7 +37102,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 409 */
+/* 407 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -37118,7 +37135,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 410 */
+/* 408 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -37156,7 +37173,7 @@
 	module.exports = exports["default"];
 
 /***/ },
-/* 411 */
+/* 409 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37167,7 +37184,7 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _querystring = __webpack_require__(412);
+	var _querystring = __webpack_require__(410);
 
 	var _querystring2 = _interopRequireDefault(_querystring);
 
@@ -37225,17 +37242,17 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 412 */
+/* 410 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	exports.decode = exports.parse = __webpack_require__(413);
-	exports.encode = exports.stringify = __webpack_require__(414);
+	exports.decode = exports.parse = __webpack_require__(411);
+	exports.encode = exports.stringify = __webpack_require__(412);
 
 
 /***/ },
-/* 413 */
+/* 411 */
 /***/ function(module, exports) {
 
 	// Copyright Joyent, Inc. and other Node contributors.
@@ -37321,7 +37338,7 @@
 
 
 /***/ },
-/* 414 */
+/* 412 */
 /***/ function(module, exports) {
 
 	// Copyright Joyent, Inc. and other Node contributors.
@@ -37391,7 +37408,7 @@
 
 
 /***/ },
-/* 415 */
+/* 413 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -37421,7 +37438,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 416 */
+/* 414 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37432,11 +37449,11 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _entity = __webpack_require__(417);
+	var _entity = __webpack_require__(415);
 
 	var _entity2 = _interopRequireDefault(_entity);
 
-	var _eventsMarker = __webpack_require__(418);
+	var _eventsMarker = __webpack_require__(416);
 
 	var _eventsMarker2 = _interopRequireDefault(_eventsMarker);
 
@@ -37444,7 +37461,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 417 */
+/* 415 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37463,11 +37480,11 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _mixinsListener = __webpack_require__(410);
+	var _mixinsListener = __webpack_require__(408);
 
 	var _mixinsListener2 = _interopRequireDefault(_mixinsListener);
 
-	var _utilsCompareProps = __webpack_require__(415);
+	var _utilsCompareProps = __webpack_require__(413);
 
 	var _utilsCompareProps2 = _interopRequireDefault(_utilsCompareProps);
 
@@ -37515,7 +37532,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 418 */
+/* 416 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -37549,7 +37566,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 419 */
+/* 417 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37560,11 +37577,11 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _entity = __webpack_require__(417);
+	var _entity = __webpack_require__(415);
 
 	var _entity2 = _interopRequireDefault(_entity);
 
-	var _eventsInfoWindow = __webpack_require__(420);
+	var _eventsInfoWindow = __webpack_require__(418);
 
 	var _eventsInfoWindow2 = _interopRequireDefault(_eventsInfoWindow);
 
@@ -37572,7 +37589,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 420 */
+/* 418 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -37590,7 +37607,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 421 */
+/* 419 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37601,11 +37618,11 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	var _entity = __webpack_require__(417);
+	var _entity = __webpack_require__(415);
 
 	var _entity2 = _interopRequireDefault(_entity);
 
-	var _eventsCircle = __webpack_require__(422);
+	var _eventsCircle = __webpack_require__(420);
 
 	var _eventsCircle2 = _interopRequireDefault(_eventsCircle);
 
@@ -37613,7 +37630,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 422 */
+/* 420 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -37639,7 +37656,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 423 */
+/* 421 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(module) {'use strict';
@@ -37744,7 +37761,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(173)(module)))
 
 /***/ },
-/* 424 */
+/* 422 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(module) {"use strict";
@@ -37808,27 +37825,469 @@
 	        _react3.default.createElement(
 	          "h1",
 	          { className: "title-base" },
-	          "Termos de uso"
+	          "Pol\xEDtica de privacidade"
 	        ),
 	        _react3.default.createElement(
-	          "p",
+	          "div",
 	          null,
-	          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus!"
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "Bem-vindo ao Site da NAYP Co. Ltd., a seguir apresentamos a voc\xEA (\u201Cusu\xE1rio\u201D) os Termos e Condi\xE7\xF5es de Uso (\u201CTermos\u201D, \u201CTermos de Uso\u201D); documento que relaciona as principais regras que devem ser observadas por todos que utilizam e/ou acessam este Site, incluindo toda a informa\xE7\xE3o, ferramentas e servi\xE7os dispon\xEDveis. Ao utilizar e/ou visitar este Site, presume-se a leitura, compreens\xE3o e concord\xE2ncia com todos os Termos relatados, estando sujeito a estes Termos e a quaisquer outras leis aplic\xE1veis. Se voc\xEA n\xE3o concorda com todos os Termos desse acordo, ent\xE3o voc\xEA n\xE3o deve acessar o Site ou usar quaisquer servi\xE7os."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "Em todo o documento, os termos \u201Cn\xF3s\u201D, \u201Cnos\u201D e \u201Cnosso\u201D se referem \xE0 NAYP, detentora e propriet\xE1ria deste Site."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "A NAYP \xE9 fabricante de produtos do vestu\xE1rio e oferece esse espa\xE7o na internet para intera\xE7\xE3o com seus consumidores, admiradores e usu\xE1rios em geral. Este Site tem o objetivo principal de apresentar e comercializar nossos produtos, podendo tamb\xE9m exibir conte\xFAdo relacionado e/ou identificado com nosso trabalho."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "NAYP Co. Ltd., inscrita sob o CNPJ 07.430.733/0001-05 e sediada em Curitiba - PR na Rua Comendador Ara\xFAjo, 268 \u2013 Loja CA06, Centro, CEP 80420-000 / + 55 41 3308 0370."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "Nossa loja \xE9 hospedada em Shopify Inc.; que nos fornece uma plataforma de e-commerce online com um certificado SSL e conformidade PCI; que nos permite vender nossos produtos e servi\xE7os com seguran\xE7a para voc\xEA."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "Os t\xEDtulos usados nesse acordo s\xE3o inclu\xEDdos para conveni\xEAncia apenas e n\xE3o v\xE3o limitar ou, caso contr\xE1rio, afetar esses Termos.7"
+	          )
 	        ),
 	        _react3.default.createElement(
-	          "p",
+	          "div",
 	          null,
-	          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus!"
+	          _react3.default.createElement(
+	            "h2",
+	            { className: "title-base" },
+	            "SE\xC7\xC3O 1 \u2013 ACESSO E RESTRI\xC7\xD5ES DE USO"
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "1.1. \xC9 \xF4nus dos usu\xE1rios arcar com os meios necess\xE1rios para navegar neste Site, incluindo os requisitos para o acesso \xE0 Internet."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "1.2. O acesso a determinados recursos e funcionalidades do Site podem exigir requisitos espec\xEDficos, como o fornecimento de dados pessoais, idade m\xEDnima e outros conforme a necessidade. Caso o usu\xE1rio n\xE3o esteja de acordo com o exigido, dever\xE1 suspender sua navega\xE7\xE3o, sob pena de ser caracterizada m\xE1-f\xE9."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "1.3. Al\xE9m de outras proibi\xE7\xF5es, conforme estabelecido nos Termos de Uso, voc\xEA est\xE1 proibido de usar o site ou o seu conte\xFAdo: (a) para qualquer finalidade ilegal; (b) para solicitar outros a realizar ou participar de quaisquer atos il\xEDcitos; (c) violar quaisquer regulamentos internacionais, provinciais, estaduais ou federais, regras, leis ou regulamentos locais; (d) infringir ou violar os nossos direitos de propriedade intelectual ou os direitos de propriedade intelectual de terceiros; (e) para assediar, abusar, insultar, danificar, difamar, caluniar, depreciar, intimidar ou discriminar com base em g\xEAnero, orienta\xE7\xE3o sexual, religi\xE3o, etnia, ra\xE7a, idade, origem nacional ou defici\xEAncia; (f) apresentar informa\xE7\xF5es falsas ou enganosas; (g) para fazer o envio ou transmitir v\xEDrus ou qualquer outro tipo de c\xF3digo malicioso que ser\xE1 ou poder\xE1 ser utilizado em qualquer forma que afete a funcionalidade ou opera\xE7\xE3o do Site ou de qualquer site relacionado, outros sites, ou da Internet; (h) coletar ou rastrear as informa\xE7\xF5es pessoais de outras pessoas; (i) para fazer spam, phishing, pharm, pretexto, spider, crawl, ou scrape; (j) para qualquer finalidade obscena ou imoral; ou (k) para interferir ou contornar os recursos de seguran\xE7a do Site ou de qualquer site relacionado, outros sites, ou a Internet. Reservamos o direito de terminar o seu uso do Site ou de qualquer site relacionado por violar qualquer dos usos proibidos."
+	          )
 	        ),
 	        _react3.default.createElement(
-	          "p",
+	          "div",
 	          null,
-	          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus!"
+	          _react3.default.createElement(
+	            "h2",
+	            { className: "title-base" },
+	            "SE\xC7\xC3O 2 \u2013 PROPRIEDADE INTELECTUAL"
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "2.1. N\xE3o \xE9 permitido infringir ou violar os nossos direitos de propriedade intelectual ou os direitos de propriedade intelectual de terceiros;"
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "2.1.1. O uso comercial da express\xE3o NAYP como marca, al\xE9m dos conte\xFAdos contidos no Site (nomes, logotipos, marcas, textos, \xEDcones, ilustra\xE7\xF5es, fotos, v\xEDdeos, etc.) s\xE3o de propriedade da NAYP e est\xE3o protegidos pelas leis e tratados de direito autoral, marcas, patentes, modelos e desenhos industriais."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "2.1.2. Ao utilizar este Site, os usu\xE1rios declaram que ir\xE3o respeitar todos os direitos de propriedade intelectual e os decorrentes da prote\xE7\xE3o de marcas, bem como de todos os direitos referentes a terceiros que porventura estejam, ou estiveram, de alguma forma, dispon\xEDveis no Site. O simples acesso ao Site n\xE3o confere a estes, qualquer direito ao uso dos itens anteriormente citados, que nele estejam ou estiveram dispon\xEDveis."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "2.1.3. \xC9 permitido fazer somente o arquivo tempor\xE1rio deste Site e de seu conte\xFAdo, sendo vedada sua utiliza\xE7\xE3o para finalidades comerciais, publicit\xE1rias ou qualquer outra que contrarie a realidade para a qual foi concebido, conforme definido neste documento. Restam igualmente proibidas a reprodu\xE7\xE3o, distribui\xE7\xE3o e divulga\xE7\xE3o, total ou parcial, dos textos, figuras, gr\xE1ficos que comp\xF5em o presente Site, sem pr\xE9via e expressa autoriza\xE7\xE3o por escrito da NAYP, sendo permitida somente a impress\xE3o de c\xF3pias para uso e arquivo pessoal, sem que sejam separadas as partes que permitam dar o fiel e real entendimento de seu conte\xFAdo e objetivo."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "2.1.4. O usu\xE1rio concorda em n\xE3o utilizar nenhuma minera\xE7\xE3o de dados, rob\xF4s, raspagens de dados ou m\xE9todos similares de coleta de dados."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "2.1.5. O usu\xE1rio assume toda e qualquer responsabilidade, de car\xE1ter civil e/ou criminal, pela utiliza\xE7\xE3o indevida das informa\xE7\xF5es, textos, gr\xE1ficos, marcas, obras, imagens, enfim, de todo e qualquer direito de propriedade intelectual ou industrial deste Site. Nada nestes Termos de Uso deve ser interpretado como a concess\xE3o de qualquer licen\xE7a de propriedade intelectual para o usu\xE1rio."
+	          )
 	        ),
 	        _react3.default.createElement(
-	          "p",
+	          "div",
 	          null,
-	          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus!"
+	          _react3.default.createElement(
+	            "h2",
+	            { className: "title-base" },
+	            "SE\xC7\xC3O 3 \u2013 INFORMA\xC7\xD5ES GERAIS SOBRE O SITE"
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "3.1. Este Site \xE9 oferecido ao p\xFAblico da web na maneira como est\xE1 dispon\xEDvel, podendo passar por constantes aprimoramentos e atualiza\xE7\xF5es, n\xE3o ficando obrigada a NAYP a manter uma estrutura ou layout, se n\xE3o por sua pr\xF3pria conveni\xEAncia."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "3.2. A NAYP concentra seus esfor\xE7os para a disponibilidade cont\xEDnua, permanente e segura do Site, ficando sujeito, todavia, a eventos extraordin\xE1rios, como desastres naturais, falhas ou colapsos nos sistemas centrais de comunica\xE7\xE3o e acesso \xE0 internet ou por ato destrutivo de terceiro, que fogem de sua esfera de vigil\xE2ncia e responsabilidade."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "3.3. A NAYP n\xE3o se responsabiliza por qualquer dano, preju\xEDzo ou perda no equipamento dos  usu\xE1rios causados por falhas no sistema, no servidor ou na conex\xE3o \xE0 Internet, ainda que decorrentes de condutas de terceiros, inclusive por a\xE7\xF5es de softwares maliciosos como v\xEDrus, cavalos de tr\xF3ia, e outros que possam, de algum modo, danificar o equipamento ou a conex\xE3o dos visitantes em decorr\xEAncia do acesso, utiliza\xE7\xE3o ou navega\xE7\xE3o neste Site, bem como a transfer\xEAncia de dados, arquivos, imagens, textos, \xE1udios ou v\xEDdeos contidos no mesmo."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "3.4. Os usu\xE1rios n\xE3o possuem qualquer direito para exigir a disponibilidade do Site conforme melhor lhes conv\xEAm, tampouco poder\xE3o pleitear indeniza\xE7\xE3o ou repara\xE7\xE3o de danos em caso deste Site permanecer fora do ar, independente da motiva\xE7\xE3o."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "3.5. A NAYP n\xE3o se responsabiliza pelos atos praticados por usu\xE1rios em seu Site, devendo cada um ser responsabilizado de acordo com as atividades realizadas no Site."
+	          )
+	        ),
+	        _react3.default.createElement(
+	          "div",
+	          null,
+	          _react3.default.createElement(
+	            "h2",
+	            { className: "title-base" },
+	            "SE\xC7\xC3O 4 \u2013 FUNCIONALIDADES DO SITE"
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "4.1. A NAYP empenha-se em preservar a funcionalidade do Site, de modo que exista a exata percep\xE7\xE3o das opera\xE7\xF5es realizadas; utilizando layout que respeite a usabilidade e navegabilidade, facilitando a navega\xE7\xE3o sempre que poss\xEDvel."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "4.2. O Site apresenta a seus usu\xE1rios, seus produtos e proporciona a possibilidade de aquisi\xE7\xE3o de alguns deles conforme disponibilizado."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "4.2.1. Os pre\xE7os praticados pela NAYP em seu Site podem ser diferentes dos adotados em lojas f\xEDsicas. Nem por isso as lojas estar\xE3o obrigadas a reduzir o pre\xE7o de determinado produto caso o valor publicado na internet seja menor e vice-versa. H\xE1 ainda a possibilidade de alguns de nossos produtos serem vendidos exclusivamente pelo Site ou lojas f\xEDsicas; escolha o canal adequado conforme o desejo de adquirir esses produtos."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "4.3. Antes de comprar ou utilizar os produtos NAYP, o usu\xE1rio deve ler atentamente os detalhes do produto e as instru\xE7\xF5es de uso correspondentes, evitando colocar em risco sua satisfa\xE7\xE3o e/ou bem-estar ou de perder a garantia sobre o que adquiriu."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "4.3.1. A NAYP tenta ao m\xE1ximo, reproduzir o mais preciso poss\xEDvel, as cores dos produtos que est\xE3o em nosso Site. No entanto, como as cores que voc\xEA v\xEA neste Site ir\xE3o depender das configura\xE7\xF5es de v\xEDdeo que voc\xEA utiliza em seu equipamento, n\xE3o h\xE1 como garantir que a exibi\xE7\xE3o de qualquer cor das imagens em seu monitor ir\xE1 refletir a cor exata do produto recebido por voc\xEA."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "4.3.2. Todas as medidas de produtos descritas nesse Site s\xE3o aproximadas, isto ocorre devido as caracter\xEDsticas peculiares de cada processo de produ\xE7\xE3o t\xEAxtil e mat\xE9ria-prima utilizada, por\xE9m nos esfor\xE7amos ao m\xE1ximo para reproduzir da forma mais precisa poss\xEDvel tais informa\xE7\xF5es."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "4.4. Nosso servi\xE7o de entrega \xE9 realizado pelos Correios e o tempo de entrega pode variar conforme a regi\xE3o do destinat\xE1rio, da mesma forma que o valor da tarifa."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "4.5. Quaisquer ofertas e promo\xE7\xF5es ser\xE3o v\xE1lidas conforme estipulado pela NAYP e/ou conforme disponibilidade em estoque."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "4.6. A NAYP possui regras espec\xEDficas para a comercializa\xE7\xE3o, entrega, troca e devolu\xE7\xE3o de seus produtos. Busque informa\xE7\xF5es em nossa \xE1rea de Atendimento, conforme sua necessidade e tenha todas as informa\xE7\xF5es necess\xE1rias para realizar suas compras neste Site."
+	          )
+	        ),
+	        _react3.default.createElement(
+	          "div",
+	          null,
+	          _react3.default.createElement(
+	            "h2",
+	            { className: "title-base" },
+	            "SE\xC7\xC3O 5 \u2013 SERVI\xC7OS M\xD3VEIS"
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "5.1. O Site cont\xE9m servi\xE7os e recursos que est\xE3o dispon\xEDveis para alguns Dispositivos M\xF3veis. Os pre\xE7os e as taxas normais da sua operadora s\xE3o aplic\xE1veis. Nem todos os servi\xE7os m\xF3veis ir\xE3o funcionar com todas as operadoras ou todos os Dispositivos. Ao utilizar os servi\xE7os m\xF3veis da NAYP, voc\xEA concorda que iremos nos comunicar com voc\xEA por meios eletr\xF4nicos ao seu Dispositivo M\xF3vel e que algumas informa\xE7\xF5es sobre o seu uso destes servi\xE7os podem ser compartilhadas conosco. Caso altere ou desative o seu n\xFAmero de celular, voc\xEA deve atualizar imediatamente as informa\xE7\xF5es da sua conta para garantir que n\xE3o enviaremos as suas mensagens para outra pessoa."
+	          )
+	        ),
+	        _react3.default.createElement(
+	          "div",
+	          null,
+	          _react3.default.createElement(
+	            "h2",
+	            { className: "title-base" },
+	            "SE\xC7\xC3O 6 - FERRAMENTAS OPCIONAIS"
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "6.1. N\xF3s podemos oferecer a voc\xEA acesso a ferramentas de terceiros as quais n\xE3o monitoramos nem temos qualquer controle nem entrada. Voc\xEA reconhece e concorda que n\xF3s fornecemos acesso a tais ferramentas \u201Ccomo elas s\xE3o\u201D e \u201Cconforme dispon\xEDveis\u201D sem quaisquer garantias, representa\xE7\xF5es ou condi\xE7\xF5es de qualquer tipo e sem qualquer endosso. N\xF3s n\xE3o temos nenhuma responsabilidade, qualquer que seja, decorrente ou relacionada ao seu uso de ferramentas opcionais de terceiros."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "6.1.1. Qualquer uso por voc\xEA de ferramentas opcionais oferecidas atrav\xE9s do Site \xE9 inteiramente por sua conta e risco e voc\xEA deve garantir que voc\xEA conhece e aprova os termos em que as ferramentas s\xE3o fornecidas por relevante (s) fornecedor (es) terceiro (s)."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "6.1.2. Podemos tamb\xE9m, no futuro, oferecer novos servi\xE7os e/ou recursos atrav\xE9s do Site (incluindo, o lan\xE7amento de novas ferramentas e recursos). Tais recursos novos e/ou servi\xE7os devem tamb\xE9m estar sujeitos a esses Termos de Uso."
+	          )
+	        ),
+	        _react3.default.createElement(
+	          "div",
+	          null,
+	          _react3.default.createElement(
+	            "h2",
+	            { className: "title-base" },
+	            "SE\xC7\xC3O 7 - LINKS DE TERCEIROS"
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "7.1. Certos produtos, conte\xFAdos e servi\xE7os dispon\xEDveis em nosso Site podem incluir materiais de terceiros. A NAYP n\xE3o det\xE9m qualquer responsabilidade pela navega\xE7\xE3o dos usu\xE1rios nos links externos contidos no Site, sendo o dever deles a leitura dos Termos de Uso e Pol\xEDtica de Privacidade do site acessado e agir conforme o determinado. Tamb\xE9m ser\xE3o os principais respons\xE1veis caso ocorrer algum dano ou preju\xEDzo, uma vez que a navega\xE7\xE3o segura cabe aos mesmos e que a NAYP apenas apontou o link cabendo ao usu\xE1rio interessado a visita, ou n\xE3o, ao site."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "7.1.1. Links de terceiros neste Site podem direcionar voc\xEA para sites de terceiros que n\xE3o s\xE3o afiliados conosco. N\xF3s n\xE3o somos respons\xE1veis por examinar ou avaliar o conte\xFAdo ou precis\xE3o e n\xE3o garantimos e nem teremos obriga\xE7\xE3o ou responsabilidade por quaisquer materiais ou sites de terceiros, ou por quaisquer outros materiais, produtos, ou servi\xE7os de terceiros. Por favor, revise com cuidado as pol\xEDticas e pr\xE1ticas dos terceiros e certifique-se que voc\xEA as entenda antes de interagir em qualquer transa\xE7\xE3o. Queixas, reclama\xE7\xF5es, preocupa\xE7\xF5es ou quest\xF5es relativas a produtos de terceiros devem ser direcionadas aos terceiros."
+	          )
+	        ),
+	        _react3.default.createElement(
+	          "div",
+	          null,
+	          _react3.default.createElement(
+	            "h2",
+	            { className: "title-base" },
+	            "SE\xC7\xC3O 8 \u2013 PRECIS\xC3O DE INFORMA\xC7\xD5ES E CONDUTA DOS USU\xC1RIOS"
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "8.1. Os usu\xE1rios se obrigam a realizar a navega\xE7\xE3o com integridade \xE9tica, sempre respeitando as condi\xE7\xF5es que regem a utiliza\xE7\xE3o do Site e de seus recursos, para as finalidades que foram constitu\xEDdas."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "8.2. Ao fornecer dados e informa\xE7\xF5es \xE0 NAYP, o usu\xE1rio se obriga a faz\xEA-lo sempre com compromisso de veracidade e autenticidade, fornecendo informa\xE7\xE3o completa e precisa para todas as compras feitas em nosso Site. Voc\xEA concorda em atualizar prontamente seus dados e outras informa\xE7\xF5es, incluindo seu endere\xE7o de e-mail, n\xFAmeros de cart\xE3o de cr\xE9dito e datas de validade; para que possamos completar suas transa\xE7\xF5es e contatar voc\xEA quando preciso."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "8.3. Manter o sigilo das suas informa\xE7\xF5es de acesso e utiliza\xE7\xE3o do Site em rela\xE7\xE3o a terceiros, n\xE3o divulgando ou compartilhando tais informa\xE7\xF5es, a quem quer que seja; sob pena da exclus\xE3o dos servi\xE7os prestados e ter de ressarcir os danos que sobrevierem dessa divulga\xE7\xE3o indevida. Caso o usu\xE1rio suspeite que a confidencialidade de suas informa\xE7\xF5es foi quebrada, este dever\xE1 nos informar o mais r\xE1pido poss\xEDvel; atrav\xE9s dos nossos canais de contato."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "8.4. Na incid\xEAncia de danos ao Site ou a terceiros, o respons\xE1vel se compromete a arcar com todas as obriga\xE7\xF5es de indenizar o sujeito lesado, n\xE3o devendo a NAYP responder por tais preju\xEDzos."
+	          )
+	        ),
+	        _react3.default.createElement(
+	          "div",
+	          null,
+	          _react3.default.createElement(
+	            "h2",
+	            { className: "title-base" },
+	            "SE\xC7\xC3O 9 \u2013 COMUNICA\xC7\xC3O"
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "9.1. A NAYP utilizar\xE1 como principal canal de comunica\xE7\xE3o com seus usu\xE1rios, o e-mail informado durante a intera\xE7\xE3o com o site, nas suas mais diversas modalidades; mas poder\xE1 utilizar outros meios desde que informados corretamente."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "9.1.1. A responsabilidade pelo recebimento dos comunicados \xE9 exclusiva dos visitantes, por isso \xE9 indispens\xE1vel que sempre forne\xE7am os dados corretos e precisos \xE0 NAYP, al\xE9m de os manterem atualizados."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "9.1.2. \xC9 igualmente de suas al\xE7adas deixarem seus sistemas de anti-spam configurados de modo que n\xE3o interfiram no recebimento dos nossos comunicados e materiais, n\xE3o sendo aceit\xE1vel nenhuma desculpa caso n\xE3o tenha tido acesso a algum comunicado em virtude desse bloqueio ou filtro similar."
+	          )
+	        ),
+	        _react3.default.createElement(
+	          "div",
+	          null,
+	          _react3.default.createElement(
+	            "h2",
+	            { className: "title-base" },
+	            "SE\xC7\xC3O 10 \u2013 PRIVACIDADE"
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "10.1. A NAYP possui documento pr\xF3prio, denominado Pol\xEDtica de Privacidade, que rege o tratamento dado \xE0s informa\xE7\xF5es de cadastro e demais informa\xE7\xF5es e dados coletados neste Site."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "10.1.1. A Pol\xEDtica de Privacidade \xE9 parte integrante e insepar\xE1vel dos Termos e Condi\xE7\xF5es de Uso deste Site, e pode ser acessada no link encontrado no topo desta p\xE1gina. Caso alguma disposi\xE7\xE3o da Pol\xEDtica de Privacidade conflitar com qualquer outra do presente documento, dever\xE1 prevalecer o descrito na norma mais espec\xEDfica."
+	          )
+	        ),
+	        _react3.default.createElement(
+	          "div",
+	          null,
+	          _react3.default.createElement(
+	            "h2",
+	            { className: "title-base" },
+	            "SE\xC7\xC3O 11 - COMENT\xC1RIOS, FEEDBACK E OUTRAS SUBMISS\xD5ES DE USU\xC1RIO"
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "11.1. Se, a nosso pedido, voc\xEA envia certas submiss\xF5es espec\xEDficas (por exemplo entradas de concurso) ou espontaneamente voc\xEA envia para n\xF3s informa\xE7\xF5es e materiais (como perguntas, coment\xE1rios, sugest\xF5es, elogios, ideias criativas, propostas, planos), seja online, por e-mail, por mala postal, ou de outra forma (coletivamente, 'coment\xE1rios'), estes ser\xE3o tratados e utilizados de forma n\xE3o-confidencial e n\xE3o-propriet\xE1ria. Ao receber tais informa\xE7\xF5es e materiais, a NAYP automaticamente recebe o direito de propriedade dessas informa\xE7\xF5es passadas, podendo adotar, publicar, reproduzir, difundir, transmitir, distribuir, copiar e criar trabalhos derivados (no todo ou em parte) de tais informa\xE7\xF5es para qualquer finalidade e sem aviso pr\xE9vio. N\xF3s n\xE3o deveremos ter nenhuma obriga\xE7\xE3o (i) de compensa\xE7\xE3o por quaisquer informa\xE7\xF5es; (ii) de responder a quaisquer coment\xE1rios."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "11.2. Podemos, mas n\xE3o temos a obriga\xE7\xE3o de, monitorar, editar ou remover conte\xFAdo que n\xF3s determinamos em nosso pr\xF3prio crit\xE9rio ser contra a lei, ofensivo, amea\xE7ador, calunioso, difamat\xF3rio, pornogr\xE1fico, obsceno ou censur\xE1vel ou violem a propriedade intelectual de terceiros ou esses Termos de Uso."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "11.2.1. Voc\xEA concorda que seus coment\xE1rios n\xE3o violar\xE3o qualquer direito de qualquer terceiro, incluindo direitos autorais, marcas registradas, privacidade, personalidade ou outro direito pessoal ou de propriedade. Voc\xEA concorda ainda que os seus coment\xE1rios n\xE3o v\xE3o conter material difamat\xF3rio ou de outra forma ilegal, abusivo ou obsceno, ou que contenham qualquer v\xEDrus de computador ou outro malware que possam de alguma forma afetar a opera\xE7\xE3o do Site ou qualquer site relacionado. Voc\xEA n\xE3o pode usar um endere\xE7o de e-mail falso, fingir ser algu\xE9m diferente de si mesmo, ou de outra forma enganar a n\xF3s ou terceiros quanto \xE0 origem de quaisquer coment\xE1rios. Voc\xEA \xE9 o \xFAnico respons\xE1vel por quaisquer coment\xE1rios que voc\xEA faz e sua precis\xE3o. N\xF3s n\xE3o assumimos qualquer responsabilidade e n\xE3o assumimos qualquer obriga\xE7\xE3o por quaisquer coment\xE1rios publicados por voc\xEA ou por qualquer terceiro."
+	          )
+	        ),
+	        _react3.default.createElement(
+	          "div",
+	          null,
+	          _react3.default.createElement(
+	            "h2",
+	            { className: "title-base" },
+	            "SE\xC7\xC3O 12 \u2013 APROVA\xC7\xD5ES E LIMITA\xC7\xD5ES"
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "12.1. Todos os pedidos realizados atrav\xE9s do Site est\xE3o sujeitos \xE0 aprova\xE7\xE3o da NAYP. Isto significa que a NAYP pode recusar ou cancelar qualquer pedido, estando ele confirmado ou n\xE3o, por qualquer motivo, e sem responsabilidade perante voc\xEA ou qualquer outra pessoa. Se o seu pedido for cancelado posteriormente ao debito, a NAYP emitir\xE1 o reembolso prontamente. Pedimos desculpas por qualquer inconveniente."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "12.1.1. Para todos os fins e efeitos de direito, informamos que a compra dos nossos produtos se destina exclusivamente ao uso e consumo dos mesmos e que n\xE3o ser\xE3o, no todo ou em parte, objeto de revenda, sob qualquer hip\xF3tese. Reservamos o direito, mas n\xE3o somos obrigados, de limitar ou proibir pedidos que, em nosso crit\xE9rio exclusivo, parecem ser feitos por comerciantes, revendedores ou distribuidores n\xE3o autorizados; ou tamb\xE9m por suspeita de fraude, regi\xE3o geogr\xE1fica ou jurisdi\xE7\xE3o. Podemos exercer esse direito numa base de caso a caso."
+	          )
+	        ),
+	        _react3.default.createElement(
+	          "div",
+	          null,
+	          _react3.default.createElement(
+	            "h2",
+	            { className: "title-base" },
+	            "SE\xC7\xC3O 13 \u2013 ATUALIZA\xC7\xD5ES E CORRE\xC7\xD5ES"
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "13.1. As informa\xE7\xF5es fornecidas no Site ou no servi\xE7o prestado podem, eventualmente, conter erros de natureza tipogr\xE1fica, incorre\xE7\xF5es ou omiss\xF5es relacionados a descri\xE7\xE3o dos produtos, pre\xE7os, promo\xE7\xF5es, ofertas, taxas de envio do produto, os tempos de transporte e disponibilidade. Respeitando os direitos do consumidor e a sua pol\xEDtica de relacionamento com o cliente, reserva-se \xE0 NAYP o direito de promover a corre\xE7\xE3o destes eventuais erros, imprecis\xF5es ou omiss\xF5es a qualquer momento e sem comunica\xE7\xE3o pr\xE9via. Consequentemente, a NAYP n\xE3o garante que as informa\xE7\xF5es obtidas atrav\xE9s deste Site sejam, a todo o tempo, exatas, completas e mesmo atualizadas."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "13.1.1. N\xE3o assumimos nenhuma obriga\xE7\xE3o de atualizar, alterar ou esclarecer informa\xE7\xF5es no Site ou em qualquer site relacionado, incluindo, sem limita\xE7\xE3o, as informa\xE7\xF5es sobre pre\xE7os, exceto conforme exigido por lei. Nenhuma atualiza\xE7\xE3o especificada ou data de atualiza\xE7\xE3o aplicada no Site ou em qualquer site relacionado, devem ser tomadas para indicar que todas as informa\xE7\xF5es no Site ou em qualquer site relacionado tenha sido modificada ou atualizada."
+	          )
+	        ),
+	        _react3.default.createElement(
+	          "div",
+	          null,
+	          _react3.default.createElement(
+	            "h2",
+	            { className: "title-base" },
+	            "SE\xC7\xC3O 14 \u2013 MODIFICA\xC7\xD5ES, SEPARALIDADE E INDEPEND\xCANCIA"
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "14.1. Os presentes Termos de Uso est\xE3o sujeitos a constante melhoria e aprimoramento. Assim, a NAYP se reserva o direito de modificar a qualquer momento, de forma unilateral, o presente documento e sua Pol\xEDtica de Privacidade. Ao navegar por este Site e utilizar suas funcionalidades, voc\xEA aceita guiar-se por nossos Termos e Condi\xE7\xF5es de Uso, e pela Pol\xEDtica de Privacidade que se encontram vigentes na data e, portanto, voc\xEA deve verificar os mesmos periodicamente."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "14.1.1. Reservamos o direito de, a qualquer momento, modificar ou descontinuar o Site (ou qualquer parte ou conte\xFAdo do mesmo) sem notifica\xE7\xE3o pr\xE9via. N\xF3s n\xE3o devemos ser responsabilizados por voc\xEA ou por qualquer terceiro por qualquer modifica\xE7\xE3o, altera\xE7\xE3o de pre\xE7o, suspens\xE3o ou descontinua\xE7\xE3o do Site. Tamb\xE9m reservamos o direito de descontinuar qualquer produto a qualquer momento."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "14.1.2. Quaisquer novos recursos ou ferramentas que s\xE3o adicionados ao Site devem tamb\xE9m estar sujeitas aos Termos e Condi\xE7\xF5es de Uso, e pela Pol\xEDtica de Privacidade. Reservamos o direito de atualizar, alterar ou trocar qualquer parte desses Termos e Pol\xEDtica ao publicar atualiza\xE7\xF5es e/ou altera\xE7\xF5es em nosso Site. Seu uso cont\xEDnuo ou acesso ao site ap\xF3s a publica\xE7\xE3o de quaisquer altera\xE7\xF5es, constitui aceita\xE7\xE3o dessas altera\xE7\xF5es."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "14.2. Se qualquer disposi\xE7\xE3o destes Termos de Uso for inv\xE1lida, as disposi\xE7\xF5es restantes destes Termos de Uso continuar\xE3o sendo obrigat\xF3rias. Se qualquer disposi\xE7\xE3o destes Termos de Uso for considerada ilegal, nula ou n\xE3o aplic\xE1vel, a provis\xE3o \xE9 considerada separ\xE1vel destes Termos de Uso e as disposi\xE7\xF5es remanescentes ainda ser\xE3o v\xE1lidas e aplic\xE1veis."
+	          )
+	        ),
+	        _react3.default.createElement(
+	          "div",
+	          null,
+	          _react3.default.createElement(
+	            "h2",
+	            { className: "title-base" },
+	            "SE\xC7\xC3O 15 - INDENIZA\xC7\xC3O"
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "15.1. Voc\xEA concorda em indenizar, defender e isentar a NAYP, suas subsidi\xE1rias, afiliadas, parceiros, funcion\xE1rios, diretores, agentes, contratados, licenciadores, fornecedores de servi\xE7os, subcontratados, fornecedores, estagi\xE1rios e funcion\xE1rios, de qualquer responsabilidade relacionada a reivindica\xE7\xF5es, preju\xEDzos, responsabilidades civis, despesas, danos e custo, incluindo, entre outros, honor\xE1rios advocat\xEDcios derivados do, ou relacionados de qualquer forma ao seu uso do Conte\xFAdo, ao seu uso do Site, \xE0 sua conduta relacionada ao Site ou aos outros usu\xE1rios do Site, ou qualquer viola\xE7\xE3o destes Termos de Uso, qualquer lei ou os direitos de terceiros."
+	          )
+	        ),
+	        _react3.default.createElement(
+	          "div",
+	          null,
+	          _react3.default.createElement(
+	            "h2",
+	            { className: "title-base" },
+	            "SE\xC7\xC3O 16 - ACORDO INTEGRAL"
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "16.1. A toler\xE2ncia do eventual descumprimento de quaisquer das cl\xE1usulas e condi\xE7\xF5es do presente instrumento n\xE3o constituir\xE1 nova\xE7\xE3o das obriga\xE7\xF5es aqui estipuladas e tampouco impedir\xE1 ou inibir\xE1 a exigibilidade das mesmas a qualquer tempo."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "16.2. A nossa falha em exercer ou executar qualquer direito ou disposi\xE7\xE3o destes Termos de Uso n\xE3o constituir\xE1 uma ren\xFAncia de tal direito ou disposi\xE7\xE3o. Esses Termos de Uso e quaisquer pol\xEDticas ou normas operacionais postadas por n\xF3s neste Site ou no que diz respeito ao servi\xE7o, constitui a totalidade do acordo e entendimento entre voc\xEA e n\xF3s e regem o uso deste Site, substituindo quaisquer acordos anteriores ou contempor\xE2neos, comunica\xE7\xF5es e propostas, seja oral ou escrita, entre voc\xEA e n\xF3s (incluindo, mas n\xE3o limitado a quaisquer vers\xF5es anteriores dos Termos de Uso). Quaisquer ambiguidades na interpreta\xE7\xE3o destes Termos n\xE3o devem ser interpretadas contra a parte que a elaborou."
+	          )
+	        ),
+	        _react3.default.createElement(
+	          "div",
+	          null,
+	          _react3.default.createElement(
+	            "h2",
+	            { className: "title-base" },
+	            "SE\xC7\xC3O 17 \u2013 LEI APLIC\xC1VEL E JURISDI\xC7\xC3O"
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "17.1. Os Termos e Condi\xE7\xF5es de Uso aqui descritos s\xE3o interpretados segundo a legisla\xE7\xE3o brasileira, no idioma portugu\xEAs, sendo eleito o Foro da Comarca de Curitiba no Estado do Paran\xE1 para dirimir qualquer lit\xEDgio, quest\xE3o ou d\xFAvida superveniente, com expressa ren\xFAncia de qualquer outro, por mais privilegiado que seja."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "\xDALTIMA ATUALIZA\xC7\xC3O: 19 de janeiro de 2017. Este Site tem como base o hor\xE1rio oficial de Bras\xEDlia."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "NAYP CO. LTD."
+	          )
 	        )
 	      );
 	    }
@@ -37841,7 +38300,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(173)(module)))
 
 /***/ },
-/* 425 */
+/* 423 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(module) {"use strict";
@@ -37908,24 +38367,366 @@
 	          "Pol\xEDtica de privacidade"
 	        ),
 	        _react3.default.createElement(
-	          "p",
+	          "div",
 	          null,
-	          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus!"
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "Como parte integrante dos Termos e Condi\xE7\xF5es de Uso deste Site, este documento, denominado Pol\xEDtica de Privacidade, tem por finalidade estabelecer as regras sobre a obten\xE7\xE3o, uso e armazenamento dos dados coletados ou fornecidos por voc\xEA (usu\xE1rio). Embora esta Pol\xEDtica de Privacidade seja criada para descrever de forma geral as nossas pr\xE1ticas de privacidade, o nosso objetivo tamb\xE9m \xE9 fornecer informa\xE7\xF5es mais detalhadas em momentos que forem mais significativos para voc\xEA."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "Em todo o documento, os termos \u201Cn\xF3s\u201D, \u201Cnos\u201D e \u201Cnosso\u201D se referem \xE0 NAYP, detentora e propriet\xE1ria deste Site."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "NAYP Co. Ltd., inscrita sob o CNPJ 07.430.733/0001-05 e sediada em Curitiba - PR na Rua Comendador Ara\xFAjo, 268 \u2013 Loja CA06, Centro, CEP 80420-000 / + 55 41 3308 0370."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "Os t\xEDtulos usados nesse acordo s\xE3o inclu\xEDdos para conveni\xEAncia apenas e n\xE3o v\xE3o limitar ou, caso contr\xE1rio, afetar essas Pol\xEDticas."
+	          )
 	        ),
 	        _react3.default.createElement(
-	          "p",
+	          "div",
 	          null,
-	          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus!"
+	          _react3.default.createElement(
+	            "h2",
+	            { className: "title-base" },
+	            "SE\xC7\xC3O 1 \u2013 OBTEN\xC7\xC3O DOS DADOS"
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "1.1. Os dados s\xE3o obtidos quando os usu\xE1rios interagirem com as diversas ferramentas e funcionalidades do Site ou quando fornecerem informa\xE7\xF5es voluntariamente, como em nossa Newsletter (\u201CBoletim Informativo\u201D), participando de nossas promo\xE7\xF5es ou concursos ou adquirindo algum produto, por exemplo. Esses dados podem incluir, entre outros, seu nome, data de nascimento, e-mail e endere\xE7o f\xEDsico, n\xFAmero de telefone, g\xEAnero, listas de contato, informa\xE7\xF5es de m\xEDdia social e perfil, informa\xE7\xF5es de localiza\xE7\xE3o (GPS), e, quando necess\xE1rio, informa\xE7\xF5es de cart\xE3o de cr\xE9dito."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "1.1.1. N\xF3s podemos combinar informa\xE7\xF5es fornecidas por voc\xEA com outras informa\xE7\xF5es de comunica\xE7\xF5es, transa\xE7\xF5es e fontes da NAYP. Isto pode incluir, entre outros, informa\xE7\xF5es das lojas NAYP, mala direta, cat\xE1logos, eventos, produtos e aplicativos, ou outras intera\xE7\xF5es da NAYP. Tamb\xE9m podemos combinar aquelas informa\xE7\xF5es com os dados dispon\xEDveis publicamente e com dados de terceiros. Se o usu\xE1rio compra um presente, tamb\xE9m ser\xE1 poss\xEDvel coletar informa\xE7\xF5es das pessoas presenteadas com nossos produtos."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "1.2. Quando voc\xEA navega pela nossa loja, recebemos tamb\xE9m automaticamente o protocolo de internet do seu dispositivo, endere\xE7o de IP, a fim de obter informa\xE7\xF5es que nos ajudam a aprender sobre seu navegador, a vers\xE3o de sistema operacional, dentre outros aplicativos instalados."
+	          )
 	        ),
 	        _react3.default.createElement(
-	          "p",
+	          "div",
 	          null,
-	          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus!"
+	          _react3.default.createElement(
+	            "h2",
+	            { className: "title-base" },
+	            "SE\xC7\xC3O 2 \u2013 CONSENTIMENTO"
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "2.1. Quando voc\xEA nos fornece as suas informa\xE7\xF5es pessoais para completar uma transa\xE7\xE3o, verificar seu cart\xE3o de cr\xE9dito, fazer um pedido, providenciar uma entrega ou retornar uma compra, entendemos que voc\xEA concorda com a nossa coleta e uso delas para aquele motivo espec\xEDfico apenas."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "2.2. Se pedimos por suas informa\xE7\xF5es pessoais por uma raz\xE3o secund\xE1ria, como por exemplo a Newsletter, vamos lhe pedir diretamente por seu consentimento, ou lhe fornecer a oportunidade de dizer n\xE3o."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "2.2.1. Com sua permiss\xE3o, podemos lhe enviar e-mails sobre nossa marca, novos produtos e outras informa\xE7\xF5es e atualiza\xE7\xF5es relevantes. Nossa inten\xE7\xE3o \xE9 utilizar este canal de informa\xE7\xE3o (Newsletter), de maneira comedida e equilibrada, visando a conveni\xEAncia. Voc\xEA pode cancelar a sua inclus\xE3o em nossa Newsletter a qualquer momento, por exemplo, atrav\xE9s do link que acompanha todos os e-mails enviados, relativos \xE0 nossa Newsletter."
+	          )
 	        ),
 	        _react3.default.createElement(
-	          "p",
+	          "div",
 	          null,
-	          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime vero voluptatem adipisci optio praesentium quis laboriosam quam, tempora excepturi totam, ratione temporibus pariatur! Ea officiis tempore eaque soluta quam repellendus!"
+	          _react3.default.createElement(
+	            "h2",
+	            { className: "title-base" },
+	            "SE\xC7\xC3O 3 \u2013 USO DOS DADOS"
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "3.1. Os dados coletados dos usu\xE1rios podem ser utilizados nos seguintes casos: (a) responder a poss\xEDveis d\xFAvidas e solicita\xE7\xF5es dos usu\xE1rios; (b) gerar an\xE1lises e estudos estat\xEDsticos com base no comportamento de uso do Site, para identifica\xE7\xE3o do perfil dos usu\xE1rios e desenvolvimento de campanhas da NAYP, mas sem realizar identifica\xE7\xE3o pessoal; (c) manter atualizados os dados cadastrais dos usu\xE1rios para contato por telefone, correio eletr\xF4nico, SMS, mala direta ou por outros meios de comunica\xE7\xE3o; (d) informar a respeito de novidades, promo\xE7\xF5es e eventos da NAYP; (e) realizar o enriquecimento da base com dados dos usu\xE1rios com a finalidade de customiza\xE7\xE3o dos servi\xE7os, melhor atendimento, promo\xE7\xF5es e desenvolvimento de novos produtos da NAYP; (f) promover o servi\xE7o e seus parceiros, comerciais ou n\xE3o, e informar sobre novas oportunidades e benef\xEDcios aos usu\xE1rios; (g) aperfei\xE7oar o uso e a xperi\xEAncia interativa durante a navega\xE7\xE3o do usu\xE1rio no Site, tal qual as demais ferramentas e servi\xE7os lan\xE7ados pela NAYP; (h) aprimorar o funcionamento do Site, bem como das demais ferramentas e servi\xE7os lan\xE7ados pela NAYP e/ou seus parceiros, comerciais ou n\xE3o e que se relacionam com o Site, direta ou indiretamente."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "3.2. N\xF3s podemos divulgar informa\xE7\xF5es a pedido do governo, em resposta a uma ordem judicial, quando exigido por lei, para cumprir as nossas pol\xEDticas, ou para proteger os nossos direitos, bens ou seguran\xE7a, al\xE9m dos direitos, bens ou seguran\xE7a de outras pessoas. Podemos compartilhar as informa\xE7\xF5es para prevenir o uso ilegal de produtos e servi\xE7os NAYP ou as viola\xE7\xF5es dos Termos de Uso, ou para nos defender de reivindica\xE7\xF5es de terceiros. Tamb\xE9m podemos compartilhar informa\xE7\xF5es com empresas que auxiliam na investiga\xE7\xE3o ou prote\xE7\xE3o contra fraude."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "3.3. A base de dados formada pela NAYP atrav\xE9s da coleta de informa\xE7\xF5es pelo Site n\xE3o ser\xE1 compartilhada, vendida, cedida, transferida, informada ou alugada a terceiros."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "3.4. A utiliza\xE7\xE3o da base de dados ser\xE1 restrita \xE0 NAYP ou parceiros de neg\xF3cios, que devem respeitar os termos desta Pol\xEDtica de Privacidade e os princ\xEDpios da necessidade e relev\xE2ncia em rela\xE7\xE3o aos objetivos do Site e sua controladora."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "3.5. Os dados armazenados ser\xE3o acessados por profissionais devidamente autorizados pela NAYP, respeitando a necessidade a que ser\xE3o submetidos, a relev\xE2ncia para os objetivos do Site e aos interesses dos usu\xE1rios, al\xE9m de preservar a privacidade dos usu\xE1rios."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "3.6. Terceiros podem realizar a an\xE1lise e agrupamento dos dados sob ordem da NAYP; por meio da utiliza\xE7\xE3o de tecnologias de monitoramento, para publicar an\xFAncios em nosso nome na Internet. Estas empresas podem coletar informa\xE7\xF5es sobre a sua intera\xE7\xE3o conosco, incluindo propaganda."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "3.7. N\xF3s podemos transferir seus dados para prestadoras de servi\xE7o para realizar nossas atividades comerciais. Por exemplo, elas podem cuidar do processamento de cart\xE3o de cr\xE9dito, frete, gest\xE3o de dados, distribui\xE7\xE3o de e-mail, pesquisa de mercado, an\xE1lise da informa\xE7\xE3o, e gest\xE3o de promo\xE7\xF5es."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "3.8. Caso o usu\xE1rio deixe de utilizar os servi\xE7os oferecidos pelo Site, a NAYP poder\xE1, para fins de auditoria e preserva\xE7\xE3o de direitos, permanecer com o registro de dados do usu\xE1rio, pelo per\xEDodo m\xE1ximo de 5 (cinco) anos, com a faculdade de exclu\xED-los definitivamente segundo sua conveni\xEAncia."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "3.8.1. O tempo m\xEDnimo de guarda para os registros de atividades no Site \xE9 de 6 (seis) meses, conforme disposi\xE7\xE3o legal do Marco Civil da Internet, Lei 12.965 de 2014, artigo 15."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "3.9. O usu\xE1rio pode solicitar \xE0 NAYP os dados que est\xE3o registrados que lhe dizem respeito, da mesma forma que pode solicitar a sua altera\xE7\xE3o ou exclus\xE3o. O usu\xE1rio deve entrar em contato atrav\xE9s dos meios disponibilizados pelo Site, para solicitar essas provid\xEAncias caso a NAYP n\xE3o ofere\xE7a a funcionalidade correspondente em seu Site."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "3.9.1. O pedido de exclus\xE3o de dados feito pelo usu\xE1rio ser\xE1 atendido ap\xF3s vencer o prazo indicado no 3.8, contudo, ainda que armazenados para fins de auditoria e preserva\xE7\xE3o de evid\xEAncias, n\xE3o mais passar\xE3o pelas hip\xF3teses de tratamento discriminado no 3.1."
+	          )
+	        ),
+	        _react3.default.createElement(
+	          "div",
+	          null,
+	          _react3.default.createElement(
+	            "h2",
+	            { className: "title-base" },
+	            "SE\xC7\xC3O 4 \u2013 SHOPIFY"
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "4.1. Nossa loja est\xE1 hospedada em Shopify Inc.; que nos fornece uma plataforma de e-commerce online com um certificado SSL e conformidade PCI; que nos permite vender nossos produtos e servi\xE7os com seguran\xE7a para voc\xEA."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "4.2. Seus dados est\xE3o reunidos atrav\xE9s do armazenamento de dados do Shopify, banco de dados e a aplica\xE7\xE3o geral do Shopify. Eles armazenam dados em um servidor seguro atr\xE1s de um firewall."
+	          )
+	        ),
+	        _react3.default.createElement(
+	          "div",
+	          null,
+	          _react3.default.createElement(
+	            "h2",
+	            { className: "title-base" },
+	            "SE\xC7\xC3O 5 \u2013 PAGAMENTO"
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "5.1. Se voc\xEA escolher um gateway de pagamento direto para completar a sua compra, ent\xE3o o Shopify armazena seus dados de cart\xE3o de cr\xE9dito, que s\xE3o criptografados atrav\xE9s do Padr\xE3o de Seguran\xE7a de Dados para a Ind\xFAstria de Pagamento com Cart\xE3o (PCI-DSS). Seus dados de transa\xE7\xE3o de compra s\xE3o armazenados apenas o tanto quanto forem necess\xE1rios para completar sua transa\xE7\xE3o de compra. Depois de completado, suas informa\xE7\xF5es de transa\xE7\xE3o d e compra s\xE3o apagadas."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "5.1.1. Todos os gateways de pagamento direto aderem aos padr\xF5es definidos pela PCI-DSS, gerenciado pelo Conselho de Normas de Seguran\xE7a PCI, que \xE9 um esfor\xE7o conjunto de marcas como Visa, MasterCard, American Express e Discover."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "5.1.2. Os requisitos da PCI-DSS ajudam a garantir o manuseio seguro de informa\xE7\xF5es de cart\xE3o de cr\xE9dito pela nossa loja e seus fornecedores de servi\xE7o."
+	          )
+	        ),
+	        _react3.default.createElement(
+	          "div",
+	          null,
+	          _react3.default.createElement(
+	            "h2",
+	            { className: "title-base" },
+	            "SE\xC7\xC3O 6 \u2013 SEGURAN\xC7A"
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "6.1. Para proteger suas informa\xE7\xF5es pessoais, tomamos precau\xE7\xF5es razo\xE1veis e seguimos as melhores pr\xE1ticas da ind\xFAstria para nos certificar que elas n\xE3o ser\xE3o perdidas inadequadamente, usurpadas, acessadas, divulgadas, alteradas ou destru\xEDdas."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "6.1.1. Se voc\xEA nos fornece suas informa\xE7\xF5es de cart\xE3o de cr\xE9dito, essas informa\xE7\xF5es s\xE3o criptografadas usando tecnologia \"Secure Socket Layer\" (SSL) e armazenada com uma criptografia AES-256. Embora nenhum m\xE9todo de transmiss\xE3o pela Internet ou armazenamento eletr\xF4nico seja totalmente seguro, n\xF3s seguimos todos os requisitos da PCI-DSS e implementamos padr\xF5es adicionais geralmente aceitos pela ind\xFAstria."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "6.1.2. Considerando que nenhum sistema de seguran\xE7a \xE9 absolutamente seguro, a NAYP se exime de quaisquer responsabilidades por eventuais danos e/ou preju\xEDzos decorrentes de falhas, v\xEDrus ou invas\xF5es do banco de dados do Site, salvo nos casos de dolo ou culpa pela mesma."
+	          )
+	        ),
+	        _react3.default.createElement(
+	          "div",
+	          null,
+	          _react3.default.createElement(
+	            "h2",
+	            { className: "title-base" },
+	            "SE\xC7\xC3O 7 \u2013 SERVI\xC7OS DE TERCEIROS"
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "7.1. No geral, os fornecedores terceirizados usados por n\xF3s ir\xE3o apenas coletar, usar e divulgar suas informa\xE7\xF5es na medida do necess\xE1rio para permitir que eles realizem os servi\xE7os que eles nos fornecem."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "7.1.1. Entretanto, certos fornecedores de servi\xE7os terceirizados, tais como gateways de pagamento e outros processadores de transa\xE7\xE3o de pagamento, t\xEAm suas pr\xF3prias Pol\xEDticas de Privacidade com respeito \xE0 informa\xE7\xE3o que somos obrigados a fornecer para eles, das transa\xE7\xF5es que voc\xEA faz relacionadas com compras. Para esses fornecedores, recomendamos que voc\xEA leia suas Pol\xEDticas de Privacidade para que voc\xEA possa entender a maneira na qual suas informa\xE7\xF5es pessoais ser\xE3o usadas por esses fornecedores."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "7.2. Em particular, lembre-se que certos fornecedores podem estar localizados em ou possuir instala\xE7\xF5es que est\xE3o localizadas em jurisdi\xE7\xF5es diferentes que voc\xEA ou n\xF3s. Assim, se voc\xEA quer continuar com uma transa\xE7\xE3o que envolve os servi\xE7os de um fornecedor de servi\xE7o terceirizado, ent\xE3o suas informa\xE7\xF5es podem tornar-se sujeitas \xE0s leis da (s) jurisdi\xE7\xE3o (\xF5es) nas quais o fornecedor de servi\xE7o ou suas instala\xE7\xF5es est\xE3o localizados."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "7.2.1. Como exemplo, se voc\xEA est\xE1 localizado no Brasil e sua transa\xE7\xE3o \xE9 processada por um gateway de pagamento localizado nos Estados Unidos, ent\xE3o suas informa\xE7\xF5es pessoais usadas para completar aquela transa\xE7\xE3o podem estar sujeitas a divulga\xE7\xE3o sob a legisla\xE7\xE3o dos Estados Unidos, incluindo o Ato Patriota. Uma vez que voc\xEA deixe o site da nossa loja ou seja redirecionado para um aplicativo ou site de terceiros, voc\xEA n\xE3o ser\xE1 mais regido por essa Pol\xEDtica de Privacidade ou pelos Termos e Condi\xE7\xF5es de Uso do nosso Site."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "7.3. Quando voc\xEA clica em links na nossa loja, eles podem lhe direcionar para fora do nosso Site. N\xE3o somos respons\xE1veis pelas pr\xE1ticas de privacidade de outros sites e lhe incentivamos a ler suas Pol\xEDticas de Privacidade."
+	          )
+	        ),
+	        _react3.default.createElement(
+	          "div",
+	          null,
+	          _react3.default.createElement(
+	            "h2",
+	            { className: "title-base" },
+	            "SE\xC7\xC3O 8 \u2013 COOKIES"
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "8.1. O Site pode fazer o uso de cookies, cabendo aos usu\xE1rios a configura\xE7\xE3o do seu navegador de Internet, caso deseje bloque\xE1-los. Nesta hip\xF3tese, algumas funcionalidades do Site poder\xE3o ser limitadas. Abaixo est\xE1 uma lista de cookies que utilizamos. N\xF3s os listamos para que voc\xEA possa escolher se voc\xEA quer sair dos cookies ou n\xE3o."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "_session_id, token \xFAnico, por sess\xE3o, Permite que o Shopify armazene informa\xE7\xF5es sobre sua sess\xE3o (referenciador, landing page, etc)."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "_shopify_visit, nenhum dado em posse, persiste por 30 minutos a partir da \xFAltima visita, usado pelo rastreador de estat\xEDsticas interno do fornecedor do Site para gravar o n\xFAmero de visitas."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "_shopify_uniq, nenhum dado em posse, expira \xE0 meia-noite (relativo ao visitante) do pr\xF3ximo dia, conta o n\xFAmero de visitas para uma loja de um \xFAnico cliente."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "carrinho, token \xFAnico, persiste por 2 semanas, armazena informa\xE7\xE3o sobre os conte\xFAdos do seu carrinho."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "_secure_session_id, token \xFAnico, por sess\xE3o."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "storefront_digest, token \xFAnico, indefinido se a loja tem uma senha, este \xE9 usado para determinar se o visitante atual tem acesso. 8.2. Outras tecnologias poder\xE3o ser utilizadas para a obten\xE7\xE3o de dados de navega\xE7\xE3o do usu\xE1rio, no entanto, respeitar\xE3o sempre aos termos desta pol\xEDtica e as op\xE7\xF5es do usu\xE1rio a respeito de sua coleta e armazenamento."
+	          )
+	        ),
+	        _react3.default.createElement(
+	          "div",
+	          null,
+	          _react3.default.createElement(
+	            "h2",
+	            { className: "title-base" },
+	            "SE\xC7\xC3O 9 \u2013 IDADE DE CONSENTIMENTO"
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "9.1. N\xF3s n\xE3o coletamos ou solicitamos informa\xE7\xF5es pessoais de usu\xE1rios com menos de 18 anos de idade de forma consciente. Recomendamos que os respons\xE1veis legais tenham papel ativo nos interesses e atividades on-line dos usu\xE1rios menores de idade."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "9.1.1. Os menores de 18 anos n\xE3o devem remeter ao nosso Site dados pessoais sem o consentimento pr\xE9vio de seus pais ou respons\xE1veis legais. Os usu\xE1rios menores de 18 anos n\xE3o podem estar registrados no Site da NAYP por sua pr\xF3pria conta, devendo ser registrados por seus pais ou tutores."
+	          )
+	        ),
+	        _react3.default.createElement(
+	          "div",
+	          null,
+	          _react3.default.createElement(
+	            "h2",
+	            { className: "title-base" },
+	            "SE\xC7\xC3O 10 \u2013 ALTERA\xC7\xD5ES"
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "10.1. Reservamos o direito de modificar essa Pol\xEDtica de Privacidade a qualquer momento, ent\xE3o por favor, revise-a com frequ\xEAncia. Altera\xE7\xF5es e esclarecimentos v\xE3o surtir efeito imediatamente ap\xF3s sua publica\xE7\xE3o no Site. Se fizermos altera\xE7\xF5es de materiais para essa Pol\xEDtica, iremos notific\xE1-lo por aqui sobre essas altera\xE7\xF5es, para que voc\xEA tenha ci\xEAncia sobre quais informa\xE7\xF5es coletamos, como as utilizamos, e sob que circunst\xE2ncias, se alguma, usamos e/ou divulgamos elas."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "10.2. Se nossa loja for adquirida ou fundida com outra empresa, suas informa\xE7\xF5es podem ser transferidas para os novos propriet\xE1rios como parte dos nossos ativos comerciais, para que possamos continuar a vender produtos para voc\xEA."
+	          )
+	        ),
+	        _react3.default.createElement(
+	          "div",
+	          null,
+	          _react3.default.createElement(
+	            "h2",
+	            { className: "title-base" },
+	            "SE\xC7\xC3O 11 \u2013 D\xDAVIDAS"
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "11.1. Os usu\xE1rios podem entrar em contato em caso de qualquer d\xFAvida com rela\xE7\xE3o \xE0s disposi\xE7\xF5es constantes desta Pol\xEDtica de Privacidade atrav\xE9s da nossa \xE1rea de Atendimento."
+	          )
+	        ),
+	        _react3.default.createElement(
+	          "div",
+	          null,
+	          _react3.default.createElement(
+	            "h2",
+	            { className: "title-base" },
+	            "SE\xC7\xC3O 12 \u2013 LEI APLIC\xC1VEL E JURISDI\xC7\xC3O"
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "12.1. Os Termos e Condi\xE7\xF5es de Uso aqui descritos s\xE3o interpretados segundo a legisla\xE7\xE3o brasileira, no idioma portugu\xEAs, sendo eleito o Foro da Comarca de Curitiba no Estado do Paran\xE1 para dirimir qualquer lit\xEDgio, quest\xE3o ou d\xFAvida superveniente, com expressa ren\xFAncia de qualquer outro, por mais privilegiado que seja."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "\xDALTIMA ATUALIZA\xC7\xC3O: 19 de janeiro de 2017."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "Este Site tem como base o hor\xE1rio oficial de Bras\xEDlia."
+	          ),
+	          _react3.default.createElement(
+	            "p",
+	            null,
+	            "NAYP CO. LTD."
+	          )
 	        )
 	      );
 	    }
@@ -37938,7 +38739,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(173)(module)))
 
 /***/ },
-/* 426 */
+/* 424 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(module) {'use strict';
@@ -37958,11 +38759,11 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _Main = __webpack_require__(427);
+	var _Main = __webpack_require__(425);
 
 	var _Main2 = _interopRequireDefault(_Main);
 
-	var _Navegation = __webpack_require__(428);
+	var _Navegation = __webpack_require__(426);
 
 	var _Navegation2 = _interopRequireDefault(_Navegation);
 
@@ -38023,7 +38824,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(173)(module)))
 
 /***/ },
-/* 427 */
+/* 425 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(module) {"use strict";
@@ -38096,7 +38897,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(173)(module)))
 
 /***/ },
-/* 428 */
+/* 426 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(module) {'use strict';

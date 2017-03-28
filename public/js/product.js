@@ -63,7 +63,7 @@
 /******/ 	}
 
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "4fab590713499670efdd"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "e810a6b1057f5e5065c7"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 
@@ -584,19 +584,19 @@
 
 	'use strict';
 
-	var _header = __webpack_require__(429);
+	var _header = __webpack_require__(427);
 
 	var header = _interopRequireWildcard(_header);
 
-	var _footer = __webpack_require__(431);
+	var _footer = __webpack_require__(429);
 
 	var footer = _interopRequireWildcard(_footer);
 
-	var _cartPreview = __webpack_require__(433);
+	var _cartPreview = __webpack_require__(431);
 
-	var _toggleElements = __webpack_require__(430);
+	var _toggleElements = __webpack_require__(428);
 
-	var _productGallery = __webpack_require__(434);
+	var _productGallery = __webpack_require__(432);
 
 	var productGallery = _interopRequireWildcard(_productGallery);
 
@@ -609,12 +609,12 @@
 
 /***/ },
 
-/***/ 429:
+/***/ 427:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
-	var _toggleElements = __webpack_require__(430);
+	var _toggleElements = __webpack_require__(428);
 
 	(0, _toggleElements.toggleDisplay)("active-collections");
 	(0, _toggleElements.toggleDisplay)("active-info");
@@ -645,7 +645,7 @@
 
 /***/ },
 
-/***/ 430:
+/***/ 428:
 /***/ function(module, exports) {
 
 	"use strict";
@@ -689,18 +689,18 @@
 
 /***/ },
 
-/***/ 431:
+/***/ 429:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
-	var _toggleElements = __webpack_require__(430);
+	var _toggleElements = __webpack_require__(428);
 
 	(0, _toggleElements.toggleDisplay)("active-footer-menu");
 
 /***/ },
 
-/***/ 433:
+/***/ 431:
 /***/ function(module, exports) {
 
 	'use strict';
@@ -742,7 +742,7 @@
 
 /***/ },
 
-/***/ 434:
+/***/ 432:
 /***/ function(module, exports) {
 
 	"use strict";
