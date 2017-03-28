@@ -16,10 +16,6 @@
 
 }
 
-.header-np .megamenu {
-  top: 90px;
-}
-
 .header-info {
   height: 50px;
   width: 140px;
@@ -74,18 +70,6 @@
   .header-np .logo-np {
     width: 50%;
   }
-
-  .header-navegation {
-    order: 1;
-    flex-grow: 1;
-    margin-right: 0;
-  }
-
-
-  .header-np .megamenu {
-    top: 120px;
-  }
-
 
   .search-box .form-wrap {
     width: 88%;
